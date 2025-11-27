@@ -173,7 +173,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 40px 20px 40px;
     overflow: hidden;
     transition: justify-content 0.4s ease;
 }
@@ -195,7 +194,9 @@
 
 
  .scale-bar {
-    width: 100%;
+    left: var(--scale-gap, 40px);
+    right: var(--scale-gap, 40px);
+    width: auto;
     height: 20px;
     border: 2px solid var(--border-color);
     border-radius: 10px;
@@ -203,9 +204,28 @@
     transition: border-color 0.3s ease, top 0.4s ease, bottom 0.4s ease, transform 0.4s ease;
     position: absolute;
     bottom: calc(36px + 6px);
-    left: 0;
     transform: translateY(0);
     z-index: 5;
+}
+
+.scale-bar::before,
+.scale-bar::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-color);
+    background: transparent;
+    pointer-events: none;
+    z-index: 6;
+}
+.scale-bar::before { content: "0"; left: -28px; }
+.scale-bar::after { content: "10"; right: -36px; }
+
+@media (max-width: 600px) {
+    .scale-bar::before { left: -20px; font-size: 0.95rem; }
+    .scale-bar::after { right: -28px; font-size: 0.95rem; }
 }
 
 .content-area.view-mode-center .scale-bar {
@@ -379,4 +399,12 @@
 }
 .modal-content h2 {
     margin-top: 0; border-bottom: 1px solid var(--border-color); padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    :root { --scale-gap: 12px; }
+    .sidebar { height: 56px; }
+    .main-wrapper { padding-bottom: calc(56px + 8px); }
+    .scale-bar { bottom: calc(56px + 8px); }
+    #zoom-slider { width: 100px; }
 }
