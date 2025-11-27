@@ -30,22 +30,6 @@
                     <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
                 </svg>
             </button>
-            <button id="undo-btn" class="sidebar-item" title="Отменить" disabled>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C20.08 11.03 16.63 8 12.5 8z"/>
-                 </svg>
-            </button>
-            <button id="redo-btn" class="sidebar-item" title="Вернуть" disabled>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                     <path d="m 11.97,8c 2.65,0 5.05,0.99 6.9,2.6L 22.47,7v 9h -9l 3.62,-3.62C 15.7,11.22 13.93,10.5 11.97,10.5 8.43,10.5 5.42,12.81 4.37,16L 2,15.22C 4.39,11.03 7.84,8 11.97,8 Z"/>
-                 </svg>
-            </button>
-        </div>
-
-        <div class="sidebar-spacer"></div>
-
-        <div class="sidebar-group">
-            <div class="sidebar-header"><span>Вид</span></div>
             <button id="viewModeBottomBtn" class="sidebar-item" title="Вид: Снизу">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M22 21H2V17H22V21ZM13 15H11V3H13V15Z"/>
@@ -55,6 +39,22 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M22 11V13H2V11H22ZM13 19H11V5H13V19Z"/>
                 </svg>
+            </button>
+        </div>
+
+        <div class="sidebar-spacer"></div>
+
+        <div class="sidebar-group">
+            <div class="sidebar-header"><span>Вид</span></div>
+            <button id="undo-btn" class="sidebar-item" title="Отменить" disabled>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C20.08 11.03 16.63 8 12.5 8z"/>
+                 </svg>
+            </button>
+            <button id="redo-btn" class="sidebar-item" title="Вернуть" disabled>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                     <path d="m 11.97,8c 2.65,0 5.05,0.99 6.9,2.6L 22.47,7v 9h -9l 3.62,-3.62C 15.7,11.22 13.93,10.5 11.97,10.5 8.43,10.5 5.42,12.81 4.37,16L 2,15.22C 4.39,11.03 7.84,8 11.97,8 Z"/>
+                 </svg>
             </button>
         </div>
         
@@ -961,4 +961,5 @@
         });
     </script>
 </body>
+
 </html>
