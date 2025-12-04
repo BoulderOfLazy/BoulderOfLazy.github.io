@@ -6,72 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images\icons\ultimategamememe.ico">
     <title>Ультимативный "Любимая игра meme"</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            position: relative;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(10, minmax(100px, 1fr));
-            gap: 0px;
-            margin-bottom: 0px;
-        }
-
-        .card {
-            border: 1px solid #ccc;
-            padding: 3px;
-            text-align: center;
-            background: #fff;
-        }
-
-        .image-placeholder {
-            min-height: 100px;
-            aspect-ratio: 264 / 352;
-            background-color: #ddd;
-            margin-bottom: 10px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .card p {
-            margin: 0;
-        }
-
-        button {
-            display: inline-block;
-            margin: 10px 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .button-container {
-            text-align: center;
-        }
-
-        #lang-toggle {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            z-index: 100;
-            padding: 8px 12px;
-            font-size: 14px;
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="css/ultimategamememe.css">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 
@@ -82,246 +17,51 @@
         <h1>УЛЬТИМАТИВНЫЙ "ЛЮБИМАЯ ИГРА MEME"</h1>
         <div class="grid"></div>
     </div>
+
+    <div class="toggle-row">
+        <span class="toggle-label" id="toggle-left">I'm only here to paste images</span>
+        <label class="toggle-switch">
+            <input type="checkbox" id="comment-toggle">
+            <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="toggle-right">Let me comment each category!</span>
+    </div>
+
+    <div class="info-link-container">
+        <span id="info-trigger">What's the difference?</span>
+    </div>
+
     <div class="button-container">
         <button id="screenshot">Генерировать скриншот</button>
+        <button id="download-btn">Скачать как HTML</button>
         <button id="clear">Очистить</button>
     </div>
 
-    <script>
-        const translations = {
-            ru: {
-                title: "Ультимативный \"Любимая игра meme\"",
-                h1: "УЛЬТИМАТИВНЫЙ \"ЛЮБИМАЯ ИГРА MEME\"",
-                placeholder: "Нажми, чтобы вставить изображение",
-                pasteAlert: "Теперь вставьте изображение из буфера обмена (Ctrl+V или Command+V)",
-                noImageAlert: "В буфере обмена нет изображения. Убедитесь, что вы скопировали изображение.",
-                screenshotButton: "Генерировать скриншот",
-                clearButton: "Очистить",
-                clearConfirm: "Вы уверены, что хотите очистить все изображения и текст?",
-                langButton: "EN",
-                phrases: [
-                    "Игра, которую должен пройти каждый", "Лучшая история", "Любимый визуальный стиль", "Заставляет задуматься", "\"Я тебя закончу, когда-нибудь..\"", "Любимая серия игр", "Лучшая боёвка", "Хорошая игра с плохим комьюнити", "Фанатская игра для фанатов от фанатов", "Игра с наибольшим наигранным временем",
-                    "200iq стратегия", "Ты любишь, но все ненавидят", "Ты ненавидишь, но всем нравится", "Недооценено", "Переоценено", "Годная инди", "Годная ААА", "Мясо, матюки, убийства...", "Лучшая детская игра", "Когда сиквел лучше оригинала",
-                    "Годнота отечественных разрабов", "ОМГ эта атмосфера", "Любимый антагонист", "Любимый протагонист", "Любимый второстепенный персонаж", "Упущенный потенциал", "Наибольшее разочарование", "Ремейк/ремастер, который смог", "Вот раньше были игры...", "Друг познаётся в коопе",
-                    "Ночной кошмар казуальщика", "Игра не для всех", "Любимый симулятор", "Депрессивная игра", "Лучший саундтрек", "\"Почему мне это нравится?\"", "Всегда возвращаешься", "Любимая бесплатная игра", "Нелюбимая игра от любимого разрабочика", "Любимая игра от нелюбимого издателя",
-                    "Лучший шутер", "Лучший юмор", "Лучший мультиплеер", "Лучший хоррор", "Лучший рогалик", "Лучший выживач/песочница", "Самая первая игра, в которую ты играл", "Самая ожидаемая игра", "Любимая игра для мобилки", "Лучшая концовка"
-                ]
-            },
-            en: {
-                title: "The Ultimate \"Favorite Game Meme\"",
-                h1: "THE ULTIMATE \"FAVORITE GAME MEME\"",
-                placeholder: "Click to paste an image",
-                pasteAlert: "Now paste an image from your clipboard (Ctrl+V or Command+V)",
-                noImageAlert: "No image found on clipboard. Make sure you copied an image.",
-                screenshotButton: "Generate Screenshot",
-                clearButton: "Clear",
-                clearConfirm: "Are you sure you want to clear all images and text?",
-                langButton: "RU",
-                phrases: [
-                    "A game everyone should play", "Best story", "Favorite visual style", "Makes you think", "\"I'll finish you... someday\"", "Favorite game series", "Best combat", "Good game, bad community", "A fan game for fans by fans", "Most played game",
-                    "200iq strategy", "You love it, everyone hates it", "You hate it, everyone loves it", "Underrated", "Overrated", "Great indie", "Great AAA", "Gore, swearing, violence...", "Best kids' game", "When the sequel is better",
-                    "Great local dev game", "OMG this atmosphere", "Favorite antagonist", "Favorite protagonist", "Favorite side character", "Wasted potential", "Biggest disappointment", "A remake/remaster that delivered", "They don't make 'em like they used to", "A friend is tested in co-op",
-                    "A casual's nightmare", "Not for everyone", "Favorite simulator", "Depressing game", "Best soundtrack", "\"Why do I like this?\"", "You always come back to", "Favorite free-to-play", "Disliked game from a fav developer", "Favorite game from a disliked publisher",
-                    "Best shooter", "Best humor", "Best multiplayer", "Best horror", "Best roguelike", "Best survival/sandbox", "The very first game you played", "Most anticipated game", "Favorite mobile game", "Best ending"
-                ]
-            }
-        };
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <h3 id="modal-title">Комментарий</h3>
+        <textarea id="comment-text"></textarea>
+        <div class="modal-buttons">
+            <button id="modal-cancel">Отмена</button>
+            <button id="modal-save">Сохранить</button>
+        </div>
+    </div>
 
-        let currentLang;
-        let currentPlaceholder = null;
-        let db;
-        const grid = document.querySelector('.grid');
+    <div class="modal" id="info-modal">
+        <h3 id="info-modal-title">Info</h3>
+        <p id="info-modal-text" style="line-height: 1.5; font-size: 14px; color: #333;"></p>
+        <div class="modal-buttons">
+            <button id="info-modal-close">OK</button>
+        </div>
+    </div>
 
-        function initDB(callback) {
-            const request = indexedDB.open('imageMemeDB', 2);
-            request.onerror = (event) => console.error("Database error: " + event.target.errorCode);
-            request.onsuccess = (event) => {
-                db = event.target.result;
-                callback();
-            };
-            request.onupgradeneeded = (event) => {
-                const db = event.target.result;
-                const oldVersion = event.oldVersion;
-                if (oldVersion < 1) {
-                    db.createObjectStore('images', { keyPath: 'id' });
-                }
-                if (oldVersion < 2) {
-                    db.createObjectStore('customTexts', { keyPath: 'id' });
-                }
-            };
-        }
+    <div class="filename-modal" id="filename-modal">
+        <div class="filename-row">
+            <input type="text" id="filename-input" autocomplete="off">
+            <button id="filename-save-btn">Save</button>
+        </div>
+    </div>
 
-        const saveImage = (index, imageBlob) => {
-            if (!db) return;
-            const transaction = db.transaction(['images'], 'readwrite');
-            const objectStore = transaction.objectStore('images');
-            objectStore.put({ id: index, image: imageBlob });
-        };
-
-        const loadImages = () => {
-            if (!db) return;
-            const transaction = db.transaction(['images'], 'readonly');
-            const objectStore = transaction.objectStore('images');
-            const placeholders = document.querySelectorAll('.image-placeholder');
-
-            objectStore.getAll().onsuccess = (event) => {
-                const images = event.target.result;
-                images.forEach(item => {
-                    if (placeholders[item.id]) {
-                        const imageUrl = URL.createObjectURL(item.image);
-                        placeholders[item.id].style.backgroundImage = `url(${imageUrl})`;
-                        placeholders[item.id].innerText = '';
-                    }
-                });
-            };
-        };
-
-        const saveText = (index, text) => {
-            if (!db) return;
-            const id = `${currentLang}_${index}`;
-            const transaction = db.transaction(['customTexts'], 'readwrite');
-            const objectStore = transaction.objectStore('customTexts');
-            objectStore.put({ id: id, text: text });
-        };
-
-        const loadTexts = () => {
-            if (!db) return;
-            const transaction = db.transaction(['customTexts'], 'readonly');
-            const objectStore = transaction.objectStore('customTexts');
-            const textElements = document.querySelectorAll('.card p');
-
-            objectStore.getAll().onsuccess = (event) => {
-                const allTexts = event.target.result;
-                allTexts.forEach(item => {
-                    const [lang, indexStr] = item.id.split('_');
-                    if (lang === currentLang) {
-                        const index = parseInt(indexStr);
-                        if (textElements[index]) {
-                            textElements[index].innerText = item.text;
-                        }
-                    }
-                });
-            };
-        };
-
-        document.addEventListener('paste', (event) => {
-            if (!currentPlaceholder) return;
-
-            const targetPlaceholder = currentPlaceholder;
-            const items = event.clipboardData.items;
-            let imageFound = false;
-            for (let item of items) {
-                if (item.type.startsWith('image/')) {
-                    const blob = item.getAsFile();
-                    const placeholderIndex = parseInt(targetPlaceholder.dataset.index);
-                    saveImage(placeholderIndex, blob);
-                    const objectURL = URL.createObjectURL(blob);
-                    targetPlaceholder.style.backgroundImage = `url(${objectURL})`;
-                    targetPlaceholder.innerText = '';
-                    imageFound = true;
-                    break;
-                }
-            }
-            if (!imageFound) {
-                alert(translations[currentLang].noImageAlert);
-            }
-            currentPlaceholder = null;
-        });
-
-        function generateGrid(lang) {
-            grid.innerHTML = '';
-            const t = translations[lang];
-
-            t.phrases.forEach((phrase, index) => {
-                const card = document.createElement('div');
-                card.className = 'card';
-                const placeholder = document.createElement('div');
-                placeholder.className = 'image-placeholder';
-                placeholder.innerText = t.placeholder;
-                placeholder.dataset.index = index;
-                placeholder.addEventListener('click', (event) => {
-                    currentPlaceholder = event.target;
-                    alert(translations[currentLang].pasteAlert);
-                });
-                const text = document.createElement('p');
-                text.contentEditable = true;
-                text.innerText = phrase;
-                text.addEventListener('blur', (event) => {
-                    saveText(index, event.target.innerText);
-                });
-                card.appendChild(placeholder);
-                card.appendChild(text);
-                grid.appendChild(card);
-            });
-        }
-
-        function updateUI(lang) {
-            const t = translations[lang];
-            document.documentElement.lang = lang;
-            document.title = t.title;
-            document.querySelector('h1').innerText = t.h1;
-            document.getElementById('screenshot').innerText = t.screenshotButton;
-            document.getElementById('clear').innerText = t.clearButton;
-            document.getElementById('lang-toggle').innerText = t.langButton;
-            generateGrid(lang);
-        }
-
-        document.getElementById('screenshot').addEventListener('click', () => {
-            html2canvas(document.getElementById('capture')).then(canvas => {
-                const link = document.createElement('a');
-                link.download = 'favorite_game_meme.png';
-                link.href = canvas.toDataURL('image/png');
-                link.click();
-            });
-        });
-
-        document.getElementById('clear').addEventListener('click', () => {
-            if (confirm(translations[currentLang].clearConfirm)) {
-                if (!db) return;
-                
-                const imgTransaction = db.transaction(['images'], 'readwrite');
-                imgTransaction.objectStore('images').clear();
-
-                const txtTransaction = db.transaction(['customTexts'], 'readwrite');
-                const txtStore = txtTransaction.objectStore('customTexts');
-                const txtRequest = txtStore.clear();
-
-                txtRequest.onsuccess = () => {
-                    location.reload();
-                };
-                txtRequest.onerror = (event) => {
-                    console.error('Failed to clear database:', event.target.error);
-                }
-            }
-        });
-
-        document.getElementById('lang-toggle').addEventListener('click', () => {
-            currentLang = (currentLang === 'ru') ? 'en' : 'ru';
-            localStorage.setItem('preferredLang', currentLang);
-            updateUI(currentLang);
-            loadImages();
-            loadTexts();
-        });
-
-        function getInitialLang() {
-            const savedLang = localStorage.getItem('preferredLang');
-            if (savedLang && translations[savedLang]) {
-                return savedLang;
-            }
-            const browserLang = navigator.language.split('-')[0];
-            return (browserLang === 'ru') ? 'ru' : 'en';
-        }
-
-        window.addEventListener('load', () => {
-            currentLang = getInitialLang();
-            updateUI(currentLang);
-            initDB(() => {
-                loadImages();
-                loadTexts();
-            });
-        });
-    </script>
+    <script src="js/ultimategamememe.js"></script>
 </body>
-
-
 </html>
