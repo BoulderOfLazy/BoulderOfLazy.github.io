@@ -596,7 +596,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const pageTitle = customName ? customName : (defaultTitles[currentLang] || 'Ultimate Game Meme');
         lines.push('<title>' + escapeHtml(pageTitle) + '</title>');
         lines.push('<style>');
-        lines.push('body{font-family:Arial,sans-serif;margin:20px;position:relative}h1{text-align:center}.grid{display:grid;grid-template-columns:repeat(10,minmax(100px,1fr));gap:0}.card{border:1px solid #ccc;padding:6px;text-align:center;background:#fff;display:flex;flex-direction:column}.image{min-height:100px;aspect-ratio:264/352;background-color:#ddd;margin-bottom:8px;background-position:center;background-repeat:no-repeat;background-size:cover}.phrase{margin:0 0 6px 0;font-weight:normal}.explain-btn{width:100%;padding:8px;background:#f0f0f0;border:1px solid #ccc;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:auto}.overlay{position:fixed;inset:0;background:transparent;display:none;z-index:200}.panel{position:fixed;display:none;left:0;top:0;width:auto;max-width:640px;background:#fff;border:1px solid #ccc;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.18);padding:12px;z-index:210;opacity:0;transform:scale(0.95);transition:opacity 160ms ease-in-out, transform 160ms ease-in-out;overflow:visible}.panel.open{display:block;opacity:1;transform:scale(1)}.panel h3{margin:0 0 8px 0;font-size:15px}.panel .body{font-size:14px;line-height:1.3}.close-hint{font-size:12px;color:#666;margin-top:8px}');
+        lines.push('body{font-family:Arial,sans-serif;margin:20px;position:relative}h1{text-align:center}.grid{display:grid;grid-template-columns:repeat(10,minmax(100px,1fr));gap:0}.card{border:1px solid #ccc;padding:3px;text-align:center;background:#fff;display:flex;flex-direction:column}.image{min-height:100px;aspect-ratio:264/352;background-color:#ddd;margin-bottom:8px;background-position:center;background-repeat:no-repeat;background-size:cover}.phrase{margin:0 0 6px 0;font-weight:normal}.explain-btn{width:100%;padding:8px;background:#f0f0f0;border:1px solid #ccc;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:auto}.overlay{position:fixed;inset:0;background:transparent;display:none;z-index:200}.panel{position:fixed;display:none;left:0;top:0;width:auto;max-width:640px;background:#fff;border:1px solid #ccc;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.18);padding:12px;z-index:210;opacity:0;transform:scale(0.95);transition:opacity 160ms ease-in-out, transform 160ms ease-in-out;overflow:visible}.panel.open{display:block;opacity:1;transform:scale(1)}.panel h3{margin:0 0 8px 0;font-size:15px}.panel .body{font-size:14px;line-height:1.3}.close-hint{font-size:12px;color:#666;margin-top:8px}');
         lines.push('</style>');
         lines.push('<script>');
         lines.push(scriptContent);
@@ -633,7 +633,14 @@ document.addEventListener('DOMContentLoaded', function() {
             lines.push(cardHtml);
         });
 
-        lines.push('</ div>');
+        lines.push('</div>');
+        const footerText = currentLang === 'ru' ? 'Создано с помощью' : 'Created with';
+        const siteUrl = window.location.origin + window.location.pathname;
+        lines.push('<div style="text-align: center; margin: 10px auto 0 auto; width: 100%;">');
+        lines.push('<a href="' + siteUrl + '" target="_blank" style="font-size: 13px; color: #555; text-decoration: underline; cursor: pointer; font-family: Arial, sans-serif;">');
+        lines.push(footerText + ' Ultimate Game Meme');
+        lines.push('</a>');
+        lines.push('</div>');
         lines.push('<div class="overlay" id="overlay" aria-hidden="true"></div>');
         lines.push('<div class="panel" id="panel" role="dialog" aria-modal="true">');
         lines.push('<h3 id="panel-title">Заголовок</h3>');
