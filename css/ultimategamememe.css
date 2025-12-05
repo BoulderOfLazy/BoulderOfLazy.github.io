@@ -66,11 +66,21 @@ h1 {
 }
 
 button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     margin: 10px 5px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    vertical-align: middle;
+}
+
+button svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
 
 .button-container {
@@ -277,7 +287,7 @@ input:checked+.toggle-slider:before {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
     padding: 12px;
     z-index: 220;
-    width: 300px;
+    width: 500px;
     opacity: 0;
     transition: opacity 0.16s ease-in-out, transform 0.16s ease-in-out;
 }
@@ -298,7 +308,7 @@ input:checked+.toggle-slider:before {
     padding: 6px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 17px;
     outline: none;
 }
 
