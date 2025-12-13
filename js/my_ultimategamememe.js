@@ -57,7 +57,7 @@ function generateGrid(lang) {
     t.phrases.forEach((phrase, index) => {
         const card = document.createElement('div'); card.className = 'card';
         const img = document.createElement('div'); img.className = 'image';
-        const imgPath = `images/game_meme/game_cover_${index}.png`;
+        const imgPath = `images/game_meme/game_cover_${index}.webp`;
         img.style.backgroundImage = `url(${imgPath})`;
         const p = document.createElement('p'); p.className = 'phrase'; p.innerText = phrase;
         const btn = document.createElement('button'); btn.className = 'explain-btn';
