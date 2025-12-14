@@ -1,7 +1,30 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #202020;
+    --border-color: #ccc;
+    --btn-bg: #ddd;
+    --link-color: #0000ed;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #444;
+    --btn-bg: #2a2a2a;
+    --link-color: #1e90ff;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
     position: relative;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  font-weight: bold;
 }
 
 h1 {
@@ -15,10 +38,10 @@ h1 {
 }
 
 .card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--border-color);
     padding: 3px;
     text-align: center;
-    background: #fff;
+    background: var(--bg-color);
     display: flex;
     flex-direction: column
 }
@@ -35,10 +58,10 @@ button {
     vertical-align: middle;
 }
 
-button svg {
+button svg, .explain-btn svg {
     width: 20px;
     height: 20px;
-    fill: currentColor;
+    fill: var(--text-color) !important;
 }
 
 .button-container {
@@ -49,7 +72,7 @@ button svg {
 .image {
     min-height: 100px;
     aspect-ratio: 264/352;
-    background-color: #ddd;
+    background-color: var(--btn-bg);
     margin-bottom: 8px;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,8 +86,9 @@ button svg {
 .explain-btn {
     width: 100%;
     padding: 8px;
-    background: #f0f0f0;
-    border: 1px solid #ccc;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -84,6 +108,9 @@ button svg {
     padding: 8px 12px;
     font-size: 14px;
     margin: 0;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
 }
 
 .overlay {
@@ -101,8 +128,9 @@ button svg {
     top: 0;
     width: auto;
     max-width: 640px;
-    background: #fff;
-    border: 1px solid #ccc;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
     border-radius: 8px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
     padding: 12px;
@@ -139,4 +167,17 @@ button svg {
     .panel {
         padding: 12px
     }
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    padding: 8px 12px;
+    margin: 0;
+    background: var(--btn-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
 }
