@@ -1,6 +1,6 @@
 const translations = {
     ru: {
-        title: "0 to 10",
+        title: "Шкала градиента",
         theme: "Переключить тему",
         help: "Помощь",
         lang: "Переключить язык (Switch Language)",
@@ -37,7 +37,7 @@ const translations = {
         removeDivTitle: "Удалить элемент"
     },
     en: {
-        title: "0 to 10",
+        title: "Gradient Scale",
         theme: "Toggle Theme",
         help: "Help",
         lang: "Переключить язык (Switch Language)",
@@ -79,6 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contentArea = document.getElementById('contentArea');
     const scaleBar = document.getElementById('scaleBar');
+    const scaleStartLabel = document.getElementById('scale-start-label');
+    const scaleEndLabel = document.getElementById('scale-end-label');
     const addButton = document.getElementById('addButton');
     const themeToggleButton = document.getElementById('theme-toggle-btn');
     const helpBtn = document.getElementById('help-btn');
@@ -230,6 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
     async function resetDataToDefault() {
         if (confirm(translations[currentLang].resetConfirm)) {
             divisionsData = getDefaultData();
+            scaleStartLabel.innerText = '0';
+            scaleEndLabel.innerText = '10';
+            localStorage.removeItem('scaleStartText');
+            localStorage.removeItem('scaleEndText');
             captureState();
             await saveData();
             scaleTitle.innerText = '';
@@ -334,6 +340,24 @@ document.addEventListener('DOMContentLoaded', () => {
         captureState();
     });
 
+    scaleStartLabel.addEventListener('input', () => {
+    localStorage.setItem('scaleStartText', scaleStartLabel.innerText);
+    renderDivisions();
+});
+
+scaleEndLabel.addEventListener('input', () => {
+    localStorage.setItem('scaleEndText', scaleEndLabel.innerText);
+    renderDivisions();
+});
+
+[scaleStartLabel, scaleEndLabel].forEach(label => {
+    label.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            label.blur();
+        }
+    });
+});
 
     zoomSlider.addEventListener('input', (e) => {
         const zoomLevel = e.target.value;
@@ -814,6 +838,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const savedTitle = localStorage.getItem('scaleTitle') || '';
         scaleTitle.innerText = savedTitle;
+        scaleStartLabel.innerText = localStorage.getItem('scaleStartText') || '0';
+        scaleEndLabel.innerText = localStorage.getItem('scaleEndText') || '10';
         adjustTitleFontSize();
 
         const savedMode = localStorage.getItem('viewMode') || 'bottom';
