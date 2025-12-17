@@ -25,7 +25,7 @@ const translations = {
         modalSave: "Сохранить",
         infoTrigger: "В чём отличие?",
         infoTitle: "\"Генерировать скриншот\" vs \"Скачать как HTML\"",
-        infoText: "<b>Генерировать скриншот:</b> Создает обычную картинку (PNG). Идеально для быстрой отправки в соцсети или друзьям. Комментарии при этом не будут показаны<br><br><b>Скачать как HTML:</b> Скачивает интерактивный файл. В нём сохраняются все ваши комментарии. Если открыть этот файл в браузере, вы (или другие) сможете прочитать написанное.",
+        infoText: "<b>Генерировать скриншот:</b> Создает обычную картинку (JPG). Идеально для быстрой отправки в соцсети или друзьям. Комментарии при этом не будут показаны<br><br><b>Скачать как HTML:</b> Скачивает интерактивный файл. В нём сохраняются все ваши комментарии. Если открыть этот файл в браузере, вы (или другие) сможете прочитать написанное.",
         infoClose: "Понятно",
         filenamePlaceholder: "Имя файла...",
         saveBtn: "Сохранить",
@@ -63,7 +63,7 @@ const translations = {
         modalSave: "Save",
         infoTrigger: "What's the difference?",
         infoTitle: "\"Generate screenshot\" vs \"Download as HTML\"",
-        infoText: "<b>Generate screenshot:</b> Generates a standard image (PNG). Perfect for quickly sharing on social media. Commentaries won't be shown.<br><br><b>Download as HTML:</b> Downloads an interactive file. It preserves all your comments. You (or others) can open this file in a browser to read what you wrote.",
+        infoText: "<b>Generate screenshot:</b> Generates a standard image (JPG). Perfect for quickly sharing on social media. Commentaries won't be shown.<br><br><b>Download as HTML:</b> Downloads an interactive file. It preserves all your comments. You (or others) can open this file in a browser to read what you wrote.",
         infoClose: "Got it",
         filenamePlaceholder: "Filename...",
         saveBtn: "Save",
@@ -124,6 +124,7 @@ const OverTypeDarkTheme = {
 let currentLang = 'ru';
 let currentPlaceholder = null;
 let currentCommentIndex = null;
+let onFilenameConfirmed = null;
 let db;
 const grid = document.querySelector('.grid');
 let isViewMode = false;
@@ -153,11 +154,11 @@ function initDB(callback) {
     };
 }
 
-const saveImage = (index, imageBlob) => {
+const saveImage = (index, imageData) => {
     if (!db) return;
     const transaction = db.transaction(['images'], 'readwrite');
     const objectStore = transaction.objectStore('images');
-    objectStore.put({ id: index, image: imageBlob });
+    objectStore.put({ id: index, image: imageData });
 };
 
 const loadImages = () => {
@@ -170,7 +171,13 @@ const loadImages = () => {
         const images = event.target.result;
         images.forEach(item => {
             if (placeholders[item.id]) {
-                const imageUrl = URL.createObjectURL(item.image);
+                let imageUrl;
+                if (item.image instanceof Blob) {
+                    imageUrl = URL.createObjectURL(item.image);
+                } else {
+                    imageUrl = item.image;
+                }
+                
                 placeholders[item.id].style.backgroundImage = `url(${imageUrl})`;
                 placeholders[item.id].innerText = '';
             }
@@ -253,26 +260,61 @@ const getComment = (index, callback) => {
 document.addEventListener('paste', (event) => {
     if (!currentPlaceholder) return;
 
-    const targetPlaceholder = currentPlaceholder;
     const items = event.clipboardData.items;
     let imageFound = false;
+    
     for (let item of items) {
         if (item.type.startsWith('image/')) {
-            const blob = item.getAsFile();
-            const placeholderIndex = parseInt(targetPlaceholder.dataset.index);
-            saveImage(placeholderIndex, blob);
-            const objectURL = URL.createObjectURL(blob);
-            targetPlaceholder.style.backgroundImage = `url(${objectURL})`;
-            targetPlaceholder.innerText = '';
             imageFound = true;
+            const blob = item.getAsFile();
+            const reader = new FileReader();
+            
+            reader.onload = (e) => {
+                processImage(e.target.result, (compressedBase64) => {
+                    const placeholderIndex = parseInt(currentPlaceholder.dataset.index);
+                    
+                    saveImage(placeholderIndex, compressedBase64);
+                    
+                    currentPlaceholder.style.backgroundImage = `url(${compressedBase64})`;
+                    currentPlaceholder.innerText = '';
+                    currentPlaceholder = null;
+                });
+            };
+            reader.readAsDataURL(blob);
             break;
         }
     }
+    
     if (!imageFound) {
         alert(translations[currentLang].noImageAlert);
     }
-    currentPlaceholder = null;
 });
+
+function processImage(base64Str, callback) {
+    const img = new Image();
+    img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const targetWidth = 264;
+        const targetHeight = 352;
+        canvas.width = targetWidth;
+        canvas.height = targetHeight;
+        const ctx = canvas.getContext('2d');
+
+        const scale = Math.max(targetWidth / img.width, targetHeight / img.height);
+        
+        const newWidth = img.width * scale;
+        const newHeight = img.height * scale;
+        
+        const x = (targetWidth - newWidth) / 2;
+        const y = (targetHeight - newHeight) / 2;
+
+        ctx.drawImage(img, x, y, newWidth, newHeight);
+        
+        const compressedDataUrl = canvas.toDataURL('image/jpeg', 0.8);
+        callback(compressedDataUrl);
+    };
+    img.src = base64Str;
+}
 
 function generateGrid(lang) {
     grid.innerHTML = '';
@@ -310,6 +352,17 @@ function generateGrid(lang) {
 
         btn.addEventListener('click', () => {
             currentCommentIndex = index;
+            const positionName = card.querySelector('p').innerText;
+            const maxLength = currentLang === 'ru'
+                ? 35
+                : 43;
+            const displayName = positionName.length > maxLength 
+                ? positionName.substring(0, maxLength - 3) + '...' 
+                : positionName;
+            const titleTemplate = currentLang === 'ru' 
+                ? `Комментарий к позиции ⟪${displayName}⟫` 
+                : `Comment on ⟪${displayName}⟫`;
+            document.getElementById('modal-title').innerText = titleTemplate;
             getComment(index, (comment) => {
                 if (editor) {
                     editor.setValue(comment || ''); 
@@ -383,14 +436,6 @@ function updateUI(lang) {
     }
 }
 
-document.getElementById('screenshot').addEventListener('click', () => {
-    openFilenameModal('png');
-});
-
-document.getElementById('download-btn').addEventListener('click', () => {
-    openFilenameModal('html');
-});
-
 function getAllData(callback) {
     if (!db) {
         callback({ images: {}, texts: {}, comments: {} });
@@ -402,42 +447,42 @@ function getAllData(callback) {
     let imagesToProcess = 0;
 
     const imgTransaction = db.transaction(['images'], 'readonly');
-    const imgRequest = imgTransaction.objectStore('images').getAll();
-    imgRequest.onsuccess = (event) => {
+    imgTransaction.objectStore('images').getAll().onsuccess = (event) => {
         const images = event.target.result;
-        imagesToProcess = images.length;
+        let processedCount = 0;
 
-        if (imagesToProcess === 0) {
+        if (images.length === 0) {
             loadTextsAndComments();
-        } else {
-            images.forEach(item => {
+            return;
+        }
+
+        images.forEach(item => {
+            if (typeof item.image === 'string') {
+                data.images[item.id] = item.image;
+                processedCount++;
+                if (processedCount === images.length) loadTextsAndComments();
+            } else {
                 const reader = new FileReader();
                 reader.onload = (e) => {
                     data.images[item.id] = e.target.result;
-                    imagesProcessed++;
-                    if (imagesProcessed === imagesToProcess) {
-                        loadTextsAndComments();
-                    }
+                    processedCount++;
+                    if (processedCount === images.length) loadTextsAndComments();
                 };
                 reader.readAsDataURL(item.image);
-            });
-        }
+            }
+        });
     };
 
     function loadTextsAndComments() {
         const txtTransaction = db.transaction(['customTexts'], 'readonly');
         txtTransaction.objectStore('customTexts').getAll().onsuccess = (event) => {
             const texts = event.target.result;
-            texts.forEach(item => {
-                data.texts[item.id] = item.text;
-            });
+            texts.forEach(item => { data.texts[item.id] = item.text; });
 
             const cmtTransaction = db.transaction(['comments'], 'readonly');
             cmtTransaction.objectStore('comments').getAll().onsuccess = (event) => {
                 const comments = event.target.result;
-                comments.forEach(item => {
-                    data.comments[item.id] = item.comment;
-                });
+                comments.forEach(item => { data.comments[item.id] = item.comment; });
                 callback(data);
             };
         };
@@ -507,17 +552,54 @@ function initOvertype() {
 }
 
 
-function openFilenameModal(type) {
-    pendingExportType = type;
-    document.getElementById('overlay').style.display = 'block';
-    filenameModal.style.display = 'block';
-    filenameInput.value = '';
-    filenameInput.focus();
+function openFilenameModal(extension, callback) {
+    const modal = document.getElementById('filename-modal');
+    const overlay = document.getElementById('overlay');
+    const input = document.getElementById('filename-input');
+    const extSpan = document.getElementById('filename-extension');
+
+    onFilenameConfirmed = callback;
+    extSpan.innerText = extension;
+    input.value = "";
+    overlay.style.display = 'block';
+    modal.style.display = 'block';
 
     requestAnimationFrame(() => {
-        filenameModal.classList.add('open');
+        modal.classList.add('open');
     });
+    
+    input.focus();
 }
+
+document.getElementById('screenshot').addEventListener('click', () => {
+    openFilenameModal('.jpg', (filename) => {
+        generateScreenshot(filename);
+    });
+});
+
+document.getElementById('download-btn').addEventListener('click', () => {
+    openFilenameModal('.html', (filename) => {
+        exportAsHTML(filename);
+    });
+});
+
+document.getElementById('filename-save-btn').onclick = () => {
+    const input = document.getElementById('filename-input');
+    const rawName = input.value.trim();
+    const filename = rawName.length > 0 ? rawName : 'my_game_meme';
+
+    if (onFilenameConfirmed) {
+        onFilenameConfirmed(filename);
+    }
+    
+    closeAllModals();
+};
+
+document.getElementById('filename-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        document.getElementById('filename-save-btn').click();
+    }
+});
 
 function closeAllModals() {
     document.getElementById('modal').style.display = 'none';
@@ -539,25 +621,28 @@ filenameSaveBtn.addEventListener('click', () => {
     const name = rawName.length > 0 ? rawName : null;
 
     if (pendingExportType === 'png') {
-        generatePNG(name);
+        generateScreenshot(name);
     } else if (pendingExportType === 'html') {
         exportAsHTML(name);
     }
     closeAllModals();
 });
 
-filenameInput.addEventListener('keydown', (e) => {
+document.getElementById('filename-input').addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
-        filenameSaveBtn.click();
+        document.getElementById('filename-save-btn').click();
     }
 });
 
-function generatePNG(customName) {
+function generateScreenshot(customName) {
     const elementToCapture = document.getElementById('capture-area');
 
     html2canvas(elementToCapture, {
         backgroundColor: "#ffffff",
-        scale: 2,
+        windowWidth: 1920,
+        windowHeight: 1080,
+        useCORS: true,
+        scale: 1,
         onclone: (clonedDoc) => {
             clonedDoc.body.classList.remove('dark-mode');
             const clonedCommentBtns = clonedDoc.querySelectorAll('.comment-btn');
@@ -577,8 +662,8 @@ function generatePNG(customName) {
         }
     }).then(canvas => {
         const link = document.createElement('a');
-        link.download = customName ? `${customName}.png` : 'favorite_game_meme.png';
-        link.href = canvas.toDataURL('image/png');
+        link.download = customName ? `${customName}.jpg` : 'favorite_game_meme.jpg';
+        link.href = canvas.toDataURL('image/jpeg');
         link.click();
     });
 }

@@ -62,9 +62,10 @@
     </div>
 
     <div class="filename-modal" id="filename-modal">
-        <div class="filename-row">
-            <input type="text" id="filename-input" autocomplete="off">
-            <button id="filename-save-btn">Save</button>
+        <div class="filename-row" style="display: flex; gap: 5px; align-items: center; justify-content: center;">
+            <input type="text" id="filename-input" placeholder="filename" style="flex-grow: 1;">
+            <span id="filename-extension" style="color: var(--text-color); padding-right: 5px;">.png</span>
+            <button id="filename-save-btn">Save</button>   
         </div>
     </div>
 
