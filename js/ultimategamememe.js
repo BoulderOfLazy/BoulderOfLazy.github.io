@@ -89,6 +89,38 @@ const icons = {
     themeDark: '<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-218l101-97 55 53-97 101-59-57Z"/></svg>'
 };
 
+const OverTypeLightTheme = {
+    name: 'custom-light',
+    colors: {
+        bgPrimary: '#ffffff',    
+        bgSecondary: '#ffffff',  
+        text: '#202020',         
+        border: '#ccc',          
+        cursor: '#202020',
+        selection: 'rgba(100, 100, 100, 0.4)',
+        syntaxMarker: '#474747ff',
+        link: '#0066cc',
+        code: '#202020',
+        codeBg: '#eee'
+    }
+};
+
+const OverTypeDarkTheme = {
+    name: 'custom-dark',
+    colors: {
+        bgPrimary: '#121212',    
+        bgSecondary: '#121212',
+        text: '#e0e0e0',         
+        border: '#444',          
+        cursor: '#e0e0e0',
+        selection: 'rgba(212, 212, 212, 0.4)',
+        syntaxMarker: '#b4b4b4ff',
+        link: '#66b3ff',
+        code: '#e0e0e0',
+        codeBg: '#2a2a2a'
+    }
+};
+
 let currentLang = 'ru';
 let currentPlaceholder = null;
 let currentCommentIndex = null;
@@ -279,7 +311,9 @@ function generateGrid(lang) {
         btn.addEventListener('click', () => {
             currentCommentIndex = index;
             getComment(index, (comment) => {
-                document.getElementById('comment-text').value = comment;
+                if (editor) {
+                    editor.setValue(comment || ''); 
+                }
                 showModal();
             });
         });
@@ -318,7 +352,6 @@ function updateUI(lang) {
     document.getElementById('toggle-right').innerText = t.toggleRight;
 
     document.getElementById('modal-title').innerText = t.modalTitle;
-    document.getElementById('comment-text').placeholder = t.commentPlaceholder;
 
     document.getElementById('modal-cancel').innerHTML = `${icons.cancel}<span>${t.modalCancel}</span>`;
     document.getElementById('modal-save').innerHTML = `${icons.save}<span>${t.modalSave}</span>`;
@@ -415,6 +448,9 @@ function toggleTheme() {
     const isDark = document.body.classList.toggle('dark-mode');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
     updateThemeIcon();
+    if (editor) {
+        editor.setTheme(isDark ? OverTypeDarkTheme : OverTypeLightTheme);
+    }
 }
 
 function updateThemeIcon() {
@@ -438,6 +474,38 @@ function initTheme() {
 }
 
 document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+let editor;
+
+function initOvertype() {
+    if (typeof OverType !== 'undefined' && document.getElementById('comment-editor')) {
+        const currentPlaceholder = translations[currentLang].commentPlaceholder;
+        const isDark = document.body.classList.contains('dark-mode');
+        const instances = new OverType('#comment-editor', {
+            theme: isDark ? OverTypeDarkTheme : OverTypeLightTheme,
+            toolbar: true,
+            toolbarButtons: [
+                toolbarButtons.bold,
+                toolbarButtons.italic,
+                toolbarButtons.separator,
+                toolbarButtons.link,
+                toolbarButtons.quote,
+                toolbarButtons.separator,
+                toolbarButtons.h1,
+                toolbarButtons.h2,
+                toolbarButtons.h3,
+                toolbarButtons.separator,
+                toolbarButtons.bulletList,
+                toolbarButtons.orderedList,
+                toolbarButtons.separator,
+                toolbarButtons.viewMode,
+            ],
+            placeholder: currentPlaceholder
+        });
+        editor = instances[0];
+    }
+}
+
 
 function openFilenameModal(type) {
     pendingExportType = type;
@@ -529,6 +597,19 @@ function exportAsHTML(customName) {
             editedPhrases.push(data.texts[key] || defaultPhrases[i]);
         }
 
+        if (typeof OverType !== 'undefined' && OverType.MarkdownParser) {
+            for (let key in data.comments) {
+                if (data.comments[key]) {
+                    let html = OverType.MarkdownParser.parse(data.comments[key]);
+                    html = html.replace(/<span class="syntax-marker[^"]*">.*?<\/span>/g, "");
+                    html = html.replace(/\sclass="(bullet-list|ordered-list|code-fence|hr-marker|blockquote|url-part)"/g, "");
+                    html = html.replace(/\sclass=""/g, "");
+                    
+                    data.comments[key] = html;
+                }
+            }
+        }
+
         const scriptContent = `
 var allComments = ${JSON.stringify(data.comments)};
 var phrases = ${JSON.stringify(editedPhrases)};
@@ -554,12 +635,28 @@ function showPanel(index, anchorBtn) {
   document.getElementById('panel-title').innerText = title;
   document.querySelector('.close-hint').innerText = translations[currentLang].closeHint;
   
-  var comment = getComment(index) || translations[currentLang].noComment;
-  document.getElementById('panel-body').innerText = comment;
+  var comment = getComment(index);
+  var bodyEl = document.getElementById('panel-body');
+  
+  if (!comment) {
+      bodyEl.innerText = translations[currentLang].noComment;
+  } else {
+      // ВАЖНО: Используем innerHTML вместо innerText для отображения форматирования
+      bodyEl.innerHTML = comment;
+  }
   
   var card = anchorBtn.closest('.card');
   var rect = card.getBoundingClientRect();
   
+  
+  var fixedSpace = 40;
+  var panelBodyHeight = rect.height - fixedSpace;
+
+  bodyEl.style.maxHeight = panelBodyHeight + 'px';
+  bodyEl.style.overflowY = 'auto'; // Прокручивается теперь только bodyEl
+
+  panel.style.overflowY = 'hidden';
+
   var desiredWidth = rect.width * 2;
   var maxAllowed = Math.min(window.innerWidth - 16, 640);
   var panelWidth = Math.max(160, Math.min(desiredWidth, maxAllowed));
@@ -646,21 +743,23 @@ document.addEventListener('DOMContentLoaded', function() {
             ru: 'Ультимативный "Любимая игра meme"',
             en: 'The Ultimate "Favorite Game Meme"'
         };
-        const pageTitle = customName ? customName : (defaultTitles[currentLang] || 'Ultimate Game Meme');
+        const pageTitle = customName ? customName : (defaultTitles[currentLang] || 'The Ultimate "Favorite Game Meme"');
         lines.push('<title>' + escapeHtml(pageTitle) + '</title>');
         lines.push('<style>');
-        lines.push(':root{--bg-color:#ffffff;--text-color:#202020;--border:#ccc;--btn-bg:#ddd;--btn-hover:#e0e0e0;}');
-        lines.push('body.dark-mode{--bg-color:#121212;--text-color:#e0e0e0;--border:#444;--btn-bg:#2a2a2a;--btn-hover:#4d4d4d;--btn-bg:#2a2a2a;}');
+        lines.push(':root{--bg-color:#ffffff;--text-color:#202020;--border:#ccc;--btn-bg:#ddd;--link-color:#0000ed;--btn-hover:#e0e0e0;}');
+        lines.push('body.dark-mode{--bg-color:#121212;--text-color:#e0e0e0;--border:#444;--btn-bg:#2a2a2a;--link-color:#1e90ff;--btn-hover:#4d4d4d;--btn-bg:#2a2a2a;}');
         lines.push('body{font-family:Arial,sans-serif;margin:20px;position:relative;background:var(--bg-color);color:var(--text-color);}');
         lines.push('.card{border:1px solid var(--border);padding:3px;text-align:center;background:var(--bg-color);display:flex;flex-direction:column}');
         lines.push('button svg{width:20px;height:20px;fill:var(--text-color)}');
         lines.push('.explain-btn{width:100%;padding:8px;background:var(--btn-bg);border:1px solid var(--border);color:var(--text-color);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-top:auto}');
         lines.push('.close-hint{font-size:12px;color:#666;margin-top:8px}');
         lines.push('.image{min-height:100px;aspect-ratio:264/352;background-color:var(--btn-bg);margin-bottom:8px;background-position:center;background-repeat:no-repeat;background-size:cover}');
-        lines.push('.panel{background:var(--bg-color);border:1px solid var(--border);color:var(--text-color);position:fixed;display:none;left:0;top:0;width:auto;max-width:640px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.18);padding:12px;z-index:210;opacity:0;transform:scale(0.95);transition:opacity 160ms ease-in-out, transform 160ms ease-in-out;overflow:visible}');
+        lines.push('.panel{background:var(--bg-color);border:1px solid var(--border);color:var(--text-color);position:fixed;display:none;left:0;top:0;width:auto;max-width:640px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.18);padding:12px;z-index:210;opacity:0;transform:scale(0.95);transition:opacity 160ms ease-in-out, transform 160ms ease-in-out;overflow:visible; box-sizing: border-box; overflow:hidden;}');
         lines.push('#theme-toggle{position:absolute;top:10px;right:10px;z-index:100;padding: 8px 12px;margin:0;background:var(--btn-bg);color:var(--text-color);border:1px solid var(--border);border-radius:4px;}');
-        lines.push('h1, p {color:var(--text);}');
-        lines.push('h1{text-align:center}.grid{display:grid;grid-template-columns:repeat(10,minmax(100px,1fr));gap:0}.phrase{margin:0 0 6px 0;font-weight:normal}.overlay{position:fixed;inset:0;background:transparent;display:none;z-index:200}.panel.open{display:block;opacity:1;transform:scale(1)}.panel h3{margin:0 0 8px 0;font-size:15px}.body{font-size:14px;line-height:1.3}');
+        lines.push('h1, p {color:var(--text-color)}');
+        lines.push('a {color:var(--link-color)}');
+        lines.push('.main-title{text-align:center}.grid{display:grid;grid-template-columns:repeat(10,minmax(100px,1fr));gap:0}.phrase{margin:0 0 6px 0;font-weight:normal}.overlay{position:fixed;inset:0;background:transparent;display:none;z-index:200}.panel.open{display:block;opacity:1;transform:scale(1)}.panel h3{margin:0 0 8px 0;font-size:15px}');
+        lines.push('.body{font-size:14px;line-height:1.4;word-wrap:break-word;} .body strong{font-weight:bold;color:var(--text-color);} .body em{font-style:italic;} .body ul, .body ol{margin:8px 0;padding-left:20px;}');
         lines.push('</style>');
         lines.push('<script>');
         lines.push(scriptContent);
@@ -672,7 +771,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ru: 'УЛЬТИМАТИВНЫЙ "ЛЮБИМАЯ ИГРА MEME"',
             en: 'THE ULTIMATE "FAVORITE GAME MEME"'
         };
-        lines.push('<h1>' + (h1Texts[currentLang] || 'THE ULTIMATE "FAVORITE GAME MEME"') + '</h1>');
+        lines.push('<h1 class="main-title">' + (h1Texts[currentLang] || 'THE ULTIMATE "FAVORITE GAME MEME"') + '</h1>');
         lines.push('<div class="grid">');
         lines.push('<button id="theme-toggle" onclick="toggleTheme()">' + icons.themeLight + '</button>');
 
@@ -684,7 +783,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const btnLabel = currentLang === 'ru' ? 'Комментарий' : 'Comment';
 
             const commentKey = currentLang + '_comment_' + index;
-            const hasComment = data.comments[commentKey] && data.comments[commentKey].trim() !== '';
+            const hasComment = data.comments[commentKey] && data.comments[commentKey].length > 0;
             const disabledState = hasComment ? '' : 'disabled style="opacity:0.5; cursor:default;"';
 
             const cardHtml = '<div class="card">' +
@@ -779,7 +878,7 @@ document.getElementById('comment-toggle').addEventListener('change', () => {
 });
 
 document.getElementById('modal-save').addEventListener('click', () => {
-    const comment = document.getElementById('comment-text').value;
+    const comment = editor ? editor.getValue() : '';
     saveComment(currentCommentIndex, comment);
     closeModal();
 });
@@ -836,6 +935,7 @@ window.addEventListener('load', () => {
     currentLang = getInitialLang();
     getCommentsEnabled();
     initTheme();
+    initOvertype();
     updateUI(currentLang);
     initDB(() => {
         loadImages();

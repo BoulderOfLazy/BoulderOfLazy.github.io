@@ -6,6 +6,7 @@
     --btn-hover: #e0e0e0;
     --placeholder-text: #666;
     --textarea-text: #000000;
+    --tb-hov: #bbb;
 }
 
 body.dark-mode {
@@ -16,6 +17,7 @@ body.dark-mode {
     --btn-hover: #3d3d3d;
     --placeholder-text: #888;
     --textarea-text: #e0e0e0;
+    --tb-hov: #555;
 }
 
 body {
@@ -161,20 +163,6 @@ button svg {
     font-size: 18px;
 }
 
-.modal textarea {
-    width: 100%;
-    min-height: 120px;
-    padding: 8px;
-    background: var(--bg-color);
-    color: var(--textarea-text);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-    margin-bottom: 12px;
-}
-
 .modal-buttons {
     display: flex;
     gap: 8px;
@@ -188,6 +176,30 @@ button svg {
     background: var(--btn-bg);
     color: var(--text-color);
     border: 1px solid var(--border);
+}
+
+.modal-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    line-height: 0;
+    z-index: 220;
+    transition: opacity 0.2s;
+}
+
+.modal-link:hover {
+    opacity: 0.8;
+}
+
+.modal-link-icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.modal-link svg {
+    fill: var(--text-color);
 }
 
 .view-mode .image-placeholder,
@@ -372,4 +384,33 @@ input:checked+.toggle-slider:before {
 
 body:not(.dark-mode) #capture-area {
     color: #000000;
+}
+#comment-editor {
+    width: 99%;
+    height: 300px;
+    margin-bottom: 12px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg-color);
+    overflow: hidden; 
+    position: relative;
+}
+
+.overtype-container {
+    --toolbar-bg: var(--bg-color) !important;
+    --toolbar-icon: var(--text-color) !important;
+    --toolbar-active: var(--btn-bg) !important;
+    --toolbar-hover: var(--btn-hover) !important;
+}
+
+.overtype-dropdown-menu {
+    background: var(--bg-color) !important;
+}
+
+.overtype-dropdown-item.active, .overtype-dropdown-item {
+    color: var(--text-color) !important;
+}
+
+.overtype-dropdown-item.active:hover, .overtype-dropdown-item:hover {
+    background: var(--btn-hover) !important;
 }
