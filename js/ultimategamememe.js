@@ -21,8 +21,6 @@ const translations = {
         shareError: "Ошибка при создании ссылки",
         modalTitle: "Комментарий",
         commentPlaceholder: "Введите ваш комментарий...",
-        modalCancel: "Отмена",
-        modalSave: "Сохранить",
         infoTrigger: "В чём отличие?",
         infoTitle: "\"Генерировать скриншот\" vs \"Скачать как HTML\"",
         infoText: "<b>Генерировать скриншот:</b> Создает обычную картинку (JPG). Идеально для быстрой отправки в соцсети или друзьям. Комментарии при этом не будут показаны<br><br><b>Скачать как HTML:</b> Скачивает интерактивный файл. В нём сохраняются все ваши комментарии. Если открыть этот файл в браузере, вы (или другие) сможете прочитать написанное.",
@@ -59,8 +57,6 @@ const translations = {
         shareError: "Error creating link",
         modalTitle: "Comment",
         commentPlaceholder: "Enter your comment...",
-        modalCancel: "Cancel",
-        modalSave: "Save",
         infoTrigger: "What's the difference?",
         infoTitle: "\"Generate screenshot\" vs \"Download as HTML\"",
         infoText: "<b>Generate screenshot:</b> Generates a standard image (JPG). Perfect for quickly sharing on social media. Commentaries won't be shown.<br><br><b>Download as HTML:</b> Downloads an interactive file. It preserves all your comments. You (or others) can open this file in a browser to read what you wrote.",
@@ -350,25 +346,9 @@ function generateGrid(lang) {
         btn.dataset.commentIndex = index;
         btn.innerHTML = `<span style="font-size:16px"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg></span><span>${t.commentButton}</span>`;
 
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
             currentCommentIndex = index;
-            const positionName = card.querySelector('p').innerText;
-            const maxLength = currentLang === 'ru'
-                ? 35
-                : 43;
-            const displayName = positionName.length > maxLength 
-                ? positionName.substring(0, maxLength - 3) + '...' 
-                : positionName;
-            const titleTemplate = currentLang === 'ru' 
-                ? `Комментарий к позиции ⟪${displayName}⟫` 
-                : `Comment on ⟪${displayName}⟫`;
-            document.getElementById('modal-title').innerText = titleTemplate;
-            getComment(index, (comment) => {
-                if (editor) {
-                    editor.setValue(comment || ''); 
-                }
-                showModal();
-            });
+            showPanel(index, e.currentTarget);
         });
 
         card.appendChild(placeholder);
@@ -382,12 +362,13 @@ function generateGrid(lang) {
 }
 
 function showModal() {
-    document.getElementById('overlay').style.display = 'block';
-    document.getElementById('modal').style.display = 'block';
-}
-
-function closeModal() {
-    closeAllModals();
+    const modal = document.getElementById('modal');
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
+    modal.style.display = 'block';
+    requestAnimationFrame(() => {
+        modal.classList.add('open');
+    });
 }
 
 function updateUI(lang) {
@@ -405,9 +386,6 @@ function updateUI(lang) {
     document.getElementById('toggle-right').innerText = t.toggleRight;
 
     document.getElementById('modal-title').innerText = t.modalTitle;
-
-    document.getElementById('modal-cancel').innerHTML = `${icons.cancel}<span>${t.modalCancel}</span>`;
-    document.getElementById('modal-save').innerHTML = `${icons.save}<span>${t.modalSave}</span>`;
 
     document.getElementById('info-trigger').innerText = t.infoTrigger;
     document.getElementById('info-modal-title').innerText = t.infoTitle;
@@ -548,6 +526,15 @@ function initOvertype() {
             placeholder: currentPlaceholder
         });
         editor = instances[0];
+        const editorElement = document.getElementById('comment-editor');
+        if (editorElement) {
+            editorElement.addEventListener('input', () => {
+                if (currentCommentIndex !== null && editor && typeof editor.getValue === 'function') {
+                    const currentComment = editor.getValue();
+                    saveComment(currentCommentIndex, currentComment);
+                }
+            });
+        }
     }
 }
 
@@ -601,8 +588,107 @@ document.getElementById('filename-input').addEventListener('keydown', (e) => {
     }
 });
 
+async function showPanel(index, anchorBtn) {
+    const lang = currentLang;
+    const t = translations[lang];
+    const modal = document.querySelector('.modal');
+    const card = anchorBtn.closest('.card');
+    const overlay = document.querySelector('.overlay');
+    card.appendChild(modal);
+    const textElement = card.querySelector('p');
+    const title = textElement ? textElement.innerText : (t.phrases[index] || '');
+    document.getElementById('modal-title').innerText = title;
+    const closeHint = modal.querySelector('.close-hint');
+    if (closeHint) {
+        closeHint.innerText = (t.closeHint || (lang === 'ru' ? 'Нажмите вне окна или Esc, чтобы закрыть' : 'Click outside or press Esc to close'));
+    }
+    await new Promise((resolve) => {
+        getComment(index, (comment) => {
+            if (editor && typeof editor.setValue === 'function') {
+                editor.setValue(comment || '');
+                try { editor.focus(); } catch (e) {}
+            } else {
+                const ce = document.getElementById('comment-editor');
+                if (ce) ce.innerText = comment || '';
+            }
+            resolve();
+        });
+    });
+
+    overlay.style.display = 'block';
+    modal.style.display = 'block';
+    document.body.style.pointerEvents = 'none';
+    modal.style.pointerEvents = 'auto';
+    overlay.style.pointerEvents = 'auto';
+    modal.style.visibility = 'hidden';
+    await new Promise(resolve => requestAnimationFrame(() => {
+        requestAnimationFrame(resolve);
+    }));
+    
+    const cardRect = card.getBoundingClientRect();
+    const modalRect = modal.getBoundingClientRect();
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    const availableWidth = window.innerWidth - scrollbarWidth;
+    const windowHeight = window.innerHeight;
+    const margin = 12;
+    const edgeMargin = 8;
+    let modalTop = '100%';
+    const spaceBelow = windowHeight - cardRect.bottom;
+    const spaceAbove = cardRect.top;
+    
+    if (spaceBelow >= modalRect.height + margin) {
+        modalTop = '100%';
+        modal.style.bottom = 'auto';
+    } else if (spaceAbove >= modalRect.height + margin) {
+        modalTop = 'auto';
+        modal.style.bottom = '100%';
+    } else {
+        if (spaceBelow >= spaceAbove) {
+            modalTop = '100%';
+            modal.style.bottom = 'auto';
+        } else {
+            modalTop = 'auto';
+            modal.style.bottom = '100%';
+        }
+    }
+    
+    const idealCardRelativeLeft = (cardRect.width - modalRect.width) / 2;
+    const viewportLeft = cardRect.left + idealCardRelativeLeft;
+    const minViewportLeft = edgeMargin;
+    const maxViewportLeft = availableWidth - modalRect.width - edgeMargin;
+    const clampedViewportLeft = Math.max(minViewportLeft, Math.min(viewportLeft, maxViewportLeft));
+    const cardRelativeLeft = clampedViewportLeft - cardRect.left;
+    
+    modal.style.position = 'absolute';
+    modal.style.left = cardRelativeLeft + 'px';
+    modal.style.top = modalTop;
+    modal.style.visibility = 'visible';
+    modal.style.transform = 'scale(0.95)';
+    modal.classList.remove('open');
+    void modal.offsetHeight;
+    requestAnimationFrame(() => {
+        modal.classList.add('open');
+        modal.style.transform = 'scale(1)';
+    });
+}
+
 function closeAllModals() {
-    document.getElementById('modal').style.display = 'none';
+    const modal = document.querySelector('.modal');
+    const overlay = document.querySelector('.overlay');
+    
+    if (modal.parentElement && modal.parentElement !== document.body) {
+        overlay.parentElement.insertBefore(modal, overlay.nextSibling);
+    }
+    
+    document.body.style.pointerEvents = 'auto';
+    modal.style.pointerEvents = 'auto';
+    modal.classList.remove('open');
+    setTimeout(() => {
+        if (!modal.classList.contains('open')) {
+            modal.style.display = 'none';
+        }
+    }, 160);
+
     document.getElementById('info-modal').style.display = 'none';
 
     filenameModal.classList.remove('open');
@@ -726,7 +812,6 @@ function showPanel(index, anchorBtn) {
   if (!comment) {
       bodyEl.innerText = translations[currentLang].noComment;
   } else {
-      // ВАЖНО: Используем innerHTML вместо innerText для отображения форматирования
       bodyEl.innerHTML = comment;
   }
   
@@ -738,7 +823,7 @@ function showPanel(index, anchorBtn) {
   var panelBodyHeight = rect.height - fixedSpace;
 
   bodyEl.style.maxHeight = panelBodyHeight + 'px';
-  bodyEl.style.overflowY = 'auto'; // Прокручивается теперь только bodyEl
+  bodyEl.style.overflowY = 'auto';
 
   panel.style.overflowY = 'hidden';
 
@@ -937,7 +1022,7 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
     updateUI(currentLang);
     loadTexts();
     loadComments();
-    closeModal();
+    closeAllModals();
 });
 
 document.getElementById('comment-toggle').addEventListener('change', () => {
@@ -962,22 +1047,12 @@ document.getElementById('comment-toggle').addEventListener('change', () => {
     }
 });
 
-document.getElementById('modal-save').addEventListener('click', () => {
-    const comment = editor ? editor.getValue() : '';
-    saveComment(currentCommentIndex, comment);
-    closeModal();
-});
-
-document.getElementById('modal-cancel').addEventListener('click', () => {
-    closeModal();
-});
-
 document.getElementById('overlay').addEventListener('click', () => {
-    closeModal();
+    closeAllModals();
 });
 
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Escape') closeAllModals();
 });
 
 const infoModal = document.getElementById('info-modal');
@@ -994,7 +1069,7 @@ document.getElementById('info-modal-close').addEventListener('click', () => {
 });
 
 overlay.addEventListener('click', () => {
-    closeModal();
+    closeAllModals();
     infoModal.style.display = 'none';
 });
 

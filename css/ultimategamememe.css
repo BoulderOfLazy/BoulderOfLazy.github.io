@@ -47,6 +47,7 @@ h1 {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: visible;
 }
 
 .image-placeholder {
@@ -134,48 +135,43 @@ button svg {
 .overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: transparent;
     display: none;
     z-index: 200;
+    pointer-events: none;
 }
 
 .modal {
-    position: fixed;
+    position: absolute;
     display: none;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: 640px;
     background: var(--bg-color);
-    color: var(--text-color);
     border: 1px solid var(--border);
+    color: var(--text-color);
     border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
-    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    padding: 12px;
     z-index: 210;
-    max-width: 600px;
-    width: 90%;
-    max-height: 80vh;
-    overflow-y: auto;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 160ms ease-in-out, transform 160ms ease-in-out;
+    overflow: visible;
+    white-space: normal;
+    margin-top: 12px;
+    bottom: auto;
+}
+
+.modal.open {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
 }
 
 .modal h3 {
-    margin: 0 0 12px 0;
-    font-size: 18px;
-}
-
-.modal-buttons {
-    display: flex;
-    gap: 8px;
-    justify-content: flex-end;
-}
-
-.modal-buttons button {
-    margin: 0;
-    padding: 8px 16px;
-    font-size: 14px;
-    background: var(--btn-bg);
-    color: var(--text-color);
-    border: 1px solid var(--border);
+    margin: 0 0 8px 0;
+    font-size: 15px;
+    text-align: left;
 }
 
 .modal-link {
@@ -365,7 +361,6 @@ input:checked+.toggle-slider:before {
     background: var(--btn-bg);
     color: var(--text-color);
     border: 1px solid var(--border);
-    border-radius: 4px;
 }
 
 .info-modal-text {
@@ -386,7 +381,7 @@ body:not(.dark-mode) #capture-area {
     color: #000000;
 }
 #comment-editor {
-    width: 99%;
+    width: 100%;
     height: 300px;
     margin-bottom: 12px;
     border: 1px solid var(--border);

@@ -67,7 +67,7 @@ function generateGrid(lang) {
         const p = document.createElement('p'); p.className = 'phrase'; p.innerText = phrase;
         const btn = document.createElement('button'); btn.className = 'explain-btn';
         btn.setAttribute('data-index', index);
-        btn.setAttribute('aria-label', lang === 'ru' ? 'Пояснение' : 'Comment');
+        btn.setAttribute('aria-label', lang === 'ru' ? 'Комментарий' : 'Comment');
         btn.innerHTML = `<span style="font-size:16px"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M240-400h480v-80H240v80Zm0-120h480v-80H240v80Zm0-120h480v-80H240v80ZM880-80 720-240H160q-33 0-56.5-23.5T80-320v-480q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v720ZM160-320h594l46 45v-525H160v480Zm0 0v-480 480Z"/></svg></span><span style="font-size:16px">${lang === 'ru' ? 'Пояснение' : 'Comment'}</span>`;
         btn.addEventListener('click', (e) => { showPanel(index, e.currentTarget); });
         card.appendChild(img);
