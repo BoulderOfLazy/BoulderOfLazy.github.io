@@ -1068,6 +1068,7 @@ const overlay = document.getElementById('overlay');
 
 document.getElementById('info-trigger').addEventListener('click', () => {
     overlay.style.display = 'block';
+    overlay.style.pointerEvents = 'auto';
     infoModalElement.style.display = 'block';
     requestAnimationFrame(() => {
         infoModalElement.classList.add('open');
