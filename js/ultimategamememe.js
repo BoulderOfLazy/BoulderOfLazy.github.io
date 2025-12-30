@@ -689,7 +689,15 @@ function closeAllModals() {
         }
     }, 160);
 
-    document.getElementById('info-modal').style.display = 'none';
+    const infoModal = document.getElementById('info-modal');
+    if (infoModal) {
+        infoModal.classList.remove('open');
+        setTimeout(() => {
+            if (!infoModal.classList.contains('open')) {
+                infoModal.style.display = 'none';
+            }
+        }, 160);
+    }
 
     filenameModal.classList.remove('open');
     setTimeout(() => {
@@ -1055,22 +1063,35 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeAllModals();
 });
 
-const infoModal = document.getElementById('info-modal');
+const infoModalElement = document.getElementById('info-modal');
 const overlay = document.getElementById('overlay');
 
 document.getElementById('info-trigger').addEventListener('click', () => {
     overlay.style.display = 'block';
-    infoModal.style.display = 'block';
+    infoModalElement.style.display = 'block';
+    requestAnimationFrame(() => {
+        infoModalElement.classList.add('open');
+    });
 });
 
 document.getElementById('info-modal-close').addEventListener('click', () => {
-    overlay.style.display = 'none';
-    infoModal.style.display = 'none';
+    infoModalElement.classList.remove('open');
+    setTimeout(() => {
+        if (!infoModalElement.classList.contains('open')) {
+            infoModalElement.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    }, 160);
 });
 
 overlay.addEventListener('click', () => {
+    infoModalElement.classList.remove('open');
+    setTimeout(() => {
+        if (!infoModalElement.classList.contains('open')) {
+            infoModalElement.style.display = 'none';
+        }
+    }, 160);
     closeAllModals();
-    infoModal.style.display = 'none';
 });
 
 function getInitialLang() {
