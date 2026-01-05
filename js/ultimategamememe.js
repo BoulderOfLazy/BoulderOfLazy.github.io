@@ -2,7 +2,7 @@ const translations = {
     ru: {
         title: "Ультимативный \"Любимая игра meme\"",
         h1: "УЛЬТИМАТИВНЫЙ \"ЛЮБИМАЯ ИГРА MEME\"",
-        placeholder: "Нажми, чтобы вставить изображение",
+        placeholder: "Кликни сюда и нажми Ctrl+V чтобы вставить изображение",
         pasteAlert: "Теперь вставьте изображение из буфера обмена (Ctrl+V или Command+V)",
         noImageAlert: "В буфере обмена нет изображения. Убедитесь, что вы скопировали изображение.",
         screenshotButton: "Генерировать скриншот",
@@ -38,7 +38,7 @@ const translations = {
     en: {
         title: "The Ultimate \"Favorite Game Meme\"",
         h1: "THE ULTIMATE \"FAVORITE GAME MEME\"",
-        placeholder: "Click to paste an image",
+        placeholder: "Click here and press Ctrl+V to paste an image",
         pasteAlert: "Now paste an image from your clipboard (Ctrl+V or Command+V)",
         noImageAlert: "No image found on clipboard. Make sure you copied an image.",
         screenshotButton: "Generate Screenshot",
@@ -273,6 +273,7 @@ document.addEventListener('paste', (event) => {
                     
                     currentPlaceholder.style.backgroundImage = `url(${compressedBase64})`;
                     currentPlaceholder.innerText = '';
+                    currentPlaceholder.classList.remove('active-slot');
                     currentPlaceholder = null;
                 });
             };
@@ -326,8 +327,11 @@ function generateGrid(lang) {
 
         if (!isViewMode) {
             placeholder.addEventListener('click', (event) => {
+                document.querySelectorAll('.image-placeholder').forEach(el => {
+                    el.classList.remove('active-slot');
+                });
                 currentPlaceholder = event.target;
-                alert(translations[currentLang].pasteAlert);
+                currentPlaceholder.classList.add('active-slot');
             });
         }
 
@@ -753,6 +757,8 @@ function generateScreenshot(customName) {
                     ph.style.opacity = '0';
                 }
             });
+            const activeSlots = clonedDoc.querySelectorAll('.active-slot');
+            activeSlots.forEach(slot => slot.classList.remove('active-slot'));
         }
     }).then(canvas => {
         const link = document.createElement('a');
@@ -1052,6 +1058,15 @@ document.getElementById('comment-toggle').addEventListener('change', () => {
         downloadBtn.style.display = 'none';
         commentBtns.forEach(btn => btn.style.display = 'none');
         if (infoLink) infoLink.style.display = 'none';
+    }
+});
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.image-placeholder')) {
+        document.querySelectorAll('.image-placeholder.active-slot').forEach(el => {
+            el.classList.remove('active-slot');
+        });
+        currentPlaceholder = null;
     }
 });
 
