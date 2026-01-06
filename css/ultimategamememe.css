@@ -6,7 +6,6 @@
     --btn-hover: #e0e0e0;
     --placeholder-text: #666;
     --textarea-text: #000000;
-    --tb-hov: #bbb;
 }
 
 body.dark-mode {
@@ -17,7 +16,6 @@ body.dark-mode {
     --btn-hover: #3d3d3d;
     --placeholder-text: #888;
     --textarea-text: #e0e0e0;
-    --tb-hov: #555;
 }
 
 body {
@@ -26,6 +24,24 @@ body {
     position: relative;
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border);
 }
 
 h1 {

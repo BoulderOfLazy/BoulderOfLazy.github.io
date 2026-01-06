@@ -3,7 +3,6 @@ const translations = {
         title: "Ультимативный \"Любимая игра meme\"",
         h1: "УЛЬТИМАТИВНЫЙ \"ЛЮБИМАЯ ИГРА MEME\"",
         placeholder: "Кликни сюда и нажми Ctrl+V чтобы вставить изображение",
-        pasteAlert: "Теперь вставьте изображение из буфера обмена (Ctrl+V или Command+V)",
         noImageAlert: "В буфере обмена нет изображения. Убедитесь, что вы скопировали изображение.",
         screenshotButton: "Генерировать скриншот",
         downloadButton: "Скачать как HTML",
@@ -13,12 +12,6 @@ const translations = {
         clearConfirm: "Вы уверены, что хотите очистить все изображения и текст?",
         langButton: "EN",
         commentButton: "Комментарий",
-        shareTitle: "Ссылка для общего доступа",
-        shareDesc: "Отправьте эту ссылку, чтобы другие могли просмотреть вашу версию:",
-        copyLink: "Скопировать ссылку",
-        linkCopied: "Ссылка скопирована!",
-        generatingShare: "Подготовка ссылки...",
-        shareError: "Ошибка при создании ссылки",
         modalTitle: "Комментарий",
         commentPlaceholder: "Введите ваш комментарий...",
         infoTrigger: "В чём отличие?",
@@ -39,7 +32,6 @@ const translations = {
         title: "The Ultimate \"Favorite Game Meme\"",
         h1: "THE ULTIMATE \"FAVORITE GAME MEME\"",
         placeholder: "Click here and press Ctrl+V to paste an image",
-        pasteAlert: "Now paste an image from your clipboard (Ctrl+V or Command+V)",
         noImageAlert: "No image found on clipboard. Make sure you copied an image.",
         screenshotButton: "Generate Screenshot",
         downloadButton: "Download as HTML",
@@ -49,12 +41,6 @@ const translations = {
         clearConfirm: "Are you sure you want to clear all images and text?",
         langButton: "RU",
         commentButton: "Comment",
-        shareTitle: "Share Link",
-        shareDesc: "Send this link so others can view your version:",
-        copyLink: "Copy Link",
-        linkCopied: "Link copied!",
-        generatingShare: "Preparing link...",
-        shareError: "Error creating link",
         modalTitle: "Comment",
         commentPlaceholder: "Enter your comment...",
         infoTrigger: "What's the difference?",
@@ -296,6 +282,8 @@ function processImage(base64Str, callback) {
         canvas.width = targetWidth;
         canvas.height = targetHeight;
         const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         const scale = Math.max(targetWidth / img.width, targetHeight / img.height);
         
@@ -944,6 +932,7 @@ document.addEventListener('DOMContentLoaded', function() {
         lines.push('a {color:var(--link-color)}');
         lines.push('.main-title{text-align:center}.grid{display:grid;grid-template-columns:repeat(10,minmax(100px,1fr));gap:0}.phrase{margin:0 0 6px 0;font-weight:normal}.overlay{position:fixed;inset:0;background:transparent;display:none;z-index:200}.panel.open{display:block;opacity:1;transform:scale(1)}.panel h3{margin:0 0 8px 0;font-size:15px}');
         lines.push('.body{font-size:14px;line-height:1.4;word-wrap:break-word;} .body strong{font-weight:bold;color:var(--text-color);} .body em{font-style:italic;} .body ul, .body ol{margin:8px 0;padding-left:20px;}');
+        lines.push('::-webkit-scrollbar {width: 10px;}::-webkit-scrollbar-track {background: var(--bg-color);}::-webkit-scrollbar-thumb {background: var(--text-color);border: 2px solid var(--bg-color);border-radius: 10px;}::-webkit-scrollbar-thumb:hover {background: var(--border);}');
         lines.push('</style>');
         lines.push('<script>');
         lines.push(scriptContent);
@@ -968,7 +957,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const commentKey = currentLang + '_comment_' + index;
             const hasComment = data.comments[commentKey] && data.comments[commentKey].length > 0;
-            const disabledState = hasComment ? '' : 'disabled style="opacity:0.5; cursor:default;"';
+            const disabledState = hasComment ? '' : 'disabled style="opacity:0; cursor:default;"';
 
             const cardHtml = '<div class="card">' +
                 '<div class="image" style="' + bgStyle + '"></div>' +

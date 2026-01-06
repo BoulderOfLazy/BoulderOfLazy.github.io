@@ -440,3 +440,21 @@
 .scale-label:hover, .scale-label:focus {
     border-bottom-color: var(--text-color);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--input-border-color);
+}
