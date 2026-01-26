@@ -8,7 +8,6 @@
     <title>Ультимативный "Любимая игра meme"</title>
     <link rel="stylesheet" href="css/ultimategamememe.css">
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <script src="js/overtype.min.js"></script>
 </head>
 
 <body>
@@ -21,49 +20,9 @@
         <div class="grid"></div>
     </div>
 
-    <div class="toggle-row">
-        <span class="toggle-label" id="toggle-left">I'm only here to paste images</span>
-        <label class="toggle-switch">
-            <input type="checkbox" id="comment-toggle">
-            <span class="toggle-slider"></span>
-        </label>
-        <span class="toggle-label" id="toggle-right">Let me comment each category!</span>
-    </div>
-
-    <div class="info-link-container">
-        <span id="info-trigger">What's the difference?</span>
-    </div>
-
     <div class="button-container">
         <button id="screenshot">Генерировать скриншот</button>
-        <button id="download-btn">Скачать как HTML</button>
         <button id="clear">Очистить</button>
-    </div>
-
-    <div class="overlay" id="overlay"></div>
-    <div class="modal" id="modal">
-        <h3 id="modal-title">Комментарий</h3>
-        <div id="comment-editor"></div>
-        <div style="display: flex; justify-content: space-between; margin-top: 8px; gap: 8px; min-height: 24px;">
-            <a href="https://github.com/panphora/overtype" target="_blank" class="modal-link" style="flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
-                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 16 16" width="20px" style="display: block;"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
-            </a>
-            <div class="close-hint" style="text-align: center; flex: 1; line-height: 1;">Нажмите вне окна или Esc, чтобы закрыть</div>
-        </div>
-       </div>
-
-    <div class="info-modal" id="info-modal">
-        <h3 id="info-modal-title">Info</h3>
-        <p id="info-modal-text"></p>
-        <button id="info-modal-close" style="width: 100%; margin: 8px 0 0 0;">OK</button>
-    </div>
-
-    <div class="filename-modal" id="filename-modal">
-        <div class="filename-row" style="display: flex; gap: 5px; align-items: center; justify-content: center;">
-            <input type="text" id="filename-input" placeholder="filename" style="flex-grow: 1;">
-            <span id="filename-extension" style="color: var(--text-color); padding-right: 5px;">.png</span>
-            <button id="filename-save-btn">Save</button>   
-        </div>
     </div>
 
     <script src="js/ultimategamememe.js"></script>
