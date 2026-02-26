@@ -12,6 +12,8 @@ const translations = {
         reset: "Сбросить",
         zoomReset: "Сбросить приближение",
         screenshot: "Скриншот",
+        export: "Экспортировать",
+        import: "Импортировать",
         titlePlaceholder: "Введите заголовок...",
         modalTitle: "Как пользоваться сайтом",
         modalItems: [
@@ -24,6 +26,7 @@ const translations = {
             "<b>Вид:</b> Кнопки по центру левой панели меняют компоновку шкалы.",
             "<b>Масштаб:</b> Используйте ползунок на левой панели, чтобы растянуть шкалу.",
             "<b>Скриншот:</b> Кнопка \"Камера\" делает снимок всей вашей шкалы включая заголовок и скачивает его.",
+            "<b>Экспорт/Импорт:</b> Экспортируйте все элементы в JSON файл и поделитесь им. Импортируйте файл, чтобы загрузить все элементы в меню подготовки.",
             "<b>Сохранение:</b> Все изменения (порядок, текст, изображения, вид, заголовок) сохраняются автоматически."
         ],
         resetConfirm: "Вы уверены, что хотите сбросить всю шкалу? Это действие необратимо.",
@@ -31,6 +34,9 @@ const translations = {
         imgNotFound: "Картинка не найдена в буфере обмена.",
         pasteError: "Не удалось вставить картинку. ",
         screenshotError: "Не удалось сделать скриншот.",
+        exportSuccess: "Элементы успешно экспортированы.",
+        importSuccess: "Элементы успешно импортированы.",
+        importError: "Ошибка при импорте файла. Проверьте формат файла.",
         defaultText: "Введите текст",
         pasteImgTitle: "Вставить картинку из буфера обмена",
         removeImgTitle: "Удалить картинку",
@@ -49,6 +55,8 @@ const translations = {
         reset: "Reset",
         zoomReset: "Reset Zoom",
         screenshot: "Screenshot",
+        export: "Export",
+        import: "Import",
         titlePlaceholder: "Enter a title...",
         modalTitle: "How to use this site",
         modalItems: [
@@ -61,6 +69,7 @@ const translations = {
             "<b>View:</b> The buttons in the center of the left panel change the scale layout.",
             "<b>Zoom:</b> Use the slider on the left panel to stretch the scale.",
             "<b>Screenshot:</b> The \"Camera\" button takes a picture of your entire scale including the title and downloads it.",
+            "<b>Export/Import:</b> Export all items to a JSON file and share it with others. Import a file to load all items into the staging menu.",
             "<b>Saving:</b> All changes (order, text, images, view, title) are saved automatically."
         ],
         resetConfirm: "Are you sure you want to reset the entire scale? This action cannot be undone.",
@@ -68,6 +77,9 @@ const translations = {
         imgNotFound: "No image found in clipboard.",
         pasteError: "Failed to paste image. ",
         screenshotError: "Failed to take screenshot.",
+        exportSuccess: "Items exported successfully.",
+        importSuccess: "Items imported successfully.",
+        importError: "Error importing file. Please check the file format.",
         defaultText: "Enter text",
         pasteImgTitle: "Paste image from clipboard",
         removeImgTitle: "Remove image",
@@ -97,10 +109,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const undoBtn = document.getElementById('undo-btn');
     const redoBtn = document.getElementById('redo-btn');
     const langToggleButton = document.getElementById('lang-toggle-btn');
+    const stagingMenuContainer = document.getElementById('stagingMenuContainer');
+    const stagingMenuToggle = document.getElementById('stagingMenuToggle');
+    const stagingMenuScroll = document.getElementById('stagingMenuScroll');
+    const exportButton = document.getElementById('exportButton');
+    const importButton = document.getElementById('importButton');
+    const importFileInput = document.getElementById('importFileInput');
 
     let divisionsData = [];
+    let stagingItems = [];
     let draggedElement = null;
     let draggedId = null;
+    let draggedFromStaging = false;
+    let dragWasCompleted = false;
     let db = null;
     let currentViewMode = 'bottom';
     const MAX_TITLE_FONT_SIZE = 2.5;
@@ -140,6 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
         resetButton.title = t.reset;
         zoomResetBtn.title = t.zoomReset;
         screenshotButton.title = t.screenshot;
+        exportButton.title = t.export;
+        importButton.title = t.import;
         langToggleButton.title = t.lang;
 
         scaleTitle.dataset.placeholder = t.titlePlaceholder;
@@ -155,6 +178,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         renderDivisions();
+        
+        // Update placeholders for all inputs and textareas
+        document.querySelectorAll('.division-container input[type="text"]').forEach(input => {
+            input.placeholder = t.defaultText;
+        });
+        document.querySelectorAll('.staging-item-text').forEach(textarea => {
+            textarea.placeholder = t.defaultText;
+        });
     }
 
     langToggleButton.addEventListener('click', () => {
@@ -220,12 +251,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    function saveStagingItems() {
+        try {
+            localStorage.setItem('stagingItems', JSON.stringify(stagingItems));
+        } catch (err) {
+            console.error('Error saving staging items:', err);
+        }
+    }
+
+    function loadStagingItems() {
+        try {
+            const saved = localStorage.getItem('stagingItems');
+            if (saved) {
+                stagingItems = JSON.parse(saved);
+            }
+        } catch (err) {
+            console.error('Error loading staging items:', err);
+            stagingItems = [];
+        }
+    }
+
     function getDefaultData() {
         return [
-            { id: 1, text: translations[currentLang].defaultText, image: null, order: 0 },
-            { id: 2, text: translations[currentLang].defaultText, image: null, order: 1 },
-            { id: 3, text: translations[currentLang].defaultText, image: null, order: 2 },
-            { id: 4, text: translations[currentLang].defaultText, image: null, order: 3 }
+            { id: 1, text: null, image: null, order: 0 },
+            { id: 2, text: null, image: null, order: 1 },
+            { id: 3, text: null, image: null, order: 2 },
+            { id: 4, text: null, image: null, order: 3 }
         ];
     }
 
@@ -236,12 +287,16 @@ document.addEventListener('DOMContentLoaded', () => {
             scaleEndLabel.innerText = '10';
             localStorage.removeItem('scaleStartText');
             localStorage.removeItem('scaleEndText');
+            stagingItems = [];
+            saveStagingItems();
+            stagingMenuContainer.classList.remove('expanded');
             captureState();
             await saveData();
             scaleTitle.innerText = '';
             localStorage.removeItem('scaleTitle');
             adjustTitleFontSize();
             renderDivisions();
+            renderStagingMenu();
         }
     }
 
@@ -397,6 +452,54 @@ scaleEndLabel.addEventListener('input', () => {
         });
     }
 
+    // Compress image to reduce file size while maintaining reasonable quality
+    async function compressImage(blob) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    const canvas = document.createElement('canvas');
+                    let width = img.width;
+                    let height = img.height;
+                    
+                    // Resize if image is larger than 800x800
+                    const maxDimension = 800;
+                    if (width > maxDimension || height > maxDimension) {
+                        const ratio = Math.min(maxDimension / width, maxDimension / height);
+                        width = Math.round(width * ratio);
+                        height = Math.round(height * ratio);
+                    }
+                    
+                    canvas.width = width;
+                    canvas.height = height;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, width, height);
+                    
+                    // Convert to compressed dataURL (WebP if supported, otherwise JPEG at 85% quality)
+                    let compressedDataUrl;
+                    try {
+                        // Try WebP first (better compression)
+                        compressedDataUrl = canvas.toDataURL('image/webp', 0.8);
+                        // If WebP isn't much smaller, fall back to JPEG
+                        if (compressedDataUrl.length > blob.size * 0.9) {
+                            compressedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+                        }
+                    } catch (e) {
+                        // Fallback to JPEG if WebP fails
+                        compressedDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+                    }
+                    
+                    resolve(compressedDataUrl);
+                };
+                img.onerror = () => reject(new Error('Failed to load image'));
+                img.src = e.target.result;
+            };
+            reader.onerror = () => reject(new Error('Failed to read blob'));
+            reader.readAsDataURL(blob);
+        });
+    }
+
     async function takeScreenshot() {
         const titleEl = document.getElementById('scale-title');
         const scaleContainerEl = document.getElementById('scalePanningContainer');
@@ -482,11 +585,17 @@ scaleEndLabel.addEventListener('input', () => {
                 const id = Number(container.dataset.id);
                 const item = divisionsData.find(d => d.id === id);
                 if (item && item.image) {
-                    conversionPromises.push(
-                        blobToDataURL(item.image).then(dataUrl => {
-                            imgTag.src = dataUrl;
-                        })
-                    );
+                    // Images are already dataURLs (compressed), no conversion needed
+                    if (typeof item.image === 'string') {
+                        imgTag.src = item.image;
+                    } else if (item.image instanceof Blob) {
+                        // Handle legacy Blob format (shouldn't happen with new compression, but for safety)
+                        conversionPromises.push(
+                            blobToDataURL(item.image).then(dataUrl => {
+                                imgTag.src = dataUrl;
+                            })
+                        );
+                    }
                 }
             }
         });
@@ -522,6 +631,120 @@ scaleEndLabel.addEventListener('input', () => {
 
     screenshotButton.addEventListener('click', takeScreenshot);
     resetButton.addEventListener('click', resetDataToDefault);
+
+    function exportData() {
+        try {
+            const allItems = [...divisionsData, ...stagingItems];
+            
+            const exportObj = {
+                version: "1.0",
+                timestamp: new Date().toISOString(),
+                items: allItems
+            };
+
+            const dataStr = JSON.stringify(exportObj, null, 2);
+            const dataBlob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `scale-export-${Date.now()}.json`;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            // Show success message
+            const messageEl = document.createElement('div');
+            messageEl.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background-color: #2ecc71;
+                color: white;
+                padding: 12px 20px;
+                border-radius: 5px;
+                z-index: 9999;
+                font-size: 14px;
+                animation: fadeInOut 3s ease-in-out;
+            `;
+            messageEl.textContent = translations[currentLang].exportSuccess;
+            document.body.appendChild(messageEl);
+            setTimeout(() => document.body.removeChild(messageEl), 3000);
+        } catch (err) {
+            console.error('Export error:', err);
+            alert(translations[currentLang].importError);
+        }
+    }
+
+    function importData(file) {
+        try {
+            const reader = new FileReader();
+            reader.onload = async (e) => {
+                try {
+                    const importedObj = JSON.parse(e.target.result);
+                    
+                    if (!Array.isArray(importedObj.items)) {
+                        throw new Error('Invalid file format');
+                    }
+
+                    // Add all imported items to staging menu with unique IDs
+                    const baseId = Date.now() * 1000;
+                    stagingItems = importedObj.items.map((item, index) => ({
+                        id: baseId + index,
+                        text: item.text || null,
+                        image: item.image || null
+                    }));
+
+                    saveStagingItems();
+                    renderStagingMenu();
+                    
+                    // Expand staging menu to show imported items
+                    if (!stagingMenuContainer.classList.contains('expanded')) {
+                        stagingMenuContainer.classList.add('expanded');
+                    }
+
+                    // Show success message
+                    const messageEl = document.createElement('div');
+                    messageEl.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background-color: #2ecc71;
+                        color: white;
+                        padding: 12px 20px;
+                        border-radius: 5px;
+                        z-index: 9999;
+                        font-size: 14px;
+                        animation: fadeInOut 3s ease-in-out;
+                    `;
+                    messageEl.textContent = translations[currentLang].importSuccess;
+                    document.body.appendChild(messageEl);
+                    setTimeout(() => document.body.removeChild(messageEl), 3000);
+
+                } catch (err) {
+                    console.error('Import parse error:', err);
+                    alert(translations[currentLang].importError);
+                }
+            };
+            reader.readAsText(file);
+        } catch (err) {
+            console.error('Import error:', err);
+            alert(translations[currentLang].importError);
+        }
+    }
+
+    exportButton.addEventListener('click', exportData);
+    importButton.addEventListener('click', () => {
+        importFileInput.click();
+    });
+    
+    importFileInput.addEventListener('change', (e) => {
+        if (e.target.files.length > 0) {
+            importData(e.target.files[0]);
+            // Reset input so same file can be imported again
+            importFileInput.value = '';
+        }
+    });
 
     function getDivisionStyles(index, layoutParams) {
         const { isOverlapping, maxLevels } = layoutParams;
@@ -601,8 +824,11 @@ scaleEndLabel.addEventListener('input', () => {
                 if (item.image instanceof Blob) {
                     img.src = URL.createObjectURL(item.image);
                     img.onload = () => URL.revokeObjectURL(img.src);
+                } else if (typeof item.image === 'string') {
+                    // Handle data URLs from staging menu
+                    img.src = item.image;
                 } else {
-                    console.warn("Попытка создать URL не из Blob для ID:", item.id);
+                    console.warn("Попытка создать URL неподдерживаемого типа для ID:", item.id);
                 }
                 imageContainer.appendChild(img);
             }
@@ -611,6 +837,7 @@ scaleEndLabel.addEventListener('input', () => {
             const input = document.createElement('input');
             input.type = 'text';
             input.value = item.text;
+            input.placeholder = translations[currentLang].defaultText;
             input.draggable = true;
             input.addEventListener('change', () => {
                 item.text = input.value;
@@ -633,6 +860,12 @@ scaleEndLabel.addEventListener('input', () => {
             removeImgFromDivBtn.innerHTML = '&#8722;';
             removeImgFromDivBtn.title = translations[currentLang].removeImgTitle;
             btnControls.appendChild(removeImgFromDivBtn);
+
+            const moveToStagingBtn = document.createElement('button');
+            moveToStagingBtn.id = 'move-to-staging-btn';
+            moveToStagingBtn.innerHTML = '↶';
+            moveToStagingBtn.title = 'Move to staging menu';
+            btnControls.appendChild(moveToStagingBtn);
 
             const removeDivBtn = document.createElement('button');
             removeDivBtn.id = 'remove-division-btn';
@@ -703,7 +936,7 @@ scaleEndLabel.addEventListener('input', () => {
 
             const item = divisionsData.find(d => d.id === id);
             if (item) {
-                item.image = blob;
+                item.image = await compressImage(blob);
                 captureState();
                 await saveData();
                 renderDivisions();
@@ -721,21 +954,129 @@ scaleEndLabel.addEventListener('input', () => {
         renderDivisions();
     }
 
+    async function handleMoveToStaging(id) {
+        const item = divisionsData.find(d => d.id === id);
+        if (item) {
+            stagingItems.push({
+                id: item.id,
+                text: item.text,
+                image: item.image
+            });
+            saveStagingItems();
+            divisionsData = divisionsData.filter(d => d.id !== id);
+            captureState();
+            await saveData();
+            renderDivisions();
+            renderStagingMenu();
+            if (!stagingMenuContainer.classList.contains('expanded')) {
+                stagingMenuContainer.classList.add('expanded');
+            }
+        }
+    }
+
     function addDragAndDropHandlers() {
         document.querySelectorAll('.division-container input[type="text"]').forEach(input => {
             input.addEventListener('dragstart', (e) => {
                 draggedElement = e.currentTarget.closest('.division-container');
                 draggedId = Number(draggedElement.dataset.id);
+                dragWasCompleted = false;
+                e.dataTransfer.effectAllowed = 'move';
+                
+                // Store original divisions data for restoration on dragend
+                originalDivisionsData = JSON.parse(JSON.stringify(divisionsData));
+                lastInsertIndex = null;
+                
+                // Create preview element for scale element
+                const item = divisionsData.find(d => d.id === draggedId);
+                if (item) {
+                    scalePreviewElement = document.createElement('div');
+                    scalePreviewElement.className = 'division-container';
+                    scalePreviewElement.style.position = 'absolute';
+                    scalePreviewElement.style.opacity = '0.5';
+                    scalePreviewElement.style.zIndex = '999';
+                    scalePreviewElement.style.pointerEvents = 'none';
+                    scalePreviewElement.style.width = '120px';
+                    scalePreviewElement.style.display = 'flex';
+                    scalePreviewElement.style.alignItems = 'center';
+                    scalePreviewElement.style.transform = 'translateX(-50%)';
+                    
+                    scalePreviewElement.classList.add(currentViewMode === 'center' ? 'position-down' : 'position-up');
+                    
+                    const previewImageContainer = document.createElement('div');
+                    previewImageContainer.className = 'image-container';
+                    if (item.image) {
+                        const img = document.createElement('img');
+                        if (item.image instanceof Blob) {
+                            img.src = URL.createObjectURL(item.image);
+                            img.onload = () => URL.revokeObjectURL(img.src);
+                        } else if (typeof item.image === 'string') {
+                            img.src = item.image;
+                        }
+                        previewImageContainer.appendChild(img);
+                    }
+                    scalePreviewElement.appendChild(previewImageContainer);
+                    
+                    const previewInput = document.createElement('input');
+                    previewInput.type = 'text';
+                    previewInput.value = item.text;
+                    previewInput.readOnly = true;
+                    previewInput.style.pointerEvents = 'none';
+                    previewInput.style.width = '100%';
+                    previewInput.style.padding = '5px';
+                    previewInput.style.backgroundColor = 'var(--input-bg-color)';
+                    previewInput.style.color = 'var(--text-color)';
+                    previewInput.style.border = '1px solid var(--input-border-color)';
+                    previewInput.style.borderRadius = '5px';
+                    previewInput.style.textAlign = 'center';
+                    previewInput.style.boxSizing = 'border-box';
+                    previewInput.style.fontSize = '14px';
+                    previewInput.style.marginTop = '5px';
+                    previewInput.style.marginBottom = '5px';
+                    scalePreviewElement.appendChild(previewInput);
+                    
+                    const previewStem = document.createElement('div');
+                    previewStem.className = 'division-stem';
+                    previewStem.style.width = '3px';
+                    previewStem.style.backgroundColor = 'var(--border-color)';
+                    previewStem.style.height = '40px';
+                    previewStem.style.order = '4';
+                    scalePreviewElement.appendChild(previewStem);
+                    
+                    scaleBar.appendChild(scalePreviewElement);
+                }
                 setTimeout(() => draggedElement.classList.add('dragging'), 0);
             });
 
             input.addEventListener('dragend', () => {
                 if (!draggedElement) return;
                 draggedElement.classList.remove('dragging');
+                
+                // Remove scale element preview
+                if (scalePreviewElement) {
+                    scalePreviewElement.remove();
+                    scalePreviewElement = null;
+                }
+                
+                // Restore original divisions data if drag was cancelled
+                if (originalDivisionsData !== null && !dragWasCompleted) {
+                    divisionsData = originalDivisionsData;
+                    originalDivisionsData = null;
+                    lastInsertIndex = null;
+                    renderDivisions();
+                }
+                
+                // Only save if drag was not completed (cancelled drag)
+                // If completed, drop handler already saved and rendered
+                if (!dragWasCompleted && draggedId !== null) {
+                    captureState();
+                    saveData().then(renderDivisions);
+                }
+                
                 draggedElement = null;
                 draggedId = null
-                captureState();
-                saveData().then(renderDivisions);
+                dragWasCompleted = false;
+                originalDivisionsData = null;
+                lastInsertIndex = null;
             });
         });
     }
@@ -770,65 +1111,423 @@ scaleEndLabel.addEventListener('input', () => {
             }
             return;
         }
+
+        const moveToStagingBtn = target.closest('#move-to-staging-btn');
+        if (moveToStagingBtn) {
+            handleMoveToStaging(itemId);
+            return;
+        }
     });
 
 
     scaleBar.addEventListener('dragover', (e) => {
         e.preventDefault();
+        
+        if (draggedFromStaging) {
+            e.dataTransfer.dropEffect = 'move';
+            return;
+        }
+        
         if (!draggedElement) return;
 
         const scaleRect = scaleBar.getBoundingClientRect();
         const mouseX = e.clientX - scaleRect.left;
-        const segmentWidth = scaleRect.width / (divisionsData.length + 1);
-
-        let targetIndex = Math.floor(mouseX / segmentWidth);
-        targetIndex = Math.max(0, Math.min(divisionsData.length - 1, targetIndex));
-
-        const currentIndex = divisionsData.findIndex(item => item.id === draggedId);
-
-        if (targetIndex !== currentIndex) {
-            const item = divisionsData.splice(currentIndex, 1)[0];
-            divisionsData.splice(targetIndex, 0, item);
-        }
-
-        const layoutParams = getLayoutParams();
-
-        divisionsData.forEach((item, index) => {
-            const el = scaleBar.querySelector(`.division-container[data-id="${item.id}"]`);
-            if (el) {
-                const newPosition = ((index + 1) / (divisionsData.length + 1)) * 100;
-                if (item.id !== draggedId) {
-                    el.style.left = `${newPosition}%`;
-                }
-
-                const { stemHeight, positionClass } = getDivisionStyles(index, layoutParams);
-
-                el.className = 'division-container';
-                el.classList.add(positionClass);
-                if (item.id === draggedId) {
-                    el.classList.add('dragging');
-                }
-                if (item.image) {
-                    el.classList.add('has-image');
-                }
-                el.querySelector('.division-stem').style.height = `${stemHeight}px`;
-            }
-        });
-
+        
+        // Just update the dragged element position visually, don't reorder yet
         draggedElement.style.left = `${mouseX}px`;
+        e.dataTransfer.dropEffect = 'move';
     });
 
     addButton.addEventListener('click', async () => {
         const newItem = {
             id: Date.now(),
-            text: translations[currentLang].defaultText,
-            image: null,
-            order: divisionsData.length
+            text: null,
+            image: null
         };
-        divisionsData.push(newItem);
-        captureState();
-        await saveData();
-        renderDivisions();
+        stagingItems.push(newItem);
+        saveStagingItems();
+        renderStagingMenu();
+        if (!stagingMenuContainer.classList.contains('expanded')) {
+            stagingMenuContainer.classList.add('expanded');
+        }
+    });
+
+    stagingMenuToggle.addEventListener('click', () => {
+        stagingMenuContainer.classList.toggle('expanded');
+    });
+
+    function renderStagingMenu() {
+        stagingMenuScroll.innerHTML = '';
+        stagingItems.forEach((item) => {
+            const itemEl = document.createElement('div');
+            itemEl.className = 'staging-item';
+            if (item.image) {
+                itemEl.classList.add('has-image');
+            }
+            itemEl.draggable = true;
+            itemEl.dataset.stagingId = item.id;
+
+            const imageContainer = document.createElement('div');
+            imageContainer.className = 'staging-item-image-container';
+            
+            if (item.image) {
+                const img = document.createElement('img');
+                img.src = item.image;
+                imageContainer.appendChild(img);
+            } else {
+                const placeholder = document.createElement('div');
+                placeholder.className = 'staging-item-image-placeholder';
+                placeholder.innerText = '';
+                imageContainer.appendChild(placeholder);
+            }
+
+            const controls = document.createElement('div');
+            controls.className = 'staging-item-controls';
+            const addImgBtn = document.createElement('button');
+            addImgBtn.className = 'staging-item-btn staging-item-add-img-btn';
+            addImgBtn.title = translations[currentLang].pasteImgTitle;
+            addImgBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 48 48" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" /></svg>';
+            addImgBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                handleStagingImagePaste(item.id);
+            });
+
+            const removeImgBtn = document.createElement('button');
+            removeImgBtn.className = 'staging-item-btn staging-item-remove-img-btn';
+            removeImgBtn.title = translations[currentLang].removeImgTitle;
+            removeImgBtn.innerHTML = '−';
+            removeImgBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                item.image = null;
+                saveStagingItems();
+                renderStagingMenu();
+            });
+
+            const removeStagingItemBtn = document.createElement('button');
+            removeStagingItemBtn.className = 'staging-item-btn staging-item-remove-btn';
+            removeStagingItemBtn.title = 'Remove item';
+            removeStagingItemBtn.innerHTML = '✕';
+            removeStagingItemBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                stagingItems = stagingItems.filter(si => si.id !== item.id);
+                saveStagingItems();
+                renderStagingMenu();
+            });
+
+            controls.appendChild(addImgBtn);
+            controls.appendChild(removeImgBtn);
+            controls.appendChild(removeStagingItemBtn);
+
+            const textArea = document.createElement('textarea');
+            textArea.className = 'staging-item-text';
+            textArea.placeholder = translations[currentLang].defaultText;
+            textArea.value = item.text;
+            textArea.addEventListener('input', (e) => {
+                item.text = e.target.value;
+                saveStagingItems();
+            });
+
+            itemEl.appendChild(imageContainer);
+            itemEl.appendChild(controls);
+            itemEl.appendChild(textArea);
+            stagingMenuScroll.appendChild(itemEl);
+        });
+    }
+
+    async function handleStagingImagePaste(id) {
+        try {
+            const clipboardItems = await navigator.clipboard.read();
+            let imageFound = false;
+            for (const item of clipboardItems) {
+                const imageTypes = item.types.filter(type => type.startsWith('image/'));
+                if (imageTypes.length > 0) {
+                    const blob = await item.getType(imageTypes[0]);
+                    const compressedDataUrl = await compressImage(blob);
+                    const stagingItem = stagingItems.find(si => si.id === id);
+                    if (stagingItem) {
+                        stagingItem.image = compressedDataUrl;
+                        saveStagingItems();
+                        renderStagingMenu();
+                    }
+                    imageFound = true;
+                    break;
+                }
+            }
+            if (!imageFound) {
+                alert(translations[currentLang].imgNotFound);
+            }
+        } catch (err) {
+            console.error(err);
+            alert(translations[currentLang].pasteError);
+        }
+    }
+
+    let stagingPreviewElement = null;
+    let scalePreviewElement = null;
+    let originalDivisionsData = null;
+    let lastInsertIndex = null;
+
+    stagingMenuScroll.addEventListener('dragstart', (e) => {
+        if (e.target.closest('.staging-item')) {
+            const stagingItem = e.target.closest('.staging-item');
+            draggedId = parseInt(stagingItem.dataset.stagingId);
+            draggedFromStaging = true;
+            draggedElement = stagingItem;
+            e.dataTransfer.effectAllowed = 'move';
+            
+            // Store original divisions data for restoration on dragend
+            originalDivisionsData = JSON.parse(JSON.stringify(divisionsData));
+            lastInsertIndex = null;
+            
+            // Create preview element on scale that matches actual division-container
+            const item = stagingItems.find(si => si.id === draggedId);
+            if (item) {
+                stagingPreviewElement = document.createElement('div');
+                stagingPreviewElement.className = 'division-container';
+                stagingPreviewElement.style.position = 'absolute';
+                stagingPreviewElement.style.opacity = '0.5';
+                stagingPreviewElement.style.zIndex = '999';
+                stagingPreviewElement.style.pointerEvents = 'none';
+                stagingPreviewElement.style.width = '120px';
+                stagingPreviewElement.style.display = 'none';
+                stagingPreviewElement.style.alignItems = 'center';
+                stagingPreviewElement.style.transform = 'translateX(-50%)';
+                
+                // Set initial position class (will be updated on dragover)
+                stagingPreviewElement.classList.add(currentViewMode === 'center' ? 'position-down' : 'position-up');
+                
+                const previewImageContainer = document.createElement('div');
+                previewImageContainer.className = 'image-container';
+                if (item.image) {
+                    const img = document.createElement('img');
+                    img.src = item.image;
+                    previewImageContainer.appendChild(img);
+                }
+                stagingPreviewElement.appendChild(previewImageContainer);
+                
+                const previewInput = document.createElement('input');
+                previewInput.type = 'text';
+                previewInput.value = item.text;
+                previewInput.readOnly = true;
+                previewInput.style.pointerEvents = 'none';
+                previewInput.style.width = '100%';
+                previewInput.style.padding = '5px';
+                previewInput.style.backgroundColor = 'var(--input-bg-color)';
+                previewInput.style.color = 'var(--text-color)';
+                previewInput.style.border = '1px solid var(--input-border-color)';
+                previewInput.style.borderRadius = '5px';
+                previewInput.style.textAlign = 'center';
+                previewInput.style.boxSizing = 'border-box';
+                previewInput.style.fontSize = '14px';
+                previewInput.style.marginTop = '5px';
+                previewInput.style.marginBottom = '5px';
+                stagingPreviewElement.appendChild(previewInput);
+                
+                const previewStem = document.createElement('div');
+                previewStem.className = 'division-stem';
+                previewStem.style.width = '3px';
+                previewStem.style.backgroundColor = 'var(--border-color)';
+                previewStem.style.height = '40px';
+                previewStem.style.order = '4';
+                stagingPreviewElement.appendChild(previewStem);
+                
+                scaleBar.appendChild(stagingPreviewElement);
+            }
+        }
+    });
+
+    stagingMenuScroll.addEventListener('dragend', () => {
+        if (stagingPreviewElement) {
+            stagingPreviewElement.remove();
+            stagingPreviewElement = null;
+        }
+        
+        // Restore original divisions data if drag was cancelled
+        if (originalDivisionsData !== null) {
+            divisionsData = originalDivisionsData;
+            originalDivisionsData = null;
+            renderDivisions();
+        }
+        
+        draggedFromStaging = false;
+        draggedId = null;
+        draggedElement = null;
+    });
+
+    const scrollWrapper = document.getElementById('scrollWrapper');
+    scrollWrapper.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.dataTransfer.dropEffect = 'move';
+        
+        if (draggedFromStaging) {
+            // Update preview position for staging elements
+            if (stagingPreviewElement) {
+                stagingPreviewElement.style.display = 'flex';
+                const scaleBarRect = scaleBar.getBoundingClientRect();
+                const containerLeft = scaleBarRect.left;
+                const containerWidth = scaleBarRect.width;
+                
+                let dropX = e.clientX - containerLeft;
+                dropX = Math.max(0, Math.min(dropX, containerWidth));
+                
+                const dropPercent = (dropX / containerWidth) * 100;
+                
+                // Calculate position between elements
+                const segments = divisionsData.length + 1;
+                let insertIndex = Math.round((dropPercent / 100) * (divisionsData.length + 1)) - 1;
+                insertIndex = Math.max(0, Math.min(divisionsData.length, insertIndex));
+                
+                // Reorder divisions temporarily if insertion point changed
+                if (lastInsertIndex !== insertIndex && originalDivisionsData) {
+                    lastInsertIndex = insertIndex;
+                    
+                    // Create a temporary item to show where it will be placed
+                    const stagingItem = stagingItems.find(si => si.id === draggedId);
+                    if (stagingItem) {
+                        // Restore original data and insert at new position
+                        divisionsData = JSON.parse(JSON.stringify(originalDivisionsData));
+                        const tempItem = {
+                            id: stagingItem.id,
+                            text: stagingItem.text,
+                            image: stagingItem.image,
+                            order: insertIndex
+                        };
+                        divisionsData.splice(insertIndex, 0, tempItem);
+                        renderDivisions();
+                    }
+                }
+                
+                const newPosition = ((insertIndex + 1) / segments) * 100;
+                stagingPreviewElement.style.left = `${newPosition}%`;
+                
+                // Get layout params and apply proper styling
+                const layoutParams = getLayoutParams();
+                const { stemHeight, positionClass } = getDivisionStyles(insertIndex, layoutParams);
+                
+                // Update position class
+                stagingPreviewElement.className = 'division-container';
+                stagingPreviewElement.classList.add(positionClass);
+                
+                // Update stem height
+                const stemEl = stagingPreviewElement.querySelector('.division-stem');
+                if (stemEl) {
+                    stemEl.style.height = `${stemHeight}px`;
+                }
+            }
+        } else if (!draggedFromStaging && draggedElement && draggedId !== null) {
+            // Handle scale element dragging with preview
+            if (scalePreviewElement) {
+                const scaleBarRect = scaleBar.getBoundingClientRect();
+                const containerLeft = scaleBarRect.left;
+                const containerWidth = scaleBarRect.width;
+                
+                let dropX = e.clientX - containerLeft;
+                dropX = Math.max(0, Math.min(dropX, containerWidth));
+                
+                const dropPercent = (dropX / containerWidth) * 100;
+                
+                // Calculate position between elements
+                const segments = divisionsData.length + 1;
+                let insertIndex = Math.round((dropPercent / 100) * (divisionsData.length + 1)) - 1;
+                insertIndex = Math.max(0, Math.min(divisionsData.length - 1, insertIndex));
+                
+                // Reorder divisions temporarily if insertion point changed
+                if (lastInsertIndex !== insertIndex && originalDivisionsData) {
+                    lastInsertIndex = insertIndex;
+                    
+                    // Restore original data and reorder
+                    divisionsData = JSON.parse(JSON.stringify(originalDivisionsData));
+                    const currentIndex = divisionsData.findIndex(item => item.id === draggedId);
+                    
+                    if (insertIndex !== currentIndex) {
+                        const item = divisionsData.splice(currentIndex, 1)[0];
+                        divisionsData.splice(insertIndex, 0, item);
+                    }
+                    renderDivisions();
+                }
+                
+                const newPosition = ((insertIndex + 1) / segments) * 100;
+                scalePreviewElement.style.left = `${newPosition}%`;
+                
+                // Get layout params and apply proper styling
+                const layoutParams = getLayoutParams();
+                const { stemHeight, positionClass } = getDivisionStyles(divisionsData.findIndex(item => item.id === draggedId), layoutParams);
+                
+                // Update position class
+                scalePreviewElement.className = 'division-container';
+                scalePreviewElement.classList.add(positionClass);
+                
+                // Update stem height
+                const stemEl = scalePreviewElement.querySelector('.division-stem');
+                if (stemEl) {
+                    stemEl.style.height = `${stemHeight}px`;
+                }
+            }
+        }
+    });
+
+    scrollWrapper.addEventListener('drop', (e) => {
+        e.preventDefault();
+        if (stagingPreviewElement) {
+            stagingPreviewElement.remove();
+            stagingPreviewElement = null;
+        }
+        
+        if (draggedFromStaging && draggedId !== null) {
+            const stagingItem = stagingItems.find(si => si.id === draggedId);
+            if (stagingItem) {
+                const scaleBarRect = scaleBar.getBoundingClientRect();
+                const scrollWrapperRect = scrollWrapper.getBoundingClientRect();
+                const containerLeft = scaleBarRect.left;
+                const containerWidth = scaleBarRect.width;
+                
+                let dropX = e.clientX - containerLeft;
+                dropX = Math.max(0, Math.min(dropX, containerWidth));
+                
+                const dropPercent = (dropX / containerWidth) * 100;
+                
+                // Calculate which index to insert at based on drop position
+                const segments = divisionsData.length + 1;
+                let insertIndex = Math.round((dropPercent / 100) * (divisionsData.length + 1)) - 1;
+                insertIndex = Math.max(0, Math.min(divisionsData.length, insertIndex));
+
+                // Restore original data and insert at final position
+                divisionsData = JSON.parse(JSON.stringify(originalDivisionsData));
+                const newItem = {
+                    id: stagingItem.id,
+                    text: stagingItem.text,
+                    image: stagingItem.image,
+                    order: insertIndex
+                };
+                divisionsData.splice(insertIndex, 0, newItem);
+                stagingItems = stagingItems.filter(si => si.id !== draggedId);
+                originalDivisionsData = null;
+                lastInsertIndex = null;
+                saveStagingItems();
+                captureState();
+                saveData();
+                renderDivisions();
+                renderStagingMenu();
+            }
+            draggedFromStaging = false;
+            draggedId = null;
+            draggedElement = null;
+        } else if (!draggedFromStaging && draggedElement && draggedId !== null) {
+            // Handle drop for scale elements - preview already updated divisionsData
+            if (scalePreviewElement) {
+                scalePreviewElement.remove();
+                scalePreviewElement = null;
+            }
+            
+            dragWasCompleted = true;
+            draggedElement = null;
+            draggedId = null;
+            originalDivisionsData = null;
+            lastInsertIndex = null;
+            captureState();
+            saveData();
+            renderDivisions();
+        }
     });
 
     async function main() {
@@ -859,6 +1558,8 @@ scaleEndLabel.addEventListener('input', () => {
             divisionsData = getDefaultData();
         }
 
+        loadStagingItems();
+        renderStagingMenu();
         captureState();
         updateUI(currentLang);
     }

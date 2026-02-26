@@ -7,8 +7,9 @@
     --icon-fill-color: #333;
     --modal-bg: rgba(0, 0, 0, 0.4);
     --modal-content-bg: #fff;
-    --sidebar-dark-bg: #212529;
-    --sidebar-text: #f8f9fa;
+    --sidebar-bg: #e8eaed;
+    --sidebar-text: #212529;
+    --icon-inner-color: #f0f2f5;
 }
  body.dark-mode {
     --bg-color: #121212;
@@ -19,14 +20,23 @@
     --icon-fill-color: #e0e0e0;
     --modal-bg: rgba(0, 0, 0, 0.7);
     --modal-content-bg: #2a2a2a;
-    --sidebar-dark-bg: #212529;
+    --sidebar-bg: #212529;
     --sidebar-text: #f8f9fa;
+    --icon-inner-color: #121212;
 }
 
 * {
     box-sizing: border-box;
 }
- body {
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    10% { opacity: 1; transform: translateY(0); }
+    90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -44,7 +54,7 @@
     width: 100%;
     height: 72px;
     flex-shrink: 0;
-    background-color: var(--sidebar-dark-bg);
+    background-color: var(--sidebar-bg);
     color: var(--sidebar-text);
     padding: 10px 16px;
     display: flex;
@@ -53,6 +63,7 @@
     z-index: 1000;
     overflow: visible;
     box-shadow: 0 -6px 20px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
  .sidebar-group {
     display: flex;
@@ -72,11 +83,11 @@
  .sidebar-header {
     font-size: 0.85em;
     font-weight: 600;
-    color: #adb5bd;
+    color: var(--sidebar-text);
+    opacity: 0.6;
     text-transform: uppercase;
     padding-bottom: 0;
     white-space: nowrap;
-    opacity: 0;
     margin-right: 8px;
 }
  .sidebar-item {
@@ -85,13 +96,13 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s;
-    color: white;
+    transition: background-color 0.2s, transform 0.1s, color 0.2s;
+    color: var(--sidebar-text);
     text-align: center;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background-color: #495057;
+    background-color: rgba(0, 0, 0, 0.1);
     white-space: nowrap;
     overflow: hidden;
     justify-content: center;
@@ -102,29 +113,34 @@
 .sidebar-item:disabled {
     opacity: 0.4;
     cursor: not-allowed;
-    background-color: #495057;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-item svg {
     width: 18px;
     height: 18px;
-    fill: var(--sidebar-text);
+    fill: currentColor;
     flex-shrink: 0; 
 }
  .sidebar-item span {
     display: none;
 }
  .sidebar-item:not(:disabled):hover {
-    background-color: #5a6268;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-item:active {
     transform: scale(0.98);
 }
- #addButton { background-color: #2ecc71; }
+ #addButton { background-color: #2ecc71; color: white; }
 #addButton:hover { background-color: #27ae60; }
-#resetButton { background-color: #e74c3c; }
+#resetButton { background-color: #e74c3c; color: white; }
 #resetButton:hover { background-color: #c0392b; }
+
+#exportButton svg path:nth-child(2),
+#importButton svg path:nth-child(2) {
+    fill: var(--icon-inner-color) !important;
+}
  #zoom-slider {
     width: 140px;
     height: 8px;
@@ -147,7 +163,7 @@
     flex-direction: column;
     height: 100vh;
     overflow: hidden;
-        padding-bottom: calc(72px + 12px);
+        padding-bottom: calc(72px + 200px + 12px);
 }
  #scale-title {
     width: 100%;
@@ -318,6 +334,14 @@
     background-color: #95a5a6;
 }
 
+#move-to-staging-btn {
+    background-color: #3498db;
+}
+
+#move-to-staging-btn:hover {
+    background-color: #2980b9;
+}
+
 #remove-division-btn { 
     background-color: #e74c3c;
 }
@@ -457,4 +481,217 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--input-border-color);
+}
+
+/* Staging Menu Styles */
+.staging-menu-container {
+    position: fixed;
+    bottom: 72px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
+    border-radius: 12px 12px 0 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    transition: max-height 0.4s ease;
+}
+
+.staging-menu-container.expanded {
+    max-height: 400px;
+    z-index: 999;
+}
+
+.staging-menu-toggle {
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    height: 36px;
+    flex-shrink: 0;
+    transition: background-color 0.2s;
+}
+
+.staging-menu-toggle:hover {
+    background-color: var(--input-bg-color);
+}
+
+.staging-menu-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-color);
+    transition: transform 0.4s ease;
+}
+
+.staging-menu-container.expanded .staging-menu-toggle svg {
+    transform: rotate(0deg);
+}
+
+.staging-menu-container:not(.expanded) .staging-menu-toggle svg {
+    transform: rotate(180deg);
+}
+
+.staging-menu-content {
+    flex-grow: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.staging-menu-scroll {
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 12px;
+    gap: 12px;
+}
+
+.staging-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    flex-shrink: 0;
+    cursor: grab;
+    pointer-events: all;
+    gap: 0;
+}
+
+.staging-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.staging-item-image-container {
+    width: 100%;
+    height: 80px;
+    background-color: var(--input-bg-color);
+    border: 2px dashed var(--input-border-color);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    overflow: visible;
+    position: relative;
+}
+
+.staging-item-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 3px;
+    pointer-events: none;
+}
+
+.staging-item-image-placeholder {
+    font-size: 32px;
+    color: var(--input-border-color);
+}
+
+.staging-item-text {
+    width: 100%;
+    padding: 4px;
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    box-sizing: border-box;
+    resize: none;
+    max-height: 40px;
+    overflow-y: auto;
+    pointer-events: all;
+}
+
+.staging-item-controls {
+    position: relative;
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    padding: 6px 0;
+    pointer-events: auto;
+}
+
+.staging-item-btn {
+    width: auto;
+    min-width: 48px;
+    height: 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+    padding: 0 4px;
+    pointer-events: auto;
+    z-index: 10;
+    transition: background-color 0.2s;
+    flex: 1;
+}
+
+.staging-item-add-img-btn {
+    background-color: #007bff;
+}
+
+.staging-item-add-img-btn:hover {
+    background-color: #0056b3;
+}
+
+.staging-item-remove-img-btn {
+    background-color: #7f8c8d;
+    display: none;
+}
+
+.staging-item-remove-img-btn:hover {
+    background-color: #95a5a6;
+}
+
+.staging-item-remove-btn {
+    background-color: #e74c3c;
+}
+
+.staging-item-remove-btn:hover {
+    background-color: #c0392b;
+}
+
+.staging-item.has-image .staging-item-add-img-btn {
+    display: none;
+}
+
+.staging-item.has-image .staging-item-remove-img-btn {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .staging-menu-container {
+        bottom: 56px;
+        max-height: 150px;
+    }
+    
+    .staging-menu-container.expanded {
+        max-height: 300px;
+    }
+    
+    .staging-item {
+        width: 80px;
+    }
+    
+    .staging-item-image-container {
+        height: 60px;
+    }
 }
