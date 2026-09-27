@@ -145,11 +145,6 @@
     "path": "vr-stuff/games/escape-simulator/data.json"
   },
   {
-    "title": "The Exit 8 VR",
-    "slug": "the-exit-8-vr",
-    "path": "vr-stuff/games/the-exit-8-vr/data.json"
-  },
-  {
     "title": "Exoshock",
     "slug": "exoshock",
     "path": "vr-stuff/games/exoshock/data.json"
