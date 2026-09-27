@@ -1,0 +1,45 @@
+{
+  "slug": "little-nightmares-vr-altered-echoes",
+  "title": "Little Nightmares VR: Altered Echoes",
+  "shortDescription": "",
+  "longDescription": "Little Nightmares VR: Altered Echoes — тёмное и атмосферное приключение. Вы играете за загадочную Тёмную Шесть. Исследуйте мир, решайте головоломки, уходите от грозных врагов и обретите цельность.",
+  "metaLink": "https://www.meta.com/experiences/little-nightmares-vr-altered-echoes/29336472685998992/",
+  "steamLink": "https://store.steampowered.com/app/2482940/Little_Nightmares_VR_Altered_Echoes/",
+  "metaRating": "4.5/5",
+  "steamRating": "80%",
+  "metaPrice": "€29.99",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "3h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/little-nightmares-vr-altered-echoes/cover.webp",
+  "logo": "/vr-stuff/games/little-nightmares-vr-altered-echoes/logo.webp",
+  "background": "/vr-stuff/games/little-nightmares-vr-altered-echoes/background.webp",
+  "trailer": {
+    "youtubeId": "TEoynUMGbao",
+    "thumbnail": "https://i.ytimg.com/vi/TEoynUMGbao/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_0.webp",
+    "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_1.webp",
+    "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_2.webp",
+    "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_3.webp",
+    "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

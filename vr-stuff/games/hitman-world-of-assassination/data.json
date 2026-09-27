@@ -1,0 +1,45 @@
+{
+  "slug": "hitman-world-of-assassination",
+  "title": "Hitman: World of Assassination",
+  "shortDescription": "Играть нужно только в PCVR версию (или PSVR2, если имеется), т.к. порт на Quest - <a href=\"https://www.youtube.com/watch?v=uEBAabTF7jY\" target=\"_blank\" onclick=\"event.stopPropagation()\">мусор</a>",
+  "longDescription": "Войдите в мир наемных убийц. «HITMAN: World of Assassination» включает все лучшее из HITMAN, HITMAN 2 и HITMAN 3, в том числе основную кампанию, режим контрактов, обострения, аркадные контракты на неуловимую цель и режим в стиле roguelike «HITMAN: Фрилансер».",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1659040/HITMAN_World_of_Assassination/",
+  "metaRating": "N/A",
+  "steamRating": "87%",
+  "metaPrice": "—",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/hitman-world-of-assassination/cover.webp",
+  "logo": "/vr-stuff/games/hitman-world-of-assassination/logo.webp",
+  "background": "/vr-stuff/games/hitman-world-of-assassination/background.webp",
+  "trailer": {
+    "youtubeId": "iNoocHwugKM",
+    "thumbnail": "https://i.ytimg.com/vi/iNoocHwugKM/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/hitman-world-of-assassination/screenshot_0.webp",
+    "/vr-stuff/games/hitman-world-of-assassination/screenshot_1.webp",
+    "/vr-stuff/games/hitman-world-of-assassination/screenshot_2.webp",
+    "/vr-stuff/games/hitman-world-of-assassination/screenshot_3.webp",
+    "/vr-stuff/games/hitman-world-of-assassination/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "the-last-clockwinder",
+  "title": "The Last Clockwinder",
+  "shortDescription": "",
+  "longDescription": "VR-игра в жанре пазл-автоматизация. Создавайте сложные часовые механизмы из своих клонов и возвращайте жизнь древнему дереву с помощью автоматизации, коллекции редких растений со всей галактики и команды часовых садовников.",
+  "metaLink": "https://www.meta.com/experiences/the-last-clockwinder/4837365566303714/",
+  "steamLink": "https://store.steampowered.com/app/1755100/The_Last_Clockwinder/",
+  "metaRating": "4.8/5",
+  "steamRating": "96%",
+  "metaPrice": "€24.99",
+  "steamPrice": "22.99€",
+  "hltb": {
+    "mainStory": "4.8h",
+    "mainExtra": "6h",
+    "completionist": "8.1h"
+  },
+  "cover": "/vr-stuff/games/the-last-clockwinder/cover.webp",
+  "logo": "/vr-stuff/games/the-last-clockwinder/logo.webp",
+  "background": "/vr-stuff/games/the-last-clockwinder/background.webp",
+  "trailer": {
+    "youtubeId": "JUVjNLc_X2M",
+    "thumbnail": "https://i.ytimg.com/vi/JUVjNLc_X2M/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-last-clockwinder/screenshot_0.webp",
+    "/vr-stuff/games/the-last-clockwinder/screenshot_1.webp",
+    "/vr-stuff/games/the-last-clockwinder/screenshot_2.webp",
+    "/vr-stuff/games/the-last-clockwinder/screenshot_3.webp",
+    "/vr-stuff/games/the-last-clockwinder/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "blade-and-sorcery",
+  "title": "Blade & Sorcery",
+  "shortDescription": "Если вы видели на YouTube видео, где люди фехтуют мечами из Star Wars в VR, то это наверняка была эта игра. Имеет сингплеерную кампанию, но основной её частью является режим песочницы. Мультиплеер есть в виде мода",
+  "longDescription": "Blade & Sorcery — это средневековое фэнтези, созданное специально для VR, с полноценными сражениями ближнего боя, дальнего боя и магией на основе физики. Станьте могучим воином, следопытом или чародеем и сокрушите своих врагов.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/629730/Blade_and_Sorcery/",
+  "metaRating": "N/A",
+  "steamRating": "96%",
+  "metaPrice": "—",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "9.7h",
+    "mainExtra": "19.1h",
+    "completionist": "49.3h"
+  },
+  "cover": "/vr-stuff/games/blade-and-sorcery/cover.webp",
+  "logo": "/vr-stuff/games/blade-and-sorcery/logo.webp",
+  "background": "/vr-stuff/games/blade-and-sorcery/background.webp",
+  "trailer": {
+    "youtubeId": "-Kmd07gEq1s",
+    "thumbnail": "https://i.ytimg.com/vi/-Kmd07gEq1s/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/blade-and-sorcery/screenshot_0.webp",
+    "/vr-stuff/games/blade-and-sorcery/screenshot_1.webp",
+    "/vr-stuff/games/blade-and-sorcery/screenshot_2.webp",
+    "/vr-stuff/games/blade-and-sorcery/screenshot_3.webp",
+    "/vr-stuff/games/blade-and-sorcery/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Fighting",
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

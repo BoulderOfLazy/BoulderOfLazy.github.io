@@ -1,0 +1,46 @@
+{
+  "slug": "waltz-of-the-wizard",
+  "title": "Waltz of the Wizard",
+  "shortDescription": "",
+  "longDescription": "Waltz of the Wizard – это уникальный опыт виртуальной реальности, с помощью которого вы сможете ощутить себя настоящим обладателем магической силы. Расширенная версия представляет собой обновленную оригинальную версию, в которую добавлены новые заклинания, взаимодействия и секреты!",
+  "metaLink": "https://www.meta.com/experiences/waltz-of-the-wizard/2280285932034855/",
+  "steamLink": "https://store.steampowered.com/app/1094390/Waltz_of_the_Wizard/",
+  "metaRating": "4.9/5",
+  "steamRating": "90%",
+  "metaPrice": "€19.99",
+  "steamPrice": "16.99€",
+  "hltb": {
+    "mainStory": "0.6h",
+    "mainExtra": "1.2h",
+    "completionist": "7h"
+  },
+  "cover": "/vr-stuff/games/waltz-of-the-wizard/cover.webp",
+  "logo": "/vr-stuff/games/waltz-of-the-wizard/logo.webp",
+  "background": "/vr-stuff/games/waltz-of-the-wizard/background.webp",
+  "trailer": {
+    "youtubeId": "2WLH5uuqsBw",
+    "thumbnail": "https://i.ytimg.com/vi/2WLH5uuqsBw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/waltz-of-the-wizard/screenshot_0.webp",
+    "/vr-stuff/games/waltz-of-the-wizard/screenshot_1.webp",
+    "/vr-stuff/games/waltz-of-the-wizard/screenshot_2.webp",
+    "/vr-stuff/games/waltz-of-the-wizard/screenshot_3.webp",
+    "/vr-stuff/games/waltz-of-the-wizard/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

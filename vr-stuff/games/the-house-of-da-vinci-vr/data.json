@@ -1,0 +1,46 @@
+{
+  "slug": "the-house-of-da-vinci-vr",
+  "title": "The House of Da Vinci VR",
+  "shortDescription": "\"Can I have The Room VR?\" \"We already have The Room VR at home\" The Room VR at home:",
+  "longDescription": "В качестве ученика Леонардо вы будете решать головоломки, раскрывать секреты изобретений и искать скрытые объекты во Флоренции XVI века. Используйте уникальное устройство, чтобы заглянуть в прошлое и разгадать тайны. Встречайте боевые машины, сложные сейфы и иммерсивные квесты в закрытых комнатах, вдохновленные гением Да Винчи.",
+  "metaLink": "https://www.meta.com/experiences/the-house-of-da-vinci-vr/6074227932599910/",
+  "steamLink": "https://store.steampowered.com/app/2948310/The_House_of_Da_Vinci_VR/",
+  "metaRating": "4.7/5",
+  "steamRating": "92%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "4.6h",
+    "mainExtra": "5.1h",
+    "completionist": "7.3h"
+  },
+  "cover": "/vr-stuff/games/the-house-of-da-vinci-vr/cover.webp",
+  "logo": "/vr-stuff/games/the-house-of-da-vinci-vr/logo.webp",
+  "background": "/vr-stuff/games/the-house-of-da-vinci-vr/background.webp",
+  "trailer": {
+    "youtubeId": "mZ6gIuxEcbM",
+    "thumbnail": "https://i.ytimg.com/vi/mZ6gIuxEcbM/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-house-of-da-vinci-vr/screenshot_0.webp",
+    "/vr-stuff/games/the-house-of-da-vinci-vr/screenshot_1.webp",
+    "/vr-stuff/games/the-house-of-da-vinci-vr/screenshot_2.webp",
+    "/vr-stuff/games/the-house-of-da-vinci-vr/screenshot_3.webp",
+    "/vr-stuff/games/the-house-of-da-vinci-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Historical"
+    ]
+  }
+}

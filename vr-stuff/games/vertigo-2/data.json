@@ -1,0 +1,43 @@
+{
+  "slug": "vertigo-2",
+  "title": "Vertigo 2",
+  "shortDescription": "",
+  "longDescription": "Vertigo 2 — это одиночное VR-приключение. Исследуйте глубины огромного Квантового Реактора, спускаясь вниз, чтобы завершить свой путь домой.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/843390/Vertigo_2/",
+  "metaRating": "N/A",
+  "steamRating": "95%",
+  "metaPrice": "—",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "10.9h",
+    "mainExtra": "12.7h",
+    "completionist": "19.8h"
+  },
+  "cover": "/vr-stuff/games/vertigo-2/cover.webp",
+  "logo": "/vr-stuff/games/vertigo-2/logo.webp",
+  "background": "/vr-stuff/games/vertigo-2/background.webp",
+  "trailer": {
+    "youtubeId": "zz_Yrw0Zang",
+    "thumbnail": "https://i.ytimg.com/vi/zz_Yrw0Zang/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vertigo-2/screenshot_0.webp",
+    "/vr-stuff/games/vertigo-2/screenshot_1.webp",
+    "/vr-stuff/games/vertigo-2/screenshot_2.webp",
+    "/vr-stuff/games/vertigo-2/screenshot_3.webp",
+    "/vr-stuff/games/vertigo-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

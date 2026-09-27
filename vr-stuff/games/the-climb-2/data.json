@@ -1,0 +1,45 @@
+{
+  "slug": "the-climb-2",
+  "title": "The Climb 2",
+  "shortDescription": "",
+  "longDescription": "Азарт восхождения оживает в The Climb 2 — исследуйте новые городские локации и захватывающие карты с потрясающими видами. Восходите на величественные вершины, пробирайтесь через огромные пещеры, покоряйте небоскребы и находите скрытые короткие пути к вершине. Соревнуйтесь с друзьями и покоряйте таблицы лидеров в асинхронных мультиплеерных режимах. От исследования горных ландшафтов до покорения городских декораций — почувствуйте драйв скалолазания без страховки и наслаждайтесь захватывающими видами, достигая новых высот.",
+  "metaLink": "https://www.meta.com/experiences/the-climb-2/2617233878395214/",
+  "steamLink": "",
+  "metaRating": "4.3/5",
+  "steamRating": "N/A",
+  "metaPrice": "€29.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "3.6h",
+    "mainExtra": "8.4h",
+    "completionist": "15.5h"
+  },
+  "cover": "/vr-stuff/games/the-climb-2/cover.webp",
+  "logo": "/vr-stuff/games/the-climb-2/logo.webp",
+  "background": "/vr-stuff/games/the-climb-2/background.webp",
+  "trailer": {
+    "youtubeId": "YSNPalIihiE",
+    "thumbnail": "https://i.ytimg.com/vi/YSNPalIihiE/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-climb-2/screenshot_0.webp",
+    "/vr-stuff/games/the-climb-2/screenshot_1.webp",
+    "/vr-stuff/games/the-climb-2/screenshot_2.webp",
+    "/vr-stuff/games/the-climb-2/screenshot_3.webp",
+    "/vr-stuff/games/the-climb-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Simulation",
+      "Sports"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

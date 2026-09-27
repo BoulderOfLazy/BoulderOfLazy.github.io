@@ -1,0 +1,44 @@
+{
+  "slug": "spymaster",
+  "title": "Spymaster",
+  "shortDescription": "На данный момент находится в раннем доступе",
+  "longDescription": "В мире, где приватность и доверие — роскошь, недоступная большинству, агенты NODE являются последним рубежом обороны. Сочетая динамичные экшен-сцены и решение головоломок в иммерсивных миссиях, управляйте тремя элитными агентами с уникальными способностями и манипулируйте временем с помощью сверхсекретной технологии C.A.S.S.E.T.T.E.",
+  "metaLink": "https://www.meta.com/experiences/spymaster/28613851174895338/",
+  "steamLink": "https://store.steampowered.com/app/4391420/Spymaster/",
+  "metaRating": "4.8/5",
+  "steamRating": "100%",
+  "metaPrice": "€11.99",
+  "steamPrice": "11.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/spymaster/cover.webp",
+  "logo": "/vr-stuff/games/spymaster/logo.webp",
+  "background": "/vr-stuff/games/spymaster/background.webp",
+  "trailer": {
+    "youtubeId": "vUoWBDUFJVY",
+    "thumbnail": "https://i.ytimg.com/vi/vUoWBDUFJVY/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/spymaster/screenshot_6.webp",
+    "/vr-stuff/games/spymaster/screenshot_7.webp",
+    "/vr-stuff/games/spymaster/screenshot_8.webp",
+    "/vr-stuff/games/spymaster/screenshot_9.webp",
+    "/vr-stuff/games/spymaster/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

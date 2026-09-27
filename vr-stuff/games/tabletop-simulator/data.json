@@ -1,0 +1,45 @@
+{
+  "slug": "tabletop-simulator",
+  "title": "Tabletop Simulator",
+  "shortDescription": "",
+  "longDescription": "Tabletop Simulator — это единственный симулятор, в котором вы можете выплеснуть агрессию, перевернув стол! Здесь нет никаких правил: только вы, физическая песочница и ваши друзья. Создавайте собственные онлайн-настольные игры или играйте в тысячи модов, созданных сообществом. Безграничные возможности для игры!",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/286160/Tabletop_Simulator/",
+  "metaRating": "N/A",
+  "steamRating": "95%",
+  "metaPrice": "—",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "36.7h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/tabletop-simulator/cover.webp",
+  "logo": "/vr-stuff/games/tabletop-simulator/logo.webp",
+  "background": "/vr-stuff/games/tabletop-simulator/background.webp",
+  "trailer": {
+    "youtubeId": "JBqernEHjUc",
+    "thumbnail": "https://i.ytimg.com/vi/JBqernEHjUc/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/tabletop-simulator/screenshot_0.webp",
+    "/vr-stuff/games/tabletop-simulator/screenshot_1.webp",
+    "/vr-stuff/games/tabletop-simulator/screenshot_2.webp",
+    "/vr-stuff/games/tabletop-simulator/screenshot_3.webp",
+    "/vr-stuff/games/tabletop-simulator/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

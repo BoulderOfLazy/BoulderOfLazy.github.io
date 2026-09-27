@@ -1,0 +1,46 @@
+{
+  "slug": "unloop",
+  "title": "UnLoop",
+  "shortDescription": "",
+  "longDescription": "VR-головоломка, где играть с самим собой строго обязательно 💦 Прокрадись на космическую станцию, окажись в ловушке времени и создай идеальную команду из своих прошлых копий. Никто не будет держать тебя за ручку. Разберись, что за чертовщина тут происходит, ну или просто пришей сам себя.",
+  "metaLink": "https://www.meta.com/experiences/unloop/7453152428032973/",
+  "steamLink": "https://store.steampowered.com/app/2672470/UnLoop/",
+  "metaRating": "4.9/5",
+  "steamRating": "98%",
+  "metaPrice": "€17.49",
+  "steamPrice": "17.49€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/unloop/cover.webp",
+  "logo": "/vr-stuff/games/unloop/logo.webp",
+  "background": "/vr-stuff/games/unloop/background.webp",
+  "trailer": {
+    "youtubeId": "f_sEbgqO3-w",
+    "thumbnail": "https://i.ytimg.com/vi/f_sEbgqO3-w/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/unloop/screenshot_5.webp",
+    "/vr-stuff/games/unloop/screenshot_6.webp",
+    "/vr-stuff/games/unloop/screenshot_7.webp",
+    "/vr-stuff/games/unloop/screenshot_8.webp",
+    "/vr-stuff/games/unloop/screenshot_9.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "of-lies-and-rain",
+  "title": "Of Lies and Rain",
+  "shortDescription": "",
+  "longDescription": "Of Lies and Rain — это сюжетный шутер от первого лица, созданный исключительно для VR. Действие разворачивается в мрачном научно-фантастическом постапокалиптическом мире, на границе реального и цифрового. Вы будете сражаться, чтобы вернуть своё прошлое и спасти человечество от гибели.",
+  "metaLink": "https://www.meta.com/experiences/of-lies-and-rain/8807261575967907/",
+  "steamLink": "https://store.steampowered.com/app/3141330/Of_Lies_and_Rain/",
+  "metaRating": "4.4/5",
+  "steamRating": "79%",
+  "metaPrice": "€29.99",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "7h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/of-lies-and-rain/cover.webp",
+  "logo": "/vr-stuff/games/of-lies-and-rain/logo.webp",
+  "background": "/vr-stuff/games/of-lies-and-rain/background.webp",
+  "trailer": {
+    "youtubeId": "OdiOPOuGbo8",
+    "thumbnail": "https://i.ytimg.com/vi/OdiOPOuGbo8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/of-lies-and-rain/screenshot_0.webp",
+    "/vr-stuff/games/of-lies-and-rain/screenshot_1.webp",
+    "/vr-stuff/games/of-lies-and-rain/screenshot_2.webp",
+    "/vr-stuff/games/of-lies-and-rain/screenshot_3.webp",
+    "/vr-stuff/games/of-lies-and-rain/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

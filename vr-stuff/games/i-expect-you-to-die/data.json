@@ -1,0 +1,46 @@
+{
+  "slug": "i-expect-you-to-die",
+  "title": "I Expect You To Die",
+  "shortDescription": "Юморная серия игр, где ты играешь в роли спецагента с телекинезом, мещающего злодеям осуществить их планы. Все три части проходятся сидя на одном месте. Написал про все сразу, так как они структурно идентичны. Крайне рекомендую все три части в качестве одних из первых VR опытов. 7/10",
+  "longDescription": "Проверьте свои навыки решения задач в этой VR-головоломке в жанре escape-the-room. Возьмите на себя роль секретного агента с телекинетическими способностями, чтобы остановить Zoraxis — злую корпорацию, стремящуюся к мировому господству.",
+  "metaLink": "https://www.meta.com/experiences/i-expect-you-to-die/1987283631365460/",
+  "steamLink": "https://store.steampowered.com/app/587430/I_Expect_You_To_Die/",
+  "metaRating": "4.8/5",
+  "steamRating": "95%",
+  "metaPrice": "€24.99",
+  "steamPrice": "22.99€",
+  "hltb": {
+    "mainStory": "3.1h",
+    "mainExtra": "4h",
+    "completionist": "5.5h"
+  },
+  "cover": "/vr-stuff/games/i-expect-you-to-die/cover.webp",
+  "logo": "/vr-stuff/games/i-expect-you-to-die/logo.webp",
+  "background": "/vr-stuff/games/i-expect-you-to-die/background.webp",
+  "trailer": {
+    "youtubeId": "uqw7mF80ywk",
+    "thumbnail": "https://i.ytimg.com/vi/uqw7mF80ywk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/i-expect-you-to-die/screenshot_0.webp",
+    "/vr-stuff/games/i-expect-you-to-die/screenshot_1.webp",
+    "/vr-stuff/games/i-expect-you-to-die/screenshot_2.webp",
+    "/vr-stuff/games/i-expect-you-to-die/screenshot_3.webp",
+    "/vr-stuff/games/i-expect-you-to-die/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

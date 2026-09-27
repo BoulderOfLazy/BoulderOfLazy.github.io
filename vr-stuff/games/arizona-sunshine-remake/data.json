@@ -1,0 +1,48 @@
+{
+  "slug": "arizona-sunshine-remake",
+  "title": "Arizona Sunshine Remake",
+  "shortDescription": "Классика VR игр. Ремейк заметно подтянул графику + перенёс все геймплейные новшества сиквела",
+  "longDescription": "Зомби-апокалипсис получил новый облик: Arizona Sunshine® Remake поднимает оригинальную игру на новый уровень — с убойной ВР-графикой, боями и оружием нового поколения. Боритесь с ожившими мертвецами в одиночку или с тремя товарищами в постапокалиптической юго-западной Америке, захваченной зомби.",
+  "metaLink": "https://www.meta.com/experiences/arizona-sunshine-remake/7000275296693016/",
+  "steamLink": "https://store.steampowered.com/app/2897700",
+  "metaRating": "4.3/5",
+  "steamRating": "88%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "4.2h",
+    "mainExtra": "6.5h",
+    "completionist": "9.6h"
+  },
+  "cover": "/vr-stuff/games/arizona-sunshine-remake/cover.webp",
+  "logo": "/vr-stuff/games/arizona-sunshine-remake/logo.webp",
+  "background": "/vr-stuff/games/arizona-sunshine-remake/background.webp",
+  "trailer": {
+    "youtubeId": "QGo5m9E-Tg0",
+    "thumbnail": "https://i.ytimg.com/vi/QGo5m9E-Tg0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/arizona-sunshine-remake/screenshot_0.webp",
+    "/vr-stuff/games/arizona-sunshine-remake/screenshot_1.webp",
+    "/vr-stuff/games/arizona-sunshine-remake/screenshot_2.webp",
+    "/vr-stuff/games/arizona-sunshine-remake/screenshot_3.webp",
+    "/vr-stuff/games/arizona-sunshine-remake/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy",
+      "Post-Apocalyptic"
+    ]
+  }
+}

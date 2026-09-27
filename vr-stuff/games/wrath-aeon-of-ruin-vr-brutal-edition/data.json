@@ -1,0 +1,44 @@
+{
+  "slug": "wrath-aeon-of-ruin-vr-brutal-edition",
+  "title": "WRATH: Aeon of Ruin VR - Brutal Edition",
+  "shortDescription": "",
+  "longDescription": "Охотьтесь на оскверненных Стражей и очистите умирающий мир в Wrath: Aeon of Ruin VR — жестоком олдскульном FPS, созданном на легендарном движке Quake и переосмысленном для виртуальной реальности. С боевой системой двух видов оружия одновременно, физической перезарядкой и смертоносными артефактами в вашем распоряжении у тьмы нет ни единого шанса.",
+  "metaLink": "https://www.meta.com/experiences/wrath-aeon-of-ruin-vr-brutal-edition/7273802939384127/",
+  "steamLink": "https://store.steampowered.com/app/3430260/WRATH_Aeon_of_Ruin_VR__Brutal_Edition/",
+  "metaRating": "4.8/5",
+  "steamRating": "95%",
+  "metaPrice": "€17.99",
+  "steamPrice": "16.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/cover.webp",
+  "logo": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/logo.webp",
+  "background": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/background.webp",
+  "trailer": {
+    "youtubeId": "",
+    "thumbnail": ""
+  },
+  "screenshots": [
+    "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_0.webp",
+    "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_1.webp",
+    "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_2.webp",
+    "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_3.webp",
+    "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

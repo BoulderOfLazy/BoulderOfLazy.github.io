@@ -1,0 +1,45 @@
+{
+  "slug": "beat-saber",
+  "title": "Beat Saber",
+  "shortDescription": "Моды можно устанавливать и на Quest через QuestPatcher или ModsBeforeFriday. Однако, самые распространённые моды для пользовательских карт (NoodleExtensions, Chroma) на шлеме не поддерживаются новыми версиями (последняя версия, которая их поддерживает - 1.40.8). Если Beat Saber с модами в портативе не нужен, то лучше играть в лицензию на ПК. <a href=\"https://bsmg.wiki/pc-modding.html\" target=\"_blank\" onclick=\"event.stopPropagation()\">Тут</a> руководство/список менеджеров модов для PCVR",
+  "longDescription": "Разрубай биты, двигайся и погрузись в самую популярную VR-ритм-игру в мире!* Пригибайся, уклоняйся и попадай в ритм под 300+ авторских композиций от таких исполнителей, как Coldplay, Imagine Dragons и Metallica. Играй соло, соревнуйся онлайн или передай гарнитуру друзьям на следующей вечеринке. Врывайся в игру с уже включенными 60+ треками!",
+  "metaLink": "https://www.meta.com/experiences/beat-saber/2448060205267927/",
+  "steamLink": "https://store.steampowered.com/app/620980/Beat_Saber/",
+  "metaRating": "4.5/5",
+  "steamRating": "95%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "6.5h",
+    "mainExtra": "24.4h",
+    "completionist": "55.7h"
+  },
+  "cover": "/vr-stuff/games/beat-saber/cover.webp",
+  "logo": "/vr-stuff/games/beat-saber/logo.webp",
+  "background": "/vr-stuff/games/beat-saber/background.webp",
+  "trailer": {
+    "youtubeId": "vL39Sg2AqWg",
+    "thumbnail": "https://i.ytimg.com/vi/vL39Sg2AqWg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/beat-saber/screenshot_0.webp",
+    "/vr-stuff/games/beat-saber/screenshot_1.webp",
+    "/vr-stuff/games/beat-saber/screenshot_2.webp",
+    "/vr-stuff/games/beat-saber/screenshot_3.webp",
+    "/vr-stuff/games/beat-saber/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Rhythm"
+    ],
+    "gameModes": [
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

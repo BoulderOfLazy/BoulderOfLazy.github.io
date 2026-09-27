@@ -1,0 +1,47 @@
+{
+  "slug": "vmx",
+  "title": "VMX",
+  "shortDescription": "",
+  "longDescription": "Отдай всё на полную в VMX. Езди на BMX, MTB или самокатах, выполняй трюки с использованием жестов, катайся в парках с друзьями, принимай вызовы и кастомизируй свой транспорт и стиль в иммерсивной мультиплеерной VR-площадке.",
+  "metaLink": "https://www.meta.com/experiences/vmx/9972621452774845/",
+  "steamLink": "https://store.steampowered.com/app/3554630/VMX/",
+  "metaRating": "N/A",
+  "steamRating": "88%",
+  "metaPrice": "—",
+  "steamPrice": "14.79€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/vmx/cover.webp",
+  "logo": "/vr-stuff/games/vmx/logo.webp",
+  "background": "/vr-stuff/games/vmx/background.webp",
+  "trailer": {
+    "youtubeId": "7s3Cf5g7Dr8",
+    "thumbnail": "https://i.ytimg.com/vi/7s3Cf5g7Dr8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vmx/screenshot_2.webp",
+    "/vr-stuff/games/vmx/screenshot_3.webp",
+    "/vr-stuff/games/vmx/screenshot_4.webp",
+    "/vr-stuff/games/vmx/screenshot_5.webp",
+    "/vr-stuff/games/vmx/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

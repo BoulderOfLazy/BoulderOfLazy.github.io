@@ -1,0 +1,45 @@
+{
+  "slug": "vtol-vr",
+  "title": "VTOL VR",
+  "shortDescription": "",
+  "longDescription": "VTOL VR - это игра о боевых полетах в недалеком будущем, созданная специально для виртуальной реальности. Управляйте продвинутыми многоцелевыми самолетами, собственными руками переключайте тумблеры, нажимайте кнопки и управляйте виртуальными приборами.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/667970/VTOL_VR/",
+  "metaRating": "N/A",
+  "steamRating": "98%",
+  "metaPrice": "—",
+  "steamPrice": "25.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "20.3h"
+  },
+  "cover": "/vr-stuff/games/vtol-vr/cover.webp",
+  "logo": "/vr-stuff/games/vtol-vr/logo.webp",
+  "background": "/vr-stuff/games/vtol-vr/background.webp",
+  "trailer": {
+    "youtubeId": "wcL-8NT1y_0",
+    "thumbnail": "https://i.ytimg.com/vi/wcL-8NT1y_0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vtol-vr/screenshot_0.webp",
+    "/vr-stuff/games/vtol-vr/screenshot_1.webp",
+    "/vr-stuff/games/vtol-vr/screenshot_2.webp",
+    "/vr-stuff/games/vtol-vr/screenshot_3.webp",
+    "/vr-stuff/games/vtol-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "ghost-town",
+  "title": "Ghost Town",
+  "shortDescription": "Нарративная головоломка от создателей серии The Room. VR GOTY 2025 в нескольких церемониях награждений",
+  "longDescription": "Ghost Town — это однопользовательское VR пазл-приключение от создателей The Room. Лондон, 1983 год. Эдит Пенроуз — охотница на призраков, занятая изгнанием беспокойных духов города. Но после исчезновения брата Эдит придется задействовать свой ум и сверхъестественные способности, чтобы разгадать тайну.",
+  "metaLink": "https://www.meta.com/experiences/ghost-town/9531494193591052/",
+  "steamLink": "https://store.steampowered.com/app/2496180/Ghost_Town/",
+  "metaRating": "4.8/5",
+  "steamRating": "95%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "4h",
+    "mainExtra": "4.8h",
+    "completionist": "5.4h"
+  },
+  "cover": "/vr-stuff/games/ghost-town/cover.webp",
+  "logo": "/vr-stuff/games/ghost-town/logo.webp",
+  "background": "/vr-stuff/games/ghost-town/background.webp",
+  "trailer": {
+    "youtubeId": "052hBB-f_EY",
+    "thumbnail": "https://i.ytimg.com/vi/052hBB-f_EY/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/ghost-town/screenshot_6.webp",
+    "/vr-stuff/games/ghost-town/screenshot_7.webp",
+    "/vr-stuff/games/ghost-town/screenshot_8.webp",
+    "/vr-stuff/games/ghost-town/screenshot_9.webp",
+    "/vr-stuff/games/ghost-town/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

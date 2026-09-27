@@ -1,0 +1,46 @@
+{
+  "slug": "escape-simulator",
+  "title": "Escape Simulator",
+  "shortDescription": "Имеется возможность играть с NonVR игроками",
+  "longDescription": "Головоломка от первого лица, в которую можно играть соло или в онлайн кооперативе. Исследуйте набор высокоинтерактивных квест-румов. Передвигайте мебель, поднимайте и осматривайте предметы, разбивайте горшки и взламывайте замки! Играйте в тысячи комнат, созданных сообществом, через редактор уровней.",
+  "metaLink": "https://www.meta.com/experiences/escape-simulator/6960826027306377/",
+  "steamLink": "https://store.steampowered.com/app/1435790/Escape_Simulator/",
+  "metaRating": "4.2/5",
+  "steamRating": "94%",
+  "metaPrice": "€16.99",
+  "steamPrice": "16.99€",
+  "hltb": {
+    "mainStory": "7.6h",
+    "mainExtra": "11.5h",
+    "completionist": "15.6h"
+  },
+  "cover": "/vr-stuff/games/escape-simulator/cover.webp",
+  "logo": "/vr-stuff/games/escape-simulator/logo.webp",
+  "background": "/vr-stuff/games/escape-simulator/background.webp",
+  "trailer": {
+    "youtubeId": "H4dkMYMLIk4",
+    "thumbnail": "https://i.ytimg.com/vi/H4dkMYMLIk4/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/escape-simulator/screenshot_0.webp",
+    "/vr-stuff/games/escape-simulator/screenshot_1.webp",
+    "/vr-stuff/games/escape-simulator/screenshot_2.webp",
+    "/vr-stuff/games/escape-simulator/screenshot_3.webp",
+    "/vr-stuff/games/escape-simulator/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

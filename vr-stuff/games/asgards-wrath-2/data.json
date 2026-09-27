@@ -1,0 +1,45 @@
+{
+  "slug": "asgards-wrath-2",
+  "title": "Asgard's Wrath 2",
+  "shortDescription": "Не менее крутое и эпичное продолжение, весьма ограниченное в графическом плане (в отличие от первой части) из-за того, что это эксклюзив Quest 3(S). Теперь в египетском сеттинге",
+  "longDescription": "Пробудись, Космический Страж — судьба реальности в твоих руках. Путешествуй по бескрайним мирам, населенных богами, в погоне за богом-трикстером Локи, который угрожает разорвать нити вселенной. Тебе предстоит сражаться с богами и монстрами в одной из самых масштабных и эпических Action RPG в VR. Управляй уникальными героями-смертными и превращай верных животных в своих воинов-последователей, исследуя огромный живой мир с полной свободой действий и разгадывая невероятные загадки божественного масштаба.",
+  "metaLink": "https://www.meta.com/experiences/asgards-wrath-2/2603836099654226/",
+  "steamLink": "",
+  "metaRating": "4.2/5",
+  "steamRating": "N/A",
+  "metaPrice": "€59.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "33.8h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/asgards-wrath-2/cover.webp",
+  "logo": "/vr-stuff/games/asgards-wrath-2/logo.webp",
+  "background": "/vr-stuff/games/asgards-wrath-2/background.webp",
+  "trailer": {
+    "youtubeId": "3SYJeM_LaZ0",
+    "thumbnail": "https://i.ytimg.com/vi/3SYJeM_LaZ0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/asgards-wrath-2/screenshot_0.webp",
+    "/vr-stuff/games/asgards-wrath-2/screenshot_1.webp",
+    "/vr-stuff/games/asgards-wrath-2/screenshot_2.webp",
+    "/vr-stuff/games/asgards-wrath-2/screenshot_3.webp",
+    "/vr-stuff/games/asgards-wrath-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "RPG"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "slug": "epyka",
+  "title": "Epyka",
+  "shortDescription": "",
+  "longDescription": "Отправьтесь в захватывающее путешествие, чтобы раскрыть древнейшую тайну человечества. Когда ваш отец оставляет вам в наследство свой Кристалл Света, вы и ваш верный спутник Джек отплываете на поиски утраченной цивилизации человечества — Эпики. Исследуйте яркий мир в духе Pixar: солнечные пляжи, мрачные пещеры и вулканические глубины. Решайте хитроумные головоломки, используйте сверхъестественные силы и сразитесь с древним злом, скрывающимся в недрах. Сумеете ли вы доказать скептикам обратное и исполнить своё предназначение?",
+  "metaLink": "https://www.meta.com/experiences/epyka/8266573286749577/",
+  "steamLink": "",
+  "metaRating": "4.4/5",
+  "steamRating": "N/A",
+  "metaPrice": "€9.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/epyka/cover.webp",
+  "logo": "/vr-stuff/games/epyka/logo.webp",
+  "background": "/vr-stuff/games/epyka/background.webp",
+  "trailer": {
+    "youtubeId": "5hbu37_E-eY",
+    "thumbnail": "https://i.ytimg.com/vi/5hbu37_E-eY/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/epyka/screenshot_32.webp",
+    "/vr-stuff/games/epyka/screenshot_33.webp",
+    "/vr-stuff/games/epyka/screenshot_34.webp",
+    "/vr-stuff/games/epyka/screenshot_35.webp",
+    "/vr-stuff/games/epyka/screenshot_36.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

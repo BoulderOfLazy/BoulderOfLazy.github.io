@@ -1,0 +1,41 @@
+{
+  "slug": "davigo",
+  "title": "DAVIGO",
+  "shortDescription": "Один игрок в VR, играющий за летающую голову с кистями, сражается против других игроков без VR",
+  "longDescription": "DAVIGO — это битва на основе физики в режиме VR против PC. Станьте ГИГАНТОМ в VR или маленьким РЫЦАРЕМ на ПК и сражайтесь с друзьями в локальных или онлайн-матчах. РЫЦАРИ могут играть бесплатно с DAVIGO KNIGHT'S PASS.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1116540/DAVIGO_VR_vs_PC/",
+  "metaRating": "N/A",
+  "steamRating": "84%",
+  "metaPrice": "—",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/davigo/cover.webp",
+  "logo": "/vr-stuff/games/davigo/logo.webp",
+  "background": "/vr-stuff/games/davigo/background.webp",
+  "trailer": {
+    "youtubeId": "z0x7ZD1ynGk",
+    "thumbnail": "https://i.ytimg.com/vi/z0x7ZD1ynGk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/davigo/screenshot_0.webp",
+    "/vr-stuff/games/davigo/screenshot_1.webp",
+    "/vr-stuff/games/davigo/screenshot_2.webp",
+    "/vr-stuff/games/davigo/screenshot_3.webp",
+    "/vr-stuff/games/davigo/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Multiplayer"
+    ],
+    "themes": []
+  }
+}

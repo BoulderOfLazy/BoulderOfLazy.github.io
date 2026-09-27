@@ -1,0 +1,44 @@
+{
+  "slug": "vr-giants",
+  "title": "VR Giants",
+  "shortDescription": "Игра только в коопе за одним ПК - один в шлеме, другой на ПК",
+  "longDescription": "VR Giants — это локальная/онлайн кооперативная VR игра, в которой один игрок в VR и один игрок на экране работают вместе. Игрок в VR управляет гигантом и должен защищать и поддерживать крошечного игрока, которым управляет игрок на экране. Крошечный игрок может использовать тело гиганта как расширение уровня.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1124160/VR_Giants/",
+  "metaRating": "N/A",
+  "steamRating": "81%",
+  "metaPrice": "—",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/vr-giants/cover.webp",
+  "logo": "/vr-stuff/games/vr-giants/logo.webp",
+  "background": "/vr-stuff/games/vr-giants/background.webp",
+  "trailer": {
+    "youtubeId": "HgE3VxOTsDs",
+    "thumbnail": "https://i.ytimg.com/vi/HgE3VxOTsDs/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vr-giants/screenshot_0.webp",
+    "/vr-stuff/games/vr-giants/screenshot_1.webp",
+    "/vr-stuff/games/vr-giants/screenshot_2.webp",
+    "/vr-stuff/games/vr-giants/screenshot_3.webp",
+    "/vr-stuff/games/vr-giants/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Platformer",
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Co-op"
+    ],
+    "themes": []
+  }
+}

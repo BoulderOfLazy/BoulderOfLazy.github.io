@@ -1,0 +1,47 @@
+{
+  "slug": "walkabout-mini-golf",
+  "title": "Walkabout Mini Golf",
+  "shortDescription": "",
+  "longDescription": "Погрузитесь в веселый и красивый мир, наполненный лучшими мини-гольф полями, которые вы когда-либо видели! Играйте в одиночку, знакомьтесь с новыми людьми или бросайте вызов друзьям в частной игре до 8 человек. Чрезвычайно реалистичная физика создает идеальные условия как для опытных гольфистов, так и для любителей.",
+  "metaLink": "https://www.meta.com/experiences/walkabout-mini-golf/2462678267173943/",
+  "steamLink": "https://store.steampowered.com/app/1408230/Walkabout_Mini_Golf_VR/",
+  "metaRating": "4.8/5",
+  "steamRating": "97%",
+  "metaPrice": "€22.99",
+  "steamPrice": "24.50€",
+  "hltb": {
+    "mainStory": "9h",
+    "mainExtra": "15.3h",
+    "completionist": "35.6h"
+  },
+  "cover": "/vr-stuff/games/walkabout-mini-golf/cover.webp",
+  "logo": "/vr-stuff/games/walkabout-mini-golf/logo.webp",
+  "background": "/vr-stuff/games/walkabout-mini-golf/background.webp",
+  "trailer": {
+    "youtubeId": "wyRjHU7vNEg",
+    "thumbnail": "https://i.ytimg.com/vi/wyRjHU7vNEg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/walkabout-mini-golf/screenshot_0.webp",
+    "/vr-stuff/games/walkabout-mini-golf/screenshot_1.webp",
+    "/vr-stuff/games/walkabout-mini-golf/screenshot_2.webp",
+    "/vr-stuff/games/walkabout-mini-golf/screenshot_3.webp",
+    "/vr-stuff/games/walkabout-mini-golf/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation",
+      "Sports"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

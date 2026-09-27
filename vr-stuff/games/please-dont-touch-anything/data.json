@@ -1,0 +1,47 @@
+{
+  "slug": "please-dont-touch-anything",
+  "title": "Please, Don't Touch Anything",
+  "shortDescription": "Есть также версия на Quest 3(S) с Mixed Reality",
+  "longDescription": "Нелинейная, изобилующая неординарными загадками головоломка с нажатием кнопок.",
+  "metaLink": "https://www.meta.com/experiences/please-dont-touch-anything/2706567592751319/",
+  "steamLink": "https://store.steampowered.com/app/529590/Please_Dont_Touch_Anything_3D/",
+  "metaRating": "3.8/5",
+  "steamRating": "82%",
+  "metaPrice": "€9.99",
+  "steamPrice": "9.75€",
+  "hltb": {
+    "mainStory": "1.2h",
+    "mainExtra": "1.9h",
+    "completionist": "3h"
+  },
+  "cover": "/vr-stuff/games/please-dont-touch-anything/cover.webp",
+  "logo": "/vr-stuff/games/please-dont-touch-anything/logo.webp",
+  "background": "/vr-stuff/games/please-dont-touch-anything/background.webp",
+  "trailer": {
+    "youtubeId": "QPAbHZRczUw",
+    "thumbnail": "https://i.ytimg.com/vi/QPAbHZRczUw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/please-dont-touch-anything/screenshot_6.webp",
+    "/vr-stuff/games/please-dont-touch-anything/screenshot_7.webp",
+    "/vr-stuff/games/please-dont-touch-anything/screenshot_8.webp",
+    "/vr-stuff/games/please-dont-touch-anything/screenshot_9.webp",
+    "/vr-stuff/games/please-dont-touch-anything/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle",
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

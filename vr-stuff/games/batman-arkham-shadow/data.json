@@ -1,0 +1,46 @@
+{
+  "slug": "batman-arkham-shadow",
+  "title": "Batman: Arkham Shadow",
+  "shortDescription": "Чуть ли не дословная адаптация геймплея игр серии Arkham под VR. По отзывам на уровне HL:A, если не лучше. Эксклюзив Quest 3(S)",
+  "longDescription": "Сегодня четвертое июля, и Готэм-сити подвергся атаке со стороны новой угрозы: таинственного Короля Крыс и его фанатичных последователей. Пока город охватывают массовые беспорядки, Бэтмен спешит предотвратить этот так называемый «День гнева», пока всё не пошло прахом.",
+  "metaLink": "https://www.meta.com/experiences/batman-arkham-shadow/3551691271620960/",
+  "steamLink": "",
+  "metaRating": "4.6/5",
+  "steamRating": "N/A",
+  "metaPrice": "€45.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "10.4h",
+    "mainExtra": "12.8h",
+    "completionist": "15.6h"
+  },
+  "cover": "/vr-stuff/games/batman-arkham-shadow/cover.webp",
+  "logo": "/vr-stuff/games/batman-arkham-shadow/logo.webp",
+  "background": "/vr-stuff/games/batman-arkham-shadow/background.webp",
+  "trailer": {
+    "youtubeId": "dadLtfngQH8",
+    "thumbnail": "https://i.ytimg.com/vi/dadLtfngQH8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/batman-arkham-shadow/screenshot_2.webp",
+    "/vr-stuff/games/batman-arkham-shadow/screenshot_3.webp",
+    "/vr-stuff/games/batman-arkham-shadow/screenshot_4.webp",
+    "/vr-stuff/games/batman-arkham-shadow/screenshot_5.webp",
+    "/vr-stuff/games/batman-arkham-shadow/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "wanderer-the-fragments-of-fate",
+  "title": "Wanderer: The Fragments of Fate",
+  "shortDescription": "",
+  "longDescription": "Сделайте шаг в неизвестность — переосмысленное приключение во времени. Представляем Wanderer: Осколки судьбы, ремейк признанной VR-игры Wanderer. Никто не знает, куда вы попадёте и кем станете, раскрывая тайны времени.",
+  "metaLink": "https://www.meta.com/experiences/wanderer-the-fragments-of-fate/5479628732140032/",
+  "steamLink": "https://store.steampowered.com/app/2472940/Wanderer_The_Fragments_of_Fate/",
+  "metaRating": "3.4/5",
+  "steamRating": "60%",
+  "metaPrice": "€45.99",
+  "steamPrice": "48.99€",
+  "hltb": {
+    "mainStory": "15h",
+    "mainExtra": "27h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/wanderer-the-fragments-of-fate/cover.webp",
+  "logo": "/vr-stuff/games/wanderer-the-fragments-of-fate/logo.webp",
+  "background": "/vr-stuff/games/wanderer-the-fragments-of-fate/background.webp",
+  "trailer": {
+    "youtubeId": "_1NkXr6vBjk",
+    "thumbnail": "https://i.ytimg.com/vi/_1NkXr6vBjk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/wanderer-the-fragments-of-fate/screenshot_0.webp",
+    "/vr-stuff/games/wanderer-the-fragments-of-fate/screenshot_1.webp",
+    "/vr-stuff/games/wanderer-the-fragments-of-fate/screenshot_2.webp",
+    "/vr-stuff/games/wanderer-the-fragments-of-fate/screenshot_3.webp",
+    "/vr-stuff/games/wanderer-the-fragments-of-fate/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "metro-awakening",
+  "title": "Metro Awakening",
+  "shortDescription": "",
+  "longDescription": "Metro Awakening — это разработанный для VR сюжетный приключенческий шутер от первого лица. Погрузитесь в атмосферу Metro с элементами исследования, стелса и боев. Надевайте противогаз и отправляйтесь навстречу разрушительной радиации в глубины метро, где на каждом шагу вас будут поджидать угрозы.",
+  "metaLink": "https://www.meta.com/experiences/metro-awakening/5096918017089406/",
+  "steamLink": "https://store.steampowered.com/app/2669410/Metro_Awakening/",
+  "metaRating": "4.5/5",
+  "steamRating": "73%",
+  "metaPrice": "€29.99",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "10h",
+    "mainExtra": "12.2h",
+    "completionist": "14.6h"
+  },
+  "cover": "/vr-stuff/games/metro-awakening/cover.webp",
+  "logo": "/vr-stuff/games/metro-awakening/logo.webp",
+  "background": "/vr-stuff/games/metro-awakening/background.webp",
+  "trailer": {
+    "youtubeId": "v9j3xpmd4ag",
+    "thumbnail": "https://i.ytimg.com/vi/v9j3xpmd4ag/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/metro-awakening/screenshot_0.webp",
+    "/vr-stuff/games/metro-awakening/screenshot_1.webp",
+    "/vr-stuff/games/metro-awakening/screenshot_2.webp",
+    "/vr-stuff/games/metro-awakening/screenshot_3.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative",
+      "Post-Apocalyptic"
+    ]
+  }
+}

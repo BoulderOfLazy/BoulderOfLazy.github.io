@@ -1,0 +1,44 @@
+{
+  "slug": "virtual-virtual-reality",
+  "title": "Virtual Virtual Reality",
+  "shortDescription": "",
+  "longDescription": "Игра о VR, ИИ и наших общих фантазиях в жанре научной фантастики. В будущем, где ИИ изменил общество, могут ли люди по-прежнему находить цель? Узнайте в Activitude — сервисе, который позволяет людям помогать клиентам ИИ все более необычными способами.",
+  "metaLink": "https://www.meta.com/experiences/virtual-virtual-reality/2111191602278229/",
+  "steamLink": "https://store.steampowered.com/app/889480/Virtual_Virtual_Reality/",
+  "metaRating": "4.6/5",
+  "steamRating": "91%",
+  "metaPrice": "€14.99",
+  "steamPrice": "12.49€",
+  "hltb": {
+    "mainStory": "2.5h",
+    "mainExtra": "3h",
+    "completionist": "3.7h"
+  },
+  "cover": "/vr-stuff/games/virtual-virtual-reality/cover.webp",
+  "logo": "/vr-stuff/games/virtual-virtual-reality/logo.webp",
+  "background": "/vr-stuff/games/virtual-virtual-reality/background.webp",
+  "trailer": {
+    "youtubeId": "Sb1efNYhkGI",
+    "thumbnail": "https://i.ytimg.com/vi/Sb1efNYhkGI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/virtual-virtual-reality/screenshot_0.webp",
+    "/vr-stuff/games/virtual-virtual-reality/screenshot_1.webp",
+    "/vr-stuff/games/virtual-virtual-reality/screenshot_2.webp",
+    "/vr-stuff/games/virtual-virtual-reality/screenshot_3.webp",
+    "/vr-stuff/games/virtual-virtual-reality/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

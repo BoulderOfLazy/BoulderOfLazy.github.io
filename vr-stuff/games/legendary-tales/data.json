@@ -1,0 +1,46 @@
+{
+  "slug": "legendary-tales",
+  "title": "Legendary Tales",
+  "shortDescription": "",
+  "longDescription": "Legendary Tales — это VR-экшен-ролевая игра с кооперативным режимом до 4 игроков. Собирайте предметы, улучшайте свои способности и пробивайтесь сквозь постоянно меняющееся подземелье, чтобы создать свои собственные Legendary Tales.",
+  "metaLink": "https://www.meta.com/experiences/legendary-tales/7355622301195522/",
+  "steamLink": "https://store.steampowered.com/app/1465070/Legendary_Tales/",
+  "metaRating": "4.4/5",
+  "steamRating": "76%",
+  "metaPrice": "36.99€",
+  "steamPrice": "39.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/legendary-tales/cover.webp",
+  "logo": "/vr-stuff/games/legendary-tales/logo.webp",
+  "background": "/vr-stuff/games/legendary-tales/background.webp",
+  "trailer": {
+    "youtubeId": "kDO7KE-_Jnk",
+    "thumbnail": "https://i.ytimg.com/vi/kDO7KE-_Jnk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/legendary-tales/screenshot_0.webp",
+    "/vr-stuff/games/legendary-tales/screenshot_1.webp",
+    "/vr-stuff/games/legendary-tales/screenshot_2.webp",
+    "/vr-stuff/games/legendary-tales/screenshot_3.webp",
+    "/vr-stuff/games/legendary-tales/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Fighting",
+      "RPG"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

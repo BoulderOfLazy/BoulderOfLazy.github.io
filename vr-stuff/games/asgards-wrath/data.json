@@ -1,0 +1,45 @@
+{
+  "slug": "asgards-wrath",
+  "title": "Asgard's Wrath",
+  "shortDescription": "Эпик в сеттинге нордической мифологии, длящийся 25 (!) часов. До выхода HL:A считалась лучшим VR опытом, так как являлась одной из первых игр, сопоставимых с плоскоэкранными играми по общей глубине и проработке. Для того, чтобы в неё в принципе поиграть, придётся устанавливать Meta Quest Link на свой ПК, так купить её можно только в Meta Store, а пиратка без мода (Revive) через SteamVR, через который обычно играют на проводных шлемах, не работает",
+  "longDescription": "БИТВА СМЕРТНЫХ. ВОСХОДЕНИЕ БОГА. Стань следующим великим богом Асгарда, погрузившись в легендарный мир скандинавской мифологии. Оттачивай мастерство владения мечом и демонстрируй свой уникальный стиль боя в сражениях нового уровня. Управляй различными классами героев-смертных, решай грандиозные загадки и превращай животных в боевых спутников, которых ты ведешь в бой. Откройся зову, асгардиец. Тебя ждет VR божественного масштаба!",
+  "metaLink": "https://www.meta.com/experiences/pcvr/asgards-wrath/1180401875303371/",
+  "steamLink": "",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "€39.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "26.7h",
+    "mainExtra": "39.4h",
+    "completionist": "69.6h"
+  },
+  "cover": "/vr-stuff/games/asgards-wrath/cover.webp",
+  "logo": "/vr-stuff/games/asgards-wrath/logo.webp",
+  "background": "/vr-stuff/games/asgards-wrath/background.webp",
+  "trailer": {
+    "youtubeId": "d5a4nWtbVyY",
+    "thumbnail": "https://i.ytimg.com/vi/d5a4nWtbVyY/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/asgards-wrath/screenshot_0.webp",
+    "/vr-stuff/games/asgards-wrath/screenshot_1.webp",
+    "/vr-stuff/games/asgards-wrath/screenshot_2.webp",
+    "/vr-stuff/games/asgards-wrath/screenshot_3.webp",
+    "/vr-stuff/games/asgards-wrath/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "RPG"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

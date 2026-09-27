@@ -1,0 +1,46 @@
+{
+  "slug": "convrgence",
+  "title": "CONVRGENCE",
+  "shortDescription": "Духовный наследник S.T.A.L.K.E.R. в VR. Правда, в отличие от Into The Radius является extraction-shooter-ом",
+  "longDescription": "CONVRGENCE - это VR-шутер на выживание. Исследуйте Чернокаменскую зону отчуждения: ищите хабар, сражайтесь с бандитами и охотьтесь за таинственными артефактами. Но поспешите вернуться на базу до заката. Ведь ночью охотник превращается в жертву.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/2609610/CONVRGENCE/",
+  "metaRating": "N/A",
+  "steamRating": "88%",
+  "metaPrice": "—",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/convrgence/cover.webp",
+  "logo": "/vr-stuff/games/convrgence/logo.webp",
+  "background": "/vr-stuff/games/convrgence/background.webp",
+  "trailer": {
+    "youtubeId": "obtjEpkiMkQ",
+    "thumbnail": "https://i.ytimg.com/vi/obtjEpkiMkQ/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/convrgence/screenshot_0.webp",
+    "/vr-stuff/games/convrgence/screenshot_1.webp",
+    "/vr-stuff/games/convrgence/screenshot_2.webp",
+    "/vr-stuff/games/convrgence/screenshot_3.webp",
+    "/vr-stuff/games/convrgence/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Post-Apocalyptic",
+      "Survival"
+    ]
+  }
+}

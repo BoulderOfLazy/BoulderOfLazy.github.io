@@ -1,0 +1,43 @@
+{
+  "slug": "bugsnax",
+  "title": "Bugsnax",
+  "shortDescription": "Оказывается, у Bugsnax есть официальный VR режим",
+  "longDescription": "Ловите загадочных живых вкусняшек и угощайте друзей в этом необычном приключении!",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/674140/Bugsnax/",
+  "metaRating": "N/A",
+  "steamRating": "97%",
+  "metaPrice": "—",
+  "steamPrice": "20.99€",
+  "hltb": {
+    "mainStory": "7.9h",
+    "mainExtra": "11.7h",
+    "completionist": "15.5h"
+  },
+  "cover": "/vr-stuff/games/bugsnax/cover.webp",
+  "logo": "/vr-stuff/games/bugsnax/logo.webp",
+  "background": "/vr-stuff/games/bugsnax/background.webp",
+  "trailer": {
+    "youtubeId": "1neEhMubpaY",
+    "thumbnail": "https://i.ytimg.com/vi/1neEhMubpaY/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/bugsnax/screenshot_0.webp",
+    "/vr-stuff/games/bugsnax/screenshot_1.webp",
+    "/vr-stuff/games/bugsnax/screenshot_2.webp",
+    "/vr-stuff/games/bugsnax/screenshot_3.webp",
+    "/vr-stuff/games/bugsnax/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

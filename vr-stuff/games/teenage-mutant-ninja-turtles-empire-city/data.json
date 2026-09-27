@@ -1,0 +1,50 @@
+{
+  "slug": "teenage-mutant-ninja-turtles-empire-city",
+  "title": "Teenage Mutant Ninja Turtles: Empire City",
+  "shortDescription": "",
+  "longDescription": "Братство в тенях. Город на грани. В вакууме, оставленном гибелью Шреддера, хватка клана Фут усиливается на улицах, которые ты когда-то называл своим домом. В первой в истории игре TMNT от первого лица в жанре экшен-приключение VR — создай свою главу, в одиночку или в кооперативе до трех друзей.",
+  "metaLink": "https://www.meta.com/experiences/teenage-mutant-ninja-turtles-empire-city/6635073589916590/",
+  "steamLink": "https://store.steampowered.com/app/3713650/Teenage_Mutant_Ninja_Turtles_Empire_City/",
+  "metaRating": "4.4/5",
+  "steamRating": "76%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/cover.webp",
+  "logo": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/logo.webp",
+  "background": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/background.webp",
+  "trailer": {
+    "youtubeId": "PKiBY61_A4Q",
+    "thumbnail": "https://i.ytimg.com/vi/PKiBY61_A4Q/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_4.webp",
+    "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_5.webp",
+    "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_6.webp",
+    "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_7.webp",
+    "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_8.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Platformer"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy",
+      "Narrative",
+      "Open World"
+    ]
+  }
+}

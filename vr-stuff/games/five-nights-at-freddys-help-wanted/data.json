@@ -1,0 +1,45 @@
+{
+  "slug": "five-nights-at-freddys-help-wanted",
+  "title": "Five Nights at Freddy's: Help Wanted",
+  "shortDescription": "Hur-hur-hurhur-hur-hur-hurhur-hurhur. hur-hur-hurhur. hur-hur-hurhur",
+  "longDescription": "Five Nights at Freddy’s: Help Wanted — это сборник классических и оригинальных мини-игр во вселенной Five Nights. Ощутите ужас в плоском (не VR) режиме или в VR. Поддерживаются Oculus Rift и HTC Vive. Наличие VR-гарнитуры НЕ обязательно для игры.",
+  "metaLink": "https://www.meta.com/experiences/five-nights-at-freddys-help-wanted/3162101440489458/",
+  "steamLink": "https://store.steampowered.com/app/732690/FIVE_NIGHTS_AT_FREDDYS_HELP_WANTED/",
+  "metaRating": "4.8/5",
+  "steamRating": "95%",
+  "metaPrice": "€29.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "10.9h",
+    "mainExtra": "11.5h",
+    "completionist": "16.2h"
+  },
+  "cover": "/vr-stuff/games/five-nights-at-freddys-help-wanted/cover.webp",
+  "logo": "/vr-stuff/games/five-nights-at-freddys-help-wanted/logo.webp",
+  "background": "/vr-stuff/games/five-nights-at-freddys-help-wanted/background.webp",
+  "trailer": {
+    "youtubeId": "lLv3wTRJwWM",
+    "thumbnail": "https://i.ytimg.com/vi/lLv3wTRJwWM/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted/screenshot_0.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted/screenshot_1.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted/screenshot_2.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted/screenshot_3.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

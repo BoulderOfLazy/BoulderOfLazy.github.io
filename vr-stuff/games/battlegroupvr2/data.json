@@ -1,0 +1,46 @@
+{
+  "slug": "battlegroupvr2",
+  "title": "BattleGroupVR2",
+  "shortDescription": "",
+  "longDescription": "BattleGroupVR2 — это VR-стратегия о космосе в реальном времени, где вы исследуете галактику и командуете флотом мощных боевых кораблей с борта флагмана. Исследуйте, добывайте ресурсы, торгуйте и охотьтесь. Развивайте флот, улучшайте корабли и обучайте капитанов.",
+  "metaLink": "https://www.meta.com/experiences/battlegroupvr2/9386827918099701/",
+  "steamLink": "https://store.steampowered.com/app/3385960/BattleGroupVR2/",
+  "metaRating": "4.2/5",
+  "steamRating": "84%",
+  "metaPrice": "€22.99",
+  "steamPrice": "24.50€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/battlegroupvr2/cover.webp",
+  "logo": "/vr-stuff/games/battlegroupvr2/logo.webp",
+  "background": "/vr-stuff/games/battlegroupvr2/background.webp",
+  "trailer": {
+    "youtubeId": "YEbZD-Gg_JU",
+    "thumbnail": "https://i.ytimg.com/vi/YEbZD-Gg_JU/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/battlegroupvr2/screenshot_0.webp",
+    "/vr-stuff/games/battlegroupvr2/screenshot_1.webp",
+    "/vr-stuff/games/battlegroupvr2/screenshot_2.webp",
+    "/vr-stuff/games/battlegroupvr2/screenshot_3.webp",
+    "/vr-stuff/games/battlegroupvr2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Strategy"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

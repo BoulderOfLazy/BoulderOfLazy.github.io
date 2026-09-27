@@ -1,0 +1,45 @@
+{
+  "slug": "superhot-vr",
+  "title": "SUPERHOT VR",
+  "shortDescription": "",
+  "longDescription": "Забудь о реальном мире. Погрузись в игру душой и телом. Испытай себя в неповторимом, элегантно жестоком мире SUPERHOT VR. Враги лезут в комнату со всех сторон, десятки пуль рассекают воздух... Стоп. Что-то тут не так...",
+  "metaLink": "https://www.meta.com/experiences/superhot-vr/1921533091289407/",
+  "steamLink": "https://store.steampowered.com/app/617830/SUPERHOT_VR/",
+  "metaRating": "4.7/5",
+  "steamRating": "82%",
+  "metaPrice": "€24.99",
+  "steamPrice": "22.49€",
+  "hltb": {
+    "mainStory": "2h",
+    "mainExtra": "3.4h",
+    "completionist": "7h"
+  },
+  "cover": "/vr-stuff/games/superhot-vr/cover.webp",
+  "logo": "/vr-stuff/games/superhot-vr/logo.webp",
+  "background": "/vr-stuff/games/superhot-vr/background.webp",
+  "trailer": {
+    "youtubeId": "pzG7Wc6mbwE",
+    "thumbnail": "https://i.ytimg.com/vi/pzG7Wc6mbwE/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/superhot-vr/screenshot_0.webp",
+    "/vr-stuff/games/superhot-vr/screenshot_1.webp",
+    "/vr-stuff/games/superhot-vr/screenshot_2.webp",
+    "/vr-stuff/games/superhot-vr/screenshot_3.webp",
+    "/vr-stuff/games/superhot-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

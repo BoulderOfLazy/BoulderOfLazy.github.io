@@ -1,0 +1,45 @@
+{
+  "slug": "stormland",
+  "title": "Stormland",
+  "shortDescription": "",
+  "longDescription": "Представляем мир Stormland — инопланетного небесного мира, где процветает экзотическая жизнь, а разрозненная цивилизация андроидов скрыта в руинах. Играйте в одиночном режиме или исследуйте забытые руины с другом в кооперативном режиме для двоих. Исследуйте обширный мир с полной свободой: преодолевайте скалы, планируйте над пропастями и пронзайте потоки сквозняка на огромной скорости. Используйте взрывчатку, управляйте электричеством и применяйте высокотехнологичное оружие, чтобы победить злобную армию роботов-захватчиков.",
+  "metaLink": "https://www.meta.com/experiences/pcvr/stormland/1360938750683878/",
+  "steamLink": "",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "€39.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "5.5h",
+    "mainExtra": "20h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/stormland/cover.webp",
+  "logo": "/vr-stuff/games/stormland/logo.webp",
+  "background": "/vr-stuff/games/stormland/background.webp",
+  "trailer": {
+    "youtubeId": "KBP7hMWMUyk",
+    "thumbnail": "https://i.ytimg.com/vi/KBP7hMWMUyk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/stormland/screenshot_0.webp",
+    "/vr-stuff/games/stormland/screenshot_1.webp",
+    "/vr-stuff/games/stormland/screenshot_2.webp",
+    "/vr-stuff/games/stormland/screenshot_3.webp",
+    "/vr-stuff/games/stormland/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

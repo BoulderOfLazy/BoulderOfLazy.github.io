@@ -1,0 +1,43 @@
+{
+  "slug": "gunman-contracts",
+  "title": "Gunman Contracts",
+  "shortDescription": "",
+  "longDescription": "\"Gunman Contracts - Stand Alone\" — это динамичный однопользовательский шутер в стиле боевиков, созданный для VR и Non-VR. В роли профессионального киллера противостань беспощадным силам преступного мира, выполняя один контракт за другим.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/2421750/Gunman_Contracts__Stand_Alone",
+  "metaRating": "N/A",
+  "steamRating": "79%",
+  "metaPrice": "—",
+  "steamPrice": "25.49€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/gunman-contracts/cover.webp",
+  "logo": "/vr-stuff/games/gunman-contracts/logo.webp",
+  "background": "/vr-stuff/games/gunman-contracts/background.webp",
+  "trailer": {
+    "youtubeId": "",
+    "thumbnail": ""
+  },
+  "screenshots": [
+    "/vr-stuff/games/gunman-contracts/screenshot_0.webp",
+    "/vr-stuff/games/gunman-contracts/screenshot_1.webp",
+    "/vr-stuff/games/gunman-contracts/screenshot_2.webp",
+    "/vr-stuff/games/gunman-contracts/screenshot_3.webp",
+    "/vr-stuff/games/gunman-contracts/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

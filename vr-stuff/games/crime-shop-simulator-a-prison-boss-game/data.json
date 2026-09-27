@@ -1,0 +1,47 @@
+{
+  "slug": "crime-shop-simulator-a-prison-boss-game",
+  "title": "Crime Shop Simulator: A Prison Boss Game",
+  "shortDescription": "",
+  "longDescription": "Prison Boss Prohibition — это VR-игра, в которой вы играете за владельца магазина по продаже контрабанды. Варите пиво, печатайте журналы для взрослых, крутите сигареты и продавайте их направо и налево! Но не расслабляйтесь — копы уже унюхали ваш след.",
+  "metaLink": "https://www.meta.com/experiences/crime-shop-simulator-a-prison-boss-game/6710396435653866/",
+  "steamLink": "https://store.steampowered.com/app/2973830/Crime_Shop_Simulator_A_Prison_Boss_Game/",
+  "metaRating": "4.5/5",
+  "steamRating": "85%",
+  "metaPrice": "€17.99",
+  "steamPrice": "17.99€",
+  "hltb": {
+    "mainStory": "1.8h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/cover.webp",
+  "logo": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/logo.webp",
+  "background": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/hero.webp",
+  "trailer": {
+    "youtubeId": "s4PmSOLW0sU",
+    "thumbnail": "https://i.ytimg.com/vi/s4PmSOLW0sU/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_2.webp",
+    "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_3.webp",
+    "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_4.webp",
+    "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_5.webp",
+    "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

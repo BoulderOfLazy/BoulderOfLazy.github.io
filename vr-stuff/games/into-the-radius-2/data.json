@@ -1,0 +1,50 @@
+{
+  "slug": "into-the-radius-2",
+  "title": "Into the Radius 2",
+  "shortDescription": "Теперь с коопом на двоих! (а ещё сиквел переквалифицировался в extraction shooter) Нативно работает только на Quest 3(S)",
+  "longDescription": "Into the Radius 2 — это иммерсивный VR-шутер на выживание, действие которого происходит в мире сюрреалистичных пейзажей и смертоносных сущностей, известных как Печорская Аномалия. Вооружитесь реалистичным оружием и отправляйтесь вглубь тайн этого мира. Поддерживается кооперативный режим для до четырех игроков.",
+  "metaLink": "https://www.meta.com/experiences/into-the-radius-2/6605328856182465/",
+  "steamLink": "https://store.steampowered.com/app/2307350/Into_the_Radius_2/",
+  "metaRating": "4.2/5",
+  "steamRating": "79%",
+  "metaPrice": "€36.99",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "31.3h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/into-the-radius-2/cover.webp",
+  "logo": "/vr-stuff/games/into-the-radius-2/logo.webp",
+  "background": "/vr-stuff/games/into-the-radius-2/background.webp",
+  "trailer": {
+    "youtubeId": "5U0lIaTOhqg",
+    "thumbnail": "https://i.ytimg.com/vi/5U0lIaTOhqg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/into-the-radius-2/screenshot_0.webp",
+    "/vr-stuff/games/into-the-radius-2/screenshot_1.webp",
+    "/vr-stuff/games/into-the-radius-2/screenshot_2.webp",
+    "/vr-stuff/games/into-the-radius-2/screenshot_3.webp",
+    "/vr-stuff/games/into-the-radius-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Post-Apocalyptic",
+      "Survival"
+    ]
+  }
+}

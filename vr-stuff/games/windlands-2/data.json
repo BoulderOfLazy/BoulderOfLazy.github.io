@@ -1,0 +1,48 @@
+{
+  "slug": "windlands-2",
+  "title": "Windlands 2",
+  "shortDescription": "",
+  "longDescription": "Играйте от первого лица и используйте крюк-кошку: вернитесь в мир Windlands в одиночестве или с друзьями! Вооружитесь хватательными крюками и луком, чтобы исследовать руины разрушенного мира. Победите огромных колоссов и спасите мир от древнего зла!",
+  "metaLink": "https://www.meta.com/experiences/windlands-2/5418402731545943/",
+  "steamLink": "https://store.steampowered.com/app/458580/Windlands_2/",
+  "metaRating": "4.3/5",
+  "steamRating": "80%",
+  "metaPrice": "€24.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "4.1h",
+    "mainExtra": "13.3h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/windlands-2/cover.webp",
+  "logo": "/vr-stuff/games/windlands-2/logo.webp",
+  "background": "/vr-stuff/games/windlands-2/background.webp",
+  "trailer": {
+    "youtubeId": "BSeIn9q1jT4",
+    "thumbnail": "https://i.ytimg.com/vi/BSeIn9q1jT4/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/windlands-2/screenshot_0.webp",
+    "/vr-stuff/games/windlands-2/screenshot_1.webp",
+    "/vr-stuff/games/windlands-2/screenshot_2.webp",
+    "/vr-stuff/games/windlands-2/screenshot_3.webp",
+    "/vr-stuff/games/windlands-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Open World"
+    ]
+  }
+}

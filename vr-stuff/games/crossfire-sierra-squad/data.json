@@ -1,0 +1,45 @@
+{
+  "slug": "crossfire-sierra-squad",
+  "title": "Crossfire: Sierra Squad",
+  "shortDescription": "Заниженные отзывы в Steam частично связаны с ожиданиями игроков, которые думали, что это будет мил сим, а на выходе получился аркадный шутер (возможно даже слишком...)",
+  "longDescription": "Неистовый военно-аркадный VR-шутер для одиночного или совместного прохождения. Попадайте в различные боевые ситуации, воюйте в закрытых помещениях и на открытых пространствах — вас ждут 63 задания, 39 видов оружия и 17 типов врагов. Возглавьте элитный отряд и погружайтесь в кипящий вокруг бой.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1636030/Crossfire_Sierra_Squad/",
+  "metaRating": "N/A",
+  "steamRating": "73%",
+  "metaPrice": "—",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "4.2h",
+    "mainExtra": "19.3h",
+    "completionist": "30.7h"
+  },
+  "cover": "/vr-stuff/games/crossfire-sierra-squad/cover.webp",
+  "logo": "/vr-stuff/games/crossfire-sierra-squad/logo.webp",
+  "background": "/vr-stuff/games/crossfire-sierra-squad/background.webp",
+  "trailer": {
+    "youtubeId": "Z3RP_0zONng",
+    "thumbnail": "https://i.ytimg.com/vi/Z3RP_0zONng/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/crossfire-sierra-squad/screenshot_0.webp",
+    "/vr-stuff/games/crossfire-sierra-squad/screenshot_1.webp",
+    "/vr-stuff/games/crossfire-sierra-squad/screenshot_2.webp",
+    "/vr-stuff/games/crossfire-sierra-squad/screenshot_3.webp",
+    "/vr-stuff/games/crossfire-sierra-squad/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

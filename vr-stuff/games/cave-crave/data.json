@@ -1,0 +1,44 @@
+{
+  "slug": "cave-crave",
+  "title": "Cave Crave",
+  "shortDescription": "",
+  "longDescription": "Бросьте вызов страхам в реалистичной VR-спелеологии. Исследуйте вымышленные и реальные пещеры, включая печально известную Натти-Патти, под руководством спасателя. Покоряйте крутые подъемы и узкие лазы, используя физические инструменты и аутентичные техники.",
+  "metaLink": "https://www.meta.com/experiences/cave-crave/7527722310622065/",
+  "steamLink": "https://store.steampowered.com/app/3929970/Cave_Crave_VR/",
+  "metaRating": "4.6/5",
+  "steamRating": "83%",
+  "metaPrice": "€13.99",
+  "steamPrice": "14.79€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/cave-crave/cover.webp",
+  "logo": "/vr-stuff/games/cave-crave/logo.webp",
+  "background": "/vr-stuff/games/cave-crave/background.webp",
+  "trailer": {
+    "youtubeId": "OsUUDussyzI",
+    "thumbnail": "https://i.ytimg.com/vi/OsUUDussyzI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/cave-crave/screenshot_2.webp",
+    "/vr-stuff/games/cave-crave/screenshot_3.webp",
+    "/vr-stuff/games/cave-crave/screenshot_4.webp",
+    "/vr-stuff/games/cave-crave/screenshot_5.webp",
+    "/vr-stuff/games/cave-crave/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

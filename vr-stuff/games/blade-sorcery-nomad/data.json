@@ -1,0 +1,44 @@
+{
+  "slug": "blade-sorcery-nomad",
+  "title": "Blade & Sorcery: Nomad",
+  "shortDescription": "Версия B&S под шлемы. Тоже имеет поддержку модов. Мультиплеер есть в виде мода",
+  "longDescription": "Эпоха невесомого боя мечами с размашистыми движениями в VR подошла к концу. Blade & Sorcery: Nomad — это средневековое фэнтезийное приключение в формате sandbox, не похожее на другие. Оно фокусируется на ближнем, дальнем бое и магии, полностью использующих уникальную и реалистичную систему взаимодействия и боя на основе физики. Созданная исключительно для VR, игра использует детальные хитбоксы для определения столкновений: объекты обладают весом и подчиняются законам физики, существа обладают полной динамикой тел и присутствием, а клинки могут проникать сквозь мягкие материалы или отражать магию. В Blade & Sorcery: Nomad возможности боя ограничены только вашим воображением. Выбирайте свое оружие, свою стойку, свой стиль боя — станьте могучим воином, рейнджером или магом, о котором вы всегда мечтали!",
+  "metaLink": "https://www.meta.com/experiences/blade-sorcery-nomad/2031826350263349/",
+  "steamLink": "",
+  "metaRating": "4.3/5",
+  "steamRating": "N/A",
+  "metaPrice": "€29.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/blade-sorcery-nomad/cover.webp",
+  "logo": "/vr-stuff/games/blade-sorcery-nomad/logo.webp",
+  "background": "/vr-stuff/games/blade-sorcery-nomad/background.webp",
+  "trailer": {
+    "youtubeId": "XBJhiVwllu8",
+    "thumbnail": "https://i.ytimg.com/vi/XBJhiVwllu8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/blade-sorcery-nomad/screenshot_6.webp",
+    "/vr-stuff/games/blade-sorcery-nomad/screenshot_7.webp",
+    "/vr-stuff/games/blade-sorcery-nomad/screenshot_8.webp",
+    "/vr-stuff/games/blade-sorcery-nomad/screenshot_9.webp",
+    "/vr-stuff/games/blade-sorcery-nomad/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

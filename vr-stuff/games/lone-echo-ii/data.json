@@ -1,0 +1,43 @@
+{
+  "slug": "lone-echo-ii",
+  "title": "Lone Echo II",
+  "shortDescription": "",
+  "longDescription": "В Lone Echo II игроки снова войдут в роль андроида Джека, который отправится в новое захватывающее приключение вместе со своей подругой и капитаном Оливией «Лив» Роудс. Долгожданный сиквел Lone Echo возвращает все те инновационные особенности, которые сделали оригинал любимцем игроков по всему миру, включая управление в условиях нулевой гравитации, потрясающую визуальную составляющую и эпическую, эмоциональную историю. Используйте широкий спектр новых инструментов и способностей, чтобы преодолевать сложные испытания, разгадывая тайны далекого будущего.",
+  "metaLink": "https://www.meta.com/experiences/pcvr/lone-echo-ii/1711938725528735/",
+  "steamLink": "",
+  "metaRating": "4.1/5",
+  "steamRating": "N/A",
+  "metaPrice": "€39.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "8.2h",
+    "mainExtra": "11.2h",
+    "completionist": "15h"
+  },
+  "cover": "/vr-stuff/games/lone-echo-ii/cover.webp",
+  "logo": "/vr-stuff/games/lone-echo-ii/logo.webp",
+  "background": "/vr-stuff/games/lone-echo-ii/background.webp",
+  "trailer": {
+    "youtubeId": "delv4U_JlGg",
+    "thumbnail": "https://i.ytimg.com/vi/delv4U_JlGg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/lone-echo-ii/screenshot_0.webp",
+    "/vr-stuff/games/lone-echo-ii/screenshot_1.webp",
+    "/vr-stuff/games/lone-echo-ii/screenshot_2.webp",
+    "/vr-stuff/games/lone-echo-ii/screenshot_3.webp",
+    "/vr-stuff/games/lone-echo-ii/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

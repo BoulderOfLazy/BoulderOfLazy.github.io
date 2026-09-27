@@ -1,0 +1,46 @@
+{
+  "slug": "five-nights-at-freddys-secret-of-the-mimic",
+  "title": "Five Nights at Freddy's: Secret of the Mimic",
+  "shortDescription": "",
+  "longDescription": "Войдите в заброшенную мастерскую поместья костюмов Мюррея и разгадайте тайну, оставленную скрытным изобретателем. В Five Nights at Freddy’s: Secret of the Mimic вы попадете в мир, где каждый темный угол хранит секрет, а каждое мерцание света намекает на постоянную угрозу.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/2215390/Five_Nights_at_Freddys_Secret_of_the_Mimic/",
+  "metaRating": "N/A",
+  "steamRating": "86%",
+  "metaPrice": "—",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "6.3h",
+    "mainExtra": "8.5h",
+    "completionist": "16.4h"
+  },
+  "cover": "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/cover.webp",
+  "logo": "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/logo.webp",
+  "background": "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/background.webp",
+  "trailer": {
+    "youtubeId": "mNk9IBp9Iuc",
+    "thumbnail": "https://i.ytimg.com/vi/mNk9IBp9Iuc/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/screenshot_0.webp",
+    "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/screenshot_1.webp",
+    "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/screenshot_2.webp",
+    "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/screenshot_3.webp",
+    "/vr-stuff/games/five-nights-at-freddys-secret-of-the-mimic/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

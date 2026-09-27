@@ -1,0 +1,43 @@
+{
+  "slug": "vertigo-remastered",
+  "title": "Vertigo Remastered",
+  "shortDescription": "",
+  "longDescription": "Иммерсивный сюжетный шутер, использующий передовые возможности VR-геймплея, Vertigo Remastered представляет собой полную переработку и частичное переосмысление оригинала 2016 года.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1318090/Vertigo_Remastered/",
+  "metaRating": "N/A",
+  "steamRating": "92%",
+  "metaPrice": "—",
+  "steamPrice": "14.99€",
+  "hltb": {
+    "mainStory": "4.1h",
+    "mainExtra": "4.3h",
+    "completionist": "4.8h"
+  },
+  "cover": "/vr-stuff/games/vertigo-remastered/cover.webp",
+  "logo": "/vr-stuff/games/vertigo-remastered/logo.webp",
+  "background": "/vr-stuff/games/vertigo-remastered/background.webp",
+  "trailer": {
+    "youtubeId": "8MndROpf4Yo",
+    "thumbnail": "https://i.ytimg.com/vi/8MndROpf4Yo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vertigo-remastered/screenshot_0.webp",
+    "/vr-stuff/games/vertigo-remastered/screenshot_1.webp",
+    "/vr-stuff/games/vertigo-remastered/screenshot_2.webp",
+    "/vr-stuff/games/vertigo-remastered/screenshot_3.webp",
+    "/vr-stuff/games/vertigo-remastered/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

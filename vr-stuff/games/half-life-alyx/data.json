@@ -1,0 +1,43 @@
+{
+  "slug": "half-life-alyx",
+  "title": "Half-Life: Alyx",
+  "shortDescription": "10/10",
+  "longDescription": "﻿Half-Life: Alyx — это возвращение Valve во вселенную Half-Life в виртуальной реальности. Это история невозможной борьбы с жестокой расой пришельцев, известной как Альянс. События происходят между Half-Life и Half-Life 2. Вы играете за Аликс Вэнс, и вы — единственный шанс человечества на спасение.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/546560/HalfLife_Alyx/",
+  "metaRating": "N/A",
+  "steamRating": "98%",
+  "metaPrice": "—",
+  "steamPrice": "58.99€",
+  "hltb": {
+    "mainStory": "12.2h",
+    "mainExtra": "14.4h",
+    "completionist": "19.1h"
+  },
+  "cover": "/vr-stuff/games/half-life-alyx/cover.webp",
+  "logo": "/vr-stuff/games/half-life-alyx/logo.webp",
+  "background": "/vr-stuff/games/half-life-alyx/background.webp",
+  "trailer": {
+    "youtubeId": "O2W0N3uKXmo",
+    "thumbnail": "https://i.ytimg.com/vi/O2W0N3uKXmo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/half-life-alyx/screenshot_0.webp",
+    "/vr-stuff/games/half-life-alyx/screenshot_1.webp",
+    "/vr-stuff/games/half-life-alyx/screenshot_2.webp",
+    "/vr-stuff/games/half-life-alyx/screenshot_3.webp",
+    "/vr-stuff/games/half-life-alyx/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

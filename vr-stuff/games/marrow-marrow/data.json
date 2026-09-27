@@ -1,0 +1,45 @@
+{
+  "slug": "marrow-marrow",
+  "title": "MARROW MARROW",
+  "shortDescription": "Risk Of Rain + Doom Eternal в VR",
+  "longDescription": "ОСВОИТЕ ДВИЖЕНИЕ. ИСТРЕБИТЕ ВРЕДИТЕЛЕЙ. Ощутите весь захватывающий высокоинтенсивный экшен арена-шутеров, который вы так любите, теперь в VR — максимально близко и лично. Сосредоточьтесь на прицеливании, отточите движения, переиграйте вредителей, и вскоре вы будете пролетать сквозь уровни, оставляя за собой шлейф разрушений.",
+  "metaLink": "https://www.meta.com/experiences/marrow-marrow/9173719072733985/",
+  "steamLink": "https://store.steampowered.com/app/4040710/Marrow_Marrow/",
+  "metaRating": "4.9/5",
+  "steamRating": "100%",
+  "metaPrice": "€12.99",
+  "steamPrice": "12.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "40h"
+  },
+  "cover": "/vr-stuff/games/marrow-marrow/cover.webp",
+  "logo": "/vr-stuff/games/marrow-marrow/logo.webp",
+  "background": "/vr-stuff/games/marrow-marrow/background.webp",
+  "trailer": {
+    "youtubeId": "_RrMEV-8R0c",
+    "thumbnail": "https://i.ytimg.com/vi/_RrMEV-8R0c/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/marrow-marrow/screenshot_0.webp",
+    "/vr-stuff/games/marrow-marrow/screenshot_1.webp",
+    "/vr-stuff/games/marrow-marrow/screenshot_2.webp",
+    "/vr-stuff/games/marrow-marrow/screenshot_3.webp",
+    "/vr-stuff/games/marrow-marrow/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

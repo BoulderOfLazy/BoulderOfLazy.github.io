@@ -1,0 +1,46 @@
+{
+  "slug": "red-matter",
+  "title": "Red Matter",
+  "shortDescription": "",
+  "longDescription": "Войдите на заброшенную базу времен Холодной войны на спутнике Сатурна в этом атмосферном VR-приключении с головоломками. Сканируйте улики, переводите сообщения на волгравийском языке, управляйте странными механизмами и раскройте научно-фантастическую тайну, которая становится всё более сюрреалистичной с каждым новым открытием.",
+  "metaLink": "https://www.meta.com/experiences/red-matter/2180753588712484/",
+  "steamLink": "https://store.steampowered.com/app/966680/Red_Matter/",
+  "metaRating": "4.6/5",
+  "steamRating": "90%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "3h",
+    "mainExtra": "3.2h",
+    "completionist": "3.3h"
+  },
+  "cover": "/vr-stuff/games/red-matter/cover.webp",
+  "logo": "/vr-stuff/games/red-matter/logo.webp",
+  "background": "/vr-stuff/games/red-matter/background.webp",
+  "trailer": {
+    "youtubeId": "pR0ys_OjWho",
+    "thumbnail": "https://i.ytimg.com/vi/pR0ys_OjWho/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/red-matter/screenshot_0.webp",
+    "/vr-stuff/games/red-matter/screenshot_1.webp",
+    "/vr-stuff/games/red-matter/screenshot_2.webp",
+    "/vr-stuff/games/red-matter/screenshot_3.webp",
+    "/vr-stuff/games/red-matter/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

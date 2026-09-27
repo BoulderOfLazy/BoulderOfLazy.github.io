@@ -1,0 +1,44 @@
+{
+  "slug": "beat-the-beats",
+  "title": "Beat The Beats",
+  "shortDescription": "Beat Saber, который гораздо больше со стороны похож на обычную разминку. Имеется редактор уровней в Steam Workshop",
+  "longDescription": "Beat the Beats — это удивительное сочетание ритмической игры и бокса! Наносите боксерские удары, чтобы пройти уровни этой музыкальной аркады в виртуальной реальности. Подвигайтесь, зарядитесь энергией и попадите в ритм!",
+  "metaLink": "https://www.meta.com/experiences/beat-the-beats/6304787526300997/",
+  "steamLink": "https://store.steampowered.com/app/2677480/Beat_the_Beats_VR/",
+  "metaRating": "4.5/5",
+  "steamRating": "95%",
+  "metaPrice": "€12.99",
+  "steamPrice": "20.49€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/beat-the-beats/cover.webp",
+  "logo": "/vr-stuff/games/beat-the-beats/logo.webp",
+  "background": "/vr-stuff/games/beat-the-beats/background.webp",
+  "trailer": {
+    "youtubeId": "MTMW8fre30s",
+    "thumbnail": "https://i.ytimg.com/vi/MTMW8fre30s/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/beat-the-beats/screenshot_6.webp",
+    "/vr-stuff/games/beat-the-beats/screenshot_7.webp",
+    "/vr-stuff/games/beat-the-beats/screenshot_8.webp",
+    "/vr-stuff/games/beat-the-beats/screenshot_9.webp",
+    "/vr-stuff/games/beat-the-beats/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Rhythm"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

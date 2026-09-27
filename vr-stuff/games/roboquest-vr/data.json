@@ -1,0 +1,46 @@
+{
+  "slug": "roboquest-vr",
+  "title": "Roboquest VR",
+  "shortDescription": "Отсутствует кроссплей с NonVR игроками((",
+  "longDescription": "Будущее охвачено пламенем и захвачено безжалостными машинами, но ты создан для того, чтобы дать им отпор. Roboquest VR — это молниеносно быстрый roguelite FPS, где скорость, огневая мощь и реакция — твои главные преимущества. Адаптируйся, выживай и перезагрузи будущее!",
+  "metaLink": "https://www.meta.com/experiences/roboquest-vr/9269393463181825/",
+  "steamLink": "https://store.steampowered.com/app/3151760/Roboquest_VR/",
+  "metaRating": "4.7/5",
+  "steamRating": "87%",
+  "metaPrice": "€25.99",
+  "steamPrice": "25.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/roboquest-vr/cover.webp",
+  "logo": "/vr-stuff/games/roboquest-vr/logo.webp",
+  "background": "/vr-stuff/games/roboquest-vr/background.webp",
+  "trailer": {
+    "youtubeId": "wh4pTtD9Q5g",
+    "thumbnail": "https://i.ytimg.com/vi/wh4pTtD9Q5g/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/roboquest-vr/screenshot_0.webp",
+    "/vr-stuff/games/roboquest-vr/screenshot_1.webp",
+    "/vr-stuff/games/roboquest-vr/screenshot_2.webp",
+    "/vr-stuff/games/roboquest-vr/screenshot_3.webp",
+    "/vr-stuff/games/roboquest-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

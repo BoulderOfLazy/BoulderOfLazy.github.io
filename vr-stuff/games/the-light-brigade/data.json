@@ -1,0 +1,45 @@
+{
+  "slug": "the-light-brigade",
+  "title": "The Light Brigade",
+  "shortDescription": "",
+  "longDescription": "Отмеченный наградами VR-шутер в жанре roguelike с реалистичной стрельбой и захватывающей магией света. Повышайте свой ранг в The Light Brigade, открывайте новое оружие, улучшения, классы и способности и сражайтесь за возвращение света во тьму.",
+  "metaLink": "https://www.meta.com/experiences/the-light-brigade/2681027292004911/",
+  "steamLink": "https://store.steampowered.com/app/1579880/The_Light_Brigade/",
+  "metaRating": "4.4/5",
+  "steamRating": "88%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.50€",
+  "hltb": {
+    "mainStory": "7.6h",
+    "mainExtra": "11.3h",
+    "completionist": "17.7h"
+  },
+  "cover": "/vr-stuff/games/the-light-brigade/cover.webp",
+  "logo": "/vr-stuff/games/the-light-brigade/logo.webp",
+  "background": "/vr-stuff/games/the-light-brigade/background.webp",
+  "trailer": {
+    "youtubeId": "hJ6EssYry18",
+    "thumbnail": "https://i.ytimg.com/vi/hJ6EssYry18/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-light-brigade/screenshot_0.webp",
+    "/vr-stuff/games/the-light-brigade/screenshot_1.webp",
+    "/vr-stuff/games/the-light-brigade/screenshot_2.webp",
+    "/vr-stuff/games/the-light-brigade/screenshot_3.webp",
+    "/vr-stuff/games/the-light-brigade/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "memoreum",
+  "title": "MEMOREUM",
+  "shortDescription": "У игры есть страница Steam, но релиз на ПК маловероятен в связи с <a href=\"https://www.uploadvr.com/layoffs-at-ghosts-of-tabor-developer-shutdowns-for-3-other-vr-games/\" target=\"_blank\" onclick=\"event.stopPropagation()\">последними новостями</a>",
+  "longDescription": "На дворе 2311 год. Инфекция Ихора захватила последний корабль человечества. Вы — доктор Отто Хадсон, пытающийся разгадать тайну вспышки в то время, как ваше раздробленное сознание ускользает из реальности. Вырвавшись из капсулы стазиса, вы обнаруживаете, что корабль сильно изменился по сравнению с тем, который вы покинули. У выживших не осталось ни капли человечности, и ваша единственная надежда исходит от искаженного голоса, ведущего вас сквозь тьму. Реальность ли это или всего лишь очередной симптом?",
+  "metaLink": "https://www.meta.com/experiences/memoreum/9135633756555622/",
+  "steamLink": "",
+  "metaRating": "4.4/5",
+  "steamRating": "N/A",
+  "metaPrice": "€13.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/memoreum/cover.webp",
+  "logo": "/vr-stuff/games/memoreum/logo.webp",
+  "background": "/vr-stuff/games/memoreum/background.webp",
+  "trailer": {
+    "youtubeId": "WchTF6ufH9k",
+    "thumbnail": "https://i.ytimg.com/vi/WchTF6ufH9k/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/memoreum/screenshot_2.webp",
+    "/vr-stuff/games/memoreum/screenshot_3.webp",
+    "/vr-stuff/games/memoreum/screenshot_4.webp",
+    "/vr-stuff/games/memoreum/screenshot_5.webp",
+    "/vr-stuff/games/memoreum/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "assassins-creed-nexus-vr",
+  "title": "Assassin’s Creed Nexus VR",
+  "shortDescription": "Набор историй про трёх ГГ из разный частей серии. Геймплей походит на первоисточник. Правда, по открытому миру побродить дают не так много, как хотелось бы. И не стоит забывать, что эта игра сделана сегодняшней Ubisoft 2020-ых, так что ожидайте крутые идеи реализованные вполсилы",
+  "longDescription": "Сыграйте за трех легендарных ассасинов в новом полномасштабном экшн-приключении из серии Assassin’s Creed. Испытайте трепет во время паркура, прилив восторга в бою и напряженное ожидание, когда прячетесь в тени. Вас ждет непревзойденный уровень погружения в образ ассасина. Раскройте новые воспоминания Эцио Аудиторе, Кассандры и Коннора и помешайте планам «Абстерго», которая хочет управлять убеждениями людей.",
+  "metaLink": "https://www.meta.com/experiences/assassins-creed-nexus-vr/5812519008825194/",
+  "steamLink": "",
+  "metaRating": "4.3/5",
+  "steamRating": "N/A",
+  "metaPrice": "€39.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "12.5h",
+    "mainExtra": "15h",
+    "completionist": "18.5h"
+  },
+  "cover": "/vr-stuff/games/assassins-creed-nexus-vr/cover.webp",
+  "logo": "/vr-stuff/games/assassins-creed-nexus-vr/logo.webp",
+  "background": "/vr-stuff/games/assassins-creed-nexus-vr/background.webp",
+  "trailer": {
+    "youtubeId": "6qjhB9xeELo",
+    "thumbnail": "https://i.ytimg.com/vi/6qjhB9xeELo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/assassins-creed-nexus-vr/screenshot_0.webp",
+    "/vr-stuff/games/assassins-creed-nexus-vr/screenshot_1.webp",
+    "/vr-stuff/games/assassins-creed-nexus-vr/screenshot_2.webp",
+    "/vr-stuff/games/assassins-creed-nexus-vr/screenshot_3.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Historical",
+      "Narrative"
+    ]
+  }
+}

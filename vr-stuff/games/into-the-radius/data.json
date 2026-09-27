@@ -1,0 +1,49 @@
+{
+  "slug": "into-the-radius",
+  "title": "Into The Radius",
+  "shortDescription": "Духовный наследник \"Пикника на Обочине\" в VR",
+  "longDescription": "Into the Radius — однопользовательский VR-шутер на выживание. Исследуйте пустоши Радиуса, полные монстров и опасных аномалий. Защищайтесь с помощью реалистичного оружия, собирайте удивительные артефакты и раскрывайте секреты аномальной местности.",
+  "metaLink": "https://www.meta.com/experiences/into-the-radius/5817243991680545/",
+  "steamLink": "https://store.steampowered.com/app/1012790/Into_the_Radius_VR/",
+  "metaRating": "4.7/5",
+  "steamRating": "93%",
+  "metaPrice": "€29.99",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "22.9h",
+    "mainExtra": "34.6h",
+    "completionist": "52.4h"
+  },
+  "cover": "/vr-stuff/games/into-the-radius/cover.webp",
+  "logo": "/vr-stuff/games/into-the-radius/logo.webp",
+  "background": "/vr-stuff/games/into-the-radius/background.webp",
+  "trailer": {
+    "youtubeId": "ZhnrBeQkOXI",
+    "thumbnail": "https://i.ytimg.com/vi/ZhnrBeQkOXI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/into-the-radius/screenshot_0.webp",
+    "/vr-stuff/games/into-the-radius/screenshot_1.webp",
+    "/vr-stuff/games/into-the-radius/screenshot_2.webp",
+    "/vr-stuff/games/into-the-radius/screenshot_3.webp",
+    "/vr-stuff/games/into-the-radius/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Post-Apocalyptic",
+      "Survival"
+    ]
+  }
+}

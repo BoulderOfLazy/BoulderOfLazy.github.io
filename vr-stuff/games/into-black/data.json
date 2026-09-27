@@ -1,0 +1,47 @@
+{
+  "slug": "into-black",
+  "title": "Into Black",
+  "shortDescription": "Чем-то похожа на Deep Rock Galactic",
+  "longDescription": "Исследуйте, добывайте, крафтите и боритесь за выживание в темных глубинах этого одиночного или кооперативного VR экшн-приключения.",
+  "metaLink": "https://www.meta.com/experiences/into-black/5289374691122516/",
+  "steamLink": "https://store.steampowered.com/app/3606610/Into_Black/",
+  "metaRating": "4.7/5",
+  "steamRating": "87%",
+  "metaPrice": "€14.99",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "16h",
+    "mainExtra": "16.5h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/into-black/cover.webp",
+  "logo": "/vr-stuff/games/into-black/logo.webp",
+  "background": "/vr-stuff/games/into-black/background.webp",
+  "trailer": {
+    "youtubeId": "xzKNIjss4Q8",
+    "thumbnail": "https://i.ytimg.com/vi/xzKNIjss4Q8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/into-black/screenshot_0.webp",
+    "/vr-stuff/games/into-black/screenshot_1.webp",
+    "/vr-stuff/games/into-black/screenshot_2.webp",
+    "/vr-stuff/games/into-black/screenshot_3.webp",
+    "/vr-stuff/games/into-black/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "RPG",
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "hellsweeper-vr",
+  "title": "Hellsweeper VR",
+  "shortDescription": "Рогалик-шутер. Можно ебашить сальтухи",
+  "longDescription": "Hellsweeper VR — это динамичный боевик от первого лица. Проложите себе путь по подземному царству, овладейте оружием и магией стихий или падите под неумолимым натиском оскверненных адом душ. Возьмите волю в кулак и спуститесь в преисподнюю.",
+  "metaLink": "https://www.meta.com/experiences/hellsweeper-vr/3589244014451286/",
+  "steamLink": "https://store.steampowered.com/app/1341490/Hellsweeper_VR/",
+  "metaRating": "4.4/5",
+  "steamRating": "85%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "5.6h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/hellsweeper-vr/cover.webp",
+  "logo": "/vr-stuff/games/hellsweeper-vr/logo.webp",
+  "background": "/vr-stuff/games/hellsweeper-vr/background.webp",
+  "trailer": {
+    "youtubeId": "k86sMKCpWR0",
+    "thumbnail": "https://i.ytimg.com/vi/k86sMKCpWR0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/hellsweeper-vr/screenshot_0.webp",
+    "/vr-stuff/games/hellsweeper-vr/screenshot_1.webp",
+    "/vr-stuff/games/hellsweeper-vr/screenshot_2.webp",
+    "/vr-stuff/games/hellsweeper-vr/screenshot_3.webp",
+    "/vr-stuff/games/hellsweeper-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "slug": "battlegroupvr",
+  "title": "BattleGroupVR",
+  "shortDescription": "Космическая RTS, где ты управляешь своим космическим флотом прямо с палубы. Есть сингплеер, состоящий из набора миссий, а также PVP режимы. Особенно впечатляет тот факт, что это проект одного человека. На данный момент разрабатывается сиквел, причём не только на ПК, но и на шлемы Quest",
+  "longDescription": "BattleGroupVR — это космическая стратегия в реальном времени от первого лица, где вы ведете флот мощных боевых кораблей в бой с мостика собственного флагмана. Соберите свой флот, улучшите снаряжение, обучите капитанов, вступите в бой с врагом и захватите сектор. Постарайтесь не погибнуть вместе с кораблем.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/1178780",
+  "metaRating": "N/A",
+  "steamRating": "92%",
+  "metaPrice": "—",
+  "steamPrice": "20.99€",
+  "hltb": {
+    "mainStory": "5.5h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/battlegroupvr/cover.webp",
+  "logo": "/vr-stuff/games/battlegroupvr/logo.webp",
+  "background": "/vr-stuff/games/battlegroupvr/background.webp",
+  "trailer": {
+    "youtubeId": "aQLncTJBHXI",
+    "thumbnail": "https://i.ytimg.com/vi/aQLncTJBHXI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/battlegroupvr/screenshot_0.webp",
+    "/vr-stuff/games/battlegroupvr/screenshot_1.webp",
+    "/vr-stuff/games/battlegroupvr/screenshot_2.webp",
+    "/vr-stuff/games/battlegroupvr/screenshot_3.webp",
+    "/vr-stuff/games/battlegroupvr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Strategy"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

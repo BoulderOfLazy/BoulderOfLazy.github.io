@@ -1,0 +1,44 @@
+{
+  "slug": "puzzling-places",
+  "title": "Puzzling Places",
+  "shortDescription": "3D паззлы",
+  "longDescription": "Спокойная 3D-пазл-игра о создании детализированных миниатюрных диорам мест со всего мира.",
+  "metaLink": "https://www.meta.com/experiences/puzzling-places/3931148300302917/",
+  "steamLink": "https://store.steampowered.com/app/3530820/Puzzling_Places__3D_Jigsaw_Sim/",
+  "metaRating": "4.8/5",
+  "steamRating": "97%",
+  "metaPrice": "€14.99",
+  "steamPrice": "7.99€",
+  "hltb": {
+    "mainStory": "4.4h",
+    "mainExtra": "22.3h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/puzzling-places/cover.webp",
+  "logo": "/vr-stuff/games/puzzling-places/logo.webp",
+  "background": "/vr-stuff/games/puzzling-places/background.webp",
+  "trailer": {
+    "youtubeId": "gmuGRIHfmRQ",
+    "thumbnail": "https://i.ytimg.com/vi/gmuGRIHfmRQ/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/puzzling-places/screenshot_6.webp",
+    "/vr-stuff/games/puzzling-places/screenshot_7.webp",
+    "/vr-stuff/games/puzzling-places/screenshot_8.webp",
+    "/vr-stuff/games/puzzling-places/screenshot_9.webp",
+    "/vr-stuff/games/puzzling-places/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

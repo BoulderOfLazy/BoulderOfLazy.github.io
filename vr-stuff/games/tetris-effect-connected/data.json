@@ -1,0 +1,46 @@
+{
+  "slug": "tetris-effect-connected",
+  "title": "Tetris Effect: Connected",
+  "shortDescription": "",
+  "longDescription": "Tetris® Effect: Connected — это такой Tetris, какой вам еще не доводилось видеть, слышать или чувствовать: невероятно затягивающая, уникальная и потрясающе красивая реинтерпретация одной из самых популярных игр-головоломок в истории.",
+  "metaLink": "https://www.meta.com/experiences/tetris-effect-connected/3386618894743567/",
+  "steamLink": "https://store.steampowered.com/app/1003590/Tetris_Effect_Connected/",
+  "metaRating": "4.5/5",
+  "steamRating": "94%",
+  "metaPrice": "€29.99",
+  "steamPrice": "33.99€",
+  "hltb": {
+    "mainStory": "3.3h",
+    "mainExtra": "8.3h",
+    "completionist": "64.1h"
+  },
+  "cover": "/vr-stuff/games/tetris-effect-connected/cover.webp",
+  "logo": "/vr-stuff/games/tetris-effect-connected/logo.webp",
+  "background": "/vr-stuff/games/tetris-effect-connected/background.webp",
+  "trailer": {
+    "youtubeId": "yDzPCTgOq84",
+    "thumbnail": "https://i.ytimg.com/vi/yDzPCTgOq84/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/tetris-effect-connected/screenshot_4.webp",
+    "/vr-stuff/games/tetris-effect-connected/screenshot_5.webp",
+    "/vr-stuff/games/tetris-effect-connected/screenshot_6.webp",
+    "/vr-stuff/games/tetris-effect-connected/screenshot_7.webp",
+    "/vr-stuff/games/tetris-effect-connected/screenshot_8.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

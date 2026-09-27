@@ -1,0 +1,47 @@
+{
+  "slug": "serious-sam-vr-the-first-encounter",
+  "title": "Serious Sam VR: The First Encounter",
+  "shortDescription": "Порт Serious Sam в VR. Также имеются VR версии второй и третьей частей",
+  "longDescription": "Serious Sam VR: The First Encounter — это динамичный аркадный экшн-шутер от первого лица, включающий одиночную и кооперативную кампании, различные многопользовательские режимы, и всё это представлено в великолепном формате VR с различными способами передвижения.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/552450/Serious_Sam_VR_The_First_Encounter/",
+  "metaRating": "N/A",
+  "steamRating": "87%",
+  "metaPrice": "—",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "5.3h",
+    "mainExtra": "6.9h",
+    "completionist": "10.1h"
+  },
+  "cover": "/vr-stuff/games/serious-sam-vr-the-first-encounter/cover.webp",
+  "logo": "/vr-stuff/games/serious-sam-vr-the-first-encounter/logo.webp",
+  "background": "/vr-stuff/games/serious-sam-vr-the-first-encounter/background.webp",
+  "trailer": {
+    "youtubeId": "wfULgftxJOE",
+    "thumbnail": "https://i.ytimg.com/vi/wfULgftxJOE/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/serious-sam-vr-the-first-encounter/screenshot_0.webp",
+    "/vr-stuff/games/serious-sam-vr-the-first-encounter/screenshot_1.webp",
+    "/vr-stuff/games/serious-sam-vr-the-first-encounter/screenshot_2.webp",
+    "/vr-stuff/games/serious-sam-vr-the-first-encounter/screenshot_3.webp",
+    "/vr-stuff/games/serious-sam-vr-the-first-encounter/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

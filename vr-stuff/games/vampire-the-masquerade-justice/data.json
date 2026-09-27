@@ -1,0 +1,47 @@
+{
+  "slug": "vampire-the-masquerade-justice",
+  "title": "Vampire: The Masquerade - Justice",
+  "shortDescription": "",
+  "longDescription": "Стань вампиром. Нападай из тени и пей кровь своей добычи. Используй скрытность, убеждение и арсенал улучшаемых способностей, чтобы незаметно проскользнуть мимо врагов или покарать виновных в злачных переулках ночной Венеции.",
+  "metaLink": "https://www.meta.com/experiences/vampire-the-masquerade-justice/6179032068838054/",
+  "steamLink": "https://store.steampowered.com/app/2431700/Vampire_The_Masquerade__Justice/",
+  "metaRating": "4.0/5",
+  "steamRating": "64%",
+  "metaPrice": "€29.99",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "6.7h",
+    "mainExtra": "9.5h",
+    "completionist": "13.5h"
+  },
+  "cover": "/vr-stuff/games/vampire-the-masquerade-justice/cover.webp",
+  "logo": "/vr-stuff/games/vampire-the-masquerade-justice/logo.webp",
+  "background": "/vr-stuff/games/vampire-the-masquerade-justice/background.webp",
+  "trailer": {
+    "youtubeId": "EOkoStz19yo",
+    "thumbnail": "https://i.ytimg.com/vi/EOkoStz19yo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vampire-the-masquerade-justice/screenshot_0.webp",
+    "/vr-stuff/games/vampire-the-masquerade-justice/screenshot_1.webp",
+    "/vr-stuff/games/vampire-the-masquerade-justice/screenshot_2.webp",
+    "/vr-stuff/games/vampire-the-masquerade-justice/screenshot_3.webp",
+    "/vr-stuff/games/vampire-the-masquerade-justice/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "RPG",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

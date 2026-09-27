@@ -1,0 +1,47 @@
+{
+  "slug": "moss-book-ii",
+  "title": "Moss: Book II",
+  "shortDescription": "",
+  "longDescription": "Квилл вернулась, и за ней охотятся. Силы, что стремятся уничтожить этот мир, жаждут обрести волшебный кристалл, и пойдут на все, лишь бы выцарапать его у нее из лапок. И все же лишь вы сможете дать Квилл сил спасти этот мир и вместе с ней стать легендой.",
+  "metaLink": "https://www.meta.com/experiences/moss-book-ii/4395292760584049/",
+  "steamLink": "https://store.steampowered.com/app/2059670/Moss_II_VR/",
+  "metaRating": "4.9/5",
+  "steamRating": "99%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "6h",
+    "mainExtra": "6.1h",
+    "completionist": "7.6h"
+  },
+  "cover": "/vr-stuff/games/moss-book-ii/cover.webp",
+  "logo": "/vr-stuff/games/moss-book-ii/logo.webp",
+  "background": "/vr-stuff/games/moss-book-ii/background.webp",
+  "trailer": {
+    "youtubeId": "1dcFkH4yqMI",
+    "thumbnail": "https://i.ytimg.com/vi/1dcFkH4yqMI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/moss-book-ii/screenshot_0.webp",
+    "/vr-stuff/games/moss-book-ii/screenshot_1.webp",
+    "/vr-stuff/games/moss-book-ii/screenshot_2.webp",
+    "/vr-stuff/games/moss-book-ii/screenshot_3.webp",
+    "/vr-stuff/games/moss-book-ii/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

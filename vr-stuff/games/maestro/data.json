@@ -1,0 +1,44 @@
+{
+  "slug": "maestro",
+  "title": "Maestro",
+  "shortDescription": "",
+  "longDescription": "Maestro это уникальная VR-ритм-игра, в которой вы управляете симфоническим оркестром, используя только свои руки.Каждое движение имеет значение: система точно отслеживает ваши жесты, чтобы удерживать темп, давать сигналы инструментам и формировать музыку в реальном времени.",
+  "metaLink": "https://www.meta.com/experiences/maestro/6963344583787383/",
+  "steamLink": "https://store.steampowered.com/app/2701700/Maestro/",
+  "metaRating": "4.7/5",
+  "steamRating": "96%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.50€",
+  "hltb": {
+    "mainStory": "2.5h",
+    "mainExtra": "3h",
+    "completionist": "4.5h"
+  },
+  "cover": "/vr-stuff/games/maestro/cover.webp",
+  "logo": "/vr-stuff/games/maestro/logo.webp",
+  "background": "/vr-stuff/games/maestro/background.webp",
+  "trailer": {
+    "youtubeId": "buBb-JH9JLA",
+    "thumbnail": "https://i.ytimg.com/vi/buBb-JH9JLA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/maestro/screenshot_6.webp",
+    "/vr-stuff/games/maestro/screenshot_7.webp",
+    "/vr-stuff/games/maestro/screenshot_8.webp",
+    "/vr-stuff/games/maestro/screenshot_9.webp",
+    "/vr-stuff/games/maestro/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Rhythm"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

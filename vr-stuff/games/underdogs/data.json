@@ -1,0 +1,46 @@
+{
+  "slug": "underdogs",
+  "title": "UNDERDOGS",
+  "shortDescription": "",
+  "longDescription": "АНДЕГРАУНДНЫЕ БОИ МЕХОВ! Управляй пятитонным металлическим мехом и круши всё на аренах, погружаясь в мрачные сцены жестокого насилия!",
+  "metaLink": "https://www.meta.com/experiences/underdogs/5302178529865980/",
+  "steamLink": "https://store.steampowered.com/app/2441700/UNDERDOGS/",
+  "metaRating": "4.8/5",
+  "steamRating": "97%",
+  "metaPrice": "€29.99",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "5.1h",
+    "mainExtra": "15h",
+    "completionist": "23h"
+  },
+  "cover": "/vr-stuff/games/underdogs/cover.webp",
+  "logo": "/vr-stuff/games/underdogs/logo.webp",
+  "background": "/vr-stuff/games/underdogs/background.webp",
+  "trailer": {
+    "youtubeId": "9rt2iuTVAcU",
+    "thumbnail": "https://i.ytimg.com/vi/9rt2iuTVAcU/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/underdogs/screenshot_2.webp",
+    "/vr-stuff/games/underdogs/screenshot_3.webp",
+    "/vr-stuff/games/underdogs/screenshot_4.webp",
+    "/vr-stuff/games/underdogs/screenshot_5.webp",
+    "/vr-stuff/games/underdogs/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Roguelike"
+    ],
+    "gameModes": [
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

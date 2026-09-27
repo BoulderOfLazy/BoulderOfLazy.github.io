@@ -1,0 +1,45 @@
+{
+  "slug": "arken-age",
+  "title": "Arken Age",
+  "shortDescription": "",
+  "longDescription": "Arken Age - приключенческая VR-игра, действие которой разворачивается в Bio-Chasm, терраформированном фантастическом мире, созданном Grand Arborist. Участвуйте в боях, основанных на полной физике и свободно исследуйте густонаселенную среду, находящуюся в осаде нейронной порчи Hyperion.",
+  "metaLink": "https://www.meta.com/experiences/arken-age/29923535407244981/",
+  "steamLink": "https://store.steampowered.com/app/2274200",
+  "metaRating": "4.9/5",
+  "steamRating": "90%",
+  "metaPrice": "€27.99",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "9h",
+    "mainExtra": "12.1h",
+    "completionist": "19.3h"
+  },
+  "cover": "/vr-stuff/games/arken-age/cover.webp",
+  "logo": "/vr-stuff/games/arken-age/logo.webp",
+  "background": "/vr-stuff/games/arken-age/background.webp",
+  "trailer": {
+    "youtubeId": "hEL9NlXnnVo",
+    "thumbnail": "https://i.ytimg.com/vi/hEL9NlXnnVo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/arken-age/screenshot_0.webp",
+    "/vr-stuff/games/arken-age/screenshot_1.webp",
+    "/vr-stuff/games/arken-age/screenshot_2.webp",
+    "/vr-stuff/games/arken-age/screenshot_3.webp",
+    "/vr-stuff/games/arken-age/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "RPG",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

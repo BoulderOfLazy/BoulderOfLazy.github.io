@@ -1,0 +1,46 @@
+{
+  "slug": "tactical-assault-vr",
+  "title": "Tactical Assault VR",
+  "shortDescription": "",
+  "longDescription": "Tactical Assault VR — это напряжённый тактический шутер, в котором вы используете реальные тактики CQB (ближнего боя), чтобы занять позиции перед дверью, взломать её и устранить угрозы. Играйте соло или присоединяйтесь к онлайн-кооперативному отряду спецназа в миссиях по всему миру.",
+  "metaLink": "https://www.meta.com/experiences/tactical-assault-vr/5190911237633299/",
+  "steamLink": "https://store.steampowered.com/app/2314160/Tactical_Assault_VR/",
+  "metaRating": "4.4/5",
+  "steamRating": "77%",
+  "metaPrice": "€17.99",
+  "steamPrice": "17.49€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/tactical-assault-vr/cover.webp",
+  "logo": "/vr-stuff/games/tactical-assault-vr/logo.webp",
+  "background": "/vr-stuff/games/tactical-assault-vr/background.webp",
+  "trailer": {
+    "youtubeId": "Tdyi6LClgkI",
+    "thumbnail": "https://i.ytimg.com/vi/Tdyi6LClgkI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/tactical-assault-vr/screenshot_6.webp",
+    "/vr-stuff/games/tactical-assault-vr/screenshot_7.webp",
+    "/vr-stuff/games/tactical-assault-vr/screenshot_8.webp",
+    "/vr-stuff/games/tactical-assault-vr/screenshot_9.webp",
+    "/vr-stuff/games/tactical-assault-vr/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

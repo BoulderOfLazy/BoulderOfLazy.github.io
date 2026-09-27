@@ -1,0 +1,46 @@
+{
+  "slug": "payday-aces-high",
+  "title": "Payday: Aces High",
+  "shortDescription": "",
+  "longDescription": "Ничто не сравнится с моментом, когда надеваешь маску. Планируй дерзкие задания, устраивай стильный хаос и свергай бизнес-титанов — одно взрывное ограбление за раз. Высокие ставки, большие деньги, никакой пощады: PAYDAY: Aces High — это эталонная VR кооперативная игра про ограбления для команды до 4 игроков. Месть еще никогда не приносила такого удовольствия.",
+  "metaLink": "https://www.meta.com/experiences/payday-aces-high/9059428207447106/",
+  "steamLink": "https://store.steampowered.com/app/3456660/PAYDAY_Aces_High/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "4 квартал 2026",
+  "steamPrice": "4 квартал 2026",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/payday-aces-high/cover.webp",
+  "logo": "/vr-stuff/games/payday-aces-high/logo.webp",
+  "background": "/vr-stuff/games/payday-aces-high/background.webp",
+  "trailer": {
+    "youtubeId": "s2azupCPOcA",
+    "thumbnail": "https://i.ytimg.com/vi/s2azupCPOcA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/payday-aces-high/screenshot_6.webp",
+    "/vr-stuff/games/payday-aces-high/screenshot_7.webp",
+    "/vr-stuff/games/payday-aces-high/screenshot_8.webp",
+    "/vr-stuff/games/payday-aces-high/screenshot_9.webp",
+    "/vr-stuff/games/payday-aces-high/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

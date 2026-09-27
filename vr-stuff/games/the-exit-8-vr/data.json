@@ -1,0 +1,46 @@
+{
+  "slug": "the-exit-8-vr",
+  "title": "The Exit 8 VR",
+  "shortDescription": "Прямой порт игры. Из изменений только немного упрощённая графика на Quest, отчего некоторые аномалии заметить гораздо проще. 6/10",
+  "longDescription": "Популярная инди-игра «The Exit 8» возродилась и обрела виртуальную жизнь в виде «The Exit 8 VR»! Испытайте жуткую и захватывающую атмосферу подземных переходов Японии, теперь с новыми аномалиями!",
+  "metaLink": "https://www.meta.com/experiences/the-exit-8-vr/7683906495049890/",
+  "steamLink": "https://store.steampowered.com/app/3193770/The_Exit_8_VR/",
+  "metaRating": "4.4/5",
+  "steamRating": "84%",
+  "metaPrice": "€6.99",
+  "steamPrice": "6.89€",
+  "hltb": {
+    "mainStory": "0.7h",
+    "mainExtra": "1h",
+    "completionist": "1.1h"
+  },
+  "cover": "/vr-stuff/games/the-exit-8-vr/cover.webp",
+  "logo": "/vr-stuff/games/the-exit-8-vr/logo.webp",
+  "background": "/vr-stuff/games/the-exit-8-vr/background.webp",
+  "trailer": {
+    "youtubeId": "EVr6e-gzFUU",
+    "thumbnail": "https://i.ytimg.com/vi/EVr6e-gzFUU/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-exit-8-vr/screenshot_0.webp",
+    "/vr-stuff/games/the-exit-8-vr/screenshot_1.webp",
+    "/vr-stuff/games/the-exit-8-vr/screenshot_2.webp",
+    "/vr-stuff/games/the-exit-8-vr/screenshot_3.webp",
+    "/vr-stuff/games/the-exit-8-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror"
+    ]
+  }
+}

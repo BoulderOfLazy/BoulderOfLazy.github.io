@@ -1,0 +1,43 @@
+{
+  "slug": "among-giants",
+  "title": "Among Giants",
+  "shortDescription": "Духовный наследник Shadow of The Colossus в VR",
+  "longDescription": "Among Giants — это игра в открытом мире, где игрок может исследовать планету в собственном темпе, расшифровывая инопланетный язык, чтобы лучше понять, что случилось с человечеством, охотясь на колоссальных гигантов, блуждающих по миру, и извлекая их последние воспоминания.",
+  "metaLink": "https://www.meta.com/experiences/among-giants/25060508500262559/",
+  "steamLink": "",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "€17.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/among-giants/cover.webp",
+  "logo": "/vr-stuff/games/among-giants/logo.webp",
+  "background": "/vr-stuff/games/among-giants/background.webp",
+  "trailer": {
+    "youtubeId": "VUMGOm87fmo",
+    "thumbnail": "https://i.ytimg.com/vi/VUMGOm87fmo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/among-giants/screenshot_0.webp",
+    "/vr-stuff/games/among-giants/screenshot_1.webp",
+    "/vr-stuff/games/among-giants/screenshot_2.webp",
+    "/vr-stuff/games/among-giants/screenshot_3.webp",
+    "/vr-stuff/games/among-giants/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Open World"
+    ]
+  }
+}

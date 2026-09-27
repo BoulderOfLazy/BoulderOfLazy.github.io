@@ -1,0 +1,46 @@
+{
+  "slug": "trombone-champ-unflattened",
+  "title": "Trombone Champ: Unflattened!",
+  "shortDescription": "",
+  "longDescription": "Пришло время проявить себя и исполнить свою судьбу в Trombone Champ: Unflattened! Ритм-игра, где каждая нота находится под твоим контролем. С более чем 58 незабываемыми треками, совершенно новой кампанией, коллекционными карточками и безумными тромбонами ты не просто играешь под музыку — ты создаешь её! 🔥🎺",
+  "metaLink": "https://www.meta.com/experiences/trombone-champ-unflattened/25085547287757633/",
+  "steamLink": "https://store.steampowered.com/app/3151670/Trombone_Champ_Unflattened/",
+  "metaRating": "4.8/5",
+  "steamRating": "97%",
+  "metaPrice": "€17.99",
+  "steamPrice": "17.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/trombone-champ-unflattened/cover.webp",
+  "logo": "/vr-stuff/games/trombone-champ-unflattened/logo.webp",
+  "background": "/vr-stuff/games/trombone-champ-unflattened/background.webp",
+  "trailer": {
+    "youtubeId": "X8alTyXInXA",
+    "thumbnail": "https://i.ytimg.com/vi/X8alTyXInXA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/trombone-champ-unflattened/screenshot_0.webp",
+    "/vr-stuff/games/trombone-champ-unflattened/screenshot_1.webp",
+    "/vr-stuff/games/trombone-champ-unflattened/screenshot_2.webp",
+    "/vr-stuff/games/trombone-champ-unflattened/screenshot_3.webp",
+    "/vr-stuff/games/trombone-champ-unflattened/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Rhythm"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

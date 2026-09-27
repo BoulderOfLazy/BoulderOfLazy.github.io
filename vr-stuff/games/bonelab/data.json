@@ -1,0 +1,46 @@
+{
+  "slug": "bonelab",
+  "title": "BONELAB",
+  "shortDescription": "По сути это даже не игра, а фундамент для модификаций. Сюжет есть, но чтобы по нему продвинуться, нужно собрать все (или почти все) коллекционные предметы, которые разбросаны в разных режимах игры. Если хотите сингл, лучше поиграйте в BONEWORKS. На PCVR версии моды можно качать прямо в игре даже на пиратке Мультиплеер есть в виде мода",
+  "longDescription": "BONELAB — это экспериментальный экшен с упором на физику. Исследуйте таинственную лабораторию, наполненную оружием, врагами, испытаниями и секретами. Сбегите из своей реальности или устройте хаос. Правильных ответов не существует.",
+  "metaLink": "https://www.meta.com/experiences/bonelab/4215734068529064/",
+  "steamLink": "https://store.steampowered.com/app/1592190/BONELAB",
+  "metaRating": "4.6/5",
+  "steamRating": "82%",
+  "metaPrice": "€39.99",
+  "steamPrice": "39.99€",
+  "hltb": {
+    "mainStory": "5.7h",
+    "mainExtra": "8.3h",
+    "completionist": "17.6h"
+  },
+  "cover": "/vr-stuff/games/bonelab/cover.webp",
+  "logo": "/vr-stuff/games/bonelab/logo.webp",
+  "background": "/vr-stuff/games/bonelab/background.webp",
+  "trailer": {
+    "youtubeId": "5PBrYzE_ZMs",
+    "thumbnail": "https://i.ytimg.com/vi/5PBrYzE_ZMs/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/bonelab/screenshot_0.webp",
+    "/vr-stuff/games/bonelab/screenshot_1.webp",
+    "/vr-stuff/games/bonelab/screenshot_2.webp",
+    "/vr-stuff/games/bonelab/screenshot_3.webp",
+    "/vr-stuff/games/bonelab/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Sandbox",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "eye-of-the-temple",
+  "title": "Eye of the Temple",
+  "shortDescription": "Требует огромное игровое пространство (минимум 2м х 2м, а лучше ещё больше). Имеет проблему с позиционированием границ игровой области при игре через Virtual Desktop на Quest. Решается рецентрированием области на шлеме, стоя в её центре",
+  "longDescription": "В игре Eye of the Temple вы исследуете огромный и опасный храм в виртуальной реальности, передвигаясь по нему на своих собственных ногах. Удерживайте равновесие, шагая по движущимся блокам, избегая ловушек и решая головоломки с помощью факела и кнута.",
+  "metaLink": "https://www.meta.com/experiences/eye-of-the-temple/5361030930653377/",
+  "steamLink": "https://store.steampowered.com/app/589940/Eye_of_the_Temple/",
+  "metaRating": "4.6/5",
+  "steamRating": "92%",
+  "metaPrice": "€19.99",
+  "steamPrice": "16.79€",
+  "hltb": {
+    "mainStory": "4h",
+    "mainExtra": "4.4h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/eye-of-the-temple/cover.webp",
+  "logo": "/vr-stuff/games/eye-of-the-temple/logo.webp",
+  "background": "/vr-stuff/games/eye-of-the-temple/background.webp",
+  "trailer": {
+    "youtubeId": "_96potxOhZI",
+    "thumbnail": "https://i.ytimg.com/vi/_96potxOhZI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/eye-of-the-temple/screenshot_0.webp",
+    "/vr-stuff/games/eye-of-the-temple/screenshot_1.webp",
+    "/vr-stuff/games/eye-of-the-temple/screenshot_2.webp",
+    "/vr-stuff/games/eye-of-the-temple/screenshot_3.webp",
+    "/vr-stuff/games/eye-of-the-temple/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

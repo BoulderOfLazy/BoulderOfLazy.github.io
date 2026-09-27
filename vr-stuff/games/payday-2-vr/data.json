@@ -1,0 +1,45 @@
+{
+  "slug": "payday-2-vr",
+  "title": "Payday 2 VR",
+  "shortDescription": "Играть в этот режим не очень приятно, так как был одной из ранних попыток портирования плоских игр в VR. Опыт на 3/10, слишком хаотично и неудобно",
+  "longDescription": "Шагните в мир грабителя! PAYDAY 2 VR — это полное погружение в PAYDAY 2, где вы по-настоящему почувствуете каждого копа, дозера, клоукера и медика, приближающихся к вам.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/826090/PAYDAY_2_VR/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "—",
+  "steamPrice": "Режим PAYDAY 2",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/payday-2-vr/cover.webp",
+  "logo": "/vr-stuff/games/payday-2-vr/logo.webp",
+  "background": "/vr-stuff/games/payday-2-vr/background.webp",
+  "trailer": {
+    "youtubeId": "LvCNIC_-Cl0",
+    "thumbnail": "https://i.ytimg.com/vi/LvCNIC_-Cl0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/payday-2-vr/screenshot_0.webp",
+    "/vr-stuff/games/payday-2-vr/screenshot_1.webp",
+    "/vr-stuff/games/payday-2-vr/screenshot_2.webp",
+    "/vr-stuff/games/payday-2-vr/screenshot_3.webp",
+    "/vr-stuff/games/payday-2-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

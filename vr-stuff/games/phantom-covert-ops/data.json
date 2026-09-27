@@ -1,0 +1,44 @@
+{
+  "slug": "phantom-covert-ops",
+  "title": "Phantom: Covert Ops",
+  "shortDescription": "Стелс на байдарке",
+  "longDescription": "Вы — Фантом: элитный оперативник в условиях секретной миссии. У вас есть всего одна ночь, чтобы предотвратить полномасштабную войну. Вас направили в враждебные болота на военном каяке. Используйте оружие и снаряжение, чтобы нейтрализовать противников. Уничтожайте цели или проникайте незамеченным из теней на протяжении всей кампании.",
+  "metaLink": "https://www.meta.com/experiences/phantom-covert-ops/2302118823192509/",
+  "steamLink": "",
+  "metaRating": "4.2/5",
+  "steamRating": "N/A",
+  "metaPrice": "€29.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "3.9h",
+    "mainExtra": "5.7h",
+    "completionist": "9.5h"
+  },
+  "cover": "/vr-stuff/games/phantom-covert-ops/cover.webp",
+  "logo": "/vr-stuff/games/phantom-covert-ops/logo.webp",
+  "background": "/vr-stuff/games/phantom-covert-ops/background.webp",
+  "trailer": {
+    "youtubeId": "bbFYT79u65E",
+    "thumbnail": "https://i.ytimg.com/vi/bbFYT79u65E/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/phantom-covert-ops/screenshot_0.webp",
+    "/vr-stuff/games/phantom-covert-ops/screenshot_1.webp",
+    "/vr-stuff/games/phantom-covert-ops/screenshot_2.webp",
+    "/vr-stuff/games/phantom-covert-ops/screenshot_3.webp",
+    "/vr-stuff/games/phantom-covert-ops/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Shooter",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

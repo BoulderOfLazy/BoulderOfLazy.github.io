@@ -1,0 +1,45 @@
+{
+  "slug": "vacation-simulator",
+  "title": "Vacation Simulator",
+  "shortDescription": "",
+  "longDescription": "Мы привестствуем тебя, Биоорганическое Существо, в Vacation Simulator, грубой имитации ОТПУСКА, навеянной настоящей человеческой жизнью БЕЗ ВЫПОЛНЕНИЯ ЗАПЛАНИРОВАННЫХ ЗАДАЧ! Наш симулятор составлен идентичными роботами, что скомпоновали имитатор человеческой работы в Job Simulator.",
+  "metaLink": "https://www.meta.com/experiences/vacation-simulator/2393300320759737/",
+  "steamLink": "https://store.steampowered.com/app/726830/Vacation_Simulator/",
+  "metaRating": "4.5/5",
+  "steamRating": "92%",
+  "metaPrice": "€11.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "4.1h",
+    "mainExtra": "7.8h",
+    "completionist": "10.8h"
+  },
+  "cover": "/vr-stuff/games/vacation-simulator/cover.webp",
+  "logo": "/vr-stuff/games/vacation-simulator/logo.webp",
+  "background": "/vr-stuff/games/vacation-simulator/background.webp",
+  "trailer": {
+    "youtubeId": "vn-q463SWf0",
+    "thumbnail": "https://i.ytimg.com/vi/vn-q463SWf0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vacation-simulator/screenshot_0.webp",
+    "/vr-stuff/games/vacation-simulator/screenshot_1.webp",
+    "/vr-stuff/games/vacation-simulator/screenshot_2.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Sandbox",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

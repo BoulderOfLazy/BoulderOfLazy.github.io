@@ -1,0 +1,50 @@
+{
+  "slug": "the-walking-dead-saints-sinners",
+  "title": "The Walking Dead: Saints & Sinners",
+  "shortDescription": "",
+  "longDescription": "Saints & Sinners — это игра, не похожая ни на одну другую во вселенной The Walking Dead. Каждое испытание и каждое решение зависят только от ВАС. Сражайтесь с нежитью, собирайте припасы в затопленных руинах Нового Орлеана и принимайте мучительные решения для себя и других выживших. Проживите мир The Walking Dead.",
+  "metaLink": "https://www.meta.com/experiences/the-walking-dead-saints-sinners/2897337400373711/",
+  "steamLink": "https://store.steampowered.com/app/916840/The_Walking_Dead_Saints__Sinners/",
+  "metaRating": "4.6/5",
+  "steamRating": "85%",
+  "metaPrice": "€17.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "10.4h",
+    "mainExtra": "13.7h",
+    "completionist": "23.3h"
+  },
+  "cover": "/vr-stuff/games/the-walking-dead-saints-sinners/cover.webp",
+  "logo": "/vr-stuff/games/the-walking-dead-saints-sinners/logo.webp",
+  "background": "/vr-stuff/games/the-walking-dead-saints-sinners/background.webp",
+  "trailer": {
+    "youtubeId": "PwQx872oy4A",
+    "thumbnail": "https://i.ytimg.com/vi/PwQx872oy4A/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_0.webp",
+    "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_1.webp",
+    "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_2.webp",
+    "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_3.webp",
+    "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter",
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative",
+      "Post-Apocalyptic",
+      "Survival"
+    ]
+  }
+}

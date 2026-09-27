@@ -1,0 +1,48 @@
+{
+  "slug": "propagation-paradise-hotel",
+  "title": "Propagation: Paradise Hotel",
+  "shortDescription": "Духовный наследник Resident Evil в VR",
+  "longDescription": "Вы заперты в стенах отеля «Парадайз» и отчаянно пытаетесь найти сестру. Исследуйте мрачные коридоры, собирайте припасы и не дайте тварям вас убить. Вас ждут VR-ужасы для одного игрока, где постоянно что-то происходит, адреналин зашкаливает, а сюжет преподносит один сюрприз за другим.",
+  "metaLink": "https://www.meta.com/experiences/propagation-paradise-hotel/8826022237415280/",
+  "steamLink": "https://store.steampowered.com/app/1824960/Propagation_Paradise_Hotel/",
+  "metaRating": "4.5/5",
+  "steamRating": "86%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "3.5h",
+    "mainExtra": "4.1h",
+    "completionist": "4.9h"
+  },
+  "cover": "/vr-stuff/games/propagation-paradise-hotel/cover.webp",
+  "logo": "/vr-stuff/games/propagation-paradise-hotel/logo.webp",
+  "background": "/vr-stuff/games/propagation-paradise-hotel/background.webp",
+  "trailer": {
+    "youtubeId": "6rfFY9wYny0",
+    "thumbnail": "https://i.ytimg.com/vi/6rfFY9wYny0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/propagation-paradise-hotel/screenshot_0.webp",
+    "/vr-stuff/games/propagation-paradise-hotel/screenshot_1.webp",
+    "/vr-stuff/games/propagation-paradise-hotel/screenshot_2.webp",
+    "/vr-stuff/games/propagation-paradise-hotel/screenshot_3.webp",
+    "/vr-stuff/games/propagation-paradise-hotel/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Survival"
+    ]
+  }
+}

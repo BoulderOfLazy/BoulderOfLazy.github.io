@@ -1,0 +1,44 @@
+{
+  "slug": "myst",
+  "title": "Myst",
+  "shortDescription": "",
+  "longDescription": "Добро пожаловать на остров Мист — невероятно красивый, загадочный и окутанный интригами. Совершите путешествие на остров Мист и в другие потрясающие воображение укромные места, которые здесь называются «эпохами», и попытайтесь разгадать тайну, частью которой стали.",
+  "metaLink": "https://www.meta.com/experiences/myst/2719294624823942/",
+  "steamLink": "https://store.steampowered.com/app/1255560/Myst/",
+  "metaRating": "4.1/5",
+  "steamRating": "88%",
+  "metaPrice": "€20.99",
+  "steamPrice": "35.49€",
+  "hltb": {
+    "mainStory": "5.5h",
+    "mainExtra": "5.7h",
+    "completionist": "6.6h"
+  },
+  "cover": "/vr-stuff/games/myst/cover.webp",
+  "logo": "/vr-stuff/games/myst/logo.webp",
+  "background": "/vr-stuff/games/myst/background.webp",
+  "trailer": {
+    "youtubeId": "lSjitylRmLI",
+    "thumbnail": "https://i.ytimg.com/vi/lSjitylRmLI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/myst/screenshot_6.webp",
+    "/vr-stuff/games/myst/screenshot_7.webp",
+    "/vr-stuff/games/myst/screenshot_8.webp",
+    "/vr-stuff/games/myst/screenshot_9.webp",
+    "/vr-stuff/games/myst/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

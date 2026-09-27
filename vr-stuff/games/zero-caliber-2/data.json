@@ -1,0 +1,46 @@
+{
+  "slug": "zero-caliber-2",
+  "title": "Zero Caliber 2",
+  "shortDescription": "",
+  "longDescription": "Zero Caliber 2 Remastered переносит полноценный опыт VR-шутера на ПК — с интенсивными кинематографичными перестрелками, полной одиночной и кооперативной кампанией, PvP, огромным арсеналом для разблокировки и кастомизацией персонажа, чтобы вы выделялись. Заходите в игру, если ищете настоящий VR-шутер. УЖЕ В ПРОДАЖЕ!",
+  "metaLink": "https://www.meta.com/experiences/zero-caliber-2/6072194326150034/",
+  "steamLink": "https://store.steampowered.com/app/2719740/Zero_Caliber_2_Remastered/",
+  "metaRating": "4.3/5",
+  "steamRating": "79%",
+  "metaPrice": "€22.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "7.6h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/zero-caliber-2/cover.webp",
+  "logo": "/vr-stuff/games/zero-caliber-2/logo.webp",
+  "background": "/vr-stuff/games/zero-caliber-2/background.webp",
+  "trailer": {
+    "youtubeId": "q4e1_4PeiEg",
+    "thumbnail": "https://i.ytimg.com/vi/q4e1_4PeiEg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/zero-caliber-2/screenshot_6.webp",
+    "/vr-stuff/games/zero-caliber-2/screenshot_7.webp",
+    "/vr-stuff/games/zero-caliber-2/screenshot_8.webp",
+    "/vr-stuff/games/zero-caliber-2/screenshot_9.webp",
+    "/vr-stuff/games/zero-caliber-2/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

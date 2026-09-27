@@ -1,0 +1,47 @@
+{
+  "slug": "stride-fates",
+  "title": "STRIDE: Fates",
+  "shortDescription": "Духовный наследник Mirror's Edge в VR. Имеется также часть без подзаголовка, но она в первую очередь про мультиплеер. Эта же имеет сингловую кампанию",
+  "longDescription": "Войдите в роль офицера спецназа, использующего паркур. Пробирайтесь по крышам и подвалам антиутопического города Айрон-Сити — от трущоб до роскошных небоскребов. Справляйтесь с борьбой за власть в бандах, грязными семейными разборками, корпоративными тайнами, запрещенными технологиями и другими препятствиями, чтобы раскрыть тайны своего прошлого.",
+  "metaLink": "https://www.meta.com/experiences/stride-fates/5968439973240748/",
+  "steamLink": "https://store.steampowered.com/app/2597880/STRIDE_Fates/",
+  "metaRating": "4.0/5",
+  "steamRating": "51%",
+  "metaPrice": "€27.99",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "6.1h",
+    "mainExtra": "8.1h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/stride-fates/cover.webp",
+  "logo": "/vr-stuff/games/stride-fates/logo.webp",
+  "background": "/vr-stuff/games/stride-fates/background.webp",
+  "trailer": {
+    "youtubeId": "rpRP_4IXoQU",
+    "thumbnail": "https://i.ytimg.com/vi/rpRP_4IXoQU/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/stride-fates/screenshot_0.webp",
+    "/vr-stuff/games/stride-fates/screenshot_1.webp",
+    "/vr-stuff/games/stride-fates/screenshot_2.webp",
+    "/vr-stuff/games/stride-fates/screenshot_3.webp",
+    "/vr-stuff/games/stride-fates/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

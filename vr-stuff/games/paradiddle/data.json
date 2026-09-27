@@ -1,0 +1,46 @@
+{
+  "slug": "paradiddle",
+  "title": "Paradiddle",
+  "shortDescription": "Если хотите испытать игру на барабанах в игровой форме, то эта игра, пожалуй, наиболее приближенная к реальности. Можно даже использовать свой реальный drum kit!",
+  "longDescription": "Это гораздо больше, чем просто VR-ударная установка. Учитесь играть на барабанах шаг за шагом, демонстрируйте свои навыки в встроенной ритм-игре и создавайте свою уникальную установку из библиотеки более чем из 60 ударных инструментов без ограничений по бюджету или физическому пространству. Веселое и интуитивно понятное барабанщичество как для профессионалов, так и для новичков!",
+  "metaLink": "https://www.meta.com/experiences/paradiddle/5719805344724551/",
+  "steamLink": "https://store.steampowered.com/app/685240/Paradiddle/",
+  "metaRating": "4.4/5",
+  "steamRating": "91%",
+  "metaPrice": "€19.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "1h",
+    "mainExtra": "30h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/paradiddle/cover.webp",
+  "logo": "/vr-stuff/games/paradiddle/logo.webp",
+  "background": "/vr-stuff/games/paradiddle/background.webp",
+  "trailer": {
+    "youtubeId": "fm8rrvV5BJI",
+    "thumbnail": "https://i.ytimg.com/vi/fm8rrvV5BJI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/paradiddle/screenshot_0.webp",
+    "/vr-stuff/games/paradiddle/screenshot_1.webp",
+    "/vr-stuff/games/paradiddle/screenshot_2.webp",
+    "/vr-stuff/games/paradiddle/screenshot_3.webp",
+    "/vr-stuff/games/paradiddle/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Rhythm"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

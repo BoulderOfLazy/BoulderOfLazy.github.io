@@ -1,0 +1,46 @@
+{
+  "slug": "thief-vr-legacy-of-shadow",
+  "title": "Thief VR: Legacy of Shadow",
+  "shortDescription": "",
+  "longDescription": "Слейтесь с тенями в Thief VR. Вы искусная воровка по прозвищу Сорока. Вы осиротели по вине Норткреста и выросли на улице. Крадите, избегайте ловушек и водите стражу за нос с помощью VR-механик. Какова ваша цель? Реликвия в хранилище Норткреста. Величайший артефакт с могущественным наследием.",
+  "metaLink": "https://www.meta.com/experiences/thief-vr-legacy-of-shadow/6429437293824115/",
+  "steamLink": "https://store.steampowered.com/app/2800080/Thief_VR_Legacy_of_Shadow/",
+  "metaRating": "4.1/5",
+  "steamRating": "75%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "7.5h",
+    "mainExtra": "8.1h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/thief-vr-legacy-of-shadow/cover.webp",
+  "logo": "/vr-stuff/games/thief-vr-legacy-of-shadow/logo.webp",
+  "background": "/vr-stuff/games/thief-vr-legacy-of-shadow/background.webp",
+  "trailer": {
+    "youtubeId": "KsaiBAvU8X4",
+    "thumbnail": "https://i.ytimg.com/vi/KsaiBAvU8X4/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_6.webp",
+    "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_7.webp",
+    "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_8.webp",
+    "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_9.webp",
+    "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

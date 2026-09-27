@@ -1,0 +1,47 @@
+{
+  "slug": "skydances-behemoth",
+  "title": "Skydance's Behemoth",
+  "shortDescription": "",
+  "longDescription": "BEHEMOTH от Skydance — это оригинальная история, действие которой разворачивается в Забытых Землях, павшем королевстве, охваченном трагедией. Возьмите на себя роль воина из внешних земель, Охотницы Рен, и отправьтесь в опасное путешествие, чтобы спасти себя и свою деревню. Ваша единственная надежда — сокрушить тех, кого невозможно победить: чудовищных Бегемотов.",
+  "metaLink": "https://www.meta.com/experiences/skydances-behemoth/5767635983306831/",
+  "steamLink": "https://store.steampowered.com/app/1707990/Skydances_BEHEMOTH/",
+  "metaRating": "4.1/5",
+  "steamRating": "75%",
+  "metaPrice": "€36.99",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "9.6h",
+    "mainExtra": "11.2h",
+    "completionist": "13.5h"
+  },
+  "cover": "/vr-stuff/games/skydances-behemoth/cover.webp",
+  "logo": "/vr-stuff/games/skydances-behemoth/logo.webp",
+  "background": "/vr-stuff/games/skydances-behemoth/background.webp",
+  "trailer": {
+    "youtubeId": "6w7RxfyVceA",
+    "thumbnail": "https://i.ytimg.com/vi/6w7RxfyVceA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/skydances-behemoth/screenshot_0.webp",
+    "/vr-stuff/games/skydances-behemoth/screenshot_1.webp",
+    "/vr-stuff/games/skydances-behemoth/screenshot_2.webp",
+    "/vr-stuff/games/skydances-behemoth/screenshot_3.webp",
+    "/vr-stuff/games/skydances-behemoth/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "RPG"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

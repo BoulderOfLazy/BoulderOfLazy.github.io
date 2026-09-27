@@ -1,0 +1,44 @@
+{
+  "slug": "vendetta-forever",
+  "title": "VENDETTA FOREVER",
+  "shortDescription": "I AM YOUR BEAST + SUPERHOT в VR",
+  "longDescription": "Добро пожаловать в рай культового экшена. Vendetta Forever — это получившее признание критиков любовное письмо культовому экшн-кинематографу, сочетающее знаковые сцены, вдохновленные кино, с захватывающим VR-экшеном на базе LO-KILL-MOTION. Стреляй, чтобы убить. Убивай, чтобы двигаться.",
+  "metaLink": "https://www.meta.com/experiences/vendetta-forever/9177531962317371/",
+  "steamLink": "https://store.steampowered.com/app/3557790/Vendetta_Forever/",
+  "metaRating": "4.7/5",
+  "steamRating": "76%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "3.6h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/vendetta-forever/cover.webp",
+  "logo": "/vr-stuff/games/vendetta-forever/logo.webp",
+  "background": "/vr-stuff/games/vendetta-forever/background.webp",
+  "trailer": {
+    "youtubeId": "lteWAzPC3K0",
+    "thumbnail": "https://i.ytimg.com/vi/lteWAzPC3K0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vendetta-forever/screenshot_0.webp",
+    "/vr-stuff/games/vendetta-forever/screenshot_1.webp",
+    "/vr-stuff/games/vendetta-forever/screenshot_2.webp",
+    "/vr-stuff/games/vendetta-forever/screenshot_3.webp",
+    "/vr-stuff/games/vendetta-forever/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

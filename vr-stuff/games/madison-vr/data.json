@@ -1,0 +1,45 @@
+{
+  "slug": "madison-vr",
+  "title": "Madison VR",
+  "shortDescription": "Как же плохо выглядит нативная версия...",
+  "longDescription": "MADiSON VR погружает вас еще глубже в свой захватывающий и ужасающий мир. Используя камеру мгновенной печати в виртуальных руках, преодолейте разрыв между нашим миром и неизвестным. Делайте снимки, проявляйте их самостоятельно, чтобы решать головоломки, исследуйте тени и, прежде всего, выживайте.",
+  "metaLink": "https://www.meta.com/experiences/madison/8494434027238385/",
+  "steamLink": "https://store.steampowered.com/app/2414550/MADiSON_VR/",
+  "metaRating": "3.2/5",
+  "steamRating": "76%",
+  "metaPrice": "€29.99",
+  "steamPrice": "33.99€",
+  "hltb": {
+    "mainStory": "11.3h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/madison-vr/cover.webp",
+  "logo": "/vr-stuff/games/madison-vr/logo.webp",
+  "background": "/vr-stuff/games/madison-vr/background.webp",
+  "trailer": {
+    "youtubeId": "3SBAsyClOm4",
+    "thumbnail": "https://i.ytimg.com/vi/3SBAsyClOm4/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/madison-vr/screenshot_0.webp",
+    "/vr-stuff/games/madison-vr/screenshot_1.webp",
+    "/vr-stuff/games/madison-vr/screenshot_2.webp",
+    "/vr-stuff/games/madison-vr/screenshot_3.webp",
+    "/vr-stuff/games/madison-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

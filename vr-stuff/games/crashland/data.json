@@ -1,0 +1,44 @@
+{
+  "slug": "crashland",
+  "title": "Crashland",
+  "shortDescription": "Духовный наследник Crimsonland в VR",
+  "longDescription": "CRASHLAND — это жестокий научно-фантастический экшен-хоррор в жанре FPS, доступный как на плоском экране, так и в VR. Вы — межгалактический гладиатор, сражающийся за выживание на враждебной инопланетной планете до момента спасения. Бой быстрый, жестокий и беспощадный — освойте свое оружие, сканер движения и телепорт, чтобы выжить.",
+  "metaLink": "https://www.meta.com/experiences/crashland/1884760688319818/",
+  "steamLink": "https://store.steampowered.com/app/4383950/CRASHLAND/",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "€19.99",
+  "steamPrice": "Ещё не вышла",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/crashland/cover.webp",
+  "logo": "/vr-stuff/games/crashland/logo.webp",
+  "background": "/vr-stuff/games/crashland/background.webp",
+  "trailer": {
+    "youtubeId": "xU-CPXbECYI",
+    "thumbnail": "https://i.ytimg.com/vi/xU-CPXbECYI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/crashland/screenshot_6.webp",
+    "/vr-stuff/games/crashland/screenshot_7.webp",
+    "/vr-stuff/games/crashland/screenshot_8.webp",
+    "/vr-stuff/games/crashland/screenshot_9.webp",
+    "/vr-stuff/games/crashland/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

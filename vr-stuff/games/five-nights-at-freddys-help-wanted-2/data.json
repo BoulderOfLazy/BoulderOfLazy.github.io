@@ -1,0 +1,45 @@
+{
+  "slug": "five-nights-at-freddys-help-wanted-2",
+  "title": "Five Nights at Freddy's: Help Wanted 2",
+  "shortDescription": "",
+  "longDescription": "Five Nights at Freddy’s: Help Wanted 2 — сиквел леденящей душу VR-игры, вдохнувшей новую жизнь в легендарный ужастик. В качестве нового сотрудника компании Fazbear вам предстоит продемонстрировать все грани своего выдающегося таланта в деле управления пиццерией.",
+  "metaLink": "https://www.meta.com/experiences/five-nights-at-freddys-help-wanted-2/7156077941079207/",
+  "steamLink": "https://store.steampowered.com/app/2287520/Five_Nights_at_Freddys_Help_Wanted_2/",
+  "metaRating": "4.8/5",
+  "steamRating": "94%",
+  "metaPrice": "€39.99",
+  "steamPrice": "38.99€",
+  "hltb": {
+    "mainStory": "8.5h",
+    "mainExtra": "12.5h",
+    "completionist": "16.2h"
+  },
+  "cover": "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/cover.webp",
+  "logo": "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/logo.webp",
+  "background": "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/background.webp",
+  "trailer": {
+    "youtubeId": "01IU_Y5sKn0",
+    "thumbnail": "https://i.ytimg.com/vi/01IU_Y5sKn0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/screenshot_0.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/screenshot_1.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/screenshot_2.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/screenshot_3.webp",
+    "/vr-stuff/games/five-nights-at-freddys-help-wanted-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

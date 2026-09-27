@@ -1,0 +1,46 @@
+{
+  "slug": "i-expect-you-to-die-3-cog-in-the-machine",
+  "title": "I Expect You To Die 3: Cog in The Machine",
+  "shortDescription": "8/10",
+  "longDescription": "Перехитри своего самого коварного противника в новой части этой популярной серии VR-головоломок про шпионаж. Используй новые гаджеты, исследуй динамичные локации и примеряй уникальные маскировки, вновь погружаясь в мир шпионажа в этой игре в жанре escape room.",
+  "metaLink": "https://www.meta.com/experiences/i-expect-you-to-die-3/4676322075753574/",
+  "steamLink": "https://store.steampowered.com/app/2296380/I_Expect_You_To_Die_3_Cog_in_the_Machine/",
+  "metaRating": "4.7/5",
+  "steamRating": "92%",
+  "metaPrice": "€24.99",
+  "steamPrice": "22.99€",
+  "hltb": {
+    "mainStory": "5.1h",
+    "mainExtra": "6.9h",
+    "completionist": "10.7h"
+  },
+  "cover": "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/cover.webp",
+  "logo": "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/logo.webp",
+  "background": "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/background.webp",
+  "trailer": {
+    "youtubeId": "01TTpxa8CvA",
+    "thumbnail": "https://i.ytimg.com/vi/01TTpxa8CvA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/screenshot_0.webp",
+    "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/screenshot_1.webp",
+    "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/screenshot_2.webp",
+    "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/screenshot_3.webp",
+    "/vr-stuff/games/i-expect-you-to-die-3-cog-in-the-machine/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

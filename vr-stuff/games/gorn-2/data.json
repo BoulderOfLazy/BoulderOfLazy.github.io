@@ -1,0 +1,46 @@
+{
+  "slug": "gorn-2",
+  "title": "GORN 2",
+  "shortDescription": "В сиквеле добавили больше разнообразия и ловушек на уровнях, в остальном +- то же самое",
+  "longDescription": "Доберитесь до вершины славы на гладиаторской арене в GORN 2, продолжении нашумевшей VR-игры от студии Free Lives.",
+  "metaLink": "https://www.meta.com/experiences/gorn-2/7525358220915248/",
+  "steamLink": "https://store.steampowered.com/app/3391450/GORN_2/",
+  "metaRating": "4.5/5",
+  "steamRating": "86%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "3.3h",
+    "mainExtra": "3.7h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/gorn-2/cover.webp",
+  "logo": "/vr-stuff/games/gorn-2/logo.webp",
+  "background": "/vr-stuff/games/gorn-2/background.webp",
+  "trailer": {
+    "youtubeId": "hGROKh-1Bz8",
+    "thumbnail": "https://i.ytimg.com/vi/hGROKh-1Bz8/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/gorn-2/screenshot_0.webp",
+    "/vr-stuff/games/gorn-2/screenshot_1.webp",
+    "/vr-stuff/games/gorn-2/screenshot_2.webp",
+    "/vr-stuff/games/gorn-2/screenshot_3.webp",
+    "/vr-stuff/games/gorn-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

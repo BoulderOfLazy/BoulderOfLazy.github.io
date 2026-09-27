@@ -1,0 +1,46 @@
+{
+  "slug": "besiege-vr",
+  "title": "Besiege VR",
+  "shortDescription": "Порт игры на Quest. Вышел спустя 15 минут из-за плохого обучения управлению",
+  "longDescription": "Ведите свои машины к тотальному разрушению — своему или вражескому — получая не меньше удовольствия от эпичных провалов, чем от уверенного прогресса! Выбирайте из 25 готовых машин и сразу врывайтесь в хаос. Собирайте всё, что только сможете представить, из десятков интерактивных деталей. Устраивайте хаос в кампании из 55 уровней и 3 открытых мирах-песочницах.",
+  "metaLink": "https://www.meta.com/experiences/besiege-vr/8981075088581523/",
+  "steamLink": "",
+  "metaRating": "4.6/5",
+  "steamRating": "N/A",
+  "metaPrice": "€13.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/besiege-vr/cover.webp",
+  "logo": "/vr-stuff/games/besiege-vr/logo.webp",
+  "background": "/vr-stuff/games/besiege-vr/background.webp",
+  "trailer": {
+    "youtubeId": "zz0B1PFrFtk",
+    "thumbnail": "https://i.ytimg.com/vi/zz0B1PFrFtk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/besiege-vr/screenshot_6.webp",
+    "/vr-stuff/games/besiege-vr/screenshot_7.webp",
+    "/vr-stuff/games/besiege-vr/screenshot_8.webp",
+    "/vr-stuff/games/besiege-vr/screenshot_9.webp",
+    "/vr-stuff/games/besiege-vr/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle",
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

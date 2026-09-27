@@ -1,0 +1,44 @@
+{
+  "slug": "riven",
+  "title": "Riven",
+  "shortDescription": "",
+  "longDescription": "Сделайте первый шаг в полный загадок и секретов мир Ривена и погрузитесь в историю интриг, предательств и других бед цивилизации, балансирующей на грани катастрофы. Удостоенная множества наград игра 1997 года была воссоздана с нуля и дополнена с помощью новейших технологий.",
+  "metaLink": "https://www.meta.com/experiences/riven/6499813506711202/",
+  "steamLink": "https://store.steampowered.com/app/1712350/Riven/",
+  "metaRating": "3.8/5",
+  "steamRating": "92%",
+  "metaPrice": "€34.99",
+  "steamPrice": "35.49€",
+  "hltb": {
+    "mainStory": "9.3h",
+    "mainExtra": "12.2h",
+    "completionist": "13.3h"
+  },
+  "cover": "/vr-stuff/games/riven/cover.webp",
+  "logo": "/vr-stuff/games/riven/logo.webp",
+  "background": "/vr-stuff/games/riven/background.webp",
+  "trailer": {
+    "youtubeId": "LN1TQm942_U",
+    "thumbnail": "https://i.ytimg.com/vi/LN1TQm942_U/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/riven/screenshot_6.webp",
+    "/vr-stuff/games/riven/screenshot_7.webp",
+    "/vr-stuff/games/riven/screenshot_8.webp",
+    "/vr-stuff/games/riven/screenshot_9.webp",
+    "/vr-stuff/games/riven/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

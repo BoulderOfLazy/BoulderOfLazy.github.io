@@ -1,0 +1,45 @@
+{
+  "slug": "i-am-your-beast-vr",
+  "title": "I AM YOUR BEAST VR",
+  "shortDescription": "",
+  "longDescription": "I Am Your Beast VR переносит короткометражный скрытый триллер о мести в формате FPS от Strange Scaffold в виртуальную реальность, погружая вас в войну Альфонса Хардинга против военно-промышленного комплекса.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/3844740/I_AM_YOUR_BEAST_VR/",
+  "metaRating": "N/A",
+  "steamRating": "100%",
+  "metaPrice": "—",
+  "steamPrice": "23.45€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/i-am-your-beast-vr/cover.webp",
+  "logo": "/vr-stuff/games/i-am-your-beast-vr/logo.webp",
+  "background": "/vr-stuff/games/i-am-your-beast-vr/background.webp",
+  "trailer": {
+    "youtubeId": "UXMXcJqrS7E",
+    "thumbnail": "https://i.ytimg.com/vi/UXMXcJqrS7E/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/i-am-your-beast-vr/screenshot_0.webp",
+    "/vr-stuff/games/i-am-your-beast-vr/screenshot_1.webp",
+    "/vr-stuff/games/i-am-your-beast-vr/screenshot_2.webp",
+    "/vr-stuff/games/i-am-your-beast-vr/screenshot_3.webp",
+    "/vr-stuff/games/i-am-your-beast-vr/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

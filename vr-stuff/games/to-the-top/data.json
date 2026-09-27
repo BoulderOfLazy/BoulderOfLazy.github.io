@@ -1,0 +1,46 @@
+{
+  "slug": "to-the-top",
+  "title": "To the Top",
+  "shortDescription": "",
+  "longDescription": "VR-платформер, дающий вам свободу перемещения по миру с помощью сверхчеловеческих способностей. Одолейте более 35 уровней с новыми препятствиями и испытаниями. Соревнуйтесь за лучшие результаты или исследуйте окружение. Ощутите свободу движения.",
+  "metaLink": "https://www.meta.com/experiences/to-the-top/5930576503634498/",
+  "steamLink": "https://store.steampowered.com/app/509250/TO_THE_TOP/",
+  "metaRating": "4.6/5",
+  "steamRating": "87%",
+  "metaPrice": "€19.99",
+  "steamPrice": "16,79€",
+  "hltb": {
+    "mainStory": "5h",
+    "mainExtra": "11.2h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/to-the-top/cover.webp",
+  "logo": "/vr-stuff/games/to-the-top/logo.webp",
+  "background": "/vr-stuff/games/to-the-top/background.webp",
+  "trailer": {
+    "youtubeId": "DljCutE9uDI",
+    "thumbnail": "https://i.ytimg.com/vi/DljCutE9uDI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/to-the-top/screenshot_0.webp",
+    "/vr-stuff/games/to-the-top/screenshot_1.webp",
+    "/vr-stuff/games/to-the-top/screenshot_2.webp",
+    "/vr-stuff/games/to-the-top/screenshot_3.webp",
+    "/vr-stuff/games/to-the-top/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

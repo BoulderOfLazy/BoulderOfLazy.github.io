@@ -1,0 +1,46 @@
+{
+  "slug": "resident-evil-4",
+  "title": "Resident Evil 4",
+  "shortDescription": "Лучшая версия оригинального четвёртого резика геймплейно по моему мнению. К сожалению, некоторые моменты в катсценах были вырезаны, что, как по мне, такое себе. 9/10",
+  "longDescription": "Исследуйте мир Resident Evil 4, полностью переработанный для VR. Войдите в роль специального агента Леона С. Кеннеди на его миссии по спасению дочери президента США, похищенной таинственным культом. Станьте лицом к лицу с врагами и раскрывайте тайны с помощью геймплея, который совершил революцию в жанре survival horror. Сражайтесь с ужасными существами и противостойте подвергшимся контролю разума жителям, раскрывая их связь с культом, стоящим за похищением.",
+  "metaLink": "https://www.meta.com/experiences/resident-evil-4/2637179839719680/",
+  "steamLink": "",
+  "metaRating": "4.7/5",
+  "steamRating": "N/A",
+  "metaPrice": "€39.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/resident-evil-4/cover.webp",
+  "logo": "/vr-stuff/games/resident-evil-4/logo.webp",
+  "background": "/vr-stuff/games/resident-evil-4/background.webp",
+  "trailer": {
+    "youtubeId": "qTIizcuSdHg",
+    "thumbnail": "https://i.ytimg.com/vi/qTIizcuSdHg/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/resident-evil-4/screenshot_6.webp",
+    "/vr-stuff/games/resident-evil-4/screenshot_7.webp",
+    "/vr-stuff/games/resident-evil-4/screenshot_8.webp",
+    "/vr-stuff/games/resident-evil-4/screenshot_9.webp",
+    "/vr-stuff/games/resident-evil-4/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

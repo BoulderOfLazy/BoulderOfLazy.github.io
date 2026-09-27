@@ -1,0 +1,47 @@
+{
+  "slug": "the-room-vr-a-dark-matter",
+  "title": "The Room VR: A Dark Matter",
+  "shortDescription": "Тот самый The Room теперь и в VR. 8/10",
+  "longDescription": "Британский институт археологии, Лондон, 1908: Исчезновение уважаемого египтолога побуждает полицию начать расследование в области неведомого. Исследуйте загадочные локации, изучайте фантастические гаджеты и откройте таинственное открытие из иного мира, стирающее грань между реальностью и иллюзией.",
+  "metaLink": "https://www.meta.com/experiences/the-room-vr-a-dark-matter/2124523024270629/",
+  "steamLink": "https://store.steampowered.com/app/1104380/The_Room_VR_A_Dark_Matter/",
+  "metaRating": "4.9/5",
+  "steamRating": "97%",
+  "metaPrice": "€24.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "3.8h",
+    "mainExtra": "4.1h",
+    "completionist": "4.1h"
+  },
+  "cover": "/vr-stuff/games/the-room-vr-a-dark-matter/cover.webp",
+  "logo": "/vr-stuff/games/the-room-vr-a-dark-matter/logo.webp",
+  "background": "/vr-stuff/games/the-room-vr-a-dark-matter/background.webp",
+  "trailer": {
+    "youtubeId": "iySB6jnYwYE",
+    "thumbnail": "https://i.ytimg.com/vi/iySB6jnYwYE/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_0.webp",
+    "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_1.webp",
+    "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_2.webp",
+    "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_3.webp",
+    "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Horror",
+      "Narrative"
+    ]
+  }
+}

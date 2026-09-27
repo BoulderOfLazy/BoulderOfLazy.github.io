@@ -1,0 +1,49 @@
+{
+  "slug": "hot-dogs-horseshoes-and-hand-grenades-2",
+  "title": "Hot Dogs, Horseshoes and Hand Grenades 2",
+  "shortDescription": "",
+  "longDescription": "Стреляй, собирай лут и беги в роли разумного хот-дога в сиквеле Hot Dogs, Horseshoes & Hand Grenades (H3VR) — титулованном и высокопродаваемом иммерсивном FPS. Овладей арсеналом лучших пушек в VR. Пробивайся сквозь бесконечную процедурно генерируемую мегаструктуру. Расслабься и потренируйся на стрельбище. Чудесно!",
+  "metaLink": "https://www.meta.com/experiences/hot-dogs-horseshoes-hand-grenades-2/26291709480509388/",
+  "steamLink": "https://store.steampowered.com/app/4632350/Hot_Dogs_Horseshoes__Hand_Grenades_2/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "28 ноября",
+  "steamPrice": "В след. году",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/cover.webp",
+  "logo": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/logo.webp",
+  "background": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/background.webp",
+  "trailer": {
+    "youtubeId": "eYgc3aM81dI",
+    "thumbnail": "https://i.ytimg.com/vi/eYgc3aM81dI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/screenshot_0.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/screenshot_1.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/screenshot_2.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/screenshot_3.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Sandbox",
+      "Shooter",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "gorn",
+  "title": "GORN",
+  "shortDescription": "Забавная игра про гладиаторские бои",
+  "longDescription": "GORN — это безумно жестокий VR-симулятор гладиаторов от студии Free Lives, разработчиков Broforce и Genital Jousting.",
+  "metaLink": "https://www.meta.com/experiences/gorn/3349689215139117/",
+  "steamLink": "https://store.steampowered.com/app/578620/GORN/",
+  "metaRating": "4.7/5",
+  "steamRating": "94%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "3.4h",
+    "mainExtra": "5.2h",
+    "completionist": "6h"
+  },
+  "cover": "/vr-stuff/games/gorn/cover.webp",
+  "logo": "/vr-stuff/games/gorn/logo.webp",
+  "background": "/vr-stuff/games/gorn/background.webp",
+  "trailer": {
+    "youtubeId": "3YkrnWr1nRw",
+    "thumbnail": "https://i.ytimg.com/vi/3YkrnWr1nRw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/gorn/screenshot_0.webp",
+    "/vr-stuff/games/gorn/screenshot_1.webp",
+    "/vr-stuff/games/gorn/screenshot_2.webp",
+    "/vr-stuff/games/gorn/screenshot_3.webp",
+    "/vr-stuff/games/gorn/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

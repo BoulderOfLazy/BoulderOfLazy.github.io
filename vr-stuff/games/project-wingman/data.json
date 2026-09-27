@@ -1,0 +1,43 @@
+{
+  "slug": "project-wingman",
+  "title": "Project Wingman",
+  "shortDescription": "Духовный наследник Ace Combat с поддержкой VR",
+  "longDescription": "Project Wingman — это экшен с полетами, позволяющий сесть за штурвал реактивного истребителя и стать настоящим асом. Сражайтесь в различных заданиях и игровых режимах — от напряженных воздушных боев до крупномасштабного наземного штурма в альтернативной реальности с выжженной землей.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/895870/Project_Wingman/",
+  "metaRating": "N/A",
+  "steamRating": "94%",
+  "metaPrice": "—",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "11.4h",
+    "mainExtra": "15.4h",
+    "completionist": "44.6h"
+  },
+  "cover": "/vr-stuff/games/project-wingman/cover.webp",
+  "logo": "/vr-stuff/games/project-wingman/logo.webp",
+  "background": "/vr-stuff/games/project-wingman/background.webp",
+  "trailer": {
+    "youtubeId": "rc6S4H7SspA",
+    "thumbnail": "https://i.ytimg.com/vi/rc6S4H7SspA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/project-wingman/screenshot_0.webp",
+    "/vr-stuff/games/project-wingman/screenshot_1.webp",
+    "/vr-stuff/games/project-wingman/screenshot_2.webp",
+    "/vr-stuff/games/project-wingman/screenshot_3.webp",
+    "/vr-stuff/games/project-wingman/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

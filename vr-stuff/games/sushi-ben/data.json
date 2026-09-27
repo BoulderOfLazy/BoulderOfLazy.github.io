@@ -1,0 +1,46 @@
+{
+  "slug": "sushi-ben",
+  "title": "Sushi Ben",
+  "shortDescription": "",
+  "longDescription": "Интерактивная аниме‑история! Спаси любимый суши‑бар от коварных дельцов, утонуть в бесчисленных мини‑играх и заведи незабываемых друзей в этом масштабном приключении. Написано Моа (Hatoful Boyfriend), полная озвучка!",
+  "metaLink": "https://www.meta.com/experiences/sushi-ben/5459391390744272/",
+  "steamLink": "https://store.steampowered.com/app/2419240/Sushi_Ben/",
+  "metaRating": "4.5/5",
+  "steamRating": "82%",
+  "metaPrice": "€11.79",
+  "steamPrice": "11.79€",
+  "hltb": {
+    "mainStory": "6.3h",
+    "mainExtra": "8.4h",
+    "completionist": "12.1h"
+  },
+  "cover": "/vr-stuff/games/sushi-ben/cover.webp",
+  "logo": "/vr-stuff/games/sushi-ben/logo.webp",
+  "background": "/vr-stuff/games/sushi-ben/background.webp",
+  "trailer": {
+    "youtubeId": "1lA0ssiHHxM",
+    "thumbnail": "https://i.ytimg.com/vi/1lA0ssiHHxM/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/sushi-ben/screenshot_0.webp",
+    "/vr-stuff/games/sushi-ben/screenshot_1.webp",
+    "/vr-stuff/games/sushi-ben/screenshot_2.webp",
+    "/vr-stuff/games/sushi-ben/screenshot_3.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy",
+      "Narrative"
+    ]
+  }
+}

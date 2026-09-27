@@ -1,0 +1,47 @@
+{
+  "slug": "moss",
+  "title": "Moss",
+  "shortDescription": "",
+  "longDescription": "Moss™ — динамичное приключение с элементами головоломки для одного игрока — новая игра от Polyarc, созданная специально для VR. Она сочетает классические элементы прекрасной игры — интересных персонажей, захватывающую боевую систему, исследование мира — с новыми возможностями виртуальной реальности.",
+  "metaLink": "https://www.meta.com/experiences/moss/1654565391314903/",
+  "steamLink": "https://store.steampowered.com/app/846470/Moss_VR/",
+  "metaRating": "4.8/5",
+  "steamRating": "94%",
+  "metaPrice": "€19.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "4h",
+    "mainExtra": "4.7h",
+    "completionist": "6.8h"
+  },
+  "cover": "/vr-stuff/games/moss/cover.webp",
+  "logo": "/vr-stuff/games/moss/logo.webp",
+  "background": "/vr-stuff/games/moss/background.webp",
+  "trailer": {
+    "youtubeId": "Hbsfgsncdzw",
+    "thumbnail": "https://i.ytimg.com/vi/Hbsfgsncdzw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/moss/screenshot_0.webp",
+    "/vr-stuff/games/moss/screenshot_1.webp",
+    "/vr-stuff/games/moss/screenshot_2.webp",
+    "/vr-stuff/games/moss/screenshot_3.webp",
+    "/vr-stuff/games/moss/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "red-matter-2",
+  "title": "Red Matter 2",
+  "shortDescription": "",
+  "longDescription": "Погрузитесь в невероятно реалистичный научно-фантастический мир в этом приключении с упором на сюжет и VR-головоломками. Исследуйте внеземные объекты, управляйте тактильными инструментами, решайте загадки окружения и разгадайте искажающую реальность тайну времен Холодной войны.",
+  "metaLink": "https://www.meta.com/experiences/red-matter-2/3682089508520212/",
+  "steamLink": "https://store.steampowered.com/app/2081470/Red_Matter_2/",
+  "metaRating": "4.8/5",
+  "steamRating": "92%",
+  "metaPrice": "€29.99",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "6.4h",
+    "mainExtra": "6.7h",
+    "completionist": "6.9h"
+  },
+  "cover": "/vr-stuff/games/red-matter-2/cover.webp",
+  "logo": "/vr-stuff/games/red-matter-2/logo.webp",
+  "background": "/vr-stuff/games/red-matter-2/background.webp",
+  "trailer": {
+    "youtubeId": "iH394hzIFJk",
+    "thumbnail": "https://i.ytimg.com/vi/iH394hzIFJk/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/red-matter-2/screenshot_0.webp",
+    "/vr-stuff/games/red-matter-2/screenshot_1.webp",
+    "/vr-stuff/games/red-matter-2/screenshot_2.webp",
+    "/vr-stuff/games/red-matter-2/screenshot_3.webp",
+    "/vr-stuff/games/red-matter-2/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

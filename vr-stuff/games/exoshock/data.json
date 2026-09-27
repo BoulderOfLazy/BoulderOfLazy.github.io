@@ -1,0 +1,46 @@
+{
+  "slug": "exoshock",
+  "title": "Exoshock",
+  "shortDescription": "Даты релиза пока нет",
+  "longDescription": "Exoshock — это кооперативный научно-фантастический PvE-шутер на 1–4 игроков, созданный с одной целью: обеспечить максимально драйвовые сражения. Игра разработана с нуля как для VR, так и для ПК с полной поддержкой кроссплея.",
+  "metaLink": "https://www.meta.com/experiences/exoshock/9912140795471966/",
+  "steamLink": "https://store.steampowered.com/app/3549390/EXOSHOCK/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "—",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/exoshock/cover.webp",
+  "logo": "/vr-stuff/games/exoshock/logo.webp",
+  "background": "/vr-stuff/games/exoshock/background.webp",
+  "trailer": {
+    "youtubeId": "pWqOBOiGGWw",
+    "thumbnail": "https://i.ytimg.com/vi/pWqOBOiGGWw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/exoshock/screenshot_6.webp",
+    "/vr-stuff/games/exoshock/screenshot_7.webp",
+    "/vr-stuff/games/exoshock/screenshot_8.webp",
+    "/vr-stuff/games/exoshock/screenshot_9.webp",
+    "/vr-stuff/games/exoshock/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

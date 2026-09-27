@@ -56,8 +56,14 @@
 	--button-background:#282828;
 }
 
-/* 0to10 */
-.button-0to10 {
-  --button-text:#000000;
-  background-image:linear-gradient(to right, #e74c3c, #f1c40f, #2ecc71);
+/* Hardcover */
+.button-hardcover {
+  --button-text:#ffffff;
+  --button-background:#312E81;
+}
+
+/* VR Games List */
+.button-vr-games-list {
+  --button-text:#ffffff;
+  --button-background:#000000;
 }

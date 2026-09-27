@@ -1,0 +1,47 @@
+{
+  "slug": "hot-dogs-horseshoes-and-hand-grenades",
+  "title": "Hot Dogs, Horseshoes and Hand Grenades",
+  "shortDescription": "Тир-песочница с одной из самых проработанных моделью поведения оружия",
+  "longDescription": "Любите хот-доги? А как насчет подков? Ручные гранаты? (все любят ручные гранаты) В любом случае, у нас есть всё это, а также пушки. ТАК МНОГО ОРУЖИЯ. Так что если вы любите боеприпасы, мясо и слишком много плоских каламбуров, эта VR песочница — именно то, что вам нужно.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/",
+  "metaRating": "N/A",
+  "steamRating": "97%",
+  "metaPrice": "—",
+  "steamPrice": "19.99€",
+  "hltb": {
+    "mainStory": "35h",
+    "mainExtra": "46.1h",
+    "completionist": "70.5h"
+  },
+  "cover": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/cover.webp",
+  "logo": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/logo.webp",
+  "background": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/background.webp",
+  "trailer": {
+    "youtubeId": "jF7gachwVr0",
+    "thumbnail": "https://i.ytimg.com/vi/jF7gachwVr0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_0.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_1.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_2.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_3.webp",
+    "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Sandbox",
+      "Shooter",
+      "Simulation"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "reach",
+  "title": "Reach",
+  "shortDescription": "Нативно работает только на Quest 3(S)",
+  "longDescription": "Прорывной новый проект от nDreams Elevation — пионерской студии экспертов по VRпогружению. Станьте неохотным героем, овладейте необычайными способностями и отправьтесь в опасный мир пересекающихся реальностей. Готовы сделать прыжок?",
+  "metaLink": "https://www.meta.com/experiences/reach/9707487579328855/",
+  "steamLink": "https://store.steampowered.com/app/3273480/Reach/",
+  "metaRating": "4.2/5",
+  "steamRating": "67%",
+  "metaPrice": "€29.99",
+  "steamPrice": "29.99€",
+  "hltb": {
+    "mainStory": "8h",
+    "mainExtra": "8.8h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/reach/cover.webp",
+  "logo": "/vr-stuff/games/reach/logo.webp",
+  "background": "/vr-stuff/games/reach/background.webp",
+  "trailer": {
+    "youtubeId": "VTXU5jJXjtw",
+    "thumbnail": "https://i.ytimg.com/vi/VTXU5jJXjtw/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/reach/screenshot_2.webp",
+    "/vr-stuff/games/reach/screenshot_3.webp",
+    "/vr-stuff/games/reach/screenshot_4.webp",
+    "/vr-stuff/games/reach/screenshot_5.webp",
+    "/vr-stuff/games/reach/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Platformer",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

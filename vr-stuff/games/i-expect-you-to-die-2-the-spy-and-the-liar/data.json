@@ -1,0 +1,46 @@
+{
+  "slug": "i-expect-you-to-die-2-the-spy-and-the-liar",
+  "title": "I Expect You To Die 2: The Spy and the Liar",
+  "shortDescription": "8/10",
+  "longDescription": "Станьте элитным супершпигоном, готовым к шпионажу, взрывчатке и обилию гаджетов. Эта популярная VR франшиза в жанре escape-the-room возвращается с новыми изобретательными головоломками, хитрыми злодеями и опасными локациями.",
+  "metaLink": "https://www.meta.com/experiences/i-expect-you-to-die-2/2970998659623177/",
+  "steamLink": "https://store.steampowered.com/app/1499120/I_Expect_You_To_Die_2_The_Spy_and_the_Liar/",
+  "metaRating": "4.8/5",
+  "steamRating": "96%",
+  "metaPrice": "€24.99",
+  "steamPrice": "22.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/cover.webp",
+  "logo": "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/logo.webp",
+  "background": "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/background.webp",
+  "trailer": {
+    "youtubeId": "lPRi3ggiP7s",
+    "thumbnail": "https://i.ytimg.com/vi/lPRi3ggiP7s/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/screenshot_0.webp",
+    "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/screenshot_1.webp",
+    "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/screenshot_2.webp",
+    "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/screenshot_3.webp",
+    "/vr-stuff/games/i-expect-you-to-die-2-the-spy-and-the-liar/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

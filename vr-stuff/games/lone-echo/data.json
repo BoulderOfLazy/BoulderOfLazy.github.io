@@ -1,0 +1,43 @@
+{
+  "slug": "lone-echo",
+  "title": "Lone Echo",
+  "shortDescription": "",
+  "longDescription": "В одиночном режиме сюжетной кампании Lone Echo вы отправитесь к высокотехнологичному горнодобывающему комплексу в кольцах Сатурна, который включает в себя детально проработанную космическую станцию, обширные пространства открытого космоса и интерактивное космическое оборудование. Войдя в роль Джека — продвинутого искусственного интеллекта в современном синтетическом теле, — вы поможете капитану Оливии Роудс раскрыть все более опасную тайну, используя футуристические инструменты, умение решать сложные задачи и интерактивные диалоги для взаимодействия с окружающим миром.",
+  "metaLink": "https://www.meta.com/experiences/pcvr/lone-echo/1368187813209608/",
+  "steamLink": "",
+  "metaRating": "4.7/5",
+  "steamRating": "—",
+  "metaPrice": "€19.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "5.9h",
+    "mainExtra": "7.2h",
+    "completionist": "8.9h"
+  },
+  "cover": "/vr-stuff/games/lone-echo/cover.webp",
+  "logo": "/vr-stuff/games/lone-echo/logo.webp",
+  "background": "/vr-stuff/games/lone-echo/background.webp",
+  "trailer": {
+    "youtubeId": "i4NoRXKYtPA",
+    "thumbnail": "https://i.ytimg.com/vi/i4NoRXKYtPA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/lone-echo/screenshot_0.webp",
+    "/vr-stuff/games/lone-echo/screenshot_1.webp",
+    "/vr-stuff/games/lone-echo/screenshot_2.webp",
+    "/vr-stuff/games/lone-echo/screenshot_3.webp",
+    "/vr-stuff/games/lone-echo/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "hard-bullet",
+  "title": "Hard Bullet",
+  "shortDescription": "",
+  "longDescription": "HARD BULLET — это экшен-игра, основанная на физике, где враги наводняют залитый неоном город, принося разрушение на его улицы. Используйте замедление, огромный арсенал, чтобы выжить и разблокировать новое оружие. Подготовьтесь к следующему RIDE, оттачивая свои навыки в режимах «Песочница» и «Арена».",
+  "metaLink": "https://www.meta.com/experiences/hard-bullet/8116626111777808/",
+  "steamLink": "https://store.steampowered.com/app/1294760/HARD_BULLET/",
+  "metaRating": "4.2/5",
+  "steamRating": "83%",
+  "metaPrice": "€19.49",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/hard-bullet/cover.webp",
+  "logo": "/vr-stuff/games/hard-bullet/logo.webp",
+  "background": "/vr-stuff/games/hard-bullet/background.webp",
+  "trailer": {
+    "youtubeId": "F60FfVpDXjo",
+    "thumbnail": "https://i.ytimg.com/vi/F60FfVpDXjo/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/hard-bullet/screenshot_6.webp",
+    "/vr-stuff/games/hard-bullet/screenshot_7.webp",
+    "/vr-stuff/games/hard-bullet/screenshot_8.webp",
+    "/vr-stuff/games/hard-bullet/screenshot_9.webp",
+    "/vr-stuff/games/hard-bullet/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

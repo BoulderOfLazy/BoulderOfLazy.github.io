@@ -1,0 +1,44 @@
+{
+  "slug": "boneworks",
+  "title": "BONEWORKS",
+  "shortDescription": "Экспериментальная игра с упором на использование физики для решения игровых задач. Мультиплеер есть в виде мода. 7/10",
+  "longDescription": "BONEWORKS — это экспериментальное физическое VR-приключение. Используйте найденное физическое оружие, инструменты и предметы, чтобы сражаться на опасных игровых аренах в окружении загадочной архитектуры.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/823500/BONEWORKS",
+  "metaRating": "N/A",
+  "steamRating": "92%",
+  "metaPrice": "—",
+  "steamPrice": "28.99€",
+  "hltb": {
+    "mainStory": "10.6h",
+    "mainExtra": "15.3h",
+    "completionist": "38.7h"
+  },
+  "cover": "/vr-stuff/games/boneworks/cover.webp",
+  "logo": "/vr-stuff/games/boneworks/logo.webp",
+  "background": "/vr-stuff/games/boneworks/background.webp",
+  "trailer": {
+    "youtubeId": "oP8C2nmv3Ag",
+    "thumbnail": "https://i.ytimg.com/vi/oP8C2nmv3Ag/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/boneworks/screenshot_0.webp",
+    "/vr-stuff/games/boneworks/screenshot_1.webp",
+    "/vr-stuff/games/boneworks/screenshot_2.webp",
+    "/vr-stuff/games/boneworks/screenshot_3.webp",
+    "/vr-stuff/games/boneworks/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Sandbox",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": []
+  }
+}

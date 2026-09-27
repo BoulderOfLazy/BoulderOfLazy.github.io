@@ -1,0 +1,49 @@
+{
+  "slug": "no-mans-sky",
+  "title": "No Man's Sky",
+  "shortDescription": "",
+  "longDescription": "No Man's Sky является научно-фантастической игрой об исследованиях и выживании в бесконечной, процедурно генерируемой вселенной.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/275850/No_Mans_Sky/",
+  "metaRating": "N/A",
+  "steamRating": "83%",
+  "metaPrice": "—",
+  "steamPrice": "58.99€",
+  "hltb": {
+    "mainStory": "32.4h",
+    "mainExtra": "77.1h",
+    "completionist": "156.8h"
+  },
+  "cover": "/vr-stuff/games/no-mans-sky/cover.webp",
+  "logo": "/vr-stuff/games/no-mans-sky/logo.webp",
+  "background": "/vr-stuff/games/no-mans-sky/background.webp",
+  "trailer": {
+    "youtubeId": "5Zd61kKEAMA",
+    "thumbnail": "https://i.ytimg.com/vi/5Zd61kKEAMA/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/no-mans-sky/screenshot_0.webp",
+    "/vr-stuff/games/no-mans-sky/screenshot_1.webp",
+    "/vr-stuff/games/no-mans-sky/screenshot_2.webp",
+    "/vr-stuff/games/no-mans-sky/screenshot_3.webp",
+    "/vr-stuff/games/no-mans-sky/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "RPG",
+      "Sandbox"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Open World",
+      "Survival"
+    ]
+  }
+}

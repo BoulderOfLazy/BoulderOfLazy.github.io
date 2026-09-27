@@ -1,0 +1,49 @@
+{
+  "slug": "vox-machinae",
+  "title": "Vox Machinae",
+  "shortDescription": "",
+  "longDescription": "Пристегнитесь в кабине робота, который в семь раз выше тираннозавра, и приготовьтесь к битве в Vox Machinae: ультимативном экшн-симуляторе сражений на гигантских роботах как для VR, так и для стандартных экранов.",
+  "metaLink": "https://www.meta.com/experiences/vox-machinae/1968697563211639/",
+  "steamLink": "https://store.steampowered.com/app/334540/Vox_Machinae/",
+  "metaRating": "4.2/5",
+  "steamRating": "87%",
+  "metaPrice": "€29.99",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/vox-machinae/cover.webp",
+  "logo": "/vr-stuff/games/vox-machinae/logo.webp",
+  "background": "/vr-stuff/games/vox-machinae/background.webp",
+  "trailer": {
+    "youtubeId": "4qcfpOElmII",
+    "thumbnail": "https://i.ytimg.com/vi/4qcfpOElmII/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/vox-machinae/screenshot_0.webp",
+    "/vr-stuff/games/vox-machinae/screenshot_1.webp",
+    "/vr-stuff/games/vox-machinae/screenshot_2.webp",
+    "/vr-stuff/games/vox-machinae/screenshot_3.webp",
+    "/vr-stuff/games/vox-machinae/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Simulation",
+      "Strategy"
+    ],
+    "gameModes": [
+      "Co-op",
+      "Multiplayer",
+      "Singleplayer"
+    ],
+    "themes": [
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images\icons\vr-games-list.svg">
+    <title>VR Игры</title>
+    <link rel="stylesheet" href="css/vr_games_list.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <h1>VR Игры</h1>
+        <i>Последнее обновление: 11 июля 2026 года</i>
+        <i>Если вам нужен список игр, листайте вниз</i>
+
+        <div class="introduction" id="introduction">
+        </div>
+
+        <div class="control-panel">
+            <div class="control-row-top">
+                <input class="search-bar" type="text" id="searchInput" placeholder="Поиск по названию игры...">
+                <div class="intro-toggle">
+                    <input class="intro-status" type="checkbox" id="intro-status">
+                    <label class="intro-status-label" for="intro-status">Скрыть вступительный текст</label>
+                </div>
+            </div>
+
+            <div class="tag-filter-panel" id="tagFilterPanel">
+                <div class="tag-category">
+                    <h4 class="tag-category-title">Платформы</h4>
+                    <div class="tag-list" data-category="platforms"></div>
+                </div>
+                <div class="tag-category">
+                    <h4 class="tag-category-title">Жанры</h4>
+                    <div class="tag-list" data-category="genres"></div>
+                </div>
+                <div class="tag-category">
+                    <h4 class="tag-category-title">Режимы игры</h4>
+                    <div class="tag-list" data-category="gameModes"></div>
+                </div>
+                <div class="tag-category">
+                    <h4 class="tag-category-title">Темы</h4>
+                    <div class="tag-list" data-category="themes"></div>
+                </div>
+                <div class="active-tags-row">
+                    <span class="active-tags-label">Активные фильтры:</span>
+                    <div class="active-tags-container" id="activeTagsContainer">
+                        <span class="no-active-tags">Нет активных фильтров</span>
+                    </div>
+                    <button class="clear-tags-btn" id="clearTagsBtn" style="display:none;">Очистить все</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-list" id="game-list-container"></div>
+    </div>
+    <script src="js/vr_games_list.js"></script>
+</body>
+
+</html>

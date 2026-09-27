@@ -1,0 +1,46 @@
+{
+  "slug": "deadpool-vr",
+  "title": "Deadpool VR",
+  "shortDescription": "Эксклюзив Quest 3(S)",
+  "longDescription": "Marvel’s Deadpool VR сочетает в себе жестокие ближние и дальние бои с динамичным и бескомпромиссным перемещением по локациям. Одолейте врагов с помощью расширяемого арсенала оружия и откройте стильные и креативные способы расчленения любого, кто встанет на ваш путь. Ощутите всё это так, как может только Дэдпул. Мечтали когда-нибудь уничтожить вертолет на джипе? А как насчет использования собственных ампутированных конечностей в качестве оружия? Пристегните мечи, зарядите пушки, возьмите гранаты и отправляйтесь с Дэдпулом в безумное путешествие по вселенной Marvel.",
+  "metaLink": "https://www.meta.com/experiences/marvels-deadpool-vr/3240283705987790/",
+  "steamLink": "",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "€45.99",
+  "steamPrice": "—",
+  "hltb": {
+    "mainStory": "8.8h",
+    "mainExtra": "12h",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/deadpool-vr/cover.webp",
+  "logo": "/vr-stuff/games/deadpool-vr/logo.webp",
+  "background": "/vr-stuff/games/deadpool-vr/background.webp",
+  "trailer": {
+    "youtubeId": "VscXStzXRz0",
+    "thumbnail": "https://i.ytimg.com/vi/VscXStzXRz0/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/deadpool-vr/screenshot_32.webp",
+    "/vr-stuff/games/deadpool-vr/screenshot_33.webp",
+    "/vr-stuff/games/deadpool-vr/screenshot_34.webp",
+    "/vr-stuff/games/deadpool-vr/screenshot_35.webp",
+    "/vr-stuff/games/deadpool-vr/screenshot_36.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "budget-cuts-ultimate",
+  "title": "Budget Cuts Ultimate",
+  "shortDescription": "Стелс-экшен, завязанный на метании предметов, который органично вписывает перемещение телепортами в мир игры. Пользователи в Steam отмечают даунгрейд графики у данного издания, который связан с его портированием на Quest. Если собираетесь проходить на ПК и хотите максимально графонистые версии игр (заплатив ~х1.5 больше), рекомендуется вместо этого сборника приобрести их по отдельности",
+  "longDescription": "Войдите в стелс-игру в виртуальной реальности, где вы — последний человек среди роботов-менеджеров, запрограммированных на «оптимизацию» рабочей силы. Побегите из офиса, прокравшись мимо врагов, или обрушьте ножи, стрелы и кофейные кружки на их бессознательные электрические цепи!",
+  "metaLink": "https://www.meta.com/experiences/budget-cuts-ultimate/3011203712298006/",
+  "steamLink": "https://store.steampowered.com/app/2221980/Budget_Cuts_Ultimate/",
+  "metaRating": "4.4/5",
+  "steamRating": "88%",
+  "metaPrice": "€17.99",
+  "steamPrice": "19.50€",
+  "hltb": {
+    "mainStory": "6.4h",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/budget-cuts-ultimate/cover.webp",
+  "logo": "/vr-stuff/games/budget-cuts-ultimate/logo.webp",
+  "background": "/vr-stuff/games/budget-cuts-ultimate/background.webp",
+  "trailer": {
+    "youtubeId": "HNnjklPRsZQ",
+    "thumbnail": "https://i.ytimg.com/vi/HNnjklPRsZQ/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/budget-cuts-ultimate/screenshot_0.webp",
+    "/vr-stuff/games/budget-cuts-ultimate/screenshot_1.webp",
+    "/vr-stuff/games/budget-cuts-ultimate/screenshot_2.webp",
+    "/vr-stuff/games/budget-cuts-ultimate/screenshot_3.webp",
+    "/vr-stuff/games/budget-cuts-ultimate/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Stealth"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy",
+      "Narrative"
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "fixer-undercover",
+  "title": "Fixer Undercover",
+  "shortDescription": "",
+  "longDescription": "Шпионский триллер и головоломка в одном флаконе. Станьте сотрудником технического обслуживания под прикрытием в коррумпированной тюрьме. Решайте авторские головоломки сектор за сектором — с пятью инструментами, одним дроном-помощником и без какой-либо поддержки. Думайте умно или бейте сильно.",
+  "metaLink": "https://www.meta.com/experiences/fixer-undercover/24140390812298710/",
+  "steamLink": "https://store.steampowered.com/app/3102370/Fixer_Undercover/",
+  "metaRating": "4.8/5",
+  "steamRating": "93%",
+  "metaPrice": "€13.99",
+  "steamPrice": "17.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/fixer-undercover/cover.webp",
+  "logo": "/vr-stuff/games/fixer-undercover/logo.webp",
+  "background": "/vr-stuff/games/fixer-undercover/background.webp",
+  "trailer": {
+    "youtubeId": "eYFIxhV9YvQ",
+    "thumbnail": "https://i.ytimg.com/vi/eYFIxhV9YvQ/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/fixer-undercover/screenshot_6.webp",
+    "/vr-stuff/games/fixer-undercover/screenshot_7.webp",
+    "/vr-stuff/games/fixer-undercover/screenshot_8.webp",
+    "/vr-stuff/games/fixer-undercover/screenshot_9.webp",
+    "/vr-stuff/games/fixer-undercover/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Puzzle"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Comedy",
+      "Narrative"
+    ]
+  }
+}
