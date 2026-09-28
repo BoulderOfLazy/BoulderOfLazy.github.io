@@ -55,6 +55,15 @@ function initializeTags() {
     if (!g.tags) g.tags = { platforms: [], genres: [], gameModes: ["Singleplayer"], themes: [] };
     if (!g.tags.gameModes) g.tags.gameModes = [];
     if (!g.tags.gameModes.includes("Singleplayer")) g.tags.gameModes.unshift("Singleplayer");
+    for (const cat of Object.keys(g.tags)) {
+      if (Array.isArray(g.tags[cat])) {
+        g.tags[cat].sort((a, b) => {
+          const labelA = getTagLabel(cat, a);
+          const labelB = getTagLabel(cat, b);
+          return labelA.localeCompare(labelB, 'ru');
+        });
+      }
+    }
   });
 }
 
@@ -71,32 +80,44 @@ const TAG_TRANSLATIONS = {
     "PCVR": "PCVR"
   },
   "genres": {
-    "Fighting": "Файтинг",
-    "Platformer": "Платформер",
+    "Fighting": "Ближний бой",
+    "Platformer": "Платформер / Паркур",
     "Puzzle": "Головоломка",
-    "Rhythm": "Ритм",
+    "Rhythm": "Ритм-игра",
     "Roguelike": "Рогалик",
     "RPG": "РПГ",
     "Sandbox": "Песочница",
     "Shooter": "Шутер",
     "Simulation": "Симулятор",
-    "Sports": "Спорт",
     "Stealth": "Стелс",
-    "Strategy": "Стратегия"
+    "Strategy": "Стратегия / Тактика",
+    "Survival": "Выживач"
   },
   "gameModes": {
-    "Co-op": "Кооператив",
+    "Co-op": "Кооп",
     "Multiplayer": "Мультиплеер",
-    "Singleplayer": "Одиночная игра"
+    "Singleplayer": "Одиночка"
   },
   "themes": {
-    "Comedy": "Комедия",
-    "Historical": "Исторический",
+	  "Chill": "На зачиллить",
+    "Comedy": "Комедийная",
+	  "Cosmos": "Космическая",
+	  "Cozy": "Ламповая",
     "Horror": "Хоррор",
     "Narrative": "Повествовательная",
+	  "Magic": "Магия",
     "Open World": "Открытый мир",
-    "Post-Apocalyptic": "Постапокалипсис",
-    "Survival": "Выживание"
+	  "Physics-based": "Физичная",
+	  "Piloting": "Пилотирование",
+    "Sports": "Спортивная",
+    "Post-Apocalyptic": "Постапок"
+  }
+};
+
+const TAG_ICONS = {
+  "platforms": {
+	"Quest": "/images/icons/meta-logo.svg",
+	"PCVR": "/images/icons/pc.svg"
   }
 };
 
@@ -150,6 +171,16 @@ function getTagLabel(category, tag) {
   return TAG_TRANSLATIONS[category]?.[tag] || tag;
 }
 
+function getTagHTML(category, tag) {
+  const label = getTagLabel(category, tag);
+  const iconPath = TAG_ICONS[category]?.[tag];
+  if (iconPath) {
+    const icon = `<span class="tag-icon-mask" style="--icon-url: url('${iconPath}');"></span>`;
+    return `${icon}<span class="tag-text">${label}</span>`;
+  }
+  return label;
+}
+
 function filterGames() {
   const q = activeSearch.trim().toLowerCase();
   return GAMES_DATA.filter(game => {
@@ -177,12 +208,16 @@ function renderTagPanel() {
       const cat = listEl.dataset.category;
       if (!cat) return;
       listEl.innerHTML = "";
-      const tags = Array.from(allTags[cat] || []).sort();
+      const tags = Array.from(allTags[cat] || []).sort((a, b) => {
+        const labelA = getTagLabel(cat, a);
+        const labelB = getTagLabel(cat, b);
+        return labelA.localeCompare(labelB, 'ru');
+      });
       for (const t of tags) {
         const chip = document.createElement("span");
         chip.className = "tag-chip" + (activeTags.has(t) ? " active" : "");
         chip.dataset.category = cat;
-        chip.textContent = getTagLabel(cat, t);
+        chip.innerHTML = getTagHTML(cat, t);
         chip.addEventListener("click", (e) => {
           e.stopPropagation();
           if (activeTags.has(t)) activeTags.delete(t);
@@ -215,7 +250,7 @@ function renderTagPanel() {
             }
           }
           if (foundCat) chip.dataset.category = foundCat;
-          chip.innerHTML = getTagLabel(foundCat, t) + '<span class="remove-tag">×</span>';
+          chip.innerHTML = getTagHTML(foundCat, t) + '<span class="remove-tag">×</span>';
           chip.querySelector(".remove-tag").addEventListener("click", (e) => {
             e.stopPropagation();
             activeTags.delete(t);
@@ -249,22 +284,46 @@ function getMetaStoreItem(game) {
   if (!game.metaLink) {
     return '<div class="store-item empty"><div class="store-logo-wrap"><img class="store-logo" alt="Meta"></div><span class="store-rating no-rating">N/A</span></div>';
   }
-  const ratingClass = game.metaRating === "N/A" ? ' no-rating' : '';
+
+  const isNA = game.metaRating === "N/A";
+  const ratingClass = isNA ? ' no-rating' : '';
+  let styleAttr = '';
+
+  if (!isNA) {
+    const val = parseFloat(String(game.metaRating).replace(',', '.'));
+    if (!isNaN(val)) {
+      const hue = Math.max(0, Math.min(1, val / 5)) * 120;
+      styleAttr = ' style="color: hsl(' + Math.round(hue) + ', 80%, 55%);"';
+    }
+  }
+
   return '<div class="store-item"><div class="store-logo-wrap">' +
     '<a href="' + game.metaLink + '" target="_blank" rel="noopener">' +
-    '<img src="images/icons/meta-logo.png" class="store-logo meta-logo" alt="Meta Store"></a></div>' +
-    '<span class="store-rating' + ratingClass + '">' + game.metaRating + '</span></div>';
+    '<img src="images/icons/meta-logo.svg" class="store-logo meta-logo" alt="Meta Store"></a></div>' +
+    '<span class="store-rating' + ratingClass + '"' + styleAttr + '>' + game.metaRating + '</span></div>';
 }
 
 function getSteamStoreItem(game) {
   if (!game.steamLink) {
     return '<div class="store-item empty"><div class="store-logo-wrap"><img class="store-logo" alt="Steam"></div><span class="store-rating no-rating">N/A</span></div>';
   }
-  const ratingClass = game.steamRating === "N/A" ? ' no-rating' : '';
+
+  const isNA = game.steamRating === "N/A";
+  const ratingClass = isNA ? ' no-rating' : '';
+  let styleAttr = '';
+
+  if (!isNA) {
+    const val = parseFloat(String(game.steamRating).replace('%', '').replace(',', '.'));
+    if (!isNaN(val)) {
+      const hue = Math.max(0, Math.min(1, val / 100)) * 120;
+      styleAttr = ' style="color: hsl(' + Math.round(hue) + ', 80%, 55%);"';
+    }
+  }
+
   return '<div class="store-item"><div class="store-logo-wrap">' +
     '<a href="' + game.steamLink + '" target="_blank" rel="noopener">' +
-    '<img src="images/icons/steam-logo.png" class="store-logo steam-logo" alt="Steam"></a></div>' +
-    '<span class="store-rating' + ratingClass + '">' + game.steamRating + '</span></div>';
+    '<img src="images/icons/steam-logo.svg" class="store-logo steam-logo" alt="Steam"></a></div>' +
+    '<span class="store-rating' + ratingClass + '"' + styleAttr + '>' + game.steamRating + '</span></div>';
 }
 
 function getPricesRow(game) {
@@ -297,8 +356,8 @@ function renderCollapsedHeader(game) {
   for (const cat of TAG_ORDER) {
     for (const t of game.tags[cat]) {
       const isActive = activeTags.has(t) ? ' active' : '';
-      tagsHtmlArr.push('<span class="game-tag' + isActive + '" data-tag="' + t.replace(/"/g, '&quot;') + '" data-category="' + cat + '">' + getTagLabel(cat, t) + '</span>');
-    }
+      tagsHtmlArr.push('<span class="game-tag' + isActive + '" data-tag="' + t.replace(/"/g, '&quot;') + '" data-category="' + cat + '">' + getTagHTML(cat, t) + '</span>');
+	}
   }
   const tagsHtml = tagsHtmlArr.join('');
 
@@ -362,43 +421,6 @@ function renderCarouselItems(game, gameIdx) {
       '<img src="' + scr + '" alt="Screenshot ' + (i + 1) + '"></div>';
   });
   return html;
-}
-
-function setupCarouselDrag(carouselEl, gameIdx) {
-  let isDown = false;
-  let startX = 0;
-  let scrollLeft = 0;
-
-  const onDown = (e) => {
-    isDown = true;
-    carouselEl.classList.add('active');
-    startX = (e.pageX || e.touches?.[0]?.pageX || 0) - carouselEl.offsetLeft;
-    scrollLeft = carouselEl.scrollLeft;
-    stopAutoCycle(gameIdx);
-  };
-  const onLeave = () => {
-    isDown = false;
-    carouselEl.classList.remove('active');
-  };
-  const onUp = () => {
-    isDown = false;
-    carouselEl.classList.remove('active');
-  };
-  const onMove = (e) => {
-    if (!isDown) return;
-    e.preventDefault();
-    const x = (e.pageX || e.touches?.[0]?.pageX || 0) - carouselEl.offsetLeft;
-    const walk = (x - startX) * 2;
-    carouselEl.scrollLeft = scrollLeft - walk;
-  };
-
-  carouselEl.addEventListener('mousedown', onDown);
-  carouselEl.addEventListener('mouseleave', onLeave);
-  carouselEl.addEventListener('mouseup', onUp);
-  carouselEl.addEventListener('mousemove', onMove);
-  carouselEl.addEventListener('touchstart', onDown, { passive: true });
-  carouselEl.addEventListener('touchend', onUp);
-  carouselEl.addEventListener('touchmove', onMove, { passive: false });
 }
 
 function selectMediaItem(gameEl, gameIdx, dataIndex) {
@@ -480,8 +502,6 @@ function startAutoCycle(gameEl, gameIdx) {
 function bindCarouselEvents(gameEl, gameIdx) {
   const carouselEl = gameEl.querySelector('.image-carousel');
   if (!carouselEl) return;
-
-  setupCarouselDrag(carouselEl, gameIdx);
 
   const btnLeft = gameEl.querySelector('.carousel-btn.left');
   const btnRight = gameEl.querySelector('.carousel-btn.right');

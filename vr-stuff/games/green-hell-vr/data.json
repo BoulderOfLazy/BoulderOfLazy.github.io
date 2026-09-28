@@ -34,14 +34,15 @@
       "Quest"
     ],
     "genres": [
-      "Sandbox"
+      "Sandbox",
+      "Survival"
     ],
     "gameModes": [
+      "Co-op",
       "Singleplayer"
     ],
     "themes": [
-      "Open World",
-      "Survival"
+      "Open World"
     ]
   }
 }

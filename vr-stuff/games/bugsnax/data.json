@@ -32,12 +32,17 @@
     "platforms": [
       "PCVR"
     ],
-    "genres": [],
+    "genres": [
+      "Puzzle",
+      "Simulation"
+    ],
     "gameModes": [
       "Singleplayer"
     ],
     "themes": [
-      "Comedy"
+      "Comedy",
+      "Cozy",
+      "Open World"
     ]
   }
 }

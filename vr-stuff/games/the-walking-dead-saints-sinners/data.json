@@ -35,7 +35,8 @@
     ],
     "genres": [
       "Shooter",
-      "Stealth"
+      "Stealth",
+      "Survival"
     ],
     "gameModes": [
       "Singleplayer"
@@ -43,8 +44,7 @@
     "themes": [
       "Horror",
       "Narrative",
-      "Post-Apocalyptic",
-      "Survival"
+      "Post-Apocalyptic"
     ]
   }
 }

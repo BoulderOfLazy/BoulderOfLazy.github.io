@@ -38,6 +38,9 @@
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Cozy",
+      "Magic"
+    ]
   }
 }

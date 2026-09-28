@@ -39,6 +39,8 @@
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Sports"
+    ]
   }
 }

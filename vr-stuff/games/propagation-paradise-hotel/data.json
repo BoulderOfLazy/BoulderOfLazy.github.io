@@ -35,14 +35,14 @@
     ],
     "genres": [
       "Puzzle",
-      "Shooter"
+      "Shooter",
+      "Survival"
     ],
     "gameModes": [
       "Singleplayer"
     ],
     "themes": [
-      "Horror",
-      "Survival"
+      "Horror"
     ]
   }
 }

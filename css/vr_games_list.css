@@ -273,7 +273,6 @@ a:hover {
 	background-color: #1873cc;
 }
 
-/* Per-category coloring for filter chips */
 .tag-list[data-category="platforms"] .tag-chip {
 	background-color: rgba(39, 174, 96, 0.12);
 	color: #2ecc71;
@@ -423,6 +422,38 @@ a:hover {
 	margin: 0 auto;
 }
 
+.tag-icon-mask {
+  display: inline-block;
+  width: 22px;
+  height: 14px;
+  flex-shrink: 0;
+  background-color: var(--tag-color, currentColor); 
+  -webkit-mask-image: var(--icon-url);
+  mask-image: var(--icon-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.tag-chip, 
+.active-tag-chip, 
+.game-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px;
+  line-height: 1.6 !important;
+  vertical-align: middle;
+}
+
+.tag-text {
+  display: inline-block;
+  line-height: 1.6; 
+}
+
 /* ===== GAME LIST ===== */
 .game-list {
 	display: flex;
@@ -518,7 +549,6 @@ a:hover {
 }
 
 .game-tag {
-	display: inline-block;
 	padding: 0.15rem 0.55rem;
 	font-size: 0.72rem;
 	background-color: rgba(255,255,255,0.03);
@@ -542,13 +572,11 @@ a:hover {
 	color: #ffffff;
 }
 
-/* Active tag chip colors */
 .active-tag-chip[data-category="platforms"] { background-color: #27ae60; color: #fff; }
 .active-tag-chip[data-category="genres"] { background-color: #ff79c6; color: #fff; }
 .active-tag-chip[data-category="gameModes"] { background-color: #e67e22; color: #fff; }
 .active-tag-chip[data-category="themes"] { background-color: #1abc9c; color: #fff; }
 
-/* Per-category styles for in-game tags */
 .game-tag[data-category="platforms"] {
 	background-color: rgba(39,174,96,0.12);
 	color: #2ecc71;
@@ -698,7 +726,6 @@ a:hover {
 	margin-left: 6px;
 }
 
-/* ===== CAROUSEL WITH DRAG ===== */
 .carousel-wrapper {
 	position: relative;
 	width: 100%;
@@ -712,20 +739,27 @@ a:hover {
 	scroll-snap-type: x mandatory;
 	gap: 0.5rem;
 	width: 100%;
-	-ms-overflow-style: none;
-	cursor: grab;
 	scroll-behavior: smooth;
-	padding: 0.25rem;
-}
-
-.image-carousel.active {
-	cursor: grabbing;
-	scroll-snap-type: none;
-	scroll-behavior: auto;
+	padding: 0.25rem 0.25rem 10px 0.25rem;
 }
 
 .image-carousel::-webkit-scrollbar {
-	display: none;
+	height: 8px;
+}
+
+.image-carousel::-webkit-scrollbar-track {
+	background: #1e1e1e;
+	border-radius: 4px;
+}
+
+.image-carousel::-webkit-scrollbar-thumb {
+	background: #555555;
+	border-radius: 4px;
+	transition: background 0.2s ease;
+}
+
+.image-carousel::-webkit-scrollbar-thumb:hover {
+	background: #777777;
 }
 
 .carousel-item {
@@ -858,10 +892,10 @@ a:hover {
 .store-logo {
 	width: 54px;
 	height: 54px;
-	border-radius: 50%;
+	border-radius: 0%;
 	transition: transform 0.2s;
 	object-fit: contain;
-	background: #fff;
+	align-items: center;
 	padding: 4px;
 }
 

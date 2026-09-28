@@ -34,12 +34,15 @@
       "Quest"
     ],
     "genres": [
+      "Fighting",
       "RPG",
       "Shooter"
     ],
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Physics-based"
+    ]
   }
 }

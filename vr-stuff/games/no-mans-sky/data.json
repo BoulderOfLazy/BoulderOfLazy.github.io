@@ -34,7 +34,8 @@
     ],
     "genres": [
       "RPG",
-      "Sandbox"
+      "Sandbox",
+      "Survival"
     ],
     "gameModes": [
       "Co-op",
@@ -42,8 +43,9 @@
       "Singleplayer"
     ],
     "themes": [
+      "Cosmos",
       "Open World",
-      "Survival"
+      "Piloting"
     ]
   }
 }

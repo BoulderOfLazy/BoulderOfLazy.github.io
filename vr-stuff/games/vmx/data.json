@@ -34,14 +34,17 @@
       "Quest"
     ],
     "genres": [
-      "Simulation",
-      "Sports"
+      "Simulation"
     ],
     "gameModes": [
       "Co-op",
       "Multiplayer",
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Physics-based",
+      "Piloting",
+      "Sports"
+    ]
   }
 }

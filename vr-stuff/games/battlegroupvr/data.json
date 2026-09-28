@@ -40,6 +40,9 @@
       "Multiplayer",
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Cosmos",
+      "Piloting"
+    ]
   }
 }

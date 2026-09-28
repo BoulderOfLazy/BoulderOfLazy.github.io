@@ -41,6 +41,9 @@
       "Multiplayer",
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Magic",
+      "Physics-based"
+    ]
   }
 }

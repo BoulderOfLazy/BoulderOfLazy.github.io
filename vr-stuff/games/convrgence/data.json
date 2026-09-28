@@ -33,14 +33,15 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Shooter",
+      "Survival"
     ],
     "gameModes": [
       "Singleplayer"
     ],
     "themes": [
-      "Post-Apocalyptic",
-      "Survival"
+      "Horror",
+      "Post-Apocalyptic"
     ]
   }
 }

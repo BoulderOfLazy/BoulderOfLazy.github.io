@@ -40,6 +40,8 @@
       "Multiplayer",
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Piloting"
+    ]
   }
 }

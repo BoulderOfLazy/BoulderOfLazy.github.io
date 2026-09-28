@@ -35,7 +35,7 @@
     ],
     "genres": [
       "Shooter",
-      "Simulation"
+      "Survival"
     ],
     "gameModes": [
       "Co-op",
@@ -43,8 +43,7 @@
     ],
     "themes": [
       "Horror",
-      "Post-Apocalyptic",
-      "Survival"
+      "Post-Apocalyptic"
     ]
   }
 }

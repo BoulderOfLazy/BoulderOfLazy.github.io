@@ -35,14 +35,15 @@
     ],
     "genres": [
       "Simulation",
-      "Strategy"
+      "Strategy",
+      "Survival"
     ],
     "gameModes": [
       "Singleplayer"
     ],
     "themes": [
-      "Open World",
-      "Survival"
+      "Cosmos",
+      "Open World"
     ]
   }
 }

@@ -39,6 +39,10 @@
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Cozy",
+      "Magic",
+      "Physics-based"
+    ]
   }
 }

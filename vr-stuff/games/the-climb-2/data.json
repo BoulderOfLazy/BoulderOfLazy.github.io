@@ -34,12 +34,13 @@
     ],
     "genres": [
       "Platformer",
-      "Simulation",
-      "Sports"
+      "Simulation"
     ],
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Sports"
+    ]
   }
 }

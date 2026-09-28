@@ -39,6 +39,9 @@
     "gameModes": [
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Narrative",
+      "Physics-based"
+    ]
   }
 }

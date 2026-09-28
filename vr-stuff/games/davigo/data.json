@@ -32,10 +32,14 @@
     "platforms": [
       "PCVR"
     ],
-    "genres": [],
+    "genres": [
+      "Fighting"
+    ],
     "gameModes": [
       "Multiplayer"
     ],
-    "themes": []
+    "themes": [
+      "Physics-based"
+    ]
   }
 }

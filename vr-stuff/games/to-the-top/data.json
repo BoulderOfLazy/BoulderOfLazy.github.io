@@ -41,6 +41,8 @@
       "Multiplayer",
       "Singleplayer"
     ],
-    "themes": []
+    "themes": [
+      "Physics-based"
+    ]
   }
 }

@@ -40,7 +40,8 @@
       "Singleplayer"
     ],
     "themes": [
-      "Comedy"
+      "Comedy",
+      "Physics-based"
     ]
   }
 }
