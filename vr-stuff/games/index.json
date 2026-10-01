@@ -200,11 +200,6 @@
     "path": "vr-stuff/games/gunman-contracts/data.json"
   },
   {
-    "title": "Half-Life 2: VR Mod",
-    "slug": "half-life-2-vr-mod",
-    "path": "vr-stuff/games/half-life-2-vr-mod/data.json"
-  },
-  {
     "title": "Half-Life: Alyx",
     "slug": "half-life-alyx",
     "path": "vr-stuff/games/half-life-alyx/data.json"
