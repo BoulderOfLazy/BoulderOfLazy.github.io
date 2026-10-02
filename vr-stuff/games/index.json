@@ -30,7 +30,7 @@
     "path": "vr-stuff/games/asgards-wrath-2/data.json"
   },
   {
-    "title": "Assassin’s Creed Nexus VR",
+    "title": "Assassin\u2019s Creed Nexus VR",
     "slug": "assassins-creed-nexus-vr",
     "path": "vr-stuff/games/assassins-creed-nexus-vr/data.json"
   },
@@ -413,6 +413,11 @@
     "title": "Resident Evil 4",
     "slug": "resident-evil-4",
     "path": "vr-stuff/games/resident-evil-4/data.json"
+  },
+  {
+    "title": "The Rifted Skies",
+    "slug": "the-rifted-skies",
+    "path": "vr-stuff/games/the-rifted-skies/data.json"
   },
   {
     "title": "Riven",

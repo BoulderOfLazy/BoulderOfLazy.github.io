@@ -1,0 +1,49 @@
+{
+  "slug": "the-rifted-skies",
+  "title": "The Rifted Skies",
+  "shortDescription": "",
+  "longDescription": "The Rifted Skies это активный VR-паркур в давно покинутом мире. Ты одинокий воин, вернувшийся в родные земли в поисках ответов. Беги и сражайся, чтобы ускользнуть от смертоносного Рифта, пожирающего всё на своём пути. Умирай, возрождайся и становись сильнее с каждой новой попыткой.",
+  "metaLink": "https://www.meta.com/experiences/the-rifted-skies/24605298775746422/",
+  "steamLink": "https://store.steampowered.com/app/4857730/The_Rifted_Skies/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "Скоро выйдет",
+  "steamPrice": "Скоро выйдет",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/the-rifted-skies/cover.webp",
+  "logo": "/vr-stuff/games/the-rifted-skies/logo.webp",
+  "background": "/vr-stuff/games/the-rifted-skies/background.webp",
+  "trailer": {
+    "youtubeId": "_SPKcAYZ_pI",
+    "thumbnail": "https://i.ytimg.com/vi/_SPKcAYZ_pI/hq720.jpg"
+  },
+  "screenshots": [
+    "/vr-stuff/games/the-rifted-skies/screenshot_0.webp",
+    "/vr-stuff/games/the-rifted-skies/screenshot_1.webp",
+    "/vr-stuff/games/the-rifted-skies/screenshot_2.webp",
+    "/vr-stuff/games/the-rifted-skies/screenshot_3.webp",
+    "/vr-stuff/games/the-rifted-skies/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Fighting",
+      "Platformer",
+      "Roguelike",
+      "Shooter"
+    ],
+    "gameModes": [
+      "Singleplayer"
+    ],
+    "themes": [
+      "Magic"
+    ]
+  }
+}
