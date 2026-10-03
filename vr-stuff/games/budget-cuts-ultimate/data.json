@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/budget-cuts-ultimate/cover.webp",
   "logo": "/vr-stuff/games/budget-cuts-ultimate/logo.webp",
   "background": "/vr-stuff/games/budget-cuts-ultimate/background.webp",
-  "trailer": {
-    "youtubeId": "HNnjklPRsZQ",
-    "thumbnail": "https://i.ytimg.com/vi/HNnjklPRsZQ/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=HNnjklPRsZQ",
   "screenshots": [
     "/vr-stuff/games/budget-cuts-ultimate/screenshot_0.webp",
     "/vr-stuff/games/budget-cuts-ultimate/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Stealth"
+      "Стелс"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Narrative"
+      "Комедийная",
+      "Повествовательная"
     ]
   }
 }

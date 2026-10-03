@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vmx/cover.webp",
   "logo": "/vr-stuff/games/vmx/logo.webp",
   "background": "/vr-stuff/games/vmx/background.webp",
-  "trailer": {
-    "youtubeId": "7s3Cf5g7Dr8",
-    "thumbnail": "https://i.ytimg.com/vi/7s3Cf5g7Dr8/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=7s3Cf5g7Dr8",
   "screenshots": [
     "/vr-stuff/games/vmx/screenshot_2.webp",
     "/vr-stuff/games/vmx/screenshot_3.webp",
@@ -34,17 +31,17 @@
       "Quest"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based",
-      "Piloting",
-      "Sports"
+      "Физичная",
+      "Пилотирование",
+      "Спортивная"
     ]
   }
 }

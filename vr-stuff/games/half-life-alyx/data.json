@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/half-life-alyx/cover.webp",
   "logo": "/vr-stuff/games/half-life-alyx/logo.webp",
   "background": "/vr-stuff/games/half-life-alyx/background.webp",
-  "trailer": {
-    "youtubeId": "O2W0N3uKXmo",
-    "thumbnail": "https://i.ytimg.com/vi/O2W0N3uKXmo/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=O2W0N3uKXmo",
   "screenshots": [
     "/vr-stuff/games/half-life-alyx/screenshot_0.webp",
     "/vr-stuff/games/half-life-alyx/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

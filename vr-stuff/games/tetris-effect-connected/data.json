@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/tetris-effect-connected/cover.webp",
   "logo": "/vr-stuff/games/tetris-effect-connected/logo.webp",
   "background": "/vr-stuff/games/tetris-effect-connected/background.webp",
-  "trailer": {
-    "youtubeId": "yDzPCTgOq84",
-    "thumbnail": "https://i.ytimg.com/vi/yDzPCTgOq84/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=yDzPCTgOq84",
   "screenshots": [
     "/vr-stuff/games/tetris-effect-connected/screenshot_4.webp",
     "/vr-stuff/games/tetris-effect-connected/screenshot_5.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Cozy"
+      "На зачиллить",
+      "Ламповая"
     ]
   }
 }

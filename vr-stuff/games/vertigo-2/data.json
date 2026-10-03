@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vertigo-2/cover.webp",
   "logo": "/vr-stuff/games/vertigo-2/logo.webp",
   "background": "/vr-stuff/games/vertigo-2/background.webp",
-  "trailer": {
-    "youtubeId": "zz_Yrw0Zang",
-    "thumbnail": "https://i.ytimg.com/vi/zz_Yrw0Zang/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=zz_Yrw0Zang",
   "screenshots": [
     "/vr-stuff/games/vertigo-2/screenshot_0.webp",
     "/vr-stuff/games/vertigo-2/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based"
+      "Физичная"
     ]
   }
 }

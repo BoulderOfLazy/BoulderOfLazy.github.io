@@ -175,6 +175,11 @@
     "path": "vr-stuff/games/fixer-undercover/data.json"
   },
   {
+    "title": "Forefront",
+    "slug": "forefront",
+    "path": "vr-stuff/games/forefront/data.json"
+  },
+  {
     "title": "Ghost Town",
     "slug": "ghost-town",
     "path": "vr-stuff/games/ghost-town/data.json"

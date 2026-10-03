@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/beat-the-beats/cover.webp",
   "logo": "/vr-stuff/games/beat-the-beats/logo.webp",
   "background": "/vr-stuff/games/beat-the-beats/background.webp",
-  "trailer": {
-    "youtubeId": "MTMW8fre30s",
-    "thumbnail": "https://i.ytimg.com/vi/MTMW8fre30s/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=MTMW8fre30s",
   "screenshots": [
     "/vr-stuff/games/beat-the-beats/screenshot_6.webp",
     "/vr-stuff/games/beat-the-beats/screenshot_7.webp",
@@ -34,13 +31,13 @@
       "Quest"
     ],
     "genres": [
-      "Rhythm"
+      "Ритм-игра"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Sports"
+      "Спортивная"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/project-wingman/cover.webp",
   "logo": "/vr-stuff/games/project-wingman/logo.webp",
   "background": "/vr-stuff/games/project-wingman/background.webp",
-  "trailer": {
-    "youtubeId": "rc6S4H7SspA",
-    "thumbnail": "https://i.ytimg.com/vi/rc6S4H7SspA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=rc6S4H7SspA",
   "screenshots": [
     "/vr-stuff/games/project-wingman/screenshot_0.webp",
     "/vr-stuff/games/project-wingman/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Piloting"
+      "Пилотирование"
     ]
   }
 }

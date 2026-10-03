@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/asgards-wrath/cover.webp",
   "logo": "/vr-stuff/games/asgards-wrath/logo.webp",
   "background": "/vr-stuff/games/asgards-wrath/background.webp",
-  "trailer": {
-    "youtubeId": "d5a4nWtbVyY",
-    "thumbnail": "https://i.ytimg.com/vi/d5a4nWtbVyY/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=d5a4nWtbVyY",
   "screenshots": [
     "/vr-stuff/games/asgards-wrath/screenshot_0.webp",
     "/vr-stuff/games/asgards-wrath/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "RPG"
+      "РПГ"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

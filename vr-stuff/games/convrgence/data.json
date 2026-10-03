@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/convrgence/cover.webp",
   "logo": "/vr-stuff/games/convrgence/logo.webp",
   "background": "/vr-stuff/games/convrgence/background.webp",
-  "trailer": {
-    "youtubeId": "obtjEpkiMkQ",
-    "thumbnail": "https://i.ytimg.com/vi/obtjEpkiMkQ/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=obtjEpkiMkQ",
   "screenshots": [
     "/vr-stuff/games/convrgence/screenshot_0.webp",
     "/vr-stuff/games/convrgence/screenshot_1.webp",
@@ -33,15 +30,15 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter",
-      "Survival"
+      "Шутер",
+      "Выживач"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Post-Apocalyptic"
+      "Хоррор",
+      "Постапок"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/gorn/cover.webp",
   "logo": "/vr-stuff/games/gorn/logo.webp",
   "background": "/vr-stuff/games/gorn/background.webp",
-  "trailer": {
-    "youtubeId": "3YkrnWr1nRw",
-    "thumbnail": "https://i.ytimg.com/vi/3YkrnWr1nRw/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=3YkrnWr1nRw",
   "screenshots": [
     "/vr-stuff/games/gorn/screenshot_0.webp",
     "/vr-stuff/games/gorn/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Fighting"
+      "Ближний бой"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Physics-based"
+      "Комедийная",
+      "Физичная"
     ]
   }
 }

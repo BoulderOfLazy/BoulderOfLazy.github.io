@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/puzzling-places/cover.webp",
   "logo": "/vr-stuff/games/puzzling-places/logo.webp",
   "background": "/vr-stuff/games/puzzling-places/background.webp",
-  "trailer": {
-    "youtubeId": "gmuGRIHfmRQ",
-    "thumbnail": "https://i.ytimg.com/vi/gmuGRIHfmRQ/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=gmuGRIHfmRQ",
   "screenshots": [
     "/vr-stuff/games/puzzling-places/screenshot_6.webp",
     "/vr-stuff/games/puzzling-places/screenshot_7.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Cozy"
+      "На зачиллить",
+      "Ламповая"
     ]
   }
 }

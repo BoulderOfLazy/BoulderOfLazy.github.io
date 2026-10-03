@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/the-room-vr-a-dark-matter/cover.webp",
   "logo": "/vr-stuff/games/the-room-vr-a-dark-matter/logo.webp",
   "background": "/vr-stuff/games/the-room-vr-a-dark-matter/background.webp",
-  "trailer": {
-    "youtubeId": "iySB6jnYwYE",
-    "thumbnail": "https://i.ytimg.com/vi/iySB6jnYwYE/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=iySB6jnYwYE",
   "screenshots": [
     "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_0.webp",
     "/vr-stuff/games/the-room-vr-a-dark-matter/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Narrative"
+      "Хоррор",
+      "Повествовательная"
     ]
   }
 }

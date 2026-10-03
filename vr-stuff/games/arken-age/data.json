@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/arken-age/cover.webp",
   "logo": "/vr-stuff/games/arken-age/logo.webp",
   "background": "/vr-stuff/games/arken-age/background.webp",
-  "trailer": {
-    "youtubeId": "hEL9NlXnnVo",
-    "thumbnail": "https://i.ytimg.com/vi/hEL9NlXnnVo/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=hEL9NlXnnVo",
   "screenshots": [
     "/vr-stuff/games/arken-age/screenshot_0.webp",
     "/vr-stuff/games/arken-age/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "RPG",
-      "Shooter"
+      "Ближний бой",
+      "РПГ",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based"
+      "Физичная"
     ]
   }
 }

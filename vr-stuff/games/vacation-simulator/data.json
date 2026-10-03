@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vacation-simulator/cover.webp",
   "logo": "/vr-stuff/games/vacation-simulator/logo.webp",
   "background": "/vr-stuff/games/vacation-simulator/background.webp",
-  "trailer": {
-    "youtubeId": "vn-q463SWf0",
-    "thumbnail": "https://i.ytimg.com/vi/vn-q463SWf0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=vn-q463SWf0",
   "screenshots": [
     "/vr-stuff/games/vacation-simulator/screenshot_0.webp",
     "/vr-stuff/games/vacation-simulator/screenshot_1.webp",
@@ -32,17 +29,17 @@
       "Quest"
     ],
     "genres": [
-      "Sandbox",
-      "Simulation"
+      "Песочница",
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Comedy",
-      "Cozy",
-      "Physics-based"
+      "На зачиллить",
+      "Комедийная",
+      "Ламповая",
+      "Физичная"
     ]
   }
 }

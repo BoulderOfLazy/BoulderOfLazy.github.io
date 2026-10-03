@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/madison-vr/cover.webp",
   "logo": "/vr-stuff/games/madison-vr/logo.webp",
   "background": "/vr-stuff/games/madison-vr/background.webp",
-  "trailer": {
-    "youtubeId": "3SBAsyClOm4",
-    "thumbnail": "https://i.ytimg.com/vi/3SBAsyClOm4/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=3SBAsyClOm4",
   "screenshots": [
     "/vr-stuff/games/madison-vr/screenshot_0.webp",
     "/vr-stuff/games/madison-vr/screenshot_1.webp",
@@ -35,11 +32,11 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Narrative"
+      "Хоррор",
+      "Повествовательная"
     ]
   }
 }

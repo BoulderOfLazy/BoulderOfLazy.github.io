@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/eye-of-the-temple/cover.webp",
   "logo": "/vr-stuff/games/eye-of-the-temple/logo.webp",
   "background": "/vr-stuff/games/eye-of-the-temple/background.webp",
-  "trailer": {
-    "youtubeId": "_96potxOhZI",
-    "thumbnail": "https://i.ytimg.com/vi/_96potxOhZI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=_96potxOhZI",
   "screenshots": [
     "/vr-stuff/games/eye-of-the-temple/screenshot_0.webp",
     "/vr-stuff/games/eye-of-the-temple/screenshot_1.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

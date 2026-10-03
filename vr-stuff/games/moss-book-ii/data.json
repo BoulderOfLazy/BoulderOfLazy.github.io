@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/moss-book-ii/cover.webp",
   "logo": "/vr-stuff/games/moss-book-ii/logo.webp",
   "background": "/vr-stuff/games/moss-book-ii/background.webp",
-  "trailer": {
-    "youtubeId": "1dcFkH4yqMI",
-    "thumbnail": "https://i.ytimg.com/vi/1dcFkH4yqMI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=1dcFkH4yqMI",
   "screenshots": [
     "/vr-stuff/games/moss-book-ii/screenshot_0.webp",
     "/vr-stuff/games/moss-book-ii/screenshot_1.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Platformer",
-      "Puzzle"
+      "Платформер / Паркур",
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cozy",
-      "Magic",
-      "Narrative"
+      "Ламповая",
+      "Магия",
+      "Повествовательная"
     ]
   }
 }

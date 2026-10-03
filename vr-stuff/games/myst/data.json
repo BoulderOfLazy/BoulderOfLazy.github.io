@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/myst/cover.webp",
   "logo": "/vr-stuff/games/myst/logo.webp",
   "background": "/vr-stuff/games/myst/background.webp",
-  "trailer": {
-    "youtubeId": "lSjitylRmLI",
-    "thumbnail": "https://i.ytimg.com/vi/lSjitylRmLI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=lSjitylRmLI",
   "screenshots": [
     "/vr-stuff/games/myst/screenshot_6.webp",
     "/vr-stuff/games/myst/screenshot_7.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

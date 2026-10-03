@@ -52,9 +52,9 @@ async function loadGamesData() {
 
 function initializeTags() {
   GAMES_DATA.forEach(g => {
-    if (!g.tags) g.tags = { platforms: [], genres: [], gameModes: ["Singleplayer"], themes: [] };
+    if (!g.tags) g.tags = { platforms: [], genres: [], gameModes: ["Одиночка"], themes: [] };
     if (!g.tags.gameModes) g.tags.gameModes = [];
-    if (!g.tags.gameModes.includes("Singleplayer")) g.tags.gameModes.unshift("Singleplayer");
+    if (!g.tags.gameModes.includes("Одиночка")) g.tags.gameModes.unshift("Одиночка");
     for (const cat of Object.keys(g.tags)) {
       if (Array.isArray(g.tags[cat])) {
         g.tags[cat].sort((a, b) => {
@@ -80,44 +80,84 @@ const TAG_TRANSLATIONS = {
     "PCVR": "PCVR"
   },
   "genres": {
-    "Fighting": "Ближний бой",
-    "Platformer": "Платформер / Паркур",
-    "Puzzle": "Головоломка",
-    "Rhythm": "Ритм-игра",
-    "Roguelike": "Рогалик",
-    "RPG": "РПГ",
-    "Sandbox": "Песочница",
-    "Shooter": "Шутер",
-    "Simulation": "Симулятор",
-    "Stealth": "Стелс",
-    "Strategy": "Стратегия / Тактика",
-    "Survival": "Выживач"
+    "Ближний бой": "Ближний бой",
+    "Платформер / Паркур": "Платформер / Паркур",
+    "Ритм-игра": "Ритм-игра",
+    "Рогалик": "Рогалик",
+    "РПГ": "РПГ",
+    "Песочница": "Песочница",
+    "Шутер": "Шутер",
+    "Симулятор": "Симулятор",
+    "Стелс": "Стелс",
+    "Стратегия / Тактика": "Стратегия / Тактика",
+    "Выживач": "Выживач",
+    "На подумать": "На подумать"
   },
   "gameModes": {
-    "Co-op": "Кооп",
-    "Multiplayer": "Мультиплеер",
-    "Singleplayer": "Одиночка"
+    "Кооп": "Кооп",
+    "Мультиплеер": "Мультиплеер",
+    "Одиночка": "Одиночка"
   },
   "themes": {
-	  "Chill": "На зачиллить",
-    "Comedy": "Комедийная",
-	  "Cosmos": "Космическая",
-	  "Cozy": "Ламповая",
-    "Horror": "Хоррор",
-    "Narrative": "Повествовательная",
-	  "Magic": "Магия",
-    "Open World": "Открытый мир",
-	  "Physics-based": "Физичная",
-	  "Piloting": "Пилотирование",
-    "Sports": "Спортивная",
-    "Post-Apocalyptic": "Постапок"
+    "На зачиллить": "На зачиллить",
+    "Комедийная": "Комедийная",
+    "Космическая": "Космическая",
+    "Ламповая": "Ламповая",
+    "Хоррор": "Хоррор",
+    "Повествовательная": "Повествовательная",
+    "Магия": "Магия",
+    "Открытый мир": "Открытый мир",
+    "Физичная": "Физичная",
+    "Пилотирование": "Пилотирование",
+    "Спортивная": "Спортивная",
+    "Постапок": "Постапок"
+  }
+};
+
+const TAG_DESCRIPTIONS = {
+  "platforms": {
+    "Quest": "В это можно поиграть на Quest 2 или 3(S). Первый не учитываю, т.к. слишком старый. Отдельно помечены игры, запускающиеся только на Quest 3(S)",
+    "PCVR": "В это можно поиграть на ПК"
+  },
+  "genres": {
+    "Ближний бой": "Всё, где можно набивать и нашинковывать лица",
+    "Платформер / Паркур": "Всё, где нужно много прыгать и скакать. Вполне вероятно, что в играх с этим тегом тебя укачает",
+    "Ритм-игра": "Всё, где ты делаешь что-то под музыку!",
+    "Рогалик": "Всё, где предполагается сессионный формат, процедурная или рандомная генерация и потеря прогресса в разной форме",
+    "РПГ": "Всё, что является РПГ или содержит значительное кол-во элементов данного жанра",
+    "Песочница": "Всё, что имеет широкие просторы для воображения",
+    "Шутер": "Всё, где надо делать пиу-пиу по врагам и не только",
+    "Симулятор": "Жанр, который позволяет тебе побыть кем-то, кем, скорее всего, ты никогда не станешь))",
+    "Стелс": "В этих играх нужно быть очень-очень тихим...",
+    "Стратегия / Тактика": "Сюда запихал много чего: от RTS-ок с космическими баталиями до градостроителей",
+    "Выживач": "Всё, что связано с менеджментом ресурсов или шкал потребностей персонажа",
+    "На подумать": "Всё, где нужно пораскинуть мозгами"
+  },
+  "gameModes": {
+    "Кооп": "",
+    "Мультиплеер": "",
+    "Одиночка": ""
+  },
+  "themes": {
+    "На зачиллить": "Всё то, во что можно играть максимально ненапряжно",
+    "Комедийная": "Посмеяться и т.д.",
+    "Космическая": "Игры с именно что космическим сеттингом - не путать с научно-фантастическим",
+    "Ламповая": "Игры с уютной или простодушной атмосферой",
+    "Хоррор": "Попугаться и т.п.",
+    "Повествовательная": "Всё, что имеет синглплеерную кампанию, чаще всего с сюжетом",
+    "Магия": "Всё, что позволяет игроку кастить спеллы",
+    "Открытый мир": "Большой свободный мир, исследование без линейности",
+    "Физичная": "Игры, в которых имеется активное физическое взаимодействие с окружением и NPC",
+    "Пилотирование": "Управление транспортными средствами: самолёты, корабли, танки",
+    "Спортивная": "Игры, способные поддерживать вас в форме",
+    "Постапок": "Всё, где осталась лишь разруха и тлен"
   }
 };
 
 const TAG_ICONS = {
   "platforms": {
-	"Quest": "/images/icons/meta-logo.svg",
-	"PCVR": "/images/icons/pc.svg"
+    "Quest": "/images/icons/meta-logo.svg",
+    "PCVR": "/images/icons/pc.svg"
   }
 };
 
@@ -125,7 +165,31 @@ const TAG_ORDER = ["platforms", "genres", "gameModes", "themes"];
 
 let activeSearch = "";
 let activeTags = new Set();
+let excludedTags = new Set();
 const carouselStates = new Map();
+
+function getTagDescription(category, tag) {
+  return TAG_DESCRIPTIONS[category]?.[tag] || "";
+}
+
+function extractYoutubeId(youtubeUrl) {
+  if (!youtubeUrl) return "";
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/|youtube\.com\/v\/)([a-zA-Z0-9_-]{11})/,
+    /^([a-zA-Z0-9_-]{11})$/
+  ];
+  for (const p of patterns) {
+    const m = youtubeUrl.match(p);
+    if (m) return m[1];
+  }
+  return "";
+}
+
+function getYoutubeThumbnail(youtubeUrl) {
+  const id = extractYoutubeId(youtubeUrl);
+  if (!id) return "";
+  return `https://i.ytimg.com/vi/${id}/hq720.jpg`;
+}
 
 function stripMdLinks(str) {
   if (!str) return "";
@@ -173,12 +237,14 @@ function getTagLabel(category, tag) {
 
 function getTagHTML(category, tag) {
   const label = getTagLabel(category, tag);
+  const desc = getTagDescription(category, tag);
+  const titleAttr = desc ? ` title="${desc.replace(/"/g, '&quot;')}"` : '';
   const iconPath = TAG_ICONS[category]?.[tag];
   if (iconPath) {
     const icon = `<span class="tag-icon-mask" style="--icon-url: url('${iconPath}');"></span>`;
-    return `${icon}<span class="tag-text">${label}</span>`;
+    return `<span${titleAttr}>${icon}<span class="tag-text">${label}</span></span>`;
   }
-  return label;
+  return `<span${titleAttr}>${label}</span>`;
 }
 
 function filterGames() {
@@ -188,8 +254,13 @@ function filterGames() {
       game.title.toLowerCase().includes(q) ||
       (game.shortDescription && game.shortDescription.toLowerCase().includes(q));
     if (!matchesSearch) return false;
-    if (activeTags.size === 0) return true;
     const combined = getCombinedTags(game);
+    if (excludedTags.size > 0) {
+      for (const tag of excludedTags) {
+        if (combined.includes(tag)) return false;
+      }
+    }
+    if (activeTags.size === 0) return true;
     for (const tag of activeTags) {
       if (!combined.includes(tag)) return false;
     }
@@ -215,13 +286,26 @@ function renderTagPanel() {
       });
       for (const t of tags) {
         const chip = document.createElement("span");
-        chip.className = "tag-chip" + (activeTags.has(t) ? " active" : "");
+        let cls = "tag-chip";
+        if (activeTags.has(t)) cls += " active";
+        if (excludedTags.has(t)) cls += " excluded";
+        chip.className = cls;
         chip.dataset.category = cat;
         chip.innerHTML = getTagHTML(cat, t);
         chip.addEventListener("click", (e) => {
           e.stopPropagation();
+          excludedTags.delete(t);
           if (activeTags.has(t)) activeTags.delete(t);
           else activeTags.add(t);
+          renderTagPanel();
+          renderGames();
+        });
+        chip.addEventListener("contextmenu", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          activeTags.delete(t);
+          if (excludedTags.has(t)) excludedTags.delete(t);
+          else excludedTags.add(t);
           renderTagPanel();
           renderGames();
         });
@@ -230,7 +314,10 @@ function renderTagPanel() {
     });
 
     const activeContainer = document.getElementById("activeTagsContainer");
+    const excludedContainer = document.getElementById("excludedTagsContainer");
     const clearBtn = document.getElementById("clearTagsBtn");
+    const clearExcludedBtn = document.getElementById("clearExcludedBtn");
+
     if (activeContainer) {
       activeContainer.innerHTML = "";
       if (activeTags.size === 0) {
@@ -267,10 +354,56 @@ function renderTagPanel() {
         }
       }
     }
+
+    if (excludedContainer) {
+      excludedContainer.innerHTML = "";
+      if (excludedTags.size === 0) {
+        const span = document.createElement("span");
+        span.className = "no-active-tags";
+        span.textContent = "Нет исключённых тегов";
+        excludedContainer.appendChild(span);
+      } else {
+        for (const t of Array.from(excludedTags)) {
+          const chip = document.createElement("span");
+          chip.className = "excluded-tag-chip";
+          let foundCat = null;
+          for (const c of Object.keys(allTags)) {
+            if (allTags[c].has(t)) {
+              foundCat = c;
+              break;
+            }
+          }
+          if (foundCat) chip.dataset.category = foundCat;
+          chip.innerHTML = getTagHTML(foundCat, t) + '<span class="remove-tag">×</span>';
+          chip.querySelector(".remove-tag").addEventListener("click", (e) => {
+            e.stopPropagation();
+            excludedTags.delete(t);
+            renderTagPanel();
+            renderGames();
+          });
+          chip.addEventListener("click", (e) => {
+            e.stopPropagation();
+            excludedTags.delete(t);
+            renderTagPanel();
+            renderGames();
+          });
+          excludedContainer.appendChild(chip);
+        }
+      }
+    }
+
     if (clearBtn) {
       clearBtn.style.display = activeTags.size > 0 ? "inline-block" : "none";
       clearBtn.onclick = () => {
         activeTags.clear();
+        renderTagPanel();
+        renderGames();
+      };
+    }
+    if (clearExcludedBtn) {
+      clearExcludedBtn.style.display = excludedTags.size > 0 ? "inline-block" : "none";
+      clearExcludedBtn.onclick = () => {
+        excludedTags.clear();
         renderTagPanel();
         renderGames();
       };
@@ -355,8 +488,10 @@ function renderCollapsedHeader(game) {
   const tagsHtmlArr = [];
   for (const cat of TAG_ORDER) {
     for (const t of game.tags[cat]) {
-      const isActive = activeTags.has(t) ? ' active' : '';
-      tagsHtmlArr.push('<span class="game-tag' + isActive + '" data-tag="' + t.replace(/"/g, '&quot;') + '" data-category="' + cat + '">' + getTagHTML(cat, t) + '</span>');
+      let tagClasses = 'game-tag';
+      if (activeTags.has(t)) tagClasses += ' active';
+      if (excludedTags.has(t)) tagClasses += ' excluded';
+      tagsHtmlArr.push('<span class="' + tagClasses + '" data-tag="' + t.replace(/"/g, '&quot;') + '" data-category="' + cat + '">' + getTagHTML(cat, t) + '</span>');
 	}
   }
   const tagsHtml = tagsHtmlArr.join('');
@@ -410,14 +545,19 @@ function renderMainViewerDefault(game) {
 
 function renderCarouselItems(game, gameIdx) {
   let html = '';
-  html += '<div class="carousel-item trailer-thumb" data-type="trailer" data-game-idx="' + gameIdx + '" data-index="0">' +
-    '<img src="' + game.trailer.thumbnail + '" alt="Trailer">' +
-    '<div class="trailer-play-overlay">' +
-    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
-    '</div></div>';
+  const trailerUrl = (typeof game.trailer === 'string') ? game.trailer : (game.trailer?.youtubeUrl || game.trailer?.youtubeId || '');
+  const thumb = getYoutubeThumbnail(trailerUrl);
+  if (thumb) {
+    html += '<div class="carousel-item trailer-thumb" data-type="trailer" data-game-idx="' + gameIdx + '" data-index="0">' +
+      '<img src="' + thumb + '" alt="Trailer">' +
+      '<div class="trailer-play-overlay">' +
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
+      '</div></div>';
+  }
   game.screenshots.forEach((scr, i) => {
-    const selected = i === 0 ? ' selected' : '';
-    html += '<div class="carousel-item' + selected + '" data-type="screenshot" data-game-idx="' + gameIdx + '" data-index="' + (i + 1) + '">' +
+    const selected = (i === 0 && !thumb) ? ' selected' : (i === 0 && thumb ? '' : (thumb ? '' : (i === 0 ? ' selected' : '')));
+    const correctedSelected = (!thumb && i === 0) ? ' selected' : (thumb ? (i === 0 ? '' : '') : '');
+    html += '<div class="carousel-item' + ( (!thumb && i === 0) ? ' selected' : '' ) + '" data-type="screenshot" data-game-idx="' + gameIdx + '" data-index="' + (thumb ? i + 1 : i) + '">' +
       '<img src="' + scr + '" alt="Screenshot ' + (i + 1) + '"></div>';
   });
   return html;
@@ -434,8 +574,13 @@ function selectMediaItem(gameEl, gameIdx, dataIndex) {
   if (targetItem) targetItem.classList.add('selected');
 
   const idx = parseInt(dataIndex, 10);
-  if (idx === 0) {
-    mainViewer.innerHTML = '<img src="' + game.trailer.thumbnail + '" alt="Trailer">' +
+  const trailerUrl = (typeof game.trailer === 'string') ? game.trailer : (game.trailer?.youtubeUrl || game.trailer?.youtubeId || '');
+  const hasTrailer = !!trailerUrl;
+  const ytId = extractYoutubeId(trailerUrl);
+
+  if (hasTrailer && idx === 0) {
+    const thumb = getYoutubeThumbnail(trailerUrl);
+    mainViewer.innerHTML = '<img src="' + thumb + '" alt="Trailer">' +
       '<div class="trailer-overlay" data-game-idx="' + gameIdx + '">' +
       '<div class="play-icon-big">' +
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
@@ -444,12 +589,12 @@ function selectMediaItem(gameEl, gameIdx, dataIndex) {
     if (overlay) {
       overlay.addEventListener('click', () => {
         stopAutoCycle(gameIdx);
-        mainViewer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + game.trailer.youtubeId +
+        mainViewer.innerHTML = '<iframe src="https://www.youtube.com/embed/' + ytId +
           '?autoplay=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
       });
     }
   } else {
-    const scrIdx = idx - 1;
+    const scrIdx = hasTrailer ? idx - 1 : idx;
     const src = game.screenshots[scrIdx] || '';
     mainViewer.innerHTML = '<img src="' + src + '" alt="Screenshot">';
   }
@@ -467,15 +612,18 @@ function stopAutoCycle(gameIdx) {
 
 function startAutoCycle(gameEl, gameIdx) {
   stopAutoCycle(gameIdx);
-  const totalItems = (GAMES_DATA[gameIdx]?.screenshots?.length || 0) + 1;
+  const game = GAMES_DATA[gameIdx];
+  const trailerUrl = (typeof game?.trailer === 'string') ? game.trailer : (game?.trailer?.youtubeUrl || game?.trailer?.youtubeId || '');
+  const hasTrailer = !!trailerUrl;
+  const totalItems = (game?.screenshots?.length || 0) + (hasTrailer ? 1 : 0);
   if (totalItems <= 1) return;
 
   let state = carouselStates.get(gameIdx);
   if (!state) {
-    state = { selectedIndex: 1, intervalId: null };
+    state = { selectedIndex: hasTrailer ? 1 : 0, intervalId: null };
     carouselStates.set(gameIdx, state);
   } else {
-    state.selectedIndex = 1;
+    state.selectedIndex = hasTrailer ? 1 : 0;
   }
 
   state.intervalId = setInterval(() => {
@@ -485,7 +633,7 @@ function startAutoCycle(gameEl, gameIdx) {
       const maxIdx = totalItems - 1;
       let next = s.selectedIndex + 1;
       if (next > maxIdx) {
-        next = 1;
+        next = hasTrailer ? 1 : 0;
       }
       s.selectedIndex = next;
       if (gameEl && gameEl.isConnected && gameEl.classList.contains('open')) {
@@ -540,8 +688,20 @@ function bindGameTagClicks(gameEl) {
       e.stopPropagation();
       const t = chip.dataset.tag;
       if (!t) return;
+      excludedTags.delete(t);
       if (activeTags.has(t)) activeTags.delete(t);
       else activeTags.add(t);
+      renderTagPanel();
+      renderGames();
+    });
+    chip.addEventListener('contextmenu', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const t = chip.dataset.tag;
+      if (!t) return;
+      activeTags.delete(t);
+      if (excludedTags.has(t)) excludedTags.delete(t);
+      else excludedTags.add(t);
       renderTagPanel();
       renderGames();
     });

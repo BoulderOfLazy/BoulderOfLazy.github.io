@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/little-nightmares-vr-altered-echoes/cover.webp",
   "logo": "/vr-stuff/games/little-nightmares-vr-altered-echoes/logo.webp",
   "background": "/vr-stuff/games/little-nightmares-vr-altered-echoes/background.webp",
-  "trailer": {
-    "youtubeId": "TEoynUMGbao",
-    "thumbnail": "https://i.ytimg.com/vi/TEoynUMGbao/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=TEoynUMGbao",
   "screenshots": [
     "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_0.webp",
     "/vr-stuff/games/little-nightmares-vr-altered-echoes/screenshot_1.webp",
@@ -35,11 +32,11 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Narrative"
+      "Хоррор",
+      "Повествовательная"
     ]
   }
 }

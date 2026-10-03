@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/payday-aces-high/cover.webp",
   "logo": "/vr-stuff/games/payday-aces-high/logo.webp",
   "background": "/vr-stuff/games/payday-aces-high/background.webp",
-  "trailer": {
-    "youtubeId": "s2azupCPOcA",
-    "thumbnail": "https://i.ytimg.com/vi/s2azupCPOcA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=s2azupCPOcA",
   "screenshots": [
     "/vr-stuff/games/payday-aces-high/screenshot_6.webp",
     "/vr-stuff/games/payday-aces-high/screenshot_7.webp",
@@ -34,12 +31,12 @@
       "Quest"
     ],
     "genres": [
-      "Shooter",
-      "Stealth"
+      "Шутер",
+      "Стелс"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": []
   }

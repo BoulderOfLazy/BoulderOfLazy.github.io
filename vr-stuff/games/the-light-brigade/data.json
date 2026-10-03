@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/the-light-brigade/cover.webp",
   "logo": "/vr-stuff/games/the-light-brigade/logo.webp",
   "background": "/vr-stuff/games/the-light-brigade/background.webp",
-  "trailer": {
-    "youtubeId": "hJ6EssYry18",
-    "thumbnail": "https://i.ytimg.com/vi/hJ6EssYry18/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=hJ6EssYry18",
   "screenshots": [
     "/vr-stuff/games/the-light-brigade/screenshot_0.webp",
     "/vr-stuff/games/the-light-brigade/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Roguelike",
-      "Shooter"
+      "Рогалик",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic"
+      "Магия"
     ]
   }
 }

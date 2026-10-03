@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/phantom-covert-ops/cover.webp",
   "logo": "/vr-stuff/games/phantom-covert-ops/logo.webp",
   "background": "/vr-stuff/games/phantom-covert-ops/background.webp",
-  "trailer": {
-    "youtubeId": "bbFYT79u65E",
-    "thumbnail": "https://i.ytimg.com/vi/bbFYT79u65E/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=bbFYT79u65E",
   "screenshots": [
     "/vr-stuff/games/phantom-covert-ops/screenshot_0.webp",
     "/vr-stuff/games/phantom-covert-ops/screenshot_1.webp",
@@ -33,11 +30,11 @@
       "Quest"
     ],
     "genres": [
-      "Shooter",
-      "Stealth"
+      "Шутер",
+      "Стелс"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

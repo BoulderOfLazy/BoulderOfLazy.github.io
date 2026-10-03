@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/cover.webp",
   "logo": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/logo.webp",
   "background": "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/background.webp",
-  "trailer": {
-    "youtubeId": "PKiBY61_A4Q",
-    "thumbnail": "https://i.ytimg.com/vi/PKiBY61_A4Q/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=PKiBY61_A4Q",
   "screenshots": [
     "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_4.webp",
     "/vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/screenshot_5.webp",
@@ -34,18 +31,18 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "Platformer"
+      "Ближний бой",
+      "Платформер / Паркур"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Narrative",
-      "Open World",
-      "Physics-based"
+      "Комедийная",
+      "Повествовательная",
+      "Открытый мир",
+      "Физичная"
     ]
   }
 }

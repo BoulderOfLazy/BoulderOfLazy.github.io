@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/windlands-2/cover.webp",
   "logo": "/vr-stuff/games/windlands-2/logo.webp",
   "background": "/vr-stuff/games/windlands-2/background.webp",
-  "trailer": {
-    "youtubeId": "BSeIn9q1jT4",
-    "thumbnail": "https://i.ytimg.com/vi/BSeIn9q1jT4/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=BSeIn9q1jT4",
   "screenshots": [
     "/vr-stuff/games/windlands-2/screenshot_0.webp",
     "/vr-stuff/games/windlands-2/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Platformer",
-      "Shooter"
+      "Платформер / Паркур",
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": [
-      "Open World"
+      "Открытый мир"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/cover.webp",
   "logo": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/logo.webp",
   "background": "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/hero.webp",
-  "trailer": {
-    "youtubeId": "s4PmSOLW0sU",
-    "thumbnail": "https://i.ytimg.com/vi/s4PmSOLW0sU/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=s4PmSOLW0sU",
   "screenshots": [
     "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_2.webp",
     "/vr-stuff/games/crime-shop-simulator-a-prison-boss-game/screenshot_3.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Cozy"
+      "Комедийная",
+      "Ламповая"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/thief-vr-legacy-of-shadow/cover.webp",
   "logo": "/vr-stuff/games/thief-vr-legacy-of-shadow/logo.webp",
   "background": "/vr-stuff/games/thief-vr-legacy-of-shadow/background.webp",
-  "trailer": {
-    "youtubeId": "KsaiBAvU8X4",
-    "thumbnail": "https://i.ytimg.com/vi/KsaiBAvU8X4/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=KsaiBAvU8X4",
   "screenshots": [
     "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_6.webp",
     "/vr-stuff/games/thief-vr-legacy-of-shadow/screenshot_7.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Stealth"
+      "Стелс"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic",
-      "Narrative"
+      "Магия",
+      "Повествовательная"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/waltz-of-the-wizard/cover.webp",
   "logo": "/vr-stuff/games/waltz-of-the-wizard/logo.webp",
   "background": "/vr-stuff/games/waltz-of-the-wizard/background.webp",
-  "trailer": {
-    "youtubeId": "2WLH5uuqsBw",
-    "thumbnail": "https://i.ytimg.com/vi/2WLH5uuqsBw/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=2WLH5uuqsBw",
   "screenshots": [
     "/vr-stuff/games/waltz-of-the-wizard/screenshot_0.webp",
     "/vr-stuff/games/waltz-of-the-wizard/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Sandbox"
+      "Песочница"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Magic",
-      "Physics-based"
+      "Комедийная",
+      "Магия",
+      "Физичная"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/riven/cover.webp",
   "logo": "/vr-stuff/games/riven/logo.webp",
   "background": "/vr-stuff/games/riven/background.webp",
-  "trailer": {
-    "youtubeId": "LN1TQm942_U",
-    "thumbnail": "https://i.ytimg.com/vi/LN1TQm942_U/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=LN1TQm942_U",
   "screenshots": [
     "/vr-stuff/games/riven/screenshot_6.webp",
     "/vr-stuff/games/riven/screenshot_7.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

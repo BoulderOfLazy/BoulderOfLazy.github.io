@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/payday-2-vr/cover.webp",
   "logo": "/vr-stuff/games/payday-2-vr/logo.webp",
   "background": "/vr-stuff/games/payday-2-vr/background.webp",
-  "trailer": {
-    "youtubeId": "LvCNIC_-Cl0",
-    "thumbnail": "https://i.ytimg.com/vi/LvCNIC_-Cl0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=LvCNIC_-Cl0",
   "screenshots": [
     "/vr-stuff/games/payday-2-vr/screenshot_0.webp",
     "/vr-stuff/games/payday-2-vr/screenshot_1.webp",
@@ -33,12 +30,12 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter",
-      "Stealth"
+      "Шутер",
+      "Стелс"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": []
   }

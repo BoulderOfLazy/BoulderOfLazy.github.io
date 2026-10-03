@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/paradiddle/cover.webp",
   "logo": "/vr-stuff/games/paradiddle/logo.webp",
   "background": "/vr-stuff/games/paradiddle/background.webp",
-  "trailer": {
-    "youtubeId": "fm8rrvV5BJI",
-    "thumbnail": "https://i.ytimg.com/vi/fm8rrvV5BJI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=fm8rrvV5BJI",
   "screenshots": [
     "/vr-stuff/games/paradiddle/screenshot_0.webp",
     "/vr-stuff/games/paradiddle/screenshot_1.webp",
@@ -34,12 +31,12 @@
       "Quest"
     ],
     "genres": [
-      "Rhythm"
+      "Ритм-игра"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": []
   }

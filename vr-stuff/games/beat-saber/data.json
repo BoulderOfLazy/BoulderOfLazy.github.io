@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/beat-saber/cover.webp",
   "logo": "/vr-stuff/games/beat-saber/logo.webp",
   "background": "/vr-stuff/games/beat-saber/background.webp",
-  "trailer": {
-    "youtubeId": "vL39Sg2AqWg",
-    "thumbnail": "https://i.ytimg.com/vi/vL39Sg2AqWg/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=vL39Sg2AqWg",
   "screenshots": [
     "/vr-stuff/games/beat-saber/screenshot_0.webp",
     "/vr-stuff/games/beat-saber/screenshot_1.webp",
@@ -34,11 +31,11 @@
       "Quest"
     ],
     "genres": [
-      "Rhythm"
+      "Ритм-игра"
     ],
     "gameModes": [
-      "Multiplayer",
-      "Singleplayer"
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": []
   }

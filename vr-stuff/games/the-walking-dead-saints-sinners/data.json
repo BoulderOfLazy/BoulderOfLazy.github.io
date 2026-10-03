@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/the-walking-dead-saints-sinners/cover.webp",
   "logo": "/vr-stuff/games/the-walking-dead-saints-sinners/logo.webp",
   "background": "/vr-stuff/games/the-walking-dead-saints-sinners/background.webp",
-  "trailer": {
-    "youtubeId": "PwQx872oy4A",
-    "thumbnail": "https://i.ytimg.com/vi/PwQx872oy4A/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=PwQx872oy4A",
   "screenshots": [
     "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_0.webp",
     "/vr-stuff/games/the-walking-dead-saints-sinners/screenshot_1.webp",
@@ -34,17 +31,17 @@
       "Quest"
     ],
     "genres": [
-      "Shooter",
-      "Stealth",
-      "Survival"
+      "Шутер",
+      "Стелс",
+      "Выживач"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Narrative",
-      "Post-Apocalyptic"
+      "Хоррор",
+      "Повествовательная",
+      "Постапок"
     ]
   }
 }

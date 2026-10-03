@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vr-giants/cover.webp",
   "logo": "/vr-stuff/games/vr-giants/logo.webp",
   "background": "/vr-stuff/games/vr-giants/background.webp",
-  "trailer": {
-    "youtubeId": "HgE3VxOTsDs",
-    "thumbnail": "https://i.ytimg.com/vi/HgE3VxOTsDs/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=HgE3VxOTsDs",
   "screenshots": [
     "/vr-stuff/games/vr-giants/screenshot_0.webp",
     "/vr-stuff/games/vr-giants/screenshot_1.webp",
@@ -33,11 +30,11 @@
       "PCVR"
     ],
     "genres": [
-      "Platformer",
-      "Puzzle"
+      "Платформер / Паркур",
+      "На подумать"
     ],
     "gameModes": [
-      "Co-op"
+      "Кооп"
     ],
     "themes": []
   }

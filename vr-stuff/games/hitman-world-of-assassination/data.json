@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/hitman-world-of-assassination/cover.webp",
   "logo": "/vr-stuff/games/hitman-world-of-assassination/logo.webp",
   "background": "/vr-stuff/games/hitman-world-of-assassination/background.webp",
-  "trailer": {
-    "youtubeId": "iNoocHwugKM",
-    "thumbnail": "https://i.ytimg.com/vi/iNoocHwugKM/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=iNoocHwugKM",
   "screenshots": [
     "/vr-stuff/games/hitman-world-of-assassination/screenshot_0.webp",
     "/vr-stuff/games/hitman-world-of-assassination/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Sandbox"
+      "Песочница"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy"
+      "Комедийная"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/virtual-virtual-reality/cover.webp",
   "logo": "/vr-stuff/games/virtual-virtual-reality/logo.webp",
   "background": "/vr-stuff/games/virtual-virtual-reality/background.webp",
-  "trailer": {
-    "youtubeId": "Sb1efNYhkGI",
-    "thumbnail": "https://i.ytimg.com/vi/Sb1efNYhkGI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=Sb1efNYhkGI",
   "screenshots": [
     "/vr-stuff/games/virtual-virtual-reality/screenshot_0.webp",
     "/vr-stuff/games/virtual-virtual-reality/screenshot_1.webp",
@@ -35,10 +32,10 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

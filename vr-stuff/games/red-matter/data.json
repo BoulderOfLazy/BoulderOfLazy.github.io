@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/red-matter/cover.webp",
   "logo": "/vr-stuff/games/red-matter/logo.webp",
   "background": "/vr-stuff/games/red-matter/background.webp",
-  "trailer": {
-    "youtubeId": "pR0ys_OjWho",
-    "thumbnail": "https://i.ytimg.com/vi/pR0ys_OjWho/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=pR0ys_OjWho",
   "screenshots": [
     "/vr-stuff/games/red-matter/screenshot_0.webp",
     "/vr-stuff/games/red-matter/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Narrative"
+      "Космическая",
+      "Повествовательная"
     ]
   }
 }

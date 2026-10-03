@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/arizona-sunshine-2/cover.webp",
   "logo": "/vr-stuff/games/arizona-sunshine-2/logo.webp",
   "background": "/vr-stuff/games/arizona-sunshine-2/background.webp",
-  "trailer": {
-    "youtubeId": "j8afR1UeR6I",
-    "thumbnail": "https://i.ytimg.com/vi/j8afR1UeR6I/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=j8afR1UeR6I",
   "screenshots": [
     "/vr-stuff/games/arizona-sunshine-2/screenshot_0.webp",
     "/vr-stuff/games/arizona-sunshine-2/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Post-Apocalyptic"
+      "Комедийная",
+      "Постапок"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/green-hell-vr/cover.webp",
   "logo": "/vr-stuff/games/green-hell-vr/logo.webp",
   "background": "/vr-stuff/games/green-hell-vr/background.webp",
-  "trailer": {
-    "youtubeId": "OqdkG8m7aBA",
-    "thumbnail": "https://i.ytimg.com/vi/OqdkG8m7aBA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=OqdkG8m7aBA",
   "screenshots": [
     "/vr-stuff/games/green-hell-vr/screenshot_0.webp",
     "/vr-stuff/games/green-hell-vr/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Sandbox",
-      "Survival"
+      "Песочница",
+      "Выживач"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": [
-      "Open World"
+      "Открытый мир"
     ]
   }
 }

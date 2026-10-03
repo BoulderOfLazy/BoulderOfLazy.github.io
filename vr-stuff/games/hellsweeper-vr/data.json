@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/hellsweeper-vr/cover.webp",
   "logo": "/vr-stuff/games/hellsweeper-vr/logo.webp",
   "background": "/vr-stuff/games/hellsweeper-vr/background.webp",
-  "trailer": {
-    "youtubeId": "k86sMKCpWR0",
-    "thumbnail": "https://i.ytimg.com/vi/k86sMKCpWR0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=k86sMKCpWR0",
   "screenshots": [
     "/vr-stuff/games/hellsweeper-vr/screenshot_0.webp",
     "/vr-stuff/games/hellsweeper-vr/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Roguelike",
-      "Shooter"
+      "Рогалик",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic"
+      "Магия"
     ]
   }
 }

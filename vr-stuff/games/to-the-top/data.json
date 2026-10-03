@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/to-the-top/cover.webp",
   "logo": "/vr-stuff/games/to-the-top/logo.webp",
   "background": "/vr-stuff/games/to-the-top/background.webp",
-  "trailer": {
-    "youtubeId": "DljCutE9uDI",
-    "thumbnail": "https://i.ytimg.com/vi/DljCutE9uDI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=DljCutE9uDI",
   "screenshots": [
     "/vr-stuff/games/to-the-top/screenshot_0.webp",
     "/vr-stuff/games/to-the-top/screenshot_1.webp",
@@ -34,15 +31,15 @@
       "Quest"
     ],
     "genres": [
-      "Platformer"
+      "Платформер / Паркур"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based"
+      "Физичная"
     ]
   }
 }

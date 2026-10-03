@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/besiege-vr/cover.webp",
   "logo": "/vr-stuff/games/besiege-vr/logo.webp",
   "background": "/vr-stuff/games/besiege-vr/background.webp",
-  "trailer": {
-    "youtubeId": "zz0B1PFrFtk",
-    "thumbnail": "https://i.ytimg.com/vi/zz0B1PFrFtk/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=zz0B1PFrFtk",
   "screenshots": [
     "/vr-stuff/games/besiege-vr/screenshot_6.webp",
     "/vr-stuff/games/besiege-vr/screenshot_7.webp",
@@ -33,16 +30,16 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle",
-      "Sandbox"
+      "На подумать",
+      "Песочница"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Comedy",
-      "Physics-based"
+      "Комедийная",
+      "На зачиллить",
+      "Физичная"
     ]
   }
 }

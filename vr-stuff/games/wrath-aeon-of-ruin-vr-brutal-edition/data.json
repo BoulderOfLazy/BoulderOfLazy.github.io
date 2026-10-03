@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/cover.webp",
   "logo": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/logo.webp",
   "background": "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/background.webp",
-  "trailer": {
-    "youtubeId": "",
-    "thumbnail": ""
-  },
+  "trailer": "",
   "screenshots": [
     "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_0.webp",
     "/vr-stuff/games/wrath-aeon-of-ruin-vr-brutal-edition/screenshot_1.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/trombone-champ-unflattened/cover.webp",
   "logo": "/vr-stuff/games/trombone-champ-unflattened/logo.webp",
   "background": "/vr-stuff/games/trombone-champ-unflattened/background.webp",
-  "trailer": {
-    "youtubeId": "X8alTyXInXA",
-    "thumbnail": "https://i.ytimg.com/vi/X8alTyXInXA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=X8alTyXInXA",
   "screenshots": [
     "/vr-stuff/games/trombone-champ-unflattened/screenshot_0.webp",
     "/vr-stuff/games/trombone-champ-unflattened/screenshot_1.webp",
@@ -34,13 +31,13 @@
       "Quest"
     ],
     "genres": [
-      "Rhythm"
+      "Ритм-игра"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy"
+      "Комедийная"
     ]
   }
 }

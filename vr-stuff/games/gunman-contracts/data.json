@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/gunman-contracts/cover.webp",
   "logo": "/vr-stuff/games/gunman-contracts/logo.webp",
   "background": "/vr-stuff/games/gunman-contracts/background.webp",
-  "trailer": {
-    "youtubeId": "",
-    "thumbnail": ""
-  },
+  "trailer": "",
   "screenshots": [
     "/vr-stuff/games/gunman-contracts/screenshot_0.webp",
     "/vr-stuff/games/gunman-contracts/screenshot_1.webp",
@@ -33,10 +30,10 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

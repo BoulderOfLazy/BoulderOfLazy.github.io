@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/blade-and-sorcery/cover.webp",
   "logo": "/vr-stuff/games/blade-and-sorcery/logo.webp",
   "background": "/vr-stuff/games/blade-and-sorcery/background.webp",
-  "trailer": {
-    "youtubeId": "-Kmd07gEq1s",
-    "thumbnail": "https://i.ytimg.com/vi/-Kmd07gEq1s/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=-Kmd07gEq1s",
   "screenshots": [
     "/vr-stuff/games/blade-and-sorcery/screenshot_0.webp",
     "/vr-stuff/games/blade-and-sorcery/screenshot_1.webp",
@@ -33,15 +30,15 @@
       "PCVR"
     ],
     "genres": [
-      "Fighting",
-      "Sandbox"
+      "Ближний бой",
+      "Песочница"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic",
-      "Physics-based"
+      "Магия",
+      "Физичная"
     ]
   }
 }

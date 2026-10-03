@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/the-rifted-skies/cover.webp",
   "logo": "/vr-stuff/games/the-rifted-skies/logo.webp",
   "background": "/vr-stuff/games/the-rifted-skies/background.webp",
-  "trailer": {
-    "youtubeId": "_SPKcAYZ_pI",
-    "thumbnail": "https://i.ytimg.com/vi/_SPKcAYZ_pI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=_SPKcAYZ_pI",
   "screenshots": [
     "/vr-stuff/games/the-rifted-skies/screenshot_0.webp",
     "/vr-stuff/games/the-rifted-skies/screenshot_1.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "Platformer",
-      "Roguelike",
-      "Shooter"
+      "Ближний бой",
+      "Платформер / Паркур",
+      "Рогалик",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic"
+      "Магия"
     ]
   }
 }

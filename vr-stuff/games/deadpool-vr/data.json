@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/deadpool-vr/cover.webp",
   "logo": "/vr-stuff/games/deadpool-vr/logo.webp",
   "background": "/vr-stuff/games/deadpool-vr/background.webp",
-  "trailer": {
-    "youtubeId": "VscXStzXRz0",
-    "thumbnail": "https://i.ytimg.com/vi/VscXStzXRz0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=VscXStzXRz0",
   "screenshots": [
     "/vr-stuff/games/deadpool-vr/screenshot_32.webp",
     "/vr-stuff/games/deadpool-vr/screenshot_33.webp",
@@ -33,14 +30,14 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "Shooter"
+      "Ближний бой",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy"
+      "Комедийная"
     ]
   }
 }

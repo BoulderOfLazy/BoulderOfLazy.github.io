@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/underdogs/cover.webp",
   "logo": "/vr-stuff/games/underdogs/logo.webp",
   "background": "/vr-stuff/games/underdogs/background.webp",
-  "trailer": {
-    "youtubeId": "9rt2iuTVAcU",
-    "thumbnail": "https://i.ytimg.com/vi/9rt2iuTVAcU/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=9rt2iuTVAcU",
   "screenshots": [
     "/vr-stuff/games/underdogs/screenshot_2.webp",
     "/vr-stuff/games/underdogs/screenshot_3.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "Roguelike"
+      "Ближний бой",
+      "Рогалик"
     ],
     "gameModes": [
-      "Multiplayer",
-      "Singleplayer"
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based",
-      "Piloting"
+      "Физичная",
+      "Пилотирование"
     ]
   }
 }

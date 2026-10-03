@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/blade-sorcery-nomad/cover.webp",
   "logo": "/vr-stuff/games/blade-sorcery-nomad/logo.webp",
   "background": "/vr-stuff/games/blade-sorcery-nomad/background.webp",
-  "trailer": {
-    "youtubeId": "XBJhiVwllu8",
-    "thumbnail": "https://i.ytimg.com/vi/XBJhiVwllu8/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=XBJhiVwllu8",
   "screenshots": [
     "/vr-stuff/games/blade-sorcery-nomad/screenshot_6.webp",
     "/vr-stuff/games/blade-sorcery-nomad/screenshot_7.webp",
@@ -33,15 +30,15 @@
       "Quest"
     ],
     "genres": [
-      "Fighting",
-      "Sandbox"
+      "Ближний бой",
+      "Песочница"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Magic",
-      "Physics-based"
+      "Магия",
+      "Физичная"
     ]
   }
 }

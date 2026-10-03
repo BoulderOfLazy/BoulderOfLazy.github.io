@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/bugsnax/cover.webp",
   "logo": "/vr-stuff/games/bugsnax/logo.webp",
   "background": "/vr-stuff/games/bugsnax/background.webp",
-  "trailer": {
-    "youtubeId": "1neEhMubpaY",
-    "thumbnail": "https://i.ytimg.com/vi/1neEhMubpaY/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=1neEhMubpaY",
   "screenshots": [
     "/vr-stuff/games/bugsnax/screenshot_0.webp",
     "/vr-stuff/games/bugsnax/screenshot_1.webp",
@@ -33,16 +30,16 @@
       "PCVR"
     ],
     "genres": [
-      "Puzzle",
-      "Simulation"
+      "На подумать",
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Cozy",
-      "Open World"
+      "Комедийная",
+      "Ламповая",
+      "Открытый мир"
     ]
   }
 }

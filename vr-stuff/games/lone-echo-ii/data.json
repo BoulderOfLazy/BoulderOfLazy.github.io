@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/lone-echo-ii/cover.webp",
   "logo": "/vr-stuff/games/lone-echo-ii/logo.webp",
   "background": "/vr-stuff/games/lone-echo-ii/background.webp",
-  "trailer": {
-    "youtubeId": "delv4U_JlGg",
-    "thumbnail": "https://i.ytimg.com/vi/delv4U_JlGg/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=delv4U_JlGg",
   "screenshots": [
     "/vr-stuff/games/lone-echo-ii/screenshot_0.webp",
     "/vr-stuff/games/lone-echo-ii/screenshot_1.webp",
@@ -34,11 +31,11 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Narrative"
+      "Космическая",
+      "Повествовательная"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/lone-echo/cover.webp",
   "logo": "/vr-stuff/games/lone-echo/logo.webp",
   "background": "/vr-stuff/games/lone-echo/background.webp",
-  "trailer": {
-    "youtubeId": "i4NoRXKYtPA",
-    "thumbnail": "https://i.ytimg.com/vi/i4NoRXKYtPA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=i4NoRXKYtPA",
   "screenshots": [
     "/vr-stuff/games/lone-echo/screenshot_0.webp",
     "/vr-stuff/games/lone-echo/screenshot_1.webp",
@@ -34,11 +31,11 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Narrative"
+      "Космическая",
+      "Повествовательная"
     ]
   }
 }

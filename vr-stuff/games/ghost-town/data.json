@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/ghost-town/cover.webp",
   "logo": "/vr-stuff/games/ghost-town/logo.webp",
   "background": "/vr-stuff/games/ghost-town/background.webp",
-  "trailer": {
-    "youtubeId": "052hBB-f_EY",
-    "thumbnail": "https://i.ytimg.com/vi/052hBB-f_EY/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=052hBB-f_EY",
   "screenshots": [
     "/vr-stuff/games/ghost-town/screenshot_6.webp",
     "/vr-stuff/games/ghost-town/screenshot_7.webp",
@@ -34,13 +31,13 @@
       "Quest"
     ],
     "genres": [
-      "Puzzle"
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

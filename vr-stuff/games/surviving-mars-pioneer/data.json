@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/surviving-mars-pioneer/cover.webp",
   "logo": "/vr-stuff/games/surviving-mars-pioneer/logo.webp",
   "background": "/vr-stuff/games/surviving-mars-pioneer/background.webp",
-  "trailer": {
-    "youtubeId": "pH9QEv5UB0w",
-    "thumbnail": "https://i.ytimg.com/vi/pH9QEv5UB0w/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=pH9QEv5UB0w",
   "screenshots": [
     "/vr-stuff/games/surviving-mars-pioneer/screenshot_0.webp",
     "/vr-stuff/games/surviving-mars-pioneer/screenshot_1.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Simulation",
-      "Strategy",
-      "Survival"
+      "Симулятор",
+      "Стратегия / Тактика",
+      "Выживач"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Open World"
+      "Космическая",
+      "Открытый мир"
     ]
   }
 }

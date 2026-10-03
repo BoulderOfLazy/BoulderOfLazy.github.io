@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/stride-fates/cover.webp",
   "logo": "/vr-stuff/games/stride-fates/logo.webp",
   "background": "/vr-stuff/games/stride-fates/background.webp",
-  "trailer": {
-    "youtubeId": "rpRP_4IXoQU",
-    "thumbnail": "https://i.ytimg.com/vi/rpRP_4IXoQU/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=rpRP_4IXoQU",
   "screenshots": [
     "/vr-stuff/games/stride-fates/screenshot_0.webp",
     "/vr-stuff/games/stride-fates/screenshot_1.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Platformer",
-      "Shooter"
+      "Платформер / Паркур",
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

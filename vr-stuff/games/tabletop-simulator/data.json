@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/tabletop-simulator/cover.webp",
   "logo": "/vr-stuff/games/tabletop-simulator/logo.webp",
   "background": "/vr-stuff/games/tabletop-simulator/background.webp",
-  "trailer": {
-    "youtubeId": "JBqernEHjUc",
-    "thumbnail": "https://i.ytimg.com/vi/JBqernEHjUc/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=JBqernEHjUc",
   "screenshots": [
     "/vr-stuff/games/tabletop-simulator/screenshot_0.webp",
     "/vr-stuff/games/tabletop-simulator/screenshot_1.webp",
@@ -33,12 +30,12 @@
       "PCVR"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": []
   }

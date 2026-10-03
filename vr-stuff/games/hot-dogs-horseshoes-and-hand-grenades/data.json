@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/cover.webp",
   "logo": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/logo.webp",
   "background": "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/background.webp",
-  "trailer": {
-    "youtubeId": "jF7gachwVr0",
-    "thumbnail": "https://i.ytimg.com/vi/jF7gachwVr0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=jF7gachwVr0",
   "screenshots": [
     "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_0.webp",
     "/vr-stuff/games/hot-dogs-horseshoes-and-hand-grenades/screenshot_1.webp",
@@ -33,16 +30,16 @@
       "PCVR"
     ],
     "genres": [
-      "Sandbox",
-      "Shooter",
-      "Simulation"
+      "Песочница",
+      "Шутер",
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Physics-based"
+      "Комедийная",
+      "Физичная"
     ]
   }
 }

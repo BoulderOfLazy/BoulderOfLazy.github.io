@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/battlegroupvr/cover.webp",
   "logo": "/vr-stuff/games/battlegroupvr/logo.webp",
   "background": "/vr-stuff/games/battlegroupvr/background.webp",
-  "trailer": {
-    "youtubeId": "aQLncTJBHXI",
-    "thumbnail": "https://i.ytimg.com/vi/aQLncTJBHXI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=aQLncTJBHXI",
   "screenshots": [
     "/vr-stuff/games/battlegroupvr/screenshot_0.webp",
     "/vr-stuff/games/battlegroupvr/screenshot_1.webp",
@@ -33,16 +30,16 @@
       "PCVR"
     ],
     "genres": [
-      "Strategy"
+      "Стратегия / Тактика"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Piloting"
+      "Космическая",
+      "Пилотирование"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/into-black/cover.webp",
   "logo": "/vr-stuff/games/into-black/logo.webp",
   "background": "/vr-stuff/games/into-black/background.webp",
-  "trailer": {
-    "youtubeId": "xzKNIjss4Q8",
-    "thumbnail": "https://i.ytimg.com/vi/xzKNIjss4Q8/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=xzKNIjss4Q8",
   "screenshots": [
     "/vr-stuff/games/into-black/screenshot_0.webp",
     "/vr-stuff/games/into-black/screenshot_1.webp",
@@ -34,13 +31,13 @@
       "Quest"
     ],
     "genres": [
-      "RPG",
-      "Roguelike",
-      "Shooter"
+      "РПГ",
+      "Рогалик",
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": []
   }

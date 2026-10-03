@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/exoshock/cover.webp",
   "logo": "/vr-stuff/games/exoshock/logo.webp",
   "background": "/vr-stuff/games/exoshock/background.webp",
-  "trailer": {
-    "youtubeId": "pWqOBOiGGWw",
-    "thumbnail": "https://i.ytimg.com/vi/pWqOBOiGGWw/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=pWqOBOiGGWw",
   "screenshots": [
     "/vr-stuff/games/exoshock/screenshot_6.webp",
     "/vr-stuff/games/exoshock/screenshot_7.webp",
@@ -34,12 +31,12 @@
       "Quest"
     ],
     "genres": [
-      "Roguelike",
-      "Shooter"
+      "Рогалик",
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Singleplayer"
+      "Кооп",
+      "Одиночка"
     ],
     "themes": []
   }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/zero-caliber-2/cover.webp",
   "logo": "/vr-stuff/games/zero-caliber-2/logo.webp",
   "background": "/vr-stuff/games/zero-caliber-2/background.webp",
-  "trailer": {
-    "youtubeId": "q4e1_4PeiEg",
-    "thumbnail": "https://i.ytimg.com/vi/q4e1_4PeiEg/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=q4e1_4PeiEg",
   "screenshots": [
     "/vr-stuff/games/zero-caliber-2/screenshot_6.webp",
     "/vr-stuff/games/zero-caliber-2/screenshot_7.webp",
@@ -34,12 +31,12 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": []
   }

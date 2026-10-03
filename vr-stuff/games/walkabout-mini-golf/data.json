@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/walkabout-mini-golf/cover.webp",
   "logo": "/vr-stuff/games/walkabout-mini-golf/logo.webp",
   "background": "/vr-stuff/games/walkabout-mini-golf/background.webp",
-  "trailer": {
-    "youtubeId": "wyRjHU7vNEg",
-    "thumbnail": "https://i.ytimg.com/vi/wyRjHU7vNEg/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=wyRjHU7vNEg",
   "screenshots": [
     "/vr-stuff/games/walkabout-mini-golf/screenshot_0.webp",
     "/vr-stuff/games/walkabout-mini-golf/screenshot_1.webp",
@@ -34,17 +31,17 @@
       "Quest"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Cozy",
-      "Sports"
+      "На зачиллить",
+      "Ламповая",
+      "Спортивная"
     ]
   }
 }

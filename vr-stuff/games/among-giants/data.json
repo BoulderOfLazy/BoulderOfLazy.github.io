@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/among-giants/cover.webp",
   "logo": "/vr-stuff/games/among-giants/logo.webp",
   "background": "/vr-stuff/games/among-giants/background.webp",
-  "trailer": {
-    "youtubeId": "VUMGOm87fmo",
-    "thumbnail": "https://i.ytimg.com/vi/VUMGOm87fmo/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=VUMGOm87fmo",
   "screenshots": [
     "/vr-stuff/games/among-giants/screenshot_0.webp",
     "/vr-stuff/games/among-giants/screenshot_1.webp",
@@ -34,10 +31,10 @@
     ],
     "genres": [],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Open World"
+      "Открытый мир"
     ]
   }
 }

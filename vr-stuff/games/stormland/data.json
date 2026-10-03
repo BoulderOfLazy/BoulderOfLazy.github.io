@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/stormland/cover.webp",
   "logo": "/vr-stuff/games/stormland/logo.webp",
   "background": "/vr-stuff/games/stormland/background.webp",
-  "trailer": {
-    "youtubeId": "KBP7hMWMUyk",
-    "thumbnail": "https://i.ytimg.com/vi/KBP7hMWMUyk/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=KBP7hMWMUyk",
   "screenshots": [
     "/vr-stuff/games/stormland/screenshot_0.webp",
     "/vr-stuff/games/stormland/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Narrative"
+      "Повествовательная"
     ]
   }
 }

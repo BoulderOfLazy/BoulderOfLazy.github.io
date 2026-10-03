@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/memoreum/cover.webp",
   "logo": "/vr-stuff/games/memoreum/logo.webp",
   "background": "/vr-stuff/games/memoreum/background.webp",
-  "trailer": {
-    "youtubeId": "WchTF6ufH9k",
-    "thumbnail": "https://i.ytimg.com/vi/WchTF6ufH9k/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=WchTF6ufH9k",
   "screenshots": [
     "/vr-stuff/games/memoreum/screenshot_2.webp",
     "/vr-stuff/games/memoreum/screenshot_3.webp",
@@ -33,13 +30,13 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror"
+      "Хоррор"
     ]
   }
 }

@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vendetta-forever/cover.webp",
   "logo": "/vr-stuff/games/vendetta-forever/logo.webp",
   "background": "/vr-stuff/games/vendetta-forever/background.webp",
-  "trailer": {
-    "youtubeId": "lteWAzPC3K0",
-    "thumbnail": "https://i.ytimg.com/vi/lteWAzPC3K0/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=lteWAzPC3K0",
   "screenshots": [
     "/vr-stuff/games/vendetta-forever/screenshot_0.webp",
     "/vr-stuff/games/vendetta-forever/screenshot_1.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

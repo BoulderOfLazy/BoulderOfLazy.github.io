@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/cave-crave/cover.webp",
   "logo": "/vr-stuff/games/cave-crave/logo.webp",
   "background": "/vr-stuff/games/cave-crave/background.webp",
-  "trailer": {
-    "youtubeId": "OsUUDussyzI",
-    "thumbnail": "https://i.ytimg.com/vi/OsUUDussyzI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=OsUUDussyzI",
   "screenshots": [
     "/vr-stuff/games/cave-crave/screenshot_2.webp",
     "/vr-stuff/games/cave-crave/screenshot_3.webp",
@@ -34,10 +31,10 @@
       "Quest"
     ],
     "genres": [
-      "Simulation"
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": []
   }

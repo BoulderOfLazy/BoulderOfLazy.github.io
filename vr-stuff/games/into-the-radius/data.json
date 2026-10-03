@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/into-the-radius/cover.webp",
   "logo": "/vr-stuff/games/into-the-radius/logo.webp",
   "background": "/vr-stuff/games/into-the-radius/background.webp",
-  "trailer": {
-    "youtubeId": "ZhnrBeQkOXI",
-    "thumbnail": "https://i.ytimg.com/vi/ZhnrBeQkOXI/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=ZhnrBeQkOXI",
   "screenshots": [
     "/vr-stuff/games/into-the-radius/screenshot_0.webp",
     "/vr-stuff/games/into-the-radius/screenshot_1.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Shooter",
-      "Survival"
+      "Шутер",
+      "Выживач"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Horror",
-      "Open World",
-      "Post-Apocalyptic"
+      "Хоррор",
+      "Открытый мир",
+      "Постапок"
     ]
   }
 }

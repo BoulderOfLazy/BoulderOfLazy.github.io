@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/job-simulator/cover.webp",
   "logo": "/vr-stuff/games/job-simulator/logo.webp",
   "background": "/vr-stuff/games/job-simulator/background.webp",
-  "trailer": {
-    "youtubeId": "ULLB0zend8A",
-    "thumbnail": "https://i.ytimg.com/vi/ULLB0zend8A/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=ULLB0zend8A",
   "screenshots": [
     "/vr-stuff/games/job-simulator/screenshot_0.webp",
     "/vr-stuff/games/job-simulator/screenshot_1.webp",
@@ -34,17 +31,17 @@
       "Quest"
     ],
     "genres": [
-      "Sandbox",
-      "Simulation"
+      "Песочница",
+      "Симулятор"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Chill",
-      "Comedy",
-      "Cozy",
-      "Physics-based"
+      "На зачиллить",
+      "Комедийная",
+      "Ламповая",
+      "Физичная"
     ]
   }
 }

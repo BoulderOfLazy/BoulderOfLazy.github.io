@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/vertigo-remastered/cover.webp",
   "logo": "/vr-stuff/games/vertigo-remastered/logo.webp",
   "background": "/vr-stuff/games/vertigo-remastered/background.webp",
-  "trailer": {
-    "youtubeId": "8MndROpf4Yo",
-    "thumbnail": "https://i.ytimg.com/vi/8MndROpf4Yo/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=8MndROpf4Yo",
   "screenshots": [
     "/vr-stuff/games/vertigo-remastered/screenshot_0.webp",
     "/vr-stuff/games/vertigo-remastered/screenshot_1.webp",
@@ -33,13 +30,13 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Physics-based"
+      "Физичная"
     ]
   }
 }

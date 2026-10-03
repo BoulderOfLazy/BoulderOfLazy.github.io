@@ -1,0 +1,44 @@
+{
+  "slug": "forefront",
+  "title": "Forefront",
+  "shortDescription": "Battlefield в VR",
+  "longDescription": "Forefront — захватывающий VR-шутер с масштабными сражениями для 32 игроков и наземной, морской и воздушной техники. Вы — острие копья в войне между мировым энергетическим гигантом и силами сопротивления. На чью сторону вы встанете?",
+  "metaLink": "https://www.meta.com/experiences/forefront/28816918137899319/",
+  "steamLink": "https://store.steampowered.com/app/2981220/Forefront/",
+  "metaRating": "4.6",
+  "steamRating": "84%",
+  "metaPrice": "€27.99",
+  "steamPrice": "27.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/forefront/cover.webp",
+  "logo": "/vr-stuff/games/forefront/logo.webp",
+  "background": "/vr-stuff/games/forefront/background.webp",
+  "trailer": "M11IZk0RmaQ",
+  "screenshots": [
+    "/vr-stuff/games/forefront/screenshot_0.webp",
+    "/vr-stuff/games/forefront/screenshot_1.webp",
+    "/vr-stuff/games/forefront/screenshot_2.webp",
+    "/vr-stuff/games/forefront/screenshot_3.webp",
+    "/vr-stuff/games/forefront/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Стратегия / Тактика",
+      "Шутер"
+    ],
+    "gameModes": [
+      "Мультиплеер"
+    ],
+    "themes": [
+      "Пилотирование"
+    ]
+  }
+}

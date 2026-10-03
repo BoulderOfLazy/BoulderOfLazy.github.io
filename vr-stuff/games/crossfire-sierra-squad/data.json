@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/crossfire-sierra-squad/cover.webp",
   "logo": "/vr-stuff/games/crossfire-sierra-squad/logo.webp",
   "background": "/vr-stuff/games/crossfire-sierra-squad/background.webp",
-  "trailer": {
-    "youtubeId": "Z3RP_0zONng",
-    "thumbnail": "https://i.ytimg.com/vi/Z3RP_0zONng/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=Z3RP_0zONng",
   "screenshots": [
     "/vr-stuff/games/crossfire-sierra-squad/screenshot_0.webp",
     "/vr-stuff/games/crossfire-sierra-squad/screenshot_1.webp",
@@ -33,12 +30,12 @@
       "PCVR"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": []
   }

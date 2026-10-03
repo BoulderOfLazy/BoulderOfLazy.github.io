@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/hard-bullet/cover.webp",
   "logo": "/vr-stuff/games/hard-bullet/logo.webp",
   "background": "/vr-stuff/games/hard-bullet/background.webp",
-  "trailer": {
-    "youtubeId": "F60FfVpDXjo",
-    "thumbnail": "https://i.ytimg.com/vi/F60FfVpDXjo/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=F60FfVpDXjo",
   "screenshots": [
     "/vr-stuff/games/hard-bullet/screenshot_6.webp",
     "/vr-stuff/games/hard-bullet/screenshot_7.webp",
@@ -34,14 +31,14 @@
       "Quest"
     ],
     "genres": [
-      "Shooter"
+      "Шутер"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Comedy",
-      "Physics-based"
+      "Комедийная",
+      "Физичная"
     ]
   }
 }

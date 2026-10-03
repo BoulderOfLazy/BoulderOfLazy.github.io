@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/no-mans-sky/cover.webp",
   "logo": "/vr-stuff/games/no-mans-sky/logo.webp",
   "background": "/vr-stuff/games/no-mans-sky/background.webp",
-  "trailer": {
-    "youtubeId": "5Zd61kKEAMA",
-    "thumbnail": "https://i.ytimg.com/vi/5Zd61kKEAMA/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=5Zd61kKEAMA",
   "screenshots": [
     "/vr-stuff/games/no-mans-sky/screenshot_0.webp",
     "/vr-stuff/games/no-mans-sky/screenshot_1.webp",
@@ -33,19 +30,19 @@
       "PCVR"
     ],
     "genres": [
-      "RPG",
-      "Sandbox",
-      "Survival"
+      "РПГ",
+      "Песочница",
+      "Выживач"
     ],
     "gameModes": [
-      "Co-op",
-      "Multiplayer",
-      "Singleplayer"
+      "Кооп",
+      "Мультиплеер",
+      "Одиночка"
     ],
     "themes": [
-      "Cosmos",
-      "Open World",
-      "Piloting"
+      "Космическая",
+      "Открытый мир",
+      "Пилотирование"
     ]
   }
 }

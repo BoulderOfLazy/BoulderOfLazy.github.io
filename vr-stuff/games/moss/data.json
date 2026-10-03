@@ -17,10 +17,7 @@
   "cover": "/vr-stuff/games/moss/cover.webp",
   "logo": "/vr-stuff/games/moss/logo.webp",
   "background": "/vr-stuff/games/moss/background.webp",
-  "trailer": {
-    "youtubeId": "Hbsfgsncdzw",
-    "thumbnail": "https://i.ytimg.com/vi/Hbsfgsncdzw/hq720.jpg"
-  },
+  "trailer": "https://www.youtube.com/watch?v=Hbsfgsncdzw",
   "screenshots": [
     "/vr-stuff/games/moss/screenshot_0.webp",
     "/vr-stuff/games/moss/screenshot_1.webp",
@@ -34,16 +31,16 @@
       "Quest"
     ],
     "genres": [
-      "Platformer",
-      "Puzzle"
+      "Платформер / Паркур",
+      "На подумать"
     ],
     "gameModes": [
-      "Singleplayer"
+      "Одиночка"
     ],
     "themes": [
-      "Cozy",
-      "Magic",
-      "Narrative"
+      "Ламповая",
+      "Магия",
+      "Повествовательная"
     ]
   }
 }
