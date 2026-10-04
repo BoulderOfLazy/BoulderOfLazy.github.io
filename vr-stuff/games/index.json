@@ -30,7 +30,7 @@
     "path": "vr-stuff/games/asgards-wrath-2/data.json"
   },
   {
-    "title": "Assassin\u2019s Creed Nexus VR",
+    "title": "Assassin’s Creed Nexus VR",
     "slug": "assassins-creed-nexus-vr",
     "path": "vr-stuff/games/assassins-creed-nexus-vr/data.json"
   },
@@ -75,12 +75,12 @@
     "path": "vr-stuff/games/blade-sorcery-nomad/data.json"
   },
   {
-    "title": "Bonelab",
+    "title": "BONELAB",
     "slug": "bonelab",
     "path": "vr-stuff/games/bonelab/data.json"
   },
   {
-    "title": "Boneworks",
+    "title": "BONEWORKS",
     "slug": "boneworks",
     "path": "vr-stuff/games/boneworks/data.json"
   },
@@ -105,7 +105,7 @@
     "path": "vr-stuff/games/the-climb-2/data.json"
   },
   {
-    "title": "Convrgence",
+    "title": "CONVRGENCE",
     "slug": "convrgence",
     "path": "vr-stuff/games/convrgence/data.json"
   },
@@ -320,7 +320,7 @@
     "path": "vr-stuff/games/maestro/data.json"
   },
   {
-    "title": "Marrow Marrow",
+    "title": "MARROW MARROW",
     "slug": "marrow-marrow",
     "path": "vr-stuff/games/marrow-marrow/data.json"
   },
@@ -510,6 +510,11 @@
     "path": "vr-stuff/games/to-the-top/data.json"
   },
   {
+    "title": "Transmission: Shortwave",
+    "slug": "transmission-shortwave",
+    "path": "vr-stuff/games/transmission-shortwave/data.json"
+  },
+  {
     "title": "Trombone Champ: Unflattened!",
     "slug": "trombone-champ-unflattened",
     "path": "vr-stuff/games/trombone-champ-unflattened/data.json"
@@ -535,7 +540,7 @@
     "path": "vr-stuff/games/vampire-the-masquerade-justice/data.json"
   },
   {
-    "title": "Vendetta Forever",
+    "title": "VENDETTA FOREVER",
     "slug": "vendetta-forever",
     "path": "vr-stuff/games/vendetta-forever/data.json"
   },

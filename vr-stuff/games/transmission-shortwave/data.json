@@ -1,0 +1,45 @@
+{
+  "slug": "transmission-shortwave",
+  "title": "Transmission: Shortwave",
+  "shortDescription": "",
+  "longDescription": "Возите заказы по улицам Британии, в эпоху альтернативных 90-х и ретрофутуризма.",
+  "metaLink": "https://www.meta.com/experiences/transmission-shortwave/3547956195215144/",
+  "steamLink": "https://store.steampowered.com/app/4348970/Transmission_Shortwave/",
+  "metaRating": "4.3",
+  "steamRating": "Мало отзывов",
+  "metaPrice": "€3.99",
+  "steamPrice": "4.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/transmission-shortwave/cover.webp",
+  "logo": "/vr-stuff/games/transmission-shortwave/logo.webp",
+  "background": "/vr-stuff/games/transmission-shortwave/background.webp",
+  "trailer": "1k43QitS_Ys",
+  "screenshots": [
+    "/vr-stuff/games/transmission-shortwave/screenshot_0.webp",
+    "/vr-stuff/games/transmission-shortwave/screenshot_1.webp",
+    "/vr-stuff/games/transmission-shortwave/screenshot_2.webp",
+    "/vr-stuff/games/transmission-shortwave/screenshot_3.webp",
+    "/vr-stuff/games/transmission-shortwave/screenshot_4.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Песочница",
+      "Симулятор"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": [
+      "На зачиллить",
+      "Пилотирование"
+    ]
+  }
+}
