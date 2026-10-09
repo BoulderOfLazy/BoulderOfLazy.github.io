@@ -480,6 +480,11 @@
     "path": "vr-stuff/games/sushi-ben/data.json"
   },
   {
+    "title": "Synth Riders",
+    "slug": "synth-riders",
+    "path": "vr-stuff/games/synth-riders/data.json"
+  },
+  {
     "title": "Tabletop Simulator",
     "slug": "tabletop-simulator",
     "path": "vr-stuff/games/tabletop-simulator/data.json"

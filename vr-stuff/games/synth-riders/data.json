@@ -1,0 +1,43 @@
+{
+  "slug": "synth-riders",
+  "title": "Synth Riders",
+  "shortDescription": "Ритм игрушка, похожая на режим, который вот-вот добавят в Beat Saber. Ощущается гораздо более танцевальной оного, т.к. движения рук не напоминают конвульсии. Ещё одно преимущество заключается в нормальной поддержке пользовательских треков, встроенной в игру (которая ещё и спокойно работает даже на пиратке, в отличие от Beat Saber)",
+  "longDescription": "Позвольте музыке увлечь вас: ловите ноты, скользите по рельсам и уворачивайтесь от препятствий в уникальном сочетании фристайл-танца и фитнес-тренировки!",
+  "metaLink": "https://www.meta.com/experiences/synth-riders/2436558143118760/",
+  "steamLink": "https://store.steampowered.com/app/885000/Synth_Riders/",
+  "metaRating": "4.6/5",
+  "steamRating": "92%",
+  "metaPrice": "24.99€",
+  "steamPrice": "24.99€",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/synth-riders/cover.webp",
+  "logo": "/vr-stuff/games/synth-riders/logo.webp",
+  "background": "/vr-stuff/games/synth-riders/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=zXkF_bI7rsc",
+  "screenshots": [
+    "/vr-stuff/games/synth-riders/screenshot_0.webp",
+    "/vr-stuff/games/synth-riders/screenshot_1.webp",
+    "/vr-stuff/games/synth-riders/screenshot_2.webp",
+    "/vr-stuff/games/synth-riders/screenshot_3.webp",
+    "/vr-stuff/games/synth-riders/screenshot_4.webp",
+    "/vr-stuff/games/synth-riders/screenshot_5.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR",
+      "Quest"
+    ],
+    "genres": [
+      "Ритм-игра"
+    ],
+    "gameModes": [
+      "Одиночка",
+      "Мультиплеер"
+    ],
+    "themes": []
+  }
+}

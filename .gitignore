@@ -1,0 +1,10 @@
+.hintrc
+.gitignore
+editor-doc.md
+vr_games_editor.html
+css/vr_games_editor.css
+js/vr_games_editor.js
+vr_games_editor_server.py
+run_vr_games_editor.bat
+__pycache__/
+!.gitignore
