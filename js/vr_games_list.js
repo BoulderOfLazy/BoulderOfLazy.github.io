@@ -21,14 +21,21 @@ async function loadIntroduction() {
 async function loadGamesData() {
   try {
     console.log('Starting to load games data...');
-    const indexResponse = await fetch('vr-stuff/games/index.json');
+    const cacheBuster = Date.now();
+    const indexUrl = new URL('vr-stuff/games/index.json', document.baseURI);
+    indexUrl.searchParams.set('_', cacheBuster);
+    const indexResponse = await fetch(indexUrl, { cache: 'no-store' });
+    if (!indexResponse.ok) throw new Error(`HTTP ${indexResponse.status} loading the game index`);
     const indexData = await indexResponse.json();
     console.log('Loaded index.json with', indexData.length, 'games');
 
     const gamePromises = indexData.map(async (gameEntry) => {
       try {
         console.log('Loading game:', gameEntry.path);
-        const response = await fetch(gameEntry.path);
+        const gameUrl = new URL(gameEntry.path, document.baseURI);
+        gameUrl.searchParams.set('_', cacheBuster);
+        const response = await fetch(gameUrl, { cache: 'no-store' });
+        if (!response.ok) throw new Error(`HTTP ${response.status} loading ${gameEntry.path}`);
         const gameData = await response.json();
         console.log('Successfully loaded:', gameEntry.title);
         return gameData;
