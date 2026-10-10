@@ -6,9 +6,9 @@
   "metaLink": "https://www.meta.com/experiences/arken-age/29923535407244981/",
   "steamLink": "https://store.steampowered.com/app/2274200",
   "metaRating": "4.9/5",
-  "steamRating": "90%",
+  "steamRating": "91%",
   "metaPrice": "€27.99",
-  "steamPrice": "38.99€",
+  "steamPrice": "17.54€",
   "hltb": {
     "mainStory": "9h",
     "mainExtra": "12.1h",
@@ -41,5 +41,6 @@
     "themes": [
       "Физичная"
     ]
-  }
+  },
+  "steamOriginalPrice": "38.99€"
 }

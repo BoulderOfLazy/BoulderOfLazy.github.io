@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "97%",
   "metaPrice": "—",
-  "steamPrice": "20.99€",
+  "steamPrice": "8.39€",
   "hltb": {
     "mainStory": "7.9h",
     "mainExtra": "11.7h",
@@ -41,5 +41,6 @@
       "Ламповая",
       "Открытый мир"
     ]
-  }
+  },
+  "steamOriginalPrice": "20.99€"
 }
