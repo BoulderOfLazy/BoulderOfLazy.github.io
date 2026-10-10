@@ -1090,6 +1090,23 @@ a:hover {
 	text-align: center;
 }
 
+.store-price-values {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.45rem;
+}
+
+.store-price-values.is-discounted .store-price-value {
+	color: #ff6b6b;
+}
+
+.store-price-original {
+	font-size: 0.85rem;
+	color: #999;
+}
+
 .hltb-row {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);

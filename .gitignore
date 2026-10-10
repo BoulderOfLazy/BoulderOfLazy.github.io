@@ -8,3 +8,4 @@ vr_games_editor_server.py
 run_vr_games_editor.bat
 __pycache__/
 !.gitignore
+tests/

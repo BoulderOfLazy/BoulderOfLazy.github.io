@@ -463,17 +463,33 @@ function getPricesRow(game) {
   let left = '';
   let right = '';
   if (game.metaLink) {
-    left = '<div class="store-price"><span class="store-price-label">Meta</span><span class="store-price-value">' + game.metaPrice + '</span></div>';
+    left = '<div class="store-price"><span class="store-price-label">Meta</span>' + formatStorePrice(game.metaPrice, game.metaOriginalPrice) + '</div>';
   } else {
     left = '<div class="store-price empty"></div>';
   }
   if (game.steamLink) {
-    right = '<div class="store-price"><span class="store-price-label">Steam</span><span class="store-price-value">' + game.steamPrice + '</span></div>';
+    right = '<div class="store-price"><span class="store-price-label">Steam</span>' + formatStorePrice(game.steamPrice, game.steamOriginalPrice) + '</div>';
   } else {
     right = '<div class="store-price empty"></div>';
   }
   if (!game.metaLink && !game.steamLink) return '';
   return '<div class="prices-row">' + left + right + '</div>';
+}
+
+function formatStorePrice(current, original) {
+  const currentPrice = escapeHtml(String(current || '—'));
+  const originalPrice = String(original || '').trim();
+  const originalMarkup = originalPrice && originalPrice !== current
+    ? '<del class="store-price-original">' + escapeHtml(originalPrice) + '</del>'
+    : '';
+  return '<span class="store-price-values' + (originalMarkup ? ' is-discounted' : '') + '">' +
+    '<span class="store-price-value">' + currentPrice + '</span>' + originalMarkup + '</span>';
+}
+
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, character => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[character]);
 }
 
 function getHltbRow(game) {
