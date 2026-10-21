@@ -1,4 +1,5 @@
 let GAMES_DATA = [];
+let gameBackgroundObserver = null;
 
 async function loadIntroduction() {
   try {
@@ -613,7 +614,7 @@ function getHltbRow(game) {
     '</div>';
 }
 
-function renderCollapsedHeader(game) {
+function renderCollapsedHeader(game, prioritizeCover) {
   const tagsHtmlArr = [];
   for (const cat of TAG_ORDER) {
     for (const t of game.tags[cat]) {
@@ -625,8 +626,9 @@ function renderCollapsedHeader(game) {
   }
   const tagsHtml = tagsHtmlArr.join('');
 
-  return '<div class="game-page-title" style="--bg: url(\'' + game.background + '\');">' +
-    '<img class="game-cover" src="' + game.cover + '" alt="Cover">' +
+  return '<div class="game-page-title" data-background="' + escapeHTML(game.background) + '">' +
+    '<img class="game-cover" src="' + game.cover + '" alt="Cover" loading="' + (prioritizeCover ? 'eager' : 'lazy') + '"' +
+    (prioritizeCover ? ' fetchpriority="high"' : '') + ' decoding="async">' +
     '<div class="quick-info">' +
     '<h3>' + game.title + '</h3>' +
     '<p class="game-short-desc">' + (game.shortDescription || '') + '</p>' +
@@ -656,7 +658,7 @@ function renderExpandedContent(game, gameIdx) {
     '<div class="game-page-content-description">' +
     '<div class="logos-row">' +
     getMetaStoreItem(game) +
-    '<div class="game-logo-container"><img class="game-logo" src="' + game.logo + '" alt="Logo"></div>' +
+    '<div class="game-logo-container"><img class="game-logo" src="' + game.logo + '" alt="Logo" decoding="async"></div>' +
     getSteamStoreItem(game) +
     '</div>' +
     getPricesRow(game) +
@@ -669,7 +671,7 @@ function renderExpandedContent(game, gameIdx) {
 
 function renderMainViewerDefault(game) {
   const firstScr = game.screenshots[0] || '';
-  return '<img src="' + firstScr + '" alt="Screenshot">';
+  return '<img src="' + firstScr + '" alt="Screenshot" decoding="async">';
 }
 
 function renderCarouselItems(game, gameIdx) {
@@ -678,7 +680,7 @@ function renderCarouselItems(game, gameIdx) {
   const thumb = getYoutubeThumbnail(trailerUrl);
   if (thumb) {
     html += '<div class="carousel-item trailer-thumb" data-type="trailer" data-game-idx="' + gameIdx + '" data-index="0">' +
-      '<img src="' + thumb + '" alt="Trailer">' +
+      '<img src="' + thumb + '" alt="Trailer" loading="lazy" decoding="async">' +
       '<div class="trailer-play-overlay">' +
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>' +
       '</div></div>';
@@ -687,7 +689,7 @@ function renderCarouselItems(game, gameIdx) {
     const selected = (i === 0 && !thumb) ? ' selected' : (i === 0 && thumb ? '' : (thumb ? '' : (i === 0 ? ' selected' : '')));
     const correctedSelected = (!thumb && i === 0) ? ' selected' : (thumb ? (i === 0 ? '' : '') : '');
     html += '<div class="carousel-item' + ( (!thumb && i === 0) ? ' selected' : '' ) + '" data-type="screenshot" data-game-idx="' + gameIdx + '" data-index="' + (thumb ? i + 1 : i) + '">' +
-      '<img src="' + scr + '" alt="Screenshot ' + (i + 1) + '"></div>';
+      '<img src="' + scr + '" alt="Screenshot ' + (i + 1) + '" loading="lazy" decoding="async"></div>';
   });
   return html;
 }
@@ -837,9 +839,43 @@ function bindGameTagClicks(gameEl) {
   });
 }
 
+function observeGameBackground(gameEl) {
+  const loadBackground = (title) => {
+    const background = title.dataset.background;
+    if (!background) return;
+    const backgroundUrl = new URL(background, document.baseURI);
+    title.style.setProperty('--bg', `url(${JSON.stringify(backgroundUrl.href)})`);
+    delete title.dataset.background;
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    const title = gameEl.querySelector('.game-page-title');
+    if (title) loadBackground(title);
+    return;
+  }
+
+  if (!gameBackgroundObserver) {
+    gameBackgroundObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const title = entry.target.querySelector('.game-page-title');
+        if (title) loadBackground(title);
+        observer.unobserve(entry.target);
+      });
+    }, { rootMargin: '300px 0px' });
+  }
+
+  gameBackgroundObserver.observe(gameEl);
+}
+
 function renderGames() {
   const container = document.getElementById("game-list-container");
   if (!container) return;
+
+  if (gameBackgroundObserver) {
+    gameBackgroundObserver.disconnect();
+    gameBackgroundObserver = null;
+  }
 
   for (const [idx, state] of carouselStates) {
     if (state && state.intervalId) clearInterval(state.intervalId);
@@ -857,14 +893,15 @@ function renderGames() {
     return;
   }
 
-  games.forEach(game => {
+  games.forEach((game, index) => {
     const gameIdx = GAMES_DATA.indexOf(game);
     const gameEl = document.createElement("div");
     gameEl.className = "game-page";
     gameEl.dataset.gameSlug = game.slug;
 
-    gameEl.innerHTML = renderCollapsedHeader(game) + renderExpandedContent(game, gameIdx);
+    gameEl.innerHTML = renderCollapsedHeader(game, index === 0);
     container.appendChild(gameEl);
+    observeGameBackground(gameEl);
 
     const titleBtn = gameEl.querySelector('.game-page-title');
     if (titleBtn) {
@@ -873,6 +910,7 @@ function renderGames() {
         const wasOpen = gameEl.classList.contains('open');
         gameEl.classList.toggle('open');
         if (!wasOpen) {
+          gameEl.insertAdjacentHTML('beforeend', renderExpandedContent(game, gameIdx));
           bindCarouselEvents(gameEl, gameIdx);
           const state = { selectedIndex: 1, intervalId: null };
           carouselStates.set(gameIdx, state);
@@ -880,6 +918,7 @@ function renderGames() {
         } else {
           stopAutoCycle(gameIdx);
           carouselStates.delete(gameIdx);
+          gameEl.querySelector('.game-page-content')?.remove();
         }
       });
     }
