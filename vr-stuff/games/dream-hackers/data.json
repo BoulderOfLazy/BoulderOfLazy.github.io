@@ -1,0 +1,49 @@
+{
+  "slug": "dream-hackers",
+  "title": "Dream Hackers",
+  "shortDescription": "",
+  "longDescription": "Присоединяйся к команде Хакеров снов в VR roguelike экшен-приключении. Проникни в сюрреалистические коллективные сны, где переплетаются опасность и открытия. Создавай собственные билды из разнообразного оружия и артефактов, сражайся с кошмарами, побеждай древних боссов и раскрой правду о мире снов.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/4475020/Dream_Hackers_VR/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "—",
+  "metaOriginalPrice": "",
+  "steamPrice": "—",
+  "steamOriginalPrice": "",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/dream-hackers/cover.webp",
+  "logo": "/vr-stuff/games/dream-hackers/logo.webp",
+  "background": "/vr-stuff/games/dream-hackers/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=i2qxX6S56WU",
+  "screenshots": [
+    "/vr-stuff/games/dream-hackers/screenshot_0.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_1.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_2.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_3.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_4.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_5.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_6.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_7.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_8.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_9.webp",
+    "/vr-stuff/games/dream-hackers/screenshot_10.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "PCVR"
+    ],
+    "genres": [
+      "Шутер",
+      "Рогалик"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": []
+  }
+}

@@ -135,6 +135,11 @@
     "path": "vr-stuff/games/deadpool-vr/data.json"
   },
   {
+    "title": "Dream Hackers",
+    "slug": "dream-hackers",
+    "path": "vr-stuff/games/dream-hackers/data.json"
+  },
+  {
     "title": "Epyka",
     "slug": "epyka",
     "path": "vr-stuff/games/epyka/data.json"

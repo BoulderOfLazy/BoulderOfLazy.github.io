@@ -165,6 +165,79 @@ const TAG_ICONS = {
   "platforms": {
     "Quest": "/images/icons/meta-logo.svg",
     "PCVR": "/images/icons/pc.svg"
+  },
+  "genres": {
+    "Ближний бой": "/images/icons/tags/hand-index-thumb.svg",
+    "Платформер / Паркур": "/images/icons/tags/person-walking.svg",
+    "Ритм-игра": "/images/icons/tags/music-note-beamed.svg",
+    "Рогалик": "/images/icons/tags/dice-5.svg",
+    "РПГ": "/images/icons/tags/person-badge.svg",
+    "Песочница": "/images/icons/tags/box.svg",
+    "Шутер": "/images/icons/tags/crosshair.svg",
+    "Симулятор": "/images/icons/tags/gear.svg",
+    "Стелс": "/images/icons/tags/eye-slash.svg",
+    "Стратегия / Тактика": "/images/icons/tags/diagram-3.svg",
+    "Выживач": "/images/icons/tags/heart-pulse.svg",
+    "На подумать": "/images/icons/tags/puzzle.svg"
+  },
+  "gameModes": {
+    "Кооп": "/images/icons/tags/people.svg",
+    "Мультиплеер": "/images/icons/tags/people-fill.svg",
+    "Одиночка": "/images/icons/tags/person.svg"
+  },
+  "themes": {
+    "На зачиллить": "/images/icons/tags/cup-hot.svg",
+    "Комедийная": "/images/icons/tags/emoji-laughing.svg",
+    "Космическая": "/images/icons/tags/stars.svg",
+    "Ламповая": "/images/icons/tags/house-heart.svg",
+    "Хоррор": "/images/icons/tags/emoji-dizzy.svg",
+    "Повествовательная": "/images/icons/tags/book.svg",
+    "Магия": "/images/icons/tags/magic.svg",
+    "Открытый мир": "/images/icons/tags/globe-americas.svg",
+    "Физичная": "/images/icons/tags/boxes.svg",
+    "Пилотирование": "/images/icons/tags/airplane.svg",
+    "Спортивная": "/images/icons/tags/trophy.svg",
+    "Постапок": "/images/icons/tags/radioactive.svg"
+  }
+};
+
+const TAG_COLORS = {
+  "platforms": {
+    "Quest": "#2ecc71",
+    "PCVR": "#3498db"
+  },
+  "genres": {
+    "Ближний бой": "#ff6b6b",
+    "Платформер / Паркур": "#f1c40f",
+    "Ритм-игра": "#e84393",
+    "Рогалик": "#9b59b6",
+    "РПГ": "#f39c12",
+    "Песочница": "#95a5a6",
+    "Шутер": "#e74c3c",
+    "Симулятор": "#3498db",
+    "Стелс": "#7f8c8d",
+    "Стратегия / Тактика": "#1abc9c",
+    "Выживач": "#27ae60",
+    "На подумать": "#00bcd4"
+  },
+  "gameModes": {
+    "Кооп": "#27ae60",
+    "Мультиплеер": "#e67e22",
+    "Одиночка": "#607d8b"
+  },
+  "themes": {
+    "На зачиллить": "#00b894",
+    "Комедийная": "#fdcb6e",
+    "Космическая": "#6c5ce7",
+    "Ламповая": "#e17055",
+    "Хоррор": "#d63031",
+    "Повествовательная": "#0984e3",
+    "Магия": "#a29bfe",
+    "Открытый мир": "#00cec9",
+    "Физичная": "#74b9ff",
+    "Пилотирование": "#636e72",
+    "Спортивная": "#e84393",
+    "Постапок": "#a1887f"
   }
 };
 
@@ -242,16 +315,42 @@ function getTagLabel(category, tag) {
   return TAG_TRANSLATIONS[category]?.[tag] || tag;
 }
 
+function getTagColor(category, tag) {
+  const color = TAG_COLORS[category]?.[tag];
+  return /^#[\da-f]{6}$/i.test(color || "") ? color : "#7f8c8d";
+}
+
+function setTagColor(element, category, tag) {
+  element.style.setProperty("--tag-color", getTagColor(category, tag));
+}
+
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[char]);
+}
+
 function getTagHTML(category, tag) {
   const label = getTagLabel(category, tag);
   const desc = getTagDescription(category, tag);
-  const titleAttr = desc ? ` title="${desc.replace(/"/g, '&quot;')}"` : '';
+  const titleAttr = desc ? ` title="${escapeHTML(desc)}"` : "";
   const iconPath = TAG_ICONS[category]?.[tag];
+  let icon = "";
   if (iconPath) {
-    const icon = `<span class="tag-icon-mask" style="--icon-url: url('${iconPath}');"></span>`;
-    return `<span${titleAttr}>${icon}<span class="tag-text">${label}</span></span>`;
+    try {
+      const iconUrl = new URL(iconPath, document.baseURI);
+      if (iconUrl.protocol === "http:" || iconUrl.protocol === "https:") {
+        icon = `<span class="tag-icon-mask" style="--icon-url: url(&quot;${escapeHTML(iconUrl.href)}&quot;);"></span>`;
+      }
+    } catch (error) {
+      console.warn(`Invalid icon URL for tag "${tag}":`, error);
+    }
   }
-  return `<span${titleAttr}>${label}</span>`;
+  return `<span class="tag-content"${titleAttr}>${icon}<span class="tag-text">${escapeHTML(label)}</span></span>`;
 }
 
 function filterGames() {
@@ -298,6 +397,7 @@ function renderTagPanel() {
         if (excludedTags.has(t)) cls += " excluded";
         chip.className = cls;
         chip.dataset.category = cat;
+        setTagColor(chip, cat, t);
         chip.innerHTML = getTagHTML(cat, t);
         chip.addEventListener("click", (e) => {
           e.stopPropagation();
@@ -343,7 +443,10 @@ function renderTagPanel() {
               break;
             }
           }
-          if (foundCat) chip.dataset.category = foundCat;
+          if (foundCat) {
+            chip.dataset.category = foundCat;
+            setTagColor(chip, foundCat, t);
+          }
           chip.innerHTML = getTagHTML(foundCat, t) + '<span class="remove-tag">×</span>';
           chip.querySelector(".remove-tag").addEventListener("click", (e) => {
             e.stopPropagation();
@@ -380,7 +483,10 @@ function renderTagPanel() {
               break;
             }
           }
-          if (foundCat) chip.dataset.category = foundCat;
+          if (foundCat) {
+            chip.dataset.category = foundCat;
+            setTagColor(chip, foundCat, t);
+          }
           chip.innerHTML = getTagHTML(foundCat, t) + '<span class="remove-tag">×</span>';
           chip.querySelector(".remove-tag").addEventListener("click", (e) => {
             e.stopPropagation();
@@ -514,7 +620,7 @@ function renderCollapsedHeader(game) {
       let tagClasses = 'game-tag';
       if (activeTags.has(t)) tagClasses += ' active';
       if (excludedTags.has(t)) tagClasses += ' excluded';
-      tagsHtmlArr.push('<span class="' + tagClasses + '" data-tag="' + t.replace(/"/g, '&quot;') + '" data-category="' + cat + '">' + getTagHTML(cat, t) + '</span>');
+      tagsHtmlArr.push('<span class="' + tagClasses + '" style="--tag-color: ' + getTagColor(cat, t) + '" data-tag="' + escapeHTML(t) + '" data-category="' + cat + '">' + getTagHTML(cat, t) + '</span>');
 	}
   }
   const tagsHtml = tagsHtmlArr.join('');

@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "73%",
   "metaPrice": "—",
-  "steamPrice": "28.99€",
+  "steamPrice": "17.39€",
   "hltb": {
     "mainStory": "4.2h",
     "mainExtra": "19.3h",
@@ -38,5 +38,6 @@
       "Одиночка"
     ],
     "themes": []
-  }
+  },
+  "steamOriginalPrice": "28.99€"
 }

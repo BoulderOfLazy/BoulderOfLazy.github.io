@@ -284,92 +284,26 @@ a:hover {
 	background-color: rgba(192, 57, 43, 0.25);
 }
 
-.tag-list[data-category="platforms"] .tag-chip {
-	background-color: rgba(39, 174, 96, 0.12);
-	color: #2ecc71;
-	border-color: rgba(39, 174, 96, 0.25);
+.tag-chip:not(.excluded) {
+	background-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 12%, transparent);
+	color: var(--tag-color, #7f8c8d);
+	border-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 28%, transparent);
 }
-.tag-list[data-category="platforms"] .tag-chip:hover {
-	background-color: rgba(39, 174, 96, 0.18);
-	border-color: #27ae60;
+
+.tag-chip:not(.excluded):hover {
+	background-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 20%, transparent);
+	border-color: var(--tag-color, #7f8c8d);
 }
-.tag-list[data-category="platforms"] .tag-chip.active {
-	background-color: #27ae60;
-	border-color: #27ae60;
+
+.tag-chip.active:not(.excluded) {
+	background-color: var(--tag-color, #7f8c8d);
+	border-color: var(--tag-color, #7f8c8d);
 	color: #ffffff;
 	font-weight: 600;
 }
 
-.tag-list[data-category="platforms"] .tag-chip.excluded {
-	background-color: rgba(192, 57, 43, 0.18);
-	border-color: #c0392b;
-	color: #e74c3c;
-}
-
-.tag-list[data-category="genres"] .tag-chip {
-	background-color: rgba(255, 121, 198, 0.12);
-	color: #ff79c6;
-	border-color: rgba(255, 121, 198, 0.25);
-}
-.tag-list[data-category="genres"] .tag-chip:hover {
-	background-color: rgba(255, 121, 198, 0.18);
-	border-color: #ff79c6;
-}
-.tag-list[data-category="genres"] .tag-chip.active {
-	background-color: #ff79c6;
-	border-color: #ff79c6;
-	color: #ffffff;
-	font-weight: 600;
-}
-
-.tag-list[data-category="genres"] .tag-chip.excluded {
-	background-color: rgba(192, 57, 43, 0.18);
-	border-color: #c0392b;
-	color: #e74c3c;
-}
-
-.tag-list[data-category="gameModes"] .tag-chip {
-	background-color: rgba(230, 126, 34, 0.12);
-	color: #e67e22;
-	border-color: rgba(230, 126, 34, 0.25);
-}
-.tag-list[data-category="gameModes"] .tag-chip:hover {
-	background-color: rgba(230, 126, 34, 0.18);
-	border-color: #e67e22;
-}
-.tag-list[data-category="gameModes"] .tag-chip.active {
-	background-color: #e67e22;
-	border-color: #e67e22;
-	color: #ffffff;
-	font-weight: 600;
-}
-
-.tag-list[data-category="gameModes"] .tag-chip.excluded {
-	background-color: rgba(192, 57, 43, 0.18);
-	border-color: #c0392b;
-	color: #e74c3c;
-}
-
-.tag-list[data-category="themes"] .tag-chip {
-	background-color: rgba(26, 188, 156, 0.12);
-	color: #1abc9c;
-	border-color: rgba(26, 188, 156, 0.25);
-}
-.tag-list[data-category="themes"] .tag-chip:hover {
-	background-color: rgba(26, 188, 156, 0.18);
-	border-color: #1abc9c;
-}
-.tag-list[data-category="themes"] .tag-chip.active {
-	background-color: #1abc9c;
-	border-color: #1abc9c;
-	color: #ffffff;
-	font-weight: 600;
-}
-
-.tag-list[data-category="themes"] .tag-chip.excluded {
-	background-color: rgba(192, 57, 43, 0.18);
-	border-color: #c0392b;
-	color: #e74c3c;
+.tag-chip.active:not(.excluded):hover {
+	filter: brightness(0.88);
 }
 
 .active-tags-row {
@@ -407,7 +341,7 @@ a:hover {
 	gap: 0.35rem;
 	padding: 0.2rem 0.6rem 0.2rem 0.75rem;
 	font-size: 0.75rem;
-	background-color: #1e90ff;
+	background-color: var(--tag-color, #7f8c8d);
 	color: #fff;
 	border-radius: 1rem;
 }
@@ -543,11 +477,11 @@ a:hover {
 }
 
 .tag-icon-mask {
-  display: inline-block;
-  width: 22px;
-  height: 14px;
-  flex-shrink: 0;
-  background-color: var(--tag-color, currentColor); 
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  background-color: currentColor;
   -webkit-mask-image: var(--icon-url);
   mask-image: var(--icon-url);
   -webkit-mask-size: contain;
@@ -558,6 +492,13 @@ a:hover {
   mask-position: center;
 }
 
+.tag-content {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.2;
+}
+
 .tag-chip, 
 .active-tag-chip, 
 .game-tag {
@@ -565,13 +506,13 @@ a:hover {
   align-items: center !important;
   justify-content: center !important;
   gap: 6px;
-  line-height: 1.6 !important;
+  line-height: 1.2 !important;
   vertical-align: middle;
 }
 
 .tag-text {
-  display: inline-block;
-  line-height: 1.6; 
+  display: block;
+  line-height: 1.2;
 }
 
 /* ===== GAME LIST ===== */
@@ -692,46 +633,14 @@ a:hover {
 	color: #ffffff;
 }
 
-.active-tag-chip[data-category="platforms"] { background-color: #27ae60; color: #fff; }
-.active-tag-chip[data-category="genres"] { background-color: #ff79c6; color: #fff; }
-.active-tag-chip[data-category="gameModes"] { background-color: #e67e22; color: #fff; }
-.active-tag-chip[data-category="themes"] { background-color: #1abc9c; color: #fff; }
-
-.game-tag[data-category="platforms"] {
-	background-color: rgba(39,174,96,0.12);
-	color: #2ecc71;
-	border-color: rgba(39,174,96,0.25);
+.game-tag:not(.excluded) {
+	background-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 12%, transparent);
+	color: var(--tag-color, #7f8c8d);
+	border-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 28%, transparent);
 }
-.game-tag[data-category="platforms"]:hover { background-color: rgba(39,174,96,0.18); border-color:#27ae60; color:#fff; }
-.game-tag[data-category="platforms"].active { background-color:#27ae60; color:#fff; border-color:#27ae60; }
-.game-tag[data-category="platforms"].excluded { background-color: rgba(192,57,43,0.12); color:#e74c3c; border-color: rgba(192,57,43,0.25); text-decoration: line-through; }
-
-.game-tag[data-category="genres"] {
-	background-color: rgba(255, 121, 198,0.12);
-	color: #ff79c6;
-	border-color: rgba(255, 121, 198,0.25);
-}
-.game-tag[data-category="genres"]:hover { background-color: rgba(255, 121, 198,0.18); border-color:#ff79c6; color:#fff; }
-.game-tag[data-category="genres"].active { background-color:#ff79c6; color:#fff; border-color:#ff79c6; }
-.game-tag[data-category="genres"].excluded { background-color: rgba(192,57,43,0.12); color:#e74c3c; border-color: rgba(192,57,43,0.25); text-decoration: line-through; }
-
-.game-tag[data-category="gameModes"] {
-	background-color: rgba(230,126,34,0.12);
-	color: #e67e22;
-	border-color: rgba(230,126,34,0.25);
-}
-.game-tag[data-category="gameModes"]:hover { background-color: rgba(230,126,34,0.18); border-color:#e67e22; color:#fff; }
-.game-tag[data-category="gameModes"].active { background-color:#e67e22; color:#fff; border-color:#e67e22; }
-.game-tag[data-category="gameModes"].excluded { background-color: rgba(192,57,43,0.12); color:#e74c3c; border-color: rgba(192,57,43,0.25); text-decoration: line-through; }
-
-.game-tag[data-category="themes"] {
-	background-color: rgba(26,188,156,0.12);
-	color: #1abc9c;
-	border-color: rgba(26,188,156,0.25);
-}
-.game-tag[data-category="themes"]:hover { background-color: rgba(26,188,156,0.18); border-color:#1abc9c; color:#fff; }
-.game-tag[data-category="themes"].active { background-color:#1abc9c; color:#fff; border-color:#1abc9c; }
-.game-tag[data-category="themes"].excluded { background-color: rgba(192,57,43,0.12); color:#e74c3c; border-color: rgba(192,57,43,0.25); text-decoration: line-through; }
+.game-tag:hover { background-color: color-mix(in srgb, var(--tag-color, #7f8c8d) 20%, transparent); border-color:var(--tag-color, #7f8c8d); color:#fff; }
+.game-tag.active { background-color:var(--tag-color, #7f8c8d); color:#fff; border-color:var(--tag-color, #7f8c8d); }
+.game-tag.excluded { background-color: rgba(192,57,43,0.12); color:#e74c3c; border-color: rgba(192,57,43,0.25); text-decoration: line-through; }
 
 .collapse-arrow {
 	width: 28px;

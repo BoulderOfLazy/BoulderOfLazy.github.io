@@ -8,7 +8,7 @@
   "metaRating": "4.8/5",
   "steamRating": "93%",
   "metaPrice": "€13.99",
-  "steamPrice": "17.99€",
+  "steamPrice": "12.59€",
   "hltb": {
     "mainStory": "—",
     "mainExtra": "—",
@@ -40,5 +40,6 @@
       "Комедийная",
       "Повествовательная"
     ]
-  }
+  },
+  "steamOriginalPrice": "17.99€"
 }
