@@ -8,7 +8,7 @@
   "metaRating": "4.4/5",
   "steamRating": "88%",
   "metaPrice": "€24.99",
-  "steamPrice": "24.50€",
+  "steamPrice": "12.25€",
   "hltb": {
     "mainStory": "7.6h",
     "mainExtra": "11.3h",
@@ -40,5 +40,6 @@
     "themes": [
       "Магия"
     ]
-  }
+  },
+  "steamOriginalPrice": "24.50€"
 }

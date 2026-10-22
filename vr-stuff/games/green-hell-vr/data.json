@@ -8,7 +8,7 @@
   "metaRating": "4.2/5",
   "steamRating": "57%",
   "metaPrice": "€17.99",
-  "steamPrice": "17.99€",
+  "steamPrice": "8.99€",
   "hltb": {
     "mainStory": "11.4h",
     "mainExtra": "12h",
@@ -41,5 +41,6 @@
     "themes": [
       "Открытый мир"
     ]
-  }
+  },
+  "steamOriginalPrice": "17.99€"
 }

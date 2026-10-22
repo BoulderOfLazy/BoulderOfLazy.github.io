@@ -8,7 +8,7 @@
   "metaRating": "4.8/5",
   "steamRating": "92%",
   "metaPrice": "€29.99",
-  "steamPrice": "29.99€",
+  "steamPrice": "17.99€",
   "hltb": {
     "mainStory": "6.4h",
     "mainExtra": "6.7h",
@@ -40,5 +40,6 @@
       "Космическая",
       "Повествовательная"
     ]
-  }
+  },
+  "steamOriginalPrice": "29.99€"
 }
