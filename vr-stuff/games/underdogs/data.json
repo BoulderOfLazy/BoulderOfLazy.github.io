@@ -8,7 +8,7 @@
   "metaRating": "4.8/5",
   "steamRating": "97%",
   "metaPrice": "€29.99",
-  "steamPrice": "28.99€",
+  "steamPrice": "19.42€",
   "hltb": {
     "mainStory": "5.1h",
     "mainExtra": "15h",
@@ -42,5 +42,6 @@
       "Физичная",
       "Пилотирование"
     ]
-  }
+  },
+  "steamOriginalPrice": "28.99€"
 }

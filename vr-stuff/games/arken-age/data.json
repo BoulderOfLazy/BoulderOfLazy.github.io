@@ -8,7 +8,7 @@
   "metaRating": "4.9/5",
   "steamRating": "91%",
   "metaPrice": "€27.99",
-  "steamPrice": "17.54€",
+  "steamPrice": "38.99€",
   "hltb": {
     "mainStory": "9h",
     "mainExtra": "12.1h",
@@ -41,6 +41,5 @@
     "themes": [
       "Физичная"
     ]
-  },
-  "steamOriginalPrice": "38.99€"
+  }
 }
