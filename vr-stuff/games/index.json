@@ -450,6 +450,11 @@
     "path": "vr-stuff/games/serious-sam-vr-the-first-encounter/data.json"
   },
   {
+    "title": "Shil",
+    "slug": "shil",
+    "path": "vr-stuff/games/shil/data.json"
+  },
+  {
     "title": "Skydance's Behemoth",
     "slug": "skydances-behemoth",
     "path": "vr-stuff/games/skydances-behemoth/data.json"

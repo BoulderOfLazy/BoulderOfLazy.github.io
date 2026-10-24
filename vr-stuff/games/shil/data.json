@@ -1,0 +1,48 @@
+{
+  "slug": "shil",
+  "title": "Shil",
+  "shortDescription": "Стоит учесть, что на момент написания этого текста в Steam игра ещё не вышла, а на её странице нет ни слова про VR. Ссылку я добавил, но тег PCVR я пока ставить не буду",
+  "longDescription": "",
+  "metaLink": "https://www.meta.com/experiences/shil/8099575933454051/",
+  "steamLink": "https://store.steampowered.com/app/4028240/Shil/",
+  "metaRating": "4.5/5",
+  "steamRating": "N/A",
+  "metaPrice": "13.99€",
+  "metaOriginalPrice": "",
+  "steamPrice": "—",
+  "steamOriginalPrice": "",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/shil/cover.webp",
+  "logo": "/vr-stuff/games/shil/logo.webp",
+  "background": "/vr-stuff/games/shil/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=UVg1s6OyEq4",
+  "screenshots": [
+    "/vr-stuff/games/shil/screenshot_0.webp",
+    "/vr-stuff/games/shil/screenshot_1.webp",
+    "/vr-stuff/games/shil/screenshot_2.webp",
+    "/vr-stuff/games/shil/screenshot_3.webp",
+    "/vr-stuff/games/shil/screenshot_4.webp",
+    "/vr-stuff/games/shil/screenshot_5.webp",
+    "/vr-stuff/games/shil/screenshot_6.webp",
+    "/vr-stuff/games/shil/screenshot_7.webp",
+    "/vr-stuff/games/shil/screenshot_8.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "На подумать"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": [
+      "Хоррор"
+    ]
+  }
+}
