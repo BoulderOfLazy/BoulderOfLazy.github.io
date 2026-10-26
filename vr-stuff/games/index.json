@@ -15,6 +15,11 @@
     "path": "vr-stuff/games/arizona-sunshine-remake/data.json"
   },
   {
+    "title": "Arizona Truck Driver",
+    "slug": "arizona-truck-driver",
+    "path": "vr-stuff/games/arizona-truck-driver/data.json"
+  },
+  {
     "title": "Arken Age",
     "slug": "arken-age",
     "path": "vr-stuff/games/arken-age/data.json"
@@ -188,6 +193,11 @@
     "title": "Ghost Town",
     "slug": "ghost-town",
     "path": "vr-stuff/games/ghost-town/data.json"
+  },
+  {
+    "title": "Good Morning [Employee Name]",
+    "slug": "good-morning-employee-name",
+    "path": "vr-stuff/games/good-morning-employee-name/data.json"
   },
   {
     "title": "GORN",
@@ -508,6 +518,11 @@
     "title": "Teenage Mutant Ninja Turtles: Empire City",
     "slug": "teenage-mutant-ninja-turtles-empire-city",
     "path": "vr-stuff/games/teenage-mutant-ninja-turtles-empire-city/data.json"
+  },
+  {
+    "title": "Terry's Terraforming",
+    "slug": "terrys-terraforming",
+    "path": "vr-stuff/games/terrys-terraforming/data.json"
   },
   {
     "title": "Tetris Effect: Connected",

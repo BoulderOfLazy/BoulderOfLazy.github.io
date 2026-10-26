@@ -1,0 +1,50 @@
+{
+  "slug": "terrys-terraforming",
+  "title": "Terry's Terraforming",
+  "shortDescription": "",
+  "longDescription": "В Terry's Terraforming ваша задача — преображать умирающие планеты, делая их пригодными для новой жизни. Познакомьтесь с колоритными пришельцами со всей галактики, изменяйте облик истощённых миров и возвращайте им жизнь, раскрывая очаровательную научно-фантастическую историю. И всё это — не забывая об интересах акционеров!",
+  "metaLink": "https://www.meta.com/experiences/terrys-terraforming/7756220811151283/",
+  "steamLink": "https://store.steampowered.com/app/4372850/",
+  "metaRating": "5/5",
+  "steamRating": "N/A",
+  "metaPrice": "13.99€",
+  "metaOriginalPrice": "",
+  "steamPrice": "Скоро выйдет",
+  "steamOriginalPrice": "",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/terrys-terraforming/cover.webp",
+  "logo": "/vr-stuff/games/terrys-terraforming/logo.webp",
+  "background": "/vr-stuff/games/terrys-terraforming/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=HYI4w9zww3s",
+  "screenshots": [
+    "/vr-stuff/games/terrys-terraforming/screenshot_0.webp",
+    "/vr-stuff/games/terrys-terraforming/screenshot_1.webp",
+    "/vr-stuff/games/terrys-terraforming/screenshot_2.webp",
+    "/vr-stuff/games/terrys-terraforming/screenshot_3.webp",
+    "/vr-stuff/games/terrys-terraforming/screenshot_4.webp",
+    "/vr-stuff/games/terrys-terraforming/screenshot_5.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest",
+      "PCVR"
+    ],
+    "genres": [
+      "Песочница",
+      "На подумать",
+      "Симулятор"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": [
+      "На зачиллить",
+      "Ламповая",
+      "Космическая"
+    ]
+  }
+}

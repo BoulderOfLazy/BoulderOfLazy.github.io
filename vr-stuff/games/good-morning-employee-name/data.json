@@ -1,0 +1,48 @@
+{
+  "slug": "good-morning-employee-name",
+  "title": "Good Morning [Employee Name]",
+  "shortDescription": "Выйдет также и на Quest, но страницы в магазине на момент добавления игры в список нет",
+  "longDescription": "Вы новый сотрудник компании Consolidated Dynamics, и ваша задача — помочь подготовить следующее поколение работников. Двенадцать дней заданий, аудиозаписей и обрывков случайно подслушанных разговоров. Чем дольше вы здесь пробудете, тем сильнее будете жалеть, что не задали побольше вопросов в первый же день.",
+  "metaLink": "",
+  "steamLink": "https://store.steampowered.com/app/4864390/",
+  "metaRating": "N/A",
+  "steamRating": "N/A",
+  "metaPrice": "—",
+  "metaOriginalPrice": "",
+  "steamPrice": "—",
+  "steamOriginalPrice": "",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/good-morning-employee-name/cover.webp",
+  "logo": "/vr-stuff/games/good-morning-employee-name/logo.webp",
+  "background": "/vr-stuff/games/good-morning-employee-name/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=XbuA5T2_0HE",
+  "screenshots": [
+    "/vr-stuff/games/good-morning-employee-name/screenshot_0.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_1.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_2.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_3.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_4.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_5.webp",
+    "/vr-stuff/games/good-morning-employee-name/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest",
+      "PCVR"
+    ],
+    "genres": [
+      "На подумать"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": [
+      "Повествовательная",
+      "Хоррор"
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "arizona-truck-driver",
+  "title": "Arizona Truck Driver",
+  "shortDescription": "",
+  "longDescription": "Заберитесь в кабину и почувствуйте себя настоящим дальнобойщиком на Meta Quest 3 и 3S. Выполняйте заказы по доставке грузов в мире, вдохновлённом Аризоной: путешествуйте по бескрайним пустынным шоссе, посещайте города и наслаждайтесь живописными маршрутами. Вас ждут переменчивая погода и неожиданные ситуации на дороге.",
+  "metaLink": "https://www.meta.com/experiences/arizona-truck-driver/8670558623021730/",
+  "steamLink": "",
+  "metaRating": "4.8/5",
+  "steamRating": "N/A",
+  "metaPrice": "13.99€",
+  "metaOriginalPrice": "",
+  "steamPrice": "—",
+  "steamOriginalPrice": "",
+  "hltb": {
+    "mainStory": "—",
+    "mainExtra": "—",
+    "completionist": "—"
+  },
+  "cover": "/vr-stuff/games/arizona-truck-driver/cover.webp",
+  "logo": "/vr-stuff/games/arizona-truck-driver/logo.webp",
+  "background": "/vr-stuff/games/arizona-truck-driver/background.webp",
+  "trailer": "https://www.youtube.com/watch?v=9xK2doOA3BY",
+  "screenshots": [
+    "/vr-stuff/games/arizona-truck-driver/screenshot_2.webp",
+    "/vr-stuff/games/arizona-truck-driver/screenshot_3.webp",
+    "/vr-stuff/games/arizona-truck-driver/screenshot_4.webp",
+    "/vr-stuff/games/arizona-truck-driver/screenshot_5.webp",
+    "/vr-stuff/games/arizona-truck-driver/screenshot_6.webp"
+  ],
+  "tags": {
+    "platforms": [
+      "Quest"
+    ],
+    "genres": [
+      "Симулятор",
+      "Песочница"
+    ],
+    "gameModes": [
+      "Одиночка"
+    ],
+    "themes": [
+      "На зачиллить",
+      "Пилотирование"
+    ]
+  }
+}
