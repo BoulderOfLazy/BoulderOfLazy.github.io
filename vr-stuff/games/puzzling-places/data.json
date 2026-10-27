@@ -8,7 +8,7 @@
   "metaRating": "4.8/5",
   "steamRating": "98%",
   "metaPrice": "€14.99",
-  "steamPrice": "7.99€",
+  "steamPrice": "6.79€",
   "hltb": {
     "mainStory": "4.4h",
     "mainExtra": "22.3h",
@@ -40,5 +40,6 @@
       "На зачиллить",
       "Ламповая"
     ]
-  }
+  },
+  "steamOriginalPrice": "7.99€"
 }

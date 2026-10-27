@@ -8,7 +8,7 @@
   "metaRating": "4.5/5",
   "steamRating": "87%",
   "metaPrice": "€19.99",
-  "steamPrice": "19.99€",
+  "steamPrice": "5.99€",
   "hltb": {
     "mainStory": "3.5h",
     "mainExtra": "4.1h",
@@ -41,5 +41,6 @@
     "themes": [
       "Хоррор"
     ]
-  }
+  },
+  "steamOriginalPrice": "19.99€"
 }

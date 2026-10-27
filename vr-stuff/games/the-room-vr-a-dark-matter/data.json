@@ -8,7 +8,7 @@
   "metaRating": "4.9/5",
   "steamRating": "98%",
   "metaPrice": "€24.99",
-  "steamPrice": "24.99€",
+  "steamPrice": "6.24€",
   "hltb": {
     "mainStory": "3.8h",
     "mainExtra": "4.1h",
@@ -40,5 +40,6 @@
       "Хоррор",
       "Повествовательная"
     ]
-  }
+  },
+  "steamOriginalPrice": "24.99€"
 }

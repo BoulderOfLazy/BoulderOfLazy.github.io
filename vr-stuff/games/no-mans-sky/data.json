@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "85%",
   "metaPrice": "—",
-  "steamPrice": "58.99€",
+  "steamPrice": "23.59€",
   "hltb": {
     "mainStory": "32.4h",
     "mainExtra": "77.1h",
@@ -44,5 +44,6 @@
       "Открытый мир",
       "Пилотирование"
     ]
-  }
+  },
+  "steamOriginalPrice": "58.99€"
 }

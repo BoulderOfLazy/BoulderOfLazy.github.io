@@ -8,7 +8,7 @@
   "metaRating": "4.1/5",
   "steamRating": "85%",
   "metaPrice": "€29.99",
-  "steamPrice": "29.99€",
+  "steamPrice": "11.99€",
   "hltb": {
     "mainStory": "7.5h",
     "mainExtra": "8.6h",
@@ -41,5 +41,6 @@
       "Комедийная",
       "Постапок"
     ]
-  }
+  },
+  "steamOriginalPrice": "39.99€"
 }

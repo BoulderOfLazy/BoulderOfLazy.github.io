@@ -8,7 +8,7 @@
   "metaRating": "4.5/5",
   "steamRating": "94%",
   "metaPrice": "€12.99",
-  "steamPrice": "20.49€",
+  "steamPrice": "15.36€",
   "hltb": {
     "mainStory": "—",
     "mainExtra": "—",
@@ -39,5 +39,6 @@
     "themes": [
       "Спортивная"
     ]
-  }
+  },
+  "steamOriginalPrice": "20.49€"
 }
