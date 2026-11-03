@@ -8,7 +8,7 @@
   "metaRating": "4.8/5",
   "steamRating": "91%",
   "metaPrice": "€19.99",
-  "steamPrice": "11.89€",
+  "steamPrice": "16.99€",
   "hltb": {
     "mainStory": "0.6h",
     "mainExtra": "1.2h",
@@ -41,6 +41,5 @@
       "Магия",
       "Физичная"
     ]
-  },
-  "steamOriginalPrice": "16.99€"
+  }
 }
