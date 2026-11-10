@@ -8,7 +8,7 @@
   "metaRating": "4.2/5",
   "steamRating": "68%",
   "metaPrice": "€29.99",
-  "steamPrice": "29.99€",
+  "steamPrice": "14.99€",
   "hltb": {
     "mainStory": "8h",
     "mainExtra": "8.8h",
@@ -40,5 +40,6 @@
     "themes": [
       "Повествовательная"
     ]
-  }
+  },
+  "steamOriginalPrice": "29.99€"
 }
