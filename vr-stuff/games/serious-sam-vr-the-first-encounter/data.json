@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "88%",
   "metaPrice": "—",
-  "steamPrice": "19.50€",
+  "steamPrice": "1.95€",
   "hltb": {
     "mainStory": "5.3h",
     "mainExtra": "6.9h",
@@ -40,5 +40,6 @@
     "themes": [
       "Комедийная"
     ]
-  }
+  },
+  "steamOriginalPrice": "19.50€"
 }
