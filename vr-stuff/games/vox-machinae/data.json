@@ -8,7 +8,7 @@
   "metaRating": "4.2/5",
   "steamRating": "86%",
   "metaPrice": "€29.99",
-  "steamPrice": "24.99€",
+  "steamPrice": "8.49€",
   "hltb": {
     "mainStory": "—",
     "mainExtra": "—",
@@ -43,5 +43,6 @@
       "Повествовательная",
       "Пилотирование"
     ]
-  }
+  },
+  "steamOriginalPrice": "24.99€"
 }
