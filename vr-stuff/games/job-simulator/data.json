@@ -8,7 +8,7 @@
   "metaRating": "4.5/5",
   "steamRating": "91%",
   "metaPrice": "€19.99",
-  "steamPrice": "19.50€",
+  "steamPrice": "13.65€",
   "hltb": {
     "mainStory": "2.6h",
     "mainExtra": "3.1h",
@@ -43,5 +43,6 @@
       "Ламповая",
       "Физичная"
     ]
-  }
+  },
+  "steamOriginalPrice": "19.50€"
 }

@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "88%",
   "metaPrice": "—",
-  "steamPrice": "24.99€",
+  "steamPrice": "14.99€",
   "hltb": {
     "mainStory": "—",
     "mainExtra": "—",
@@ -40,5 +40,6 @@
       "Хоррор",
       "Постапок"
     ]
-  }
+  },
+  "steamOriginalPrice": "24.99€"
 }

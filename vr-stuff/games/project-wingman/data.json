@@ -8,7 +8,7 @@
   "metaRating": "N/A",
   "steamRating": "94%",
   "metaPrice": "—",
-  "steamPrice": "24.99€",
+  "steamPrice": "12.49€",
   "hltb": {
     "mainStory": "11.4h",
     "mainExtra": "15.4h",
@@ -38,5 +38,6 @@
     "themes": [
       "Пилотирование"
     ]
-  }
+  },
+  "steamOriginalPrice": "24.99€"
 }
